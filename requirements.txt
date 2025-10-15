@@ -1,0 +1,15 @@
+pandas
+numpy
+requests
+beautifulsoup4
+sqlalchemy
+psycopg2-binary
+streamlit
+dbt-core
+dbt-postgres
+apache-airflow
+gunicorn
+plotly
+great-expectations
+lxml
+html5lib
