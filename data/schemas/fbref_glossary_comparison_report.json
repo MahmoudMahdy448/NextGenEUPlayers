@@ -1,0 +1,326 @@
+{
+  "data/raw/2023-2024/stats_defense.csv": {
+    "total_headers": 25,
+    "direct_matches": 20,
+    "covered_by_base": 0,
+    "not_covered": 5,
+    "not_covered_sample": [
+      "Def 3rd",
+      "Mid 3rd",
+      "Att 3rd",
+      "Lost",
+      "Pass"
+    ]
+  },
+  "data/raw/2023-2024/stats_gca.csv": {
+    "total_headers": 20,
+    "direct_matches": 18,
+    "covered_by_base": 0,
+    "not_covered": 2,
+    "not_covered_sample": [
+      "TO",
+      "Def"
+    ]
+  },
+  "data/raw/2023-2024/stats_keeper.csv": {
+    "total_headers": 27,
+    "direct_matches": 27,
+    "covered_by_base": 0,
+    "not_covered": 0,
+    "not_covered_sample": []
+  },
+  "data/raw/2023-2024/stats_keeper_adv.csv": {
+    "total_headers": 32,
+    "direct_matches": 31,
+    "covered_by_base": 0,
+    "not_covered": 1,
+    "not_covered_sample": [
+      "/90"
+    ]
+  },
+  "data/raw/2023-2024/stats_misc.csv": {
+    "total_headers": 26,
+    "direct_matches": 20,
+    "covered_by_base": 0,
+    "not_covered": 6,
+    "not_covered_sample": [
+      "2CrdY",
+      "Off",
+      "Recov",
+      "Won",
+      "Lost",
+      "Won%"
+    ]
+  },
+  "data/raw/2023-2024/stats_passing.csv": {
+    "total_headers": 24,
+    "direct_matches": 24,
+    "covered_by_base": 0,
+    "not_covered": 0,
+    "not_covered_sample": []
+  },
+  "data/raw/2023-2024/stats_passing_types.csv": {
+    "total_headers": 25,
+    "direct_matches": 21,
+    "covered_by_base": 0,
+    "not_covered": 4,
+    "not_covered_sample": [
+      "In",
+      "Out",
+      "Str",
+      "Off"
+    ]
+  },
+  "data/raw/2023-2024/stats_playing_time.csv": {
+    "total_headers": 30,
+    "direct_matches": 30,
+    "covered_by_base": 0,
+    "not_covered": 0,
+    "not_covered_sample": []
+  },
+  "data/raw/2023-2024/stats_possession.csv": {
+    "total_headers": 32,
+    "direct_matches": 25,
+    "covered_by_base": 0,
+    "not_covered": 7,
+    "not_covered_sample": [
+      "Def 3rd",
+      "Mid 3rd",
+      "Att 3rd",
+      "CPA",
+      "Mis",
+      "Dis",
+      "Rec"
+    ]
+  },
+  "data/raw/2023-2024/stats_shooting.csv": {
+    "total_headers": 27,
+    "direct_matches": 27,
+    "covered_by_base": 0,
+    "not_covered": 0,
+    "not_covered_sample": []
+  },
+  "data/raw/2023-2024/stats_standard.csv": {
+    "total_headers": 30,
+    "direct_matches": 30,
+    "covered_by_base": 0,
+    "not_covered": 0,
+    "not_covered_sample": []
+  },
+  "data/raw/2024-2025/stats_defense.csv": {
+    "total_headers": 25,
+    "direct_matches": 20,
+    "covered_by_base": 0,
+    "not_covered": 5,
+    "not_covered_sample": [
+      "Def 3rd",
+      "Mid 3rd",
+      "Att 3rd",
+      "Lost",
+      "Pass"
+    ]
+  },
+  "data/raw/2024-2025/stats_gca.csv": {
+    "total_headers": 20,
+    "direct_matches": 18,
+    "covered_by_base": 0,
+    "not_covered": 2,
+    "not_covered_sample": [
+      "TO",
+      "Def"
+    ]
+  },
+  "data/raw/2024-2025/stats_keeper.csv": {
+    "total_headers": 27,
+    "direct_matches": 27,
+    "covered_by_base": 0,
+    "not_covered": 0,
+    "not_covered_sample": []
+  },
+  "data/raw/2024-2025/stats_keeper_adv.csv": {
+    "total_headers": 32,
+    "direct_matches": 31,
+    "covered_by_base": 0,
+    "not_covered": 1,
+    "not_covered_sample": [
+      "/90"
+    ]
+  },
+  "data/raw/2024-2025/stats_misc.csv": {
+    "total_headers": 26,
+    "direct_matches": 20,
+    "covered_by_base": 0,
+    "not_covered": 6,
+    "not_covered_sample": [
+      "2CrdY",
+      "Off",
+      "Recov",
+      "Won",
+      "Lost",
+      "Won%"
+    ]
+  },
+  "data/raw/2024-2025/stats_passing.csv": {
+    "total_headers": 24,
+    "direct_matches": 24,
+    "covered_by_base": 0,
+    "not_covered": 0,
+    "not_covered_sample": []
+  },
+  "data/raw/2024-2025/stats_passing_types.csv": {
+    "total_headers": 25,
+    "direct_matches": 21,
+    "covered_by_base": 0,
+    "not_covered": 4,
+    "not_covered_sample": [
+      "In",
+      "Out",
+      "Str",
+      "Off"
+    ]
+  },
+  "data/raw/2024-2025/stats_playing_time.csv": {
+    "total_headers": 30,
+    "direct_matches": 30,
+    "covered_by_base": 0,
+    "not_covered": 0,
+    "not_covered_sample": []
+  },
+  "data/raw/2024-2025/stats_possession.csv": {
+    "total_headers": 32,
+    "direct_matches": 25,
+    "covered_by_base": 0,
+    "not_covered": 7,
+    "not_covered_sample": [
+      "Def 3rd",
+      "Mid 3rd",
+      "Att 3rd",
+      "CPA",
+      "Mis",
+      "Dis",
+      "Rec"
+    ]
+  },
+  "data/raw/2024-2025/stats_shooting.csv": {
+    "total_headers": 27,
+    "direct_matches": 27,
+    "covered_by_base": 0,
+    "not_covered": 0,
+    "not_covered_sample": []
+  },
+  "data/raw/2024-2025/stats_standard.csv": {
+    "total_headers": 30,
+    "direct_matches": 30,
+    "covered_by_base": 0,
+    "not_covered": 0,
+    "not_covered_sample": []
+  },
+  "data/raw/2025-2026/stats_defense.csv": {
+    "total_headers": 25,
+    "direct_matches": 20,
+    "covered_by_base": 0,
+    "not_covered": 5,
+    "not_covered_sample": [
+      "Def 3rd",
+      "Mid 3rd",
+      "Att 3rd",
+      "Lost",
+      "Pass"
+    ]
+  },
+  "data/raw/2025-2026/stats_gca.csv": {
+    "total_headers": 20,
+    "direct_matches": 18,
+    "covered_by_base": 0,
+    "not_covered": 2,
+    "not_covered_sample": [
+      "TO",
+      "Def"
+    ]
+  },
+  "data/raw/2025-2026/stats_keeper.csv": {
+    "total_headers": 27,
+    "direct_matches": 27,
+    "covered_by_base": 0,
+    "not_covered": 0,
+    "not_covered_sample": []
+  },
+  "data/raw/2025-2026/stats_keeper_adv.csv": {
+    "total_headers": 32,
+    "direct_matches": 31,
+    "covered_by_base": 0,
+    "not_covered": 1,
+    "not_covered_sample": [
+      "/90"
+    ]
+  },
+  "data/raw/2025-2026/stats_misc.csv": {
+    "total_headers": 26,
+    "direct_matches": 20,
+    "covered_by_base": 0,
+    "not_covered": 6,
+    "not_covered_sample": [
+      "2CrdY",
+      "Off",
+      "Recov",
+      "Won",
+      "Lost",
+      "Won%"
+    ]
+  },
+  "data/raw/2025-2026/stats_passing.csv": {
+    "total_headers": 24,
+    "direct_matches": 24,
+    "covered_by_base": 0,
+    "not_covered": 0,
+    "not_covered_sample": []
+  },
+  "data/raw/2025-2026/stats_passing_types.csv": {
+    "total_headers": 25,
+    "direct_matches": 21,
+    "covered_by_base": 0,
+    "not_covered": 4,
+    "not_covered_sample": [
+      "In",
+      "Out",
+      "Str",
+      "Off"
+    ]
+  },
+  "data/raw/2025-2026/stats_playing_time.csv": {
+    "total_headers": 30,
+    "direct_matches": 30,
+    "covered_by_base": 0,
+    "not_covered": 0,
+    "not_covered_sample": []
+  },
+  "data/raw/2025-2026/stats_possession.csv": {
+    "total_headers": 32,
+    "direct_matches": 25,
+    "covered_by_base": 0,
+    "not_covered": 7,
+    "not_covered_sample": [
+      "Def 3rd",
+      "Mid 3rd",
+      "Att 3rd",
+      "CPA",
+      "Mis",
+      "Dis",
+      "Rec"
+    ]
+  },
+  "data/raw/2025-2026/stats_shooting.csv": {
+    "total_headers": 27,
+    "direct_matches": 27,
+    "covered_by_base": 0,
+    "not_covered": 0,
+    "not_covered_sample": []
+  },
+  "data/raw/2025-2026/stats_standard.csv": {
+    "total_headers": 30,
+    "direct_matches": 30,
+    "covered_by_base": 0,
+    "not_covered": 0,
+    "not_covered_sample": []
+  }
+}

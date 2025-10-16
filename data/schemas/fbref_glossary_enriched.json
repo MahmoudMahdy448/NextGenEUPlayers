@@ -1,0 +1,657 @@
+{
+  "Player": {
+    "canonical": "Player",
+    "type_hint": "TEXT",
+    "desc": "Player name."
+  },
+  "Rk": {
+    "canonical": "Rk",
+    "type_hint": "INTEGER",
+    "desc": "Rank - This is a count of the rows from top to bottom. It is recalculated following the sorting of a column."
+  },
+  "Squad": {
+    "canonical": "Squad",
+    "type_hint": "TEXT",
+    "desc": "Player's squad / club."
+  },
+  "Nation": {
+    "canonical": "Nation",
+    "type_hint": "TEXT",
+    "desc": "Nationality of the player. First, we check our records in international play at senior level. Then youth level. Then citizenship presented on wikipedia. Finally, we use their birthplace when available."
+  },
+  "Pos": {
+    "canonical": "Pos",
+    "type_hint": "TEXT",
+    "desc": "Position most commonly played by the player. Examples: GK - Goalkeepers, DF - Defenders, MF - Midfielders, FW - Forwards, FB - Fullbacks, LB - Left Backs, RB - Right Backs, CB - Center Backs, DM - Defensive Midfielders, CM - Central Midfielders, LM - Left Midfielders, RM - Right Midfielders, WM - Wide Midfielders, LW - Left Wingers, RW - Right Wingers, AM - Attacking Midfielders."
+  },
+  "Comp": {
+    "canonical": "Comp",
+    "type_hint": "TEXT",
+    "desc": "Competition. Number next to competition states which level in the country's league pyramid this league occupies."
+  },
+  "Age": {
+    "canonical": "Age",
+    "type_hint": "INTEGER",
+    "desc": "Age at season start. Given on August 1 for winter leagues and February 1 for summer leagues."
+  },
+  "Born": {
+    "canonical": "Born",
+    "type_hint": "INTEGER",
+    "desc": "Year of birth."
+  },
+  "MP": {
+    "canonical": "MP",
+    "type_hint": "INTEGER",
+    "desc": "Matches Played by the player or squad."
+  },
+  "Starts": {
+    "canonical": "Starts",
+    "type_hint": "INTEGER",
+    "desc": "Game or games started by player."
+  },
+  "Min": {
+    "canonical": "Min",
+    "type_hint": "INTEGER",
+    "desc": "Minutes played."
+  },
+  "90s": {
+    "canonical": "90s",
+    "type_hint": "INTEGER",
+    "desc": "90s played - Minutes played divided by 90."
+  },
+  "Gls": {
+    "canonical": "Gls",
+    "type_hint": "INTEGER",
+    "desc": "Goals scored or allowed."
+  },
+  "Ast": {
+    "canonical": "Ast",
+    "type_hint": "INTEGER",
+    "desc": "Assists."
+  },
+  "G+A": {
+    "canonical": "G+A",
+    "type_hint": "INTEGER",
+    "desc": "Goals + Assists."
+  },
+  "G-PK": {
+    "canonical": "G-PK",
+    "type_hint": "INTEGER",
+    "desc": "Non-Penalty Goals."
+  },
+  "PK": {
+    "canonical": "PK",
+    "type_hint": "TEXT",
+    "desc": "Penalty Kicks Made."
+  },
+  "PKatt": {
+    "canonical": "PKatt",
+    "type_hint": "TEXT",
+    "desc": "Penalty Kicks Attempted."
+  },
+  "CrdY": {
+    "canonical": "CrdY",
+    "type_hint": "TEXT",
+    "desc": "Yellow Cards."
+  },
+  "CrdR": {
+    "canonical": "CrdR",
+    "type_hint": "TEXT",
+    "desc": "Red Cards."
+  },
+  "xG": {
+    "canonical": "xG",
+    "type_hint": "INTEGER",
+    "desc": "xG: Expected Goals. xG totals include penalty kicks, but do not include penalty shootouts (unless otherwise noted). Provided by Opta."
+  },
+  "npxG": {
+    "canonical": "npxG",
+    "type_hint": "INTEGER",
+    "desc": "npxG: Non-Penalty xG. Non-Penalty Expected Goals. Provided by Opta."
+  },
+  "xAG": {
+    "canonical": "xAG",
+    "type_hint": "INTEGER",
+    "desc": "xAG: Expected Assisted Goals - xG which follows a pass that assists a shot. Provided by Opta."
+  },
+  "npxG+xAG": {
+    "canonical": "npxG+xAG",
+    "type_hint": "INTEGER",
+    "desc": "Non-Penalty Expected Goals plus Assisted Goals. xG totals include penalty kicks, but do not include penalty shootouts (unless otherwise noted). Provided by Opta."
+  },
+  "PrgC": {
+    "canonical": "PrgC",
+    "type_hint": "REAL",
+    "desc": "Progressive Carries - Carries that move the ball towards the opponent's goal line at least 10 yards from its furthest point in the last six passes, or any carry into the penalty area. Excludes carries which end in the defending 50% of the pitch."
+  },
+  "PrgP": {
+    "canonical": "PrgP",
+    "type_hint": "REAL",
+    "desc": "Progressive Passes - Completed passes that move the ball towards the opponent's goal line at least 10 yards from its furthest point in the last six passes, or any completed pass into the penalty area. Excludes passes from the defending 40% of the pitch."
+  },
+  "PrgR": {
+    "canonical": "PrgR",
+    "type_hint": "REAL",
+    "desc": "Progressive Passes Received - Completed passes that move the ball towards the opponent's goal line at least 10 yards from its furthest point in the last six passes, or any completed pass into the penalty area. Excludes passes from the defending 40% of the pitch."
+  },
+  "G+A-PK": {
+    "canonical": "G+A-PK",
+    "type_hint": "INTEGER",
+    "desc": "Goals + Assists minus Penalty Kicks made (non-penalty contribution)."
+  },
+  "xG+xAG": {
+    "canonical": "xG+xAG",
+    "type_hint": "INTEGER",
+    "desc": "Expected Goals plus Expected Assisted Goals (xG + xAG)."
+  },
+  "A-xAG": {
+    "canonical": "A-xAG",
+    "type_hint": "INTEGER",
+    "desc": "Assists minus xAG (actual assists minus expected assisted goals)."
+  },
+  "Matches": {
+    "canonical": "Matches",
+    "type_hint": "INTEGER",
+    "desc": "Matches played (alternate label sometimes used instead of MP)."
+  },
+  "Notes": {
+    "canonical": "Notes",
+    "type_hint": "INTEGER",
+    "desc": "Many CSV columns are suffixed with stat-section markers (for example: 'Gls_stats_shooting'). Those are the same base stats (Gls) scoped to a section; map them back to the base definitions where appropriate. Minimum-played notes apply to leader calculations (e.g., 'Minimum 30 minutes played per squad game to qualify as a leader')."
+  },
+  "GA": {
+    "canonical": "GA",
+    "type_hint": "INTEGER",
+    "desc": "Goals Against."
+  },
+  "GA90": {
+    "canonical": "GA90",
+    "type_hint": "INTEGER",
+    "desc": "Goals Against per 90 minutes."
+  },
+  "SoTA": {
+    "canonical": "SoTA",
+    "type_hint": "INTEGER",
+    "desc": "Shots on Target Against."
+  },
+  "Save%": {
+    "canonical": "Save%",
+    "type_hint": "REAL",
+    "desc": "Save Percentage - (Shots on Target Against - Goals Against)/Shots on Target Against. Note: does not include penalty kicks; not all shots on target are stopped by the keeper, many will be stopped by defenders."
+  },
+  "Sh": {
+    "canonical": "Sh",
+    "type_hint": "INTEGER",
+    "desc": "Shots Total - Does not include penalty kicks."
+  },
+  "SoT": {
+    "canonical": "SoT",
+    "type_hint": "INTEGER",
+    "desc": "Shots on Target - Note: Shots on target do not include penalty kicks."
+  },
+  "SoT%": {
+    "canonical": "SoT%",
+    "type_hint": "REAL",
+    "desc": "Shots on Target %."
+  },
+  "Sh/90": {
+    "canonical": "Sh/90",
+    "type_hint": "REAL",
+    "desc": "Shots Total per 90 minutes."
+  },
+  "SoT/90": {
+    "canonical": "SoT/90",
+    "type_hint": "REAL",
+    "desc": "Shots on target per 90 minutes."
+  },
+  "G/Sh": {
+    "canonical": "G/Sh",
+    "type_hint": "INTEGER",
+    "desc": "Goals per shot."
+  },
+  "G/SoT": {
+    "canonical": "G/SoT",
+    "type_hint": "INTEGER",
+    "desc": "Goals per shot on target."
+  },
+  "Dist": {
+    "canonical": "Dist",
+    "type_hint": "TEXT",
+    "desc": "Average Shot Distance (yards)."
+  },
+  "FK": {
+    "canonical": "FK",
+    "type_hint": "INTEGER",
+    "desc": "Shots from Free Kicks."
+  },
+  "npxG/Sh": {
+    "canonical": "npxG/Sh",
+    "type_hint": "INTEGER",
+    "desc": "Non-Penalty xG per shot."
+  },
+  "G-xG": {
+    "canonical": "G-xG",
+    "type_hint": "INTEGER",
+    "desc": "Goals minus Expected Goals."
+  },
+  "np:G-xG": {
+    "canonical": "np:G-xG",
+    "type_hint": "INTEGER",
+    "desc": "Non-Penalty Goals minus Non-Penalty Expected Goals."
+  },
+  "Cmp": {
+    "canonical": "Cmp",
+    "type_hint": "INTEGER",
+    "desc": "Passes Completed - Includes live ball passes (including crosses) as well as corner kicks, throw-ins, free kicks and goal kicks."
+  },
+  "Att": {
+    "canonical": "Att",
+    "type_hint": "TEXT",
+    "desc": "Passes Attempted - Includes live ball passes (including crosses) as well as corner kicks, throw-ins, free kicks and goal kicks."
+  },
+  "Cmp%": {
+    "canonical": "Cmp%",
+    "type_hint": "REAL",
+    "desc": "Pass Completion %."
+  },
+  "TotDist": {
+    "canonical": "TotDist",
+    "type_hint": "TEXT",
+    "desc": "Total Passing Distance (yards) - total distance that completed passes have traveled in any direction."
+  },
+  "PrgDist": {
+    "canonical": "PrgDist",
+    "type_hint": "TEXT",
+    "desc": "Progressive Passing Distance - total distance that completed passes have traveled towards the opponent's goal."
+  },
+  "xA": {
+    "canonical": "xA",
+    "type_hint": "INTEGER",
+    "desc": "xA: Expected Assists - Provided by Opta."
+  },
+  "KP": {
+    "canonical": "KP",
+    "type_hint": "INTEGER",
+    "desc": "Key Passes - Passes that directly lead to a shot (assisted shots)."
+  },
+  "1/3": {
+    "canonical": "1/3",
+    "type_hint": "TEXT",
+    "desc": "Passes into Final Third - Completed passes that enter the attacking 1/3 of the pitch (not including set pieces)."
+  },
+  "PPA": {
+    "canonical": "PPA",
+    "type_hint": "TEXT",
+    "desc": "Passes into Penalty Area - Completed passes into the 18-yard box (not including set pieces)."
+  },
+  "CrsPA": {
+    "canonical": "CrsPA",
+    "type_hint": "TEXT",
+    "desc": "Crosses into Penalty Area - Completed crosses into the 18-yard box (not including set pieces)."
+  },
+  "Live": {
+    "canonical": "Live",
+    "type_hint": "TEXT",
+    "desc": "Live-ball Passes."
+  },
+  "Dead": {
+    "canonical": "Dead",
+    "type_hint": "TEXT",
+    "desc": "Dead-ball Passes (set pieces, corners, throw-ins, goal kicks)."
+  },
+  "TB": {
+    "canonical": "TB",
+    "type_hint": "TEXT",
+    "desc": "Through Balls."
+  },
+  "Sw": {
+    "canonical": "Sw",
+    "type_hint": "TEXT",
+    "desc": "Switches - Passes traveling more than 40 yards of width."
+  },
+  "Crs": {
+    "canonical": "Crs",
+    "type_hint": "TEXT",
+    "desc": "Crosses."
+  },
+  "CK": {
+    "canonical": "CK",
+    "type_hint": "TEXT",
+    "desc": "Corner Kicks."
+  },
+  "TI": {
+    "canonical": "TI",
+    "type_hint": "TEXT",
+    "desc": "Throw-ins Taken."
+  },
+  "PassLive": {
+    "canonical": "PassLive",
+    "type_hint": "TEXT",
+    "desc": "Live-ball Passes (same as 'Live' but used in some CSVs)."
+  },
+  "PassDead": {
+    "canonical": "PassDead",
+    "type_hint": "TEXT",
+    "desc": "Dead-ball Passes (same as 'Dead' but used in some CSVs)."
+  },
+  "SCA": {
+    "canonical": "SCA",
+    "type_hint": "TEXT",
+    "desc": "Shot-Creating Actions - the two offensive actions directly leading to a shot, such as passes, take-ons and drawing fouls."
+  },
+  "SCA90": {
+    "canonical": "SCA90",
+    "type_hint": "REAL",
+    "desc": "Shot-Creating Actions per 90 minutes."
+  },
+  "GCA": {
+    "canonical": "GCA",
+    "type_hint": "TEXT",
+    "desc": "Goal-Creating Actions - the two offensive actions directly leading to a goal."
+  },
+  "GCA90": {
+    "canonical": "GCA90",
+    "type_hint": "REAL",
+    "desc": "Goal-Creating Actions per 90 minutes."
+  },
+  "Tkl": {
+    "canonical": "Tkl",
+    "type_hint": "TEXT",
+    "desc": "Tackles."
+  },
+  "TklW": {
+    "canonical": "TklW",
+    "type_hint": "TEXT",
+    "desc": "Tackles Won - Tackles in which the tackler's team won possession of the ball."
+  },
+  "Int": {
+    "canonical": "Int",
+    "type_hint": "TEXT",
+    "desc": "Interceptions."
+  },
+  "Tkl%": {
+    "canonical": "Tkl%",
+    "type_hint": "REAL",
+    "desc": "% of Dribblers Tackled - Dribblers tackled divided by number of attempts to challenge an opposing dribbler."
+  },
+  "Tkl+Int": {
+    "canonical": "Tkl+Int",
+    "type_hint": "TEXT",
+    "desc": "Tackles plus Interceptions - simple sum of tackles and interceptions."
+  },
+  "Blocks": {
+    "canonical": "Blocks",
+    "type_hint": "TEXT",
+    "desc": "Number of times blocking the ball by standing in its path."
+  },
+  "Clr": {
+    "canonical": "Clr",
+    "type_hint": "TEXT",
+    "desc": "Clearances."
+  },
+  "Err": {
+    "canonical": "Err",
+    "type_hint": "TEXT",
+    "desc": "Errors - Mistakes leading to an opponent's shot."
+  },
+  "Touches": {
+    "canonical": "Touches",
+    "type_hint": "INTEGER",
+    "desc": "Number of times a player touched the ball."
+  },
+  "Carries": {
+    "canonical": "Carries",
+    "type_hint": "TEXT",
+    "desc": "Number of times the player controlled the ball with their feet."
+  },
+  "Def Pen": {
+    "canonical": "Def Pen",
+    "type_hint": "INTEGER",
+    "desc": "Touches in the defensive penalty area."
+  },
+  "Att Pen": {
+    "canonical": "Att Pen",
+    "type_hint": "INTEGER",
+    "desc": "Touches in the attacking penalty area."
+  },
+  "Succ": {
+    "canonical": "Succ",
+    "type_hint": "TEXT",
+    "desc": "Successful Take-Ons."
+  },
+  "Succ%": {
+    "canonical": "Succ%",
+    "type_hint": "REAL",
+    "desc": "Successful Take-On Percentage."
+  },
+  "Tkld": {
+    "canonical": "Tkld",
+    "type_hint": "TEXT",
+    "desc": "Times Tackle During Take-On."
+  },
+  "Tkld%": {
+    "canonical": "Tkld%",
+    "type_hint": "REAL",
+    "desc": "Tackled During Take-On Percentage."
+  },
+  "Mn/MP": {
+    "canonical": "Mn/MP",
+    "type_hint": "INTEGER",
+    "desc": "Minutes Per Match Played."
+  },
+  "Min%": {
+    "canonical": "Min%",
+    "type_hint": "REAL",
+    "desc": "Percentage of Squad Minutes Played."
+  },
+  "Subs": {
+    "canonical": "Subs",
+    "type_hint": "TEXT",
+    "desc": "Substitute Appearances."
+  },
+  "Mn/Start": {
+    "canonical": "Mn/Start",
+    "type_hint": "INTEGER",
+    "desc": "Minutes Per Match Started."
+  },
+  "Compl": {
+    "canonical": "Compl",
+    "type_hint": "TEXT",
+    "desc": "Complete Matches Played."
+  },
+  "Mn/Sub": {
+    "canonical": "Mn/Sub",
+    "type_hint": "INTEGER",
+    "desc": "Minutes Per Substitution."
+  },
+  "unSub": {
+    "canonical": "unSub",
+    "type_hint": "INTEGER",
+    "desc": "Matches as Unused Sub."
+  },
+  "PPM": {
+    "canonical": "PPM",
+    "type_hint": "TEXT",
+    "desc": "Points per Match (team points per match when player appeared)."
+  },
+  "onG": {
+    "canonical": "onG",
+    "type_hint": "INTEGER",
+    "desc": "Goals scored by team while player was on pitch."
+  },
+  "onGA": {
+    "canonical": "onGA",
+    "type_hint": "INTEGER",
+    "desc": "Goals allowed by team while player was on pitch."
+  },
+  "+/-": {
+    "canonical": "+/-",
+    "type_hint": "INTEGER",
+    "desc": "Plus/Minus - goals scored minus goals allowed by the team while the player was on the pitch."
+  },
+  "+/-90": {
+    "canonical": "+/-90",
+    "type_hint": "REAL",
+    "desc": "Plus/Minus per 90 minutes."
+  },
+  "On-Off": {
+    "canonical": "On-Off",
+    "type_hint": "REAL",
+    "desc": "Plus/Minus Net per 90 Minutes."
+  },
+  "onxG": {
+    "canonical": "onxG",
+    "type_hint": "TEXT",
+    "desc": "xG while on pitch."
+  },
+  "onxGA": {
+    "canonical": "onxGA",
+    "type_hint": "INTEGER",
+    "desc": "xGA while on pitch."
+  },
+  "xG+/-": {
+    "canonical": "xG+/-",
+    "type_hint": "TEXT",
+    "desc": "xG Plus/Minus."
+  },
+  "xG+/-90": {
+    "canonical": "xG+/-90",
+    "type_hint": "REAL",
+    "desc": "xG Plus/Minus per 90 minutes."
+  },
+  "Fls": {
+    "canonical": "Fls",
+    "type_hint": "TEXT",
+    "desc": "Fouls Committed."
+  },
+  "Fld": {
+    "canonical": "Fld",
+    "type_hint": "TEXT",
+    "desc": "Fouls Drawn."
+  },
+  "OG": {
+    "canonical": "OG",
+    "type_hint": "INTEGER",
+    "desc": "Own Goals."
+  },
+  "PKwon": {
+    "canonical": "PKwon",
+    "type_hint": "TEXT",
+    "desc": "Penalty Kicks Won."
+  },
+  "PKcon": {
+    "canonical": "PKcon",
+    "type_hint": "TEXT",
+    "desc": "Penalty Kicks Conceded."
+  },
+  "Saves": {
+    "canonical": "Saves",
+    "type_hint": "INTEGER",
+    "desc": "Number of saves recorded by goalkeeper."
+  },
+  "W": {
+    "canonical": "W",
+    "type_hint": "INTEGER",
+    "desc": "Wins - matches won when keeper played."
+  },
+  "D": {
+    "canonical": "D",
+    "type_hint": "TEXT",
+    "desc": "Draws."
+  },
+  "L": {
+    "canonical": "L",
+    "type_hint": "TEXT",
+    "desc": "Losses."
+  },
+  "CS": {
+    "canonical": "CS",
+    "type_hint": "INTEGER",
+    "desc": "Clean Sheets - matches with no goals allowed."
+  },
+  "CS%": {
+    "canonical": "CS%",
+    "type_hint": "REAL",
+    "desc": "Clean Sheet Percentage."
+  },
+  "PKA": {
+    "canonical": "PKA",
+    "type_hint": "TEXT",
+    "desc": "Penalty Kicks Allowed."
+  },
+  "PKsv": {
+    "canonical": "PKsv",
+    "type_hint": "TEXT",
+    "desc": "Penalty Kicks Saved."
+  },
+  "PKm": {
+    "canonical": "PKm",
+    "type_hint": "TEXT",
+    "desc": "Penalty Kicks Missed (not saved)."
+  },
+  "PSxG": {
+    "canonical": "PSxG",
+    "type_hint": "TEXT",
+    "desc": "Post-shot xG (PSxG)."
+  },
+  "PSxG/SoT": {
+    "canonical": "PSxG/SoT",
+    "type_hint": "TEXT",
+    "desc": "Post-shot xG per Shot on Target."
+  },
+  "PSxG+/-": {
+    "canonical": "PSxG+/-",
+    "type_hint": "INTEGER",
+    "desc": "PSxG plus/minus (goals minus post-shot xG)."
+  },
+  "#OPA": {
+    "canonical": "#OPA",
+    "type_hint": "TEXT",
+    "desc": "Number of Opponent Penalty Area entries stopped (keeper stat, variable definition)."
+  },
+  "#OPA/90": {
+    "canonical": "#OPA/90",
+    "type_hint": "REAL",
+    "desc": "#OPA per 90 minutes."
+  },
+  "AvgDist": {
+    "canonical": "AvgDist",
+    "type_hint": "TEXT",
+    "desc": "Average distance of actions (keeper-specific metric)."
+  },
+  "Thr": {
+    "canonical": "Thr",
+    "type_hint": "TEXT",
+    "desc": "Throws (keeper distribution)."
+  },
+  "Launch%": {
+    "canonical": "Launch%",
+    "type_hint": "REAL",
+    "desc": "Percent of long distributions (launch%)."
+  },
+  "AvgLen": {
+    "canonical": "AvgLen",
+    "type_hint": "TEXT",
+    "desc": "Average length of distributions."
+  },
+  "Opp": {
+    "canonical": "Opp",
+    "type_hint": "TEXT",
+    "desc": "Opponent (context column used in some keeper advanced files)."
+  },
+  "Stp": {
+    "canonical": "Stp",
+    "type_hint": "TEXT",
+    "desc": "Stops (keeper)."
+  },
+  "Stp%": {
+    "canonical": "Stp%",
+    "type_hint": "REAL",
+    "desc": "Stop percentage."
+  },
+  "Att (GK)": {
+    "canonical": "Att (GK)",
+    "type_hint": "TEXT",
+    "desc": "Attempts (GK) - attempts at distributions by keeper."
+  }
+}
