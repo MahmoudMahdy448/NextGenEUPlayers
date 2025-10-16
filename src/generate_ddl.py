@@ -1,5 +1,8 @@
 import json
 import os
+import glob
+import re
+from sql_ident import make_sql_ident, make_table_name
 
 SCHEMA_FILE = "data/schemas/players_schema.json"
 DDL_OUTPUT_FILE = "data/schemas/create_tables.sql"
@@ -75,20 +78,95 @@ def generate_ddl():
             return _normalize_col_type(col_type[0])
         return "TEXT"
 
+    # Discover seasons by scanning data/raw/**/players_data-<season>.csv
+    csv_paths = glob.glob(os.path.join("data", "raw", "**", "players_data-*.csv"), recursive=True)
+    seasons = []
+    season_re = re.compile(r"players_data-(?P<season>\d{4}-\d{4})\.csv$")
+    for p in csv_paths:
+        m = season_re.search(os.path.basename(p))
+        if m:
+            seasons.append(m.group('season'))
+    seasons = sorted(set(seasons))
+
     ddl_statements = []
-    for table_name, columns in tables.items():
-        column_defs = []
-        for col_name, col_type in columns.items():
-            norm = _normalize_col_type(col_type)
-            sql_type = TYPE_MAPPING.get(norm, norm if isinstance(norm, str) else "TEXT")
-            column_defs.append(f'    "{col_name}" {sql_type}')
-        ddl = f"CREATE TABLE IF NOT EXISTS {table_name} (\n" + ",\n".join(column_defs) + "\n);\n"
-        ddl_statements.append(ddl)
+
+    column_map = {}  # original -> sanitized (global across seasons)
+    if seasons:
+        # Generate a per-season players table
+        for season in seasons:
+            safe_season = season.replace('-', '_')
+            table_name = make_table_name(f"players_{safe_season}")
+            column_defs = []
+            # When schema is the single-table form (columns -> {type,seasons,...})
+            if isinstance(schema, dict) and all(isinstance(v, dict) and 'type' in v for v in schema.values()):
+                for col_name, meta in schema.items():
+                    # If the meta has seasons, only use the type if this season is listed
+                    if 'seasons' in meta:
+                        if season not in meta['seasons']:
+                            # include column but default to TEXT when season not listed
+                            chosen = 'TEXT'
+                        else:
+                            chosen = meta.get('type', 'TEXT')
+                    else:
+                        chosen = meta.get('type', 'TEXT')
+                    norm = _normalize_col_type(chosen)
+                    sql_type = TYPE_MAPPING.get(norm, norm if isinstance(norm, str) else 'TEXT')
+                    sanitized = make_sql_ident(col_name)
+                    # ensure uniqueness of sanitized names within this table
+                    if sanitized in [c.split()[-2].strip('"') for c in column_defs]:
+                        # count existing occurrences and append suffix
+                        suffix = 1
+                        base = sanitized
+                        while f"{base}_{suffix}" in [c.split()[-2].strip('"') for c in column_defs]:
+                            suffix += 1
+                        sanitized = f"{base}_{suffix}"
+                    column_defs.append(f'    "{sanitized}" {sql_type}')
+                    column_map[col_name] = sanitized
+            else:
+                # Fallback: use normalized tables mapping (table -> cols)
+                cols = tables.get('players') or next(iter(tables.values()))
+                for col_name, col_type in cols.items():
+                    norm = _normalize_col_type(col_type)
+                    sql_type = TYPE_MAPPING.get(norm, norm if isinstance(norm, str) else 'TEXT')
+                    sanitized = make_sql_ident(col_name)
+                    # ensure uniqueness within this table
+                    if sanitized in [c.split()[-2].strip('"') for c in column_defs]:
+                        suffix = 1
+                        base = sanitized
+                        while f"{base}_{suffix}" in [c.split()[-2].strip('"') for c in column_defs]:
+                            suffix += 1
+                        sanitized = f"{base}_{suffix}"
+                    column_defs.append(f'    "{sanitized}" {sql_type}')
+                    column_map[col_name] = sanitized
+
+            ddl = f"CREATE TABLE IF NOT EXISTS {table_name} (\n" + ",\n".join(column_defs) + "\n);\n"
+            ddl_statements.append(ddl)
+    else:
+        # No season CSVs found — fallback to previous behavior (tables dict)
+        for table_name, columns in tables.items():
+            column_defs = []
+            for col_name, col_type in columns.items():
+                norm = _normalize_col_type(col_type)
+                sql_type = TYPE_MAPPING.get(norm, norm if isinstance(norm, str) else "TEXT")
+                sanitized = make_sql_ident(col_name)
+                column_defs.append(f'    "{sanitized}" {sql_type}')
+                column_map[col_name] = sanitized
+            ddl = f"CREATE TABLE IF NOT EXISTS {table_name} (\n" + ",\n".join(column_defs) + "\n);\n"
+            ddl_statements.append(ddl)
 
     full_ddl = "\n".join(ddl_statements)
 
     with open(DDL_OUTPUT_FILE, "w") as f:
         f.write(full_ddl)
+
+    # write mapping file for auditability: original -> sanitized
+    mapping_file = os.path.join(os.path.dirname(DDL_OUTPUT_FILE), 'players_column_map.json')
+    try:
+        with open(mapping_file, 'w', encoding='utf-8') as mf:
+            json.dump(column_map, mf, ensure_ascii=False, indent=2)
+        print(f"ℹ️ Column mapping written to: {mapping_file}")
+    except Exception:
+        pass
 
     print(f"✅ DDL written to: {DDL_OUTPUT_FILE}")
 
