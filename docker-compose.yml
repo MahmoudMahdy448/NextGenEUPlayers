@@ -32,13 +32,15 @@ services:
       - _PIP_ADDITIONAL_REQUIREMENTS=apache-airflow-providers-postgres
       - AIRFLOW__CORE__LOAD_EXAMPLES=False
       - AIRFLOW_UID=50000
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
     ports:
       - "8080:8080"
     volumes:
       - ./dags:/opt/airflow/dags
       - ./airflow_logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
-    command: ["bash","-c","airflow standalone"]
+      - ./scripts/airflow_create_user.sh:/opt/airflow/scripts/airflow_create_user.sh:ro
+    command: ["bash","-c","/opt/airflow/scripts/airflow_create_user.sh"]
 
   pgadmin:
     image: dpage/pgadmin4:7
