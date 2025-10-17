@@ -2,3 +2,4 @@
 data/db_data/
 pgadmin_data/
 airflow_logs/
+.env.example
