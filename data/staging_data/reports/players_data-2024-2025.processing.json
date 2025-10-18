@@ -1,0 +1,10 @@
+{
+  "file": "/workspaces/NextGenEUPlayers/data/raw/2024-2025/players_data-2024-2025.csv",
+  "rows_in": 2854,
+  "rows_out": null,
+  "cols_in": 267,
+  "cols_out": null,
+  "duplicate_columns": [],
+  "notes": [],
+  "error": "arg must be a list, tuple, 1-d array, or Series"
+}

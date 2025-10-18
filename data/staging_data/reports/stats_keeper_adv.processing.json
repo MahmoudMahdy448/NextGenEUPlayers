@@ -1,0 +1,9 @@
+{
+  "file": "/workspaces/NextGenEUPlayers/data/raw/2025-2026/stats_keeper_adv.csv",
+  "rows_in": 128,
+  "rows_out": 128,
+  "cols_in": 32,
+  "cols_out": 37,
+  "duplicate_columns": [],
+  "notes": []
+}

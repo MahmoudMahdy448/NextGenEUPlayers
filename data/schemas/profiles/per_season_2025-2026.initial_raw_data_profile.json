@@ -1,0 +1,7401 @@
+{
+  "season": "2025-2026",
+  "files": {
+    "players_data-2025-2026.csv": {
+      "file": "players_data-2025-2026.csv",
+      "rows": 2176,
+      "columns": 267,
+      "columns_meta": {
+        "Rk": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 2176,
+          "sample_values": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "Player": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 2136,
+          "sample_values": [
+            "Brenden Aaronson",
+            "Jones El-Abdellaoui",
+            "Himad Abdelli"
+          ]
+        },
+        "Nation": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2173,
+          "unique_count": 106,
+          "sample_values": [
+            "us USA",
+            "ma MAR",
+            "dz ALG"
+          ]
+        },
+        "Pos": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 10,
+          "sample_values": [
+            "FW",
+            "MF,DF",
+            "MF"
+          ]
+        },
+        "Squad": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 96,
+          "sample_values": [
+            "Leeds United",
+            "Celta Vigo",
+            "Angers"
+          ]
+        },
+        "Comp": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "eng Premier League",
+            "es La Liga",
+            "fr Ligue 1"
+          ]
+        },
+        "Age": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2174,
+          "unique_count": 27,
+          "sample_values": [
+            "24.0",
+            "19.0",
+            "25.0"
+          ]
+        },
+        "Born": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2174,
+          "unique_count": 27,
+          "sample_values": [
+            "2000.0",
+            "2006.0",
+            "1999.0"
+          ]
+        },
+        "MP": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 8,
+          "sample_values": [
+            "7",
+            "1",
+            "4"
+          ]
+        },
+        "Starts": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 9,
+          "sample_values": [
+            "4",
+            "0",
+            "2"
+          ]
+        },
+        "Min": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2175,
+          "unique_count": 616,
+          "sample_values": [
+            "397.0",
+            "34.0",
+            "190.0"
+          ]
+        },
+        "90s": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 81,
+          "sample_values": [
+            "4.4",
+            "0.4",
+            "2.1"
+          ]
+        },
+        "Gls": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 9,
+          "sample_values": [
+            "0",
+            "0",
+            "1"
+          ]
+        },
+        "Ast": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 6,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "G+A": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 13,
+          "sample_values": [
+            "0",
+            "0",
+            "1"
+          ]
+        },
+        "G-PK": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 8,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "PK": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "0",
+            "0",
+            "1"
+          ]
+        },
+        "PKatt": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "0",
+            "0",
+            "1"
+          ]
+        },
+        "CrdY": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 6,
+          "sample_values": [
+            "1",
+            "0",
+            "0"
+          ]
+        },
+        "CrdR": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 2,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "xG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 47,
+          "sample_values": [
+            "0.7",
+            "0.0",
+            "0.8"
+          ]
+        },
+        "npxG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 40,
+          "sample_values": [
+            "0.7",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "xAG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 28,
+          "sample_values": [
+            "0.7",
+            "0.1",
+            "0.2"
+          ]
+        },
+        "npxG+xAG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 51,
+          "sample_values": [
+            "1.5",
+            "0.1",
+            "0.2"
+          ]
+        },
+        "PrgC": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 41,
+          "sample_values": [
+            "7",
+            "5",
+            "9"
+          ]
+        },
+        "PrgP": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 67,
+          "sample_values": [
+            "13",
+            "0",
+            "19"
+          ]
+        },
+        "PrgR": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 74,
+          "sample_values": [
+            "21",
+            "15",
+            "7"
+          ]
+        },
+        "G+A-PK": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2175,
+          "unique_count": 153,
+          "sample_values": [
+            "0.0",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "xG+xAG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2175,
+          "unique_count": 143,
+          "sample_values": [
+            "0.33",
+            "0.14",
+            "0.47"
+          ]
+        },
+        "Rk_stats_shooting": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 2176,
+          "sample_values": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "Nation_stats_shooting": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2173,
+          "unique_count": 106,
+          "sample_values": [
+            "us USA",
+            "ma MAR",
+            "dz ALG"
+          ]
+        },
+        "Pos_stats_shooting": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 10,
+          "sample_values": [
+            "FW",
+            "MF,DF",
+            "MF"
+          ]
+        },
+        "Comp_stats_shooting": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "eng Premier League",
+            "es La Liga",
+            "fr Ligue 1"
+          ]
+        },
+        "Age_stats_shooting": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2174,
+          "unique_count": 1773,
+          "sample_values": [
+            "24-358",
+            "19-276",
+            "25-332"
+          ]
+        },
+        "Born_stats_shooting": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2174,
+          "unique_count": 27,
+          "sample_values": [
+            "2000.0",
+            "2006.0",
+            "1999.0"
+          ]
+        },
+        "90s_stats_shooting": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 81,
+          "sample_values": [
+            "4.4",
+            "0.4",
+            "2.1"
+          ]
+        },
+        "Gls_stats_shooting": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 9,
+          "sample_values": [
+            "0",
+            "0",
+            "1"
+          ]
+        },
+        "Sh": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 28,
+          "sample_values": [
+            "8",
+            "0",
+            "1"
+          ]
+        },
+        "SoT": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 15,
+          "sample_values": [
+            "3",
+            "0",
+            "0"
+          ]
+        },
+        "SoT%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1638,
+          "unique_count": 73,
+          "sample_values": [
+            "37.5",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "Sh/90": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2175,
+          "unique_count": 410,
+          "sample_values": [
+            "1.81",
+            "0.0",
+            "0.47"
+          ]
+        },
+        "SoT/90": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2175,
+          "unique_count": 214,
+          "sample_values": [
+            "0.68",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "G/Sh": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1638,
+          "unique_count": 36,
+          "sample_values": [
+            "0.0",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "G/SoT": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1086,
+          "unique_count": 29,
+          "sample_values": [
+            "0.0",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "Dist": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1638,
+          "unique_count": 289,
+          "sample_values": [
+            "14.8",
+            "30.5",
+            "11.7"
+          ]
+        },
+        "FK": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "PK_stats_shooting": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "0",
+            "0",
+            "1"
+          ]
+        },
+        "PKatt_stats_shooting": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "0",
+            "0",
+            "1"
+          ]
+        },
+        "xG_stats_shooting": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 47,
+          "sample_values": [
+            "0.7",
+            "0.0",
+            "0.8"
+          ]
+        },
+        "npxG_stats_shooting": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 40,
+          "sample_values": [
+            "0.7",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "npxG/Sh": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1638,
+          "unique_count": 56,
+          "sample_values": [
+            "0.09",
+            "0.05",
+            "0.05"
+          ]
+        },
+        "G-xG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 50,
+          "sample_values": [
+            "-0.7",
+            "0.0",
+            "0.2"
+          ]
+        },
+        "np:G-xG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 52,
+          "sample_values": [
+            "-0.7",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "Rk_stats_passing": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 2176,
+          "sample_values": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "Nation_stats_passing": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2173,
+          "unique_count": 106,
+          "sample_values": [
+            "us USA",
+            "ma MAR",
+            "dz ALG"
+          ]
+        },
+        "Pos_stats_passing": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 10,
+          "sample_values": [
+            "FW",
+            "MF,DF",
+            "MF"
+          ]
+        },
+        "Comp_stats_passing": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "eng Premier League",
+            "es La Liga",
+            "fr Ligue 1"
+          ]
+        },
+        "Age_stats_passing": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2174,
+          "unique_count": 1773,
+          "sample_values": [
+            "24-358",
+            "19-276",
+            "25-332"
+          ]
+        },
+        "Born_stats_passing": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2174,
+          "unique_count": 27,
+          "sample_values": [
+            "2000.0",
+            "2006.0",
+            "1999.0"
+          ]
+        },
+        "90s_stats_passing": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 81,
+          "sample_values": [
+            "4.4",
+            "0.4",
+            "2.1"
+          ]
+        },
+        "Cmp": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 389,
+          "sample_values": [
+            "86",
+            "21",
+            "86"
+          ]
+        },
+        "Att": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 440,
+          "sample_values": [
+            "109",
+            "26",
+            "110"
+          ]
+        },
+        "Cmp%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2165,
+          "unique_count": 412,
+          "sample_values": [
+            "78.9",
+            "80.8",
+            "78.2"
+          ]
+        },
+        "TotDist": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 1706,
+          "sample_values": [
+            "1167",
+            "320",
+            "1535"
+          ]
+        },
+        "PrgDist": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 1188,
+          "sample_values": [
+            "261",
+            "36",
+            "573"
+          ]
+        },
+        "Ast_stats_passing": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 6,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "xAG_stats_passing": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 28,
+          "sample_values": [
+            "0.7",
+            "0.1",
+            "0.2"
+          ]
+        },
+        "xA": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 26,
+          "sample_values": [
+            "0.8",
+            "0.1",
+            "0.3"
+          ]
+        },
+        "A-xAG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 45,
+          "sample_values": [
+            "-0.7",
+            "-0.1",
+            "-0.2"
+          ]
+        },
+        "KP": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 23,
+          "sample_values": [
+            "5",
+            "2",
+            "2"
+          ]
+        },
+        "1/3": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 63,
+          "sample_values": [
+            "8",
+            "0",
+            "13"
+          ]
+        },
+        "PPA": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 23,
+          "sample_values": [
+            "3",
+            "1",
+            "3"
+          ]
+        },
+        "CrsPA": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 12,
+          "sample_values": [
+            "0",
+            "1",
+            "0"
+          ]
+        },
+        "PrgP_stats_passing": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 67,
+          "sample_values": [
+            "13",
+            "0",
+            "19"
+          ]
+        },
+        "Rk_stats_passing_types": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 2176,
+          "sample_values": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "Nation_stats_passing_types": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2173,
+          "unique_count": 106,
+          "sample_values": [
+            "us USA",
+            "ma MAR",
+            "dz ALG"
+          ]
+        },
+        "Pos_stats_passing_types": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 10,
+          "sample_values": [
+            "FW",
+            "MF,DF",
+            "MF"
+          ]
+        },
+        "Comp_stats_passing_types": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "eng Premier League",
+            "es La Liga",
+            "fr Ligue 1"
+          ]
+        },
+        "Age_stats_passing_types": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2174,
+          "unique_count": 1773,
+          "sample_values": [
+            "24-358",
+            "19-276",
+            "25-332"
+          ]
+        },
+        "Born_stats_passing_types": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2174,
+          "unique_count": 27,
+          "sample_values": [
+            "2000.0",
+            "2006.0",
+            "1999.0"
+          ]
+        },
+        "90s_stats_passing_types": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 81,
+          "sample_values": [
+            "4.4",
+            "0.4",
+            "2.1"
+          ]
+        },
+        "Att_stats_passing_types": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 440,
+          "sample_values": [
+            "109",
+            "26",
+            "110"
+          ]
+        },
+        "Live": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 415,
+          "sample_values": [
+            "97",
+            "22",
+            "101"
+          ]
+        },
+        "Dead": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 90,
+          "sample_values": [
+            "10",
+            "4",
+            "9"
+          ]
+        },
+        "FK_stats_passing_types": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 38,
+          "sample_values": [
+            "2",
+            "0",
+            "1"
+          ]
+        },
+        "TB": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 9,
+          "sample_values": [
+            "1",
+            "0",
+            "1"
+          ]
+        },
+        "Sw": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 12,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Crs": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 48,
+          "sample_values": [
+            "6",
+            "5",
+            "7"
+          ]
+        },
+        "TI": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 68,
+          "sample_values": [
+            "4",
+            "4",
+            "1"
+          ]
+        },
+        "CK": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 31,
+          "sample_values": [
+            "0",
+            "0",
+            "5"
+          ]
+        },
+        "In": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 18,
+          "sample_values": [
+            "0",
+            "0",
+            "4"
+          ]
+        },
+        "Out": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 17,
+          "sample_values": [
+            "0",
+            "0",
+            "1"
+          ]
+        },
+        "Str": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 4,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Cmp_stats_passing_types": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 389,
+          "sample_values": [
+            "86",
+            "21",
+            "86"
+          ]
+        },
+        "Off": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 8,
+          "sample_values": [
+            "2",
+            "0",
+            "0"
+          ]
+        },
+        "Blocks": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 19,
+          "sample_values": [
+            "2",
+            "3",
+            "1"
+          ]
+        },
+        "Rk_stats_gca": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 2176,
+          "sample_values": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "Nation_stats_gca": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2173,
+          "unique_count": 106,
+          "sample_values": [
+            "us USA",
+            "ma MAR",
+            "dz ALG"
+          ]
+        },
+        "Pos_stats_gca": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 10,
+          "sample_values": [
+            "FW",
+            "MF,DF",
+            "MF"
+          ]
+        },
+        "Comp_stats_gca": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "eng Premier League",
+            "es La Liga",
+            "fr Ligue 1"
+          ]
+        },
+        "Age_stats_gca": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2174,
+          "unique_count": 1773,
+          "sample_values": [
+            "24-358",
+            "19-276",
+            "25-332"
+          ]
+        },
+        "Born_stats_gca": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2174,
+          "unique_count": 27,
+          "sample_values": [
+            "2000.0",
+            "2006.0",
+            "1999.0"
+          ]
+        },
+        "90s_stats_gca": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 81,
+          "sample_values": [
+            "4.4",
+            "0.4",
+            "2.1"
+          ]
+        },
+        "SCA": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 42,
+          "sample_values": [
+            "12",
+            "4",
+            "6"
+          ]
+        },
+        "SCA90": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2175,
+          "unique_count": 542,
+          "sample_values": [
+            "2.72",
+            "10.59",
+            "2.84"
+          ]
+        },
+        "PassLive": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 33,
+          "sample_values": [
+            "8",
+            "4",
+            "4"
+          ]
+        },
+        "PassDead": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 15,
+          "sample_values": [
+            "0",
+            "0",
+            "2"
+          ]
+        },
+        "TO": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 9,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Sh_stats_gca": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 6,
+          "sample_values": [
+            "3",
+            "0",
+            "0"
+          ]
+        },
+        "Fld": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 6,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Def": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 4,
+          "sample_values": [
+            "1",
+            "0",
+            "0"
+          ]
+        },
+        "GCA": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 11,
+          "sample_values": [
+            "3",
+            "0",
+            "1"
+          ]
+        },
+        "GCA90": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2175,
+          "unique_count": 157,
+          "sample_values": [
+            "0.68",
+            "0.0",
+            "0.47"
+          ]
+        },
+        "Rk_stats_defense": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 2176,
+          "sample_values": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "Nation_stats_defense": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2173,
+          "unique_count": 106,
+          "sample_values": [
+            "us USA",
+            "ma MAR",
+            "dz ALG"
+          ]
+        },
+        "Pos_stats_defense": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 10,
+          "sample_values": [
+            "FW",
+            "MF,DF",
+            "MF"
+          ]
+        },
+        "Comp_stats_defense": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "eng Premier League",
+            "es La Liga",
+            "fr Ligue 1"
+          ]
+        },
+        "Age_stats_defense": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2174,
+          "unique_count": 1773,
+          "sample_values": [
+            "24-358",
+            "19-276",
+            "25-332"
+          ]
+        },
+        "Born_stats_defense": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2174,
+          "unique_count": 27,
+          "sample_values": [
+            "2000.0",
+            "2006.0",
+            "1999.0"
+          ]
+        },
+        "90s_stats_defense": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 81,
+          "sample_values": [
+            "4.4",
+            "0.4",
+            "2.1"
+          ]
+        },
+        "Tkl": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 29,
+          "sample_values": [
+            "13",
+            "0",
+            "2"
+          ]
+        },
+        "TklW": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 20,
+          "sample_values": [
+            "9",
+            "0",
+            "2"
+          ]
+        },
+        "Def 3rd": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 21,
+          "sample_values": [
+            "6",
+            "0",
+            "2"
+          ]
+        },
+        "Mid 3rd": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 16,
+          "sample_values": [
+            "5",
+            "0",
+            "0"
+          ]
+        },
+        "Att 3rd": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 9,
+          "sample_values": [
+            "2",
+            "0",
+            "0"
+          ]
+        },
+        "Att_stats_defense": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 29,
+          "sample_values": [
+            "18",
+            "1",
+            "4"
+          ]
+        },
+        "Tkl%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1756,
+          "unique_count": 90,
+          "sample_values": [
+            "50.0",
+            "0.0",
+            "50.0"
+          ]
+        },
+        "Lost": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 19,
+          "sample_values": [
+            "9",
+            "1",
+            "2"
+          ]
+        },
+        "Blocks_stats_defense": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 20,
+          "sample_values": [
+            "7",
+            "0",
+            "3"
+          ]
+        },
+        "Sh_stats_defense": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 14,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Pass": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 17,
+          "sample_values": [
+            "7",
+            "0",
+            "3"
+          ]
+        },
+        "Int": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 17,
+          "sample_values": [
+            "2",
+            "0",
+            "5"
+          ]
+        },
+        "Tkl+Int": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 38,
+          "sample_values": [
+            "15",
+            "0",
+            "7"
+          ]
+        },
+        "Clr": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 60,
+          "sample_values": [
+            "8",
+            "1",
+            "3"
+          ]
+        },
+        "Err": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 4,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Rk_stats_possession": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 2176,
+          "sample_values": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "Nation_stats_possession": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2173,
+          "unique_count": 106,
+          "sample_values": [
+            "us USA",
+            "ma MAR",
+            "dz ALG"
+          ]
+        },
+        "Pos_stats_possession": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 10,
+          "sample_values": [
+            "FW",
+            "MF,DF",
+            "MF"
+          ]
+        },
+        "Comp_stats_possession": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "eng Premier League",
+            "es La Liga",
+            "fr Ligue 1"
+          ]
+        },
+        "Age_stats_possession": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2174,
+          "unique_count": 1773,
+          "sample_values": [
+            "24-358",
+            "19-276",
+            "25-332"
+          ]
+        },
+        "Born_stats_possession": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2174,
+          "unique_count": 27,
+          "sample_values": [
+            "2000.0",
+            "2006.0",
+            "1999.0"
+          ]
+        },
+        "90s_stats_possession": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 81,
+          "sample_values": [
+            "4.4",
+            "0.4",
+            "2.1"
+          ]
+        },
+        "Touches": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 501,
+          "sample_values": [
+            "182",
+            "30",
+            "139"
+          ]
+        },
+        "Def Pen": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 167,
+          "sample_values": [
+            "4",
+            "0",
+            "4"
+          ]
+        },
+        "Def 3rd_stats_possession": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 277,
+          "sample_values": [
+            "37",
+            "1",
+            "29"
+          ]
+        },
+        "Mid 3rd_stats_possession": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 296,
+          "sample_values": [
+            "67",
+            "9",
+            "80"
+          ]
+        },
+        "Att 3rd_stats_possession": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 189,
+          "sample_values": [
+            "79",
+            "20",
+            "32"
+          ]
+        },
+        "Att Pen": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 48,
+          "sample_values": [
+            "11",
+            "0",
+            "4"
+          ]
+        },
+        "Live_stats_possession": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 498,
+          "sample_values": [
+            "182",
+            "30",
+            "138"
+          ]
+        },
+        "Att_stats_possession": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 44,
+          "sample_values": [
+            "9",
+            "2",
+            "7"
+          ]
+        },
+        "Succ": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 25,
+          "sample_values": [
+            "4",
+            "0",
+            "2"
+          ]
+        },
+        "Succ%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1678,
+          "unique_count": 116,
+          "sample_values": [
+            "44.4",
+            "0.0",
+            "28.6"
+          ]
+        },
+        "Tkld": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 24,
+          "sample_values": [
+            "5",
+            "1",
+            "5"
+          ]
+        },
+        "Tkld%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1678,
+          "unique_count": 116,
+          "sample_values": [
+            "55.6",
+            "50.0",
+            "71.4"
+          ]
+        },
+        "Carries": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 327,
+          "sample_values": [
+            "91",
+            "19",
+            "66"
+          ]
+        },
+        "TotDist_stats_possession": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 1034,
+          "sample_values": [
+            "555",
+            "158",
+            "391"
+          ]
+        },
+        "PrgDist_stats_possession": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 710,
+          "sample_values": [
+            "246",
+            "94",
+            "218"
+          ]
+        },
+        "PrgC_stats_possession": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 41,
+          "sample_values": [
+            "7",
+            "5",
+            "9"
+          ]
+        },
+        "1/3_stats_possession": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 26,
+          "sample_values": [
+            "5",
+            "0",
+            "8"
+          ]
+        },
+        "CPA": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 25,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Mis": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 30,
+          "sample_values": [
+            "16",
+            "1",
+            "2"
+          ]
+        },
+        "Dis": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 19,
+          "sample_values": [
+            "10",
+            "1",
+            "3"
+          ]
+        },
+        "Rec": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 373,
+          "sample_values": [
+            "106",
+            "22",
+            "95"
+          ]
+        },
+        "PrgR_stats_possession": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 74,
+          "sample_values": [
+            "21",
+            "15",
+            "7"
+          ]
+        },
+        "Rk_stats_playing_time": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 2176,
+          "sample_values": [
+            "1",
+            "4",
+            "5"
+          ]
+        },
+        "Nation_stats_playing_time": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2173,
+          "unique_count": 106,
+          "sample_values": [
+            "us USA",
+            "ma MAR",
+            "dz ALG"
+          ]
+        },
+        "Pos_stats_playing_time": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 10,
+          "sample_values": [
+            "FW",
+            "MF,DF",
+            "MF"
+          ]
+        },
+        "Comp_stats_playing_time": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "eng Premier League",
+            "es La Liga",
+            "fr Ligue 1"
+          ]
+        },
+        "Age_stats_playing_time": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2174,
+          "unique_count": 1773,
+          "sample_values": [
+            "24-358",
+            "19-276",
+            "25-332"
+          ]
+        },
+        "Born_stats_playing_time": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2174,
+          "unique_count": 27,
+          "sample_values": [
+            "2000.0",
+            "2006.0",
+            "1999.0"
+          ]
+        },
+        "MP_stats_playing_time": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 8,
+          "sample_values": [
+            "7",
+            "1",
+            "4"
+          ]
+        },
+        "Min_stats_playing_time": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2175,
+          "unique_count": 616,
+          "sample_values": [
+            "397.0",
+            "34.0",
+            "190.0"
+          ]
+        },
+        "Mn/MP": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 91,
+          "sample_values": [
+            "57",
+            "34",
+            "48"
+          ]
+        },
+        "Min%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 753,
+          "sample_values": [
+            "63.0",
+            "4.7",
+            "30.2"
+          ]
+        },
+        "90s_stats_playing_time": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 81,
+          "sample_values": [
+            "4.4",
+            "0.4",
+            "2.1"
+          ]
+        },
+        "Starts_stats_playing_time": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 9,
+          "sample_values": [
+            "4",
+            "0",
+            "2"
+          ]
+        },
+        "Mn/Start": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1806,
+          "unique_count": 62,
+          "sample_values": [
+            "79.0",
+            "70.0",
+            "48.0"
+          ]
+        },
+        "Compl": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 9,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Subs": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 8,
+          "sample_values": [
+            "3",
+            "1",
+            "2"
+          ]
+        },
+        "Mn/Sub": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1380,
+          "unique_count": 66,
+          "sample_values": [
+            "27.0",
+            "34.0",
+            "25.0"
+          ]
+        },
+        "unSub": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 8,
+          "sample_values": [
+            "0",
+            "7",
+            "0"
+          ]
+        },
+        "PPM": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 54,
+          "sample_values": [
+            "1.14",
+            "0.0",
+            "0.25"
+          ]
+        },
+        "onG": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 25,
+          "sample_values": [
+            "7",
+            "0",
+            "1"
+          ]
+        },
+        "onGA": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 17,
+          "sample_values": [
+            "5",
+            "1",
+            "8"
+          ]
+        },
+        "+/-": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 32,
+          "sample_values": [
+            "2",
+            "-1",
+            "-7"
+          ]
+        },
+        "+/-90": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2175,
+          "unique_count": 543,
+          "sample_values": [
+            "0.45",
+            "-2.65",
+            "-3.32"
+          ]
+        },
+        "On-Off": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2001,
+          "unique_count": 774,
+          "sample_values": [
+            "2.77",
+            "-2.38",
+            "-3.11"
+          ]
+        },
+        "onxG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 147,
+          "sample_values": [
+            "5.6",
+            "0.3",
+            "3.2"
+          ]
+        },
+        "onxGA": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 138,
+          "sample_values": [
+            "4.8",
+            "1.0",
+            "7.4"
+          ]
+        },
+        "xG+/-": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 165,
+          "sample_values": [
+            "0.7",
+            "-0.7",
+            "-4.1"
+          ]
+        },
+        "xG+/-90": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2175,
+          "unique_count": 505,
+          "sample_values": [
+            "0.17",
+            "-1.84",
+            "-1.96"
+          ]
+        },
+        "Rk_stats_misc": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 2176,
+          "sample_values": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "Nation_stats_misc": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2173,
+          "unique_count": 106,
+          "sample_values": [
+            "us USA",
+            "ma MAR",
+            "dz ALG"
+          ]
+        },
+        "Pos_stats_misc": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 10,
+          "sample_values": [
+            "FW",
+            "MF,DF",
+            "MF"
+          ]
+        },
+        "Comp_stats_misc": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "eng Premier League",
+            "es La Liga",
+            "fr Ligue 1"
+          ]
+        },
+        "Age_stats_misc": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2174,
+          "unique_count": 1773,
+          "sample_values": [
+            "24-358",
+            "19-276",
+            "25-332"
+          ]
+        },
+        "Born_stats_misc": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2174,
+          "unique_count": 27,
+          "sample_values": [
+            "2000.0",
+            "2006.0",
+            "1999.0"
+          ]
+        },
+        "90s_stats_misc": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 81,
+          "sample_values": [
+            "4.4",
+            "0.4",
+            "2.1"
+          ]
+        },
+        "CrdY_stats_misc": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 6,
+          "sample_values": [
+            "1",
+            "0",
+            "0"
+          ]
+        },
+        "CrdR_stats_misc": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 2,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "2CrdY": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 2,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Fls": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 21,
+          "sample_values": [
+            "3",
+            "0",
+            "2"
+          ]
+        },
+        "Fld_stats_misc": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 25,
+          "sample_values": [
+            "13",
+            "0",
+            "2"
+          ]
+        },
+        "Off_stats_misc": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 11,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Crs_stats_misc": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 48,
+          "sample_values": [
+            "6",
+            "5",
+            "7"
+          ]
+        },
+        "Int_stats_misc": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 17,
+          "sample_values": [
+            "2",
+            "0",
+            "5"
+          ]
+        },
+        "TklW_stats_misc": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 20,
+          "sample_values": [
+            "9",
+            "0",
+            "2"
+          ]
+        },
+        "PKwon": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 3,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "PKcon": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 3,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "OG": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 3,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Recov": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 53,
+          "sample_values": [
+            "18",
+            "0",
+            "9"
+          ]
+        },
+        "Won": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 34,
+          "sample_values": [
+            "3",
+            "2",
+            "1"
+          ]
+        },
+        "Lost_stats_misc": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 34,
+          "sample_values": [
+            "5",
+            "0",
+            "0"
+          ]
+        },
+        "Won%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1929,
+          "unique_count": 190,
+          "sample_values": [
+            "37.5",
+            "100.0",
+            "100.0"
+          ]
+        },
+        "Rk_stats_keeper": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 128,
+          "sample_values": [
+            "1.0",
+            "2.0",
+            "3.0"
+          ]
+        },
+        "Nation_stats_keeper": {
+          "inferred_type": "TEXT",
+          "non_null_count": 128,
+          "unique_count": 39,
+          "sample_values": [
+            "es ESP",
+            "br BRA",
+            "fr FRA"
+          ]
+        },
+        "Pos_stats_keeper": {
+          "inferred_type": "TEXT",
+          "non_null_count": 128,
+          "unique_count": 1,
+          "sample_values": [
+            "GK",
+            "GK",
+            "GK"
+          ]
+        },
+        "Comp_stats_keeper": {
+          "inferred_type": "TEXT",
+          "non_null_count": 128,
+          "unique_count": 5,
+          "sample_values": [
+            "es La Liga",
+            "eng Premier League",
+            "eng Premier League"
+          ]
+        },
+        "Age_stats_keeper": {
+          "inferred_type": "TEXT",
+          "non_null_count": 128,
+          "unique_count": 127,
+          "sample_values": [
+            "24-293",
+            "33-013",
+            "32-230"
+          ]
+        },
+        "Born_stats_keeper": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 20,
+          "sample_values": [
+            "2000.0",
+            "1992.0",
+            "1993.0"
+          ]
+        },
+        "MP_stats_keeper": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 8,
+          "sample_values": [
+            "8.0",
+            "6.0",
+            "3.0"
+          ]
+        },
+        "Starts_stats_keeper": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 9,
+          "sample_values": [
+            "8.0",
+            "6.0",
+            "3.0"
+          ]
+        },
+        "Min_stats_keeper": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 22,
+          "sample_values": [
+            "720.0",
+            "540.0",
+            "270.0"
+          ]
+        },
+        "90s_stats_keeper": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 20,
+          "sample_values": [
+            "8.0",
+            "6.0",
+            "3.0"
+          ]
+        },
+        "GA": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 17,
+          "sample_values": [
+            "14.0",
+            "7.0",
+            "5.0"
+          ]
+        },
+        "GA90": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 47,
+          "sample_values": [
+            "1.75",
+            "1.17",
+            "1.67"
+          ]
+        },
+        "SoTA": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 41,
+          "sample_values": [
+            "39.0",
+            "16.0",
+            "14.0"
+          ]
+        },
+        "Saves": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 31,
+          "sample_values": [
+            "25.0",
+            "9.0",
+            "9.0"
+          ]
+        },
+        "Save%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 74,
+          "sample_values": [
+            "64.1",
+            "56.3",
+            "71.4"
+          ]
+        },
+        "W": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 8,
+          "sample_values": [
+            "2.0",
+            "5.0",
+            "0.0"
+          ]
+        },
+        "D": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 6,
+          "sample_values": [
+            "2.0",
+            "0.0",
+            "1.0"
+          ]
+        },
+        "L": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 7,
+          "sample_values": [
+            "4.0",
+            "1.0",
+            "2.0"
+          ]
+        },
+        "CS": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 6,
+          "sample_values": [
+            "2.0",
+            "2.0",
+            "0.0"
+          ]
+        },
+        "CS%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 127,
+          "unique_count": 18,
+          "sample_values": [
+            "25.0",
+            "33.3",
+            "0.0"
+          ]
+        },
+        "PKatt_stats_keeper": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 4,
+          "sample_values": [
+            "0.0",
+            "0.0",
+            "1.0"
+          ]
+        },
+        "PKA": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 4,
+          "sample_values": [
+            "0.0",
+            "0.0",
+            "1.0"
+          ]
+        },
+        "PKsv": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 3,
+          "sample_values": [
+            "0.0",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "PKm": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 2,
+          "sample_values": [
+            "0.0",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "Rk_stats_keeper_adv": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 128,
+          "sample_values": [
+            "1.0",
+            "2.0",
+            "3.0"
+          ]
+        },
+        "Nation_stats_keeper_adv": {
+          "inferred_type": "TEXT",
+          "non_null_count": 128,
+          "unique_count": 39,
+          "sample_values": [
+            "es ESP",
+            "br BRA",
+            "fr FRA"
+          ]
+        },
+        "Pos_stats_keeper_adv": {
+          "inferred_type": "TEXT",
+          "non_null_count": 128,
+          "unique_count": 1,
+          "sample_values": [
+            "GK",
+            "GK",
+            "GK"
+          ]
+        },
+        "Comp_stats_keeper_adv": {
+          "inferred_type": "TEXT",
+          "non_null_count": 128,
+          "unique_count": 5,
+          "sample_values": [
+            "es La Liga",
+            "eng Premier League",
+            "eng Premier League"
+          ]
+        },
+        "Age_stats_keeper_adv": {
+          "inferred_type": "TEXT",
+          "non_null_count": 128,
+          "unique_count": 127,
+          "sample_values": [
+            "24-293",
+            "33-013",
+            "32-230"
+          ]
+        },
+        "Born_stats_keeper_adv": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 20,
+          "sample_values": [
+            "2000.0",
+            "1992.0",
+            "1993.0"
+          ]
+        },
+        "90s_stats_keeper_adv": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 20,
+          "sample_values": [
+            "8.0",
+            "6.0",
+            "3.0"
+          ]
+        },
+        "GA_stats_keeper_adv": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 17,
+          "sample_values": [
+            "14.0",
+            "7.0",
+            "5.0"
+          ]
+        },
+        "PKA_stats_keeper_adv": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 4,
+          "sample_values": [
+            "0.0",
+            "0.0",
+            "1.0"
+          ]
+        },
+        "FK_stats_keeper_adv": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 3,
+          "sample_values": [
+            "0.0",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "CK_stats_keeper_adv": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 7,
+          "sample_values": [
+            "2.0",
+            "1.0",
+            "2.0"
+          ]
+        },
+        "OG_stats_keeper_adv": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 4,
+          "sample_values": [
+            "0.0",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "PSxG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 88,
+          "sample_values": [
+            "10.8",
+            "6.5",
+            "3.9"
+          ]
+        },
+        "PSxG/SoT": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 32,
+          "sample_values": [
+            "0.29",
+            "0.4",
+            "0.24"
+          ]
+        },
+        "PSxG+/-": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 53,
+          "sample_values": [
+            "-3.2",
+            "-0.5",
+            "-1.1"
+          ]
+        },
+        "/90": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 79,
+          "sample_values": [
+            "-0.4",
+            "-0.09",
+            "-0.35"
+          ]
+        },
+        "Cmp_stats_keeper_adv": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 49,
+          "sample_values": [
+            "30.0",
+            "22.0",
+            "11.0"
+          ]
+        },
+        "Att_stats_keeper_adv": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 80,
+          "sample_values": [
+            "102.0",
+            "60.0",
+            "48.0"
+          ]
+        },
+        "Cmp%_stats_keeper_adv": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 127,
+          "unique_count": 102,
+          "sample_values": [
+            "29.4",
+            "36.7",
+            "22.9"
+          ]
+        },
+        "Att (GK)": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 107,
+          "sample_values": [
+            "224.0",
+            "239.0",
+            "82.0"
+          ]
+        },
+        "Thr": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 42,
+          "sample_values": [
+            "37.0",
+            "27.0",
+            "15.0"
+          ]
+        },
+        "Launch%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 109,
+          "sample_values": [
+            "32.1",
+            "23.0",
+            "41.5"
+          ]
+        },
+        "AvgLen": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 92,
+          "sample_values": [
+            "31.8",
+            "29.5",
+            "35.4"
+          ]
+        },
+        "Opp": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 78,
+          "sample_values": [
+            "115.0",
+            "76.0",
+            "49.0"
+          ]
+        },
+        "Stp": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 15,
+          "sample_values": [
+            "10.0",
+            "3.0",
+            "2.0"
+          ]
+        },
+        "Stp%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 73,
+          "sample_values": [
+            "8.7",
+            "3.9",
+            "4.1"
+          ]
+        },
+        "#OPA": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 22,
+          "sample_values": [
+            "14.0",
+            "8.0",
+            "0.0"
+          ]
+        },
+        "#OPA/90": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 53,
+          "sample_values": [
+            "1.75",
+            "1.33",
+            "0.0"
+          ]
+        },
+        "AvgDist": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 85,
+          "sample_values": [
+            "15.8",
+            "14.4",
+            "5.2"
+          ]
+        }
+      }
+    },
+    "players_data_light-2025-2026.csv": {
+      "file": "players_data_light-2025-2026.csv",
+      "rows": 2176,
+      "columns": 165,
+      "columns_meta": {
+        "Rk": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 2176,
+          "sample_values": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "Player": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 2136,
+          "sample_values": [
+            "Brenden Aaronson",
+            "Jones El-Abdellaoui",
+            "Himad Abdelli"
+          ]
+        },
+        "Nation": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2173,
+          "unique_count": 106,
+          "sample_values": [
+            "us USA",
+            "ma MAR",
+            "dz ALG"
+          ]
+        },
+        "Pos": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 10,
+          "sample_values": [
+            "FW",
+            "MF,DF",
+            "MF"
+          ]
+        },
+        "Squad": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 96,
+          "sample_values": [
+            "Leeds United",
+            "Celta Vigo",
+            "Angers"
+          ]
+        },
+        "Comp": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "eng Premier League",
+            "es La Liga",
+            "fr Ligue 1"
+          ]
+        },
+        "Age": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2174,
+          "unique_count": 27,
+          "sample_values": [
+            "24.0",
+            "19.0",
+            "25.0"
+          ]
+        },
+        "Born": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2174,
+          "unique_count": 27,
+          "sample_values": [
+            "2000.0",
+            "2006.0",
+            "1999.0"
+          ]
+        },
+        "MP": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 8,
+          "sample_values": [
+            "7",
+            "1",
+            "4"
+          ]
+        },
+        "Starts": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 9,
+          "sample_values": [
+            "4",
+            "0",
+            "2"
+          ]
+        },
+        "Min": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2175,
+          "unique_count": 616,
+          "sample_values": [
+            "397.0",
+            "34.0",
+            "190.0"
+          ]
+        },
+        "90s": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 81,
+          "sample_values": [
+            "4.4",
+            "0.4",
+            "2.1"
+          ]
+        },
+        "Gls": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 9,
+          "sample_values": [
+            "0",
+            "0",
+            "1"
+          ]
+        },
+        "Ast": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 6,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "G+A": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 13,
+          "sample_values": [
+            "0",
+            "0",
+            "1"
+          ]
+        },
+        "G-PK": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 8,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "PK": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "0",
+            "0",
+            "1"
+          ]
+        },
+        "PKatt": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "0",
+            "0",
+            "1"
+          ]
+        },
+        "CrdY": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 6,
+          "sample_values": [
+            "1",
+            "0",
+            "0"
+          ]
+        },
+        "CrdR": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 2,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "xG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 47,
+          "sample_values": [
+            "0.7",
+            "0.0",
+            "0.8"
+          ]
+        },
+        "npxG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 40,
+          "sample_values": [
+            "0.7",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "xAG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 28,
+          "sample_values": [
+            "0.7",
+            "0.1",
+            "0.2"
+          ]
+        },
+        "npxG+xAG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 51,
+          "sample_values": [
+            "1.5",
+            "0.1",
+            "0.2"
+          ]
+        },
+        "G+A-PK": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2175,
+          "unique_count": 153,
+          "sample_values": [
+            "0.0",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "xG+xAG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2175,
+          "unique_count": 143,
+          "sample_values": [
+            "0.33",
+            "0.14",
+            "0.47"
+          ]
+        },
+        "PrgC": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 41,
+          "sample_values": [
+            "7",
+            "5",
+            "9"
+          ]
+        },
+        "PrgP": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 67,
+          "sample_values": [
+            "13",
+            "0",
+            "19"
+          ]
+        },
+        "PrgR": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 74,
+          "sample_values": [
+            "21",
+            "15",
+            "7"
+          ]
+        },
+        "Sh": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 28,
+          "sample_values": [
+            "8",
+            "0",
+            "1"
+          ]
+        },
+        "SoT": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 15,
+          "sample_values": [
+            "3",
+            "0",
+            "0"
+          ]
+        },
+        "SoT%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1638,
+          "unique_count": 73,
+          "sample_values": [
+            "37.5",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "Sh/90": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2175,
+          "unique_count": 410,
+          "sample_values": [
+            "1.81",
+            "0.0",
+            "0.47"
+          ]
+        },
+        "SoT/90": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2175,
+          "unique_count": 214,
+          "sample_values": [
+            "0.68",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "G/Sh": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1638,
+          "unique_count": 36,
+          "sample_values": [
+            "0.0",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "G/SoT": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1086,
+          "unique_count": 29,
+          "sample_values": [
+            "0.0",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "Dist": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1638,
+          "unique_count": 289,
+          "sample_values": [
+            "14.8",
+            "30.5",
+            "11.7"
+          ]
+        },
+        "FK": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "PK_stats_shooting": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "0",
+            "0",
+            "1"
+          ]
+        },
+        "PKatt_stats_shooting": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "0",
+            "0",
+            "1"
+          ]
+        },
+        "xG_stats_shooting": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 47,
+          "sample_values": [
+            "0.7",
+            "0.0",
+            "0.8"
+          ]
+        },
+        "npxG_stats_shooting": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 40,
+          "sample_values": [
+            "0.7",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "npxG/Sh": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1638,
+          "unique_count": 56,
+          "sample_values": [
+            "0.09",
+            "0.05",
+            "0.05"
+          ]
+        },
+        "G-xG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 50,
+          "sample_values": [
+            "-0.7",
+            "0.0",
+            "0.2"
+          ]
+        },
+        "np:G-xG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 52,
+          "sample_values": [
+            "-0.7",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "Cmp": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 389,
+          "sample_values": [
+            "86",
+            "21",
+            "86"
+          ]
+        },
+        "Att": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 440,
+          "sample_values": [
+            "109",
+            "26",
+            "110"
+          ]
+        },
+        "Cmp%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2165,
+          "unique_count": 412,
+          "sample_values": [
+            "78.9",
+            "80.8",
+            "78.2"
+          ]
+        },
+        "TotDist": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 1706,
+          "sample_values": [
+            "1167",
+            "320",
+            "1535"
+          ]
+        },
+        "PrgDist": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 1188,
+          "sample_values": [
+            "261",
+            "36",
+            "573"
+          ]
+        },
+        "Ast_stats_passing": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 6,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "xAG_stats_passing": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 28,
+          "sample_values": [
+            "0.7",
+            "0.1",
+            "0.2"
+          ]
+        },
+        "xA": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 26,
+          "sample_values": [
+            "0.8",
+            "0.1",
+            "0.3"
+          ]
+        },
+        "A-xAG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 45,
+          "sample_values": [
+            "-0.7",
+            "-0.1",
+            "-0.2"
+          ]
+        },
+        "KP": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 23,
+          "sample_values": [
+            "5",
+            "2",
+            "2"
+          ]
+        },
+        "1/3": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 63,
+          "sample_values": [
+            "8",
+            "0",
+            "13"
+          ]
+        },
+        "PPA": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 23,
+          "sample_values": [
+            "3",
+            "1",
+            "3"
+          ]
+        },
+        "CrsPA": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 12,
+          "sample_values": [
+            "0",
+            "1",
+            "0"
+          ]
+        },
+        "PrgP_stats_passing": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 67,
+          "sample_values": [
+            "13",
+            "0",
+            "19"
+          ]
+        },
+        "Live": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 415,
+          "sample_values": [
+            "97",
+            "22",
+            "101"
+          ]
+        },
+        "Dead": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 90,
+          "sample_values": [
+            "10",
+            "4",
+            "9"
+          ]
+        },
+        "FK_stats_passing_types": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 38,
+          "sample_values": [
+            "2",
+            "0",
+            "1"
+          ]
+        },
+        "TB": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 9,
+          "sample_values": [
+            "1",
+            "0",
+            "1"
+          ]
+        },
+        "Sw": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 12,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Crs": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 48,
+          "sample_values": [
+            "6",
+            "5",
+            "7"
+          ]
+        },
+        "TI": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 68,
+          "sample_values": [
+            "4",
+            "4",
+            "1"
+          ]
+        },
+        "CK": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 31,
+          "sample_values": [
+            "0",
+            "0",
+            "5"
+          ]
+        },
+        "In": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 18,
+          "sample_values": [
+            "0",
+            "0",
+            "4"
+          ]
+        },
+        "Out": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 17,
+          "sample_values": [
+            "0",
+            "0",
+            "1"
+          ]
+        },
+        "Str": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 4,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Cmp_stats_passing_types": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 389,
+          "sample_values": [
+            "86",
+            "21",
+            "86"
+          ]
+        },
+        "Tkl": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 29,
+          "sample_values": [
+            "13",
+            "0",
+            "2"
+          ]
+        },
+        "TklW": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 20,
+          "sample_values": [
+            "9",
+            "0",
+            "2"
+          ]
+        },
+        "Def 3rd": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 21,
+          "sample_values": [
+            "6",
+            "0",
+            "2"
+          ]
+        },
+        "Mid 3rd": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 16,
+          "sample_values": [
+            "5",
+            "0",
+            "0"
+          ]
+        },
+        "Att 3rd": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 9,
+          "sample_values": [
+            "2",
+            "0",
+            "0"
+          ]
+        },
+        "Att_stats_defense": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 29,
+          "sample_values": [
+            "18",
+            "1",
+            "4"
+          ]
+        },
+        "Tkl%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1756,
+          "unique_count": 90,
+          "sample_values": [
+            "50.0",
+            "0.0",
+            "50.0"
+          ]
+        },
+        "Lost": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 19,
+          "sample_values": [
+            "9",
+            "1",
+            "2"
+          ]
+        },
+        "Blocks_stats_defense": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 20,
+          "sample_values": [
+            "7",
+            "0",
+            "3"
+          ]
+        },
+        "Sh_stats_defense": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 14,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Pass": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 17,
+          "sample_values": [
+            "7",
+            "0",
+            "3"
+          ]
+        },
+        "Int": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 17,
+          "sample_values": [
+            "2",
+            "0",
+            "5"
+          ]
+        },
+        "Tkl+Int": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 38,
+          "sample_values": [
+            "15",
+            "0",
+            "7"
+          ]
+        },
+        "Clr": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 60,
+          "sample_values": [
+            "8",
+            "1",
+            "3"
+          ]
+        },
+        "Err": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 4,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "SCA": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 42,
+          "sample_values": [
+            "12",
+            "4",
+            "6"
+          ]
+        },
+        "SCA90": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2175,
+          "unique_count": 542,
+          "sample_values": [
+            "2.72",
+            "10.59",
+            "2.84"
+          ]
+        },
+        "PassLive": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 33,
+          "sample_values": [
+            "8",
+            "4",
+            "4"
+          ]
+        },
+        "PassDead": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 15,
+          "sample_values": [
+            "0",
+            "0",
+            "2"
+          ]
+        },
+        "TO": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 9,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Sh_stats_gca": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 6,
+          "sample_values": [
+            "3",
+            "0",
+            "0"
+          ]
+        },
+        "Fld": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 6,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Def": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 4,
+          "sample_values": [
+            "1",
+            "0",
+            "0"
+          ]
+        },
+        "GCA": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 11,
+          "sample_values": [
+            "3",
+            "0",
+            "1"
+          ]
+        },
+        "GCA90": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2175,
+          "unique_count": 157,
+          "sample_values": [
+            "0.68",
+            "0.0",
+            "0.47"
+          ]
+        },
+        "Touches": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 501,
+          "sample_values": [
+            "182",
+            "30",
+            "139"
+          ]
+        },
+        "Def Pen": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 167,
+          "sample_values": [
+            "4",
+            "0",
+            "4"
+          ]
+        },
+        "Def 3rd_stats_possession": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 277,
+          "sample_values": [
+            "37",
+            "1",
+            "29"
+          ]
+        },
+        "Mid 3rd_stats_possession": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 296,
+          "sample_values": [
+            "67",
+            "9",
+            "80"
+          ]
+        },
+        "Att 3rd_stats_possession": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 189,
+          "sample_values": [
+            "79",
+            "20",
+            "32"
+          ]
+        },
+        "Att Pen": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 48,
+          "sample_values": [
+            "11",
+            "0",
+            "4"
+          ]
+        },
+        "Live_stats_possession": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 498,
+          "sample_values": [
+            "182",
+            "30",
+            "138"
+          ]
+        },
+        "Att_stats_possession": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 44,
+          "sample_values": [
+            "9",
+            "2",
+            "7"
+          ]
+        },
+        "Succ": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 25,
+          "sample_values": [
+            "4",
+            "0",
+            "2"
+          ]
+        },
+        "Succ%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1678,
+          "unique_count": 116,
+          "sample_values": [
+            "44.4",
+            "0.0",
+            "28.6"
+          ]
+        },
+        "Tkld": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 24,
+          "sample_values": [
+            "5",
+            "1",
+            "5"
+          ]
+        },
+        "Tkld%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1678,
+          "unique_count": 116,
+          "sample_values": [
+            "55.6",
+            "50.0",
+            "71.4"
+          ]
+        },
+        "Carries": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 327,
+          "sample_values": [
+            "91",
+            "19",
+            "66"
+          ]
+        },
+        "TotDist_stats_possession": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 1034,
+          "sample_values": [
+            "555",
+            "158",
+            "391"
+          ]
+        },
+        "PrgDist_stats_possession": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 710,
+          "sample_values": [
+            "246",
+            "94",
+            "218"
+          ]
+        },
+        "PrgC_stats_possession": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 41,
+          "sample_values": [
+            "7",
+            "5",
+            "9"
+          ]
+        },
+        "1/3_stats_possession": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 26,
+          "sample_values": [
+            "5",
+            "0",
+            "8"
+          ]
+        },
+        "CPA": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 25,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Mis": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 30,
+          "sample_values": [
+            "16",
+            "1",
+            "2"
+          ]
+        },
+        "Dis": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 19,
+          "sample_values": [
+            "10",
+            "1",
+            "3"
+          ]
+        },
+        "Rec": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 373,
+          "sample_values": [
+            "106",
+            "22",
+            "95"
+          ]
+        },
+        "PrgR_stats_possession": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 74,
+          "sample_values": [
+            "21",
+            "15",
+            "7"
+          ]
+        },
+        "CrdY_stats_misc": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 6,
+          "sample_values": [
+            "1",
+            "0",
+            "0"
+          ]
+        },
+        "CrdR_stats_misc": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 2,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "2CrdY": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 2,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Fls": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 21,
+          "sample_values": [
+            "3",
+            "0",
+            "2"
+          ]
+        },
+        "Fld_stats_misc": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 25,
+          "sample_values": [
+            "13",
+            "0",
+            "2"
+          ]
+        },
+        "Off_stats_misc": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 11,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Crs_stats_misc": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 48,
+          "sample_values": [
+            "6",
+            "5",
+            "7"
+          ]
+        },
+        "Int_stats_misc": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 17,
+          "sample_values": [
+            "2",
+            "0",
+            "5"
+          ]
+        },
+        "TklW_stats_misc": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 20,
+          "sample_values": [
+            "9",
+            "0",
+            "2"
+          ]
+        },
+        "PKwon": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 3,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "PKcon": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 3,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "OG": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 3,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Recov": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 53,
+          "sample_values": [
+            "18",
+            "0",
+            "9"
+          ]
+        },
+        "Won": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 34,
+          "sample_values": [
+            "3",
+            "2",
+            "1"
+          ]
+        },
+        "Lost_stats_misc": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 34,
+          "sample_values": [
+            "5",
+            "0",
+            "0"
+          ]
+        },
+        "Won%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1929,
+          "unique_count": 190,
+          "sample_values": [
+            "37.5",
+            "100.0",
+            "100.0"
+          ]
+        },
+        "GA": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 17,
+          "sample_values": [
+            "14.0",
+            "7.0",
+            "5.0"
+          ]
+        },
+        "GA90": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 47,
+          "sample_values": [
+            "1.75",
+            "1.17",
+            "1.67"
+          ]
+        },
+        "SoTA": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 41,
+          "sample_values": [
+            "39.0",
+            "16.0",
+            "14.0"
+          ]
+        },
+        "Saves": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 31,
+          "sample_values": [
+            "25.0",
+            "9.0",
+            "9.0"
+          ]
+        },
+        "Save%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 74,
+          "sample_values": [
+            "64.1",
+            "56.3",
+            "71.4"
+          ]
+        },
+        "W": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 8,
+          "sample_values": [
+            "2.0",
+            "5.0",
+            "0.0"
+          ]
+        },
+        "D": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 6,
+          "sample_values": [
+            "2.0",
+            "0.0",
+            "1.0"
+          ]
+        },
+        "L": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 7,
+          "sample_values": [
+            "4.0",
+            "1.0",
+            "2.0"
+          ]
+        },
+        "CS": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 6,
+          "sample_values": [
+            "2.0",
+            "2.0",
+            "0.0"
+          ]
+        },
+        "CS%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 127,
+          "unique_count": 18,
+          "sample_values": [
+            "25.0",
+            "33.3",
+            "0.0"
+          ]
+        },
+        "PKatt_stats_keeper": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 4,
+          "sample_values": [
+            "0.0",
+            "0.0",
+            "1.0"
+          ]
+        },
+        "PKA": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 4,
+          "sample_values": [
+            "0.0",
+            "0.0",
+            "1.0"
+          ]
+        },
+        "PKsv": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 3,
+          "sample_values": [
+            "0.0",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "PKm": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 2,
+          "sample_values": [
+            "0.0",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "PSxG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 88,
+          "sample_values": [
+            "10.8",
+            "6.5",
+            "3.9"
+          ]
+        },
+        "PSxG/SoT": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 32,
+          "sample_values": [
+            "0.29",
+            "0.4",
+            "0.24"
+          ]
+        },
+        "PSxG+/-": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 53,
+          "sample_values": [
+            "-3.2",
+            "-0.5",
+            "-1.1"
+          ]
+        },
+        "/90": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 79,
+          "sample_values": [
+            "-0.4",
+            "-0.09",
+            "-0.35"
+          ]
+        },
+        "Cmp_stats_keeper_adv": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 49,
+          "sample_values": [
+            "30.0",
+            "22.0",
+            "11.0"
+          ]
+        },
+        "Att_stats_keeper_adv": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 80,
+          "sample_values": [
+            "102.0",
+            "60.0",
+            "48.0"
+          ]
+        },
+        "Cmp%_stats_keeper_adv": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 127,
+          "unique_count": 102,
+          "sample_values": [
+            "29.4",
+            "36.7",
+            "22.9"
+          ]
+        },
+        "Att (GK)": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 107,
+          "sample_values": [
+            "224.0",
+            "239.0",
+            "82.0"
+          ]
+        },
+        "Thr": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 42,
+          "sample_values": [
+            "37.0",
+            "27.0",
+            "15.0"
+          ]
+        },
+        "Launch%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 109,
+          "sample_values": [
+            "32.1",
+            "23.0",
+            "41.5"
+          ]
+        },
+        "AvgLen": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 92,
+          "sample_values": [
+            "31.8",
+            "29.5",
+            "35.4"
+          ]
+        },
+        "Opp": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 78,
+          "sample_values": [
+            "115.0",
+            "76.0",
+            "49.0"
+          ]
+        },
+        "Stp": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 15,
+          "sample_values": [
+            "10.0",
+            "3.0",
+            "2.0"
+          ]
+        },
+        "Stp%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 73,
+          "sample_values": [
+            "8.7",
+            "3.9",
+            "4.1"
+          ]
+        },
+        "#OPA": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 22,
+          "sample_values": [
+            "14.0",
+            "8.0",
+            "0.0"
+          ]
+        },
+        "#OPA/90": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 53,
+          "sample_values": [
+            "1.75",
+            "1.33",
+            "0.0"
+          ]
+        },
+        "AvgDist": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 85,
+          "sample_values": [
+            "15.8",
+            "14.4",
+            "5.2"
+          ]
+        }
+      }
+    },
+    "stats_defense.csv": {
+      "file": "stats_defense.csv",
+      "rows": 2176,
+      "columns": 25,
+      "columns_meta": {
+        "Rk": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 2176,
+          "sample_values": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "Player": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 2136,
+          "sample_values": [
+            "Brenden Aaronson",
+            "Jones El-Abdellaoui",
+            "Himad Abdelli"
+          ]
+        },
+        "Nation": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2173,
+          "unique_count": 106,
+          "sample_values": [
+            "us USA",
+            "ma MAR",
+            "dz ALG"
+          ]
+        },
+        "Pos": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 10,
+          "sample_values": [
+            "FW",
+            "MF,DF",
+            "MF"
+          ]
+        },
+        "Squad": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 96,
+          "sample_values": [
+            "Leeds United",
+            "Celta Vigo",
+            "Angers"
+          ]
+        },
+        "Comp": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "eng Premier League",
+            "es La Liga",
+            "fr Ligue 1"
+          ]
+        },
+        "Age": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2174,
+          "unique_count": 1773,
+          "sample_values": [
+            "24-358",
+            "19-276",
+            "25-332"
+          ]
+        },
+        "Born": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2174,
+          "unique_count": 27,
+          "sample_values": [
+            "2000.0",
+            "2006.0",
+            "1999.0"
+          ]
+        },
+        "90s": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 81,
+          "sample_values": [
+            "4.4",
+            "0.4",
+            "2.1"
+          ]
+        },
+        "Tkl": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 29,
+          "sample_values": [
+            "13",
+            "0",
+            "2"
+          ]
+        },
+        "TklW": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 20,
+          "sample_values": [
+            "9",
+            "0",
+            "2"
+          ]
+        },
+        "Def 3rd": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 21,
+          "sample_values": [
+            "6",
+            "0",
+            "2"
+          ]
+        },
+        "Mid 3rd": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 16,
+          "sample_values": [
+            "5",
+            "0",
+            "0"
+          ]
+        },
+        "Att 3rd": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 9,
+          "sample_values": [
+            "2",
+            "0",
+            "0"
+          ]
+        },
+        "Att": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 29,
+          "sample_values": [
+            "18",
+            "1",
+            "4"
+          ]
+        },
+        "Tkl%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1756,
+          "unique_count": 90,
+          "sample_values": [
+            "50.0",
+            "0.0",
+            "50.0"
+          ]
+        },
+        "Lost": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 19,
+          "sample_values": [
+            "9",
+            "1",
+            "2"
+          ]
+        },
+        "Blocks": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 20,
+          "sample_values": [
+            "7",
+            "0",
+            "3"
+          ]
+        },
+        "Sh": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 14,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Pass": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 17,
+          "sample_values": [
+            "7",
+            "0",
+            "3"
+          ]
+        },
+        "Int": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 17,
+          "sample_values": [
+            "2",
+            "0",
+            "5"
+          ]
+        },
+        "Tkl+Int": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 38,
+          "sample_values": [
+            "15",
+            "0",
+            "7"
+          ]
+        },
+        "Clr": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 60,
+          "sample_values": [
+            "8",
+            "1",
+            "3"
+          ]
+        },
+        "Err": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 4,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Matches": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 1,
+          "sample_values": [
+            "Matches",
+            "Matches",
+            "Matches"
+          ]
+        }
+      }
+    },
+    "stats_gca.csv": {
+      "file": "stats_gca.csv",
+      "rows": 2176,
+      "columns": 20,
+      "columns_meta": {
+        "Rk": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 2176,
+          "sample_values": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "Player": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 2136,
+          "sample_values": [
+            "Brenden Aaronson",
+            "Jones El-Abdellaoui",
+            "Himad Abdelli"
+          ]
+        },
+        "Nation": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2173,
+          "unique_count": 106,
+          "sample_values": [
+            "us USA",
+            "ma MAR",
+            "dz ALG"
+          ]
+        },
+        "Pos": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 10,
+          "sample_values": [
+            "FW",
+            "MF,DF",
+            "MF"
+          ]
+        },
+        "Squad": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 96,
+          "sample_values": [
+            "Leeds United",
+            "Celta Vigo",
+            "Angers"
+          ]
+        },
+        "Comp": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "eng Premier League",
+            "es La Liga",
+            "fr Ligue 1"
+          ]
+        },
+        "Age": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2174,
+          "unique_count": 1773,
+          "sample_values": [
+            "24-358",
+            "19-276",
+            "25-332"
+          ]
+        },
+        "Born": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2174,
+          "unique_count": 27,
+          "sample_values": [
+            "2000.0",
+            "2006.0",
+            "1999.0"
+          ]
+        },
+        "90s": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 81,
+          "sample_values": [
+            "4.4",
+            "0.4",
+            "2.1"
+          ]
+        },
+        "SCA": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 42,
+          "sample_values": [
+            "12",
+            "4",
+            "6"
+          ]
+        },
+        "SCA90": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2175,
+          "unique_count": 542,
+          "sample_values": [
+            "2.72",
+            "10.59",
+            "2.84"
+          ]
+        },
+        "PassLive": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 33,
+          "sample_values": [
+            "8",
+            "4",
+            "4"
+          ]
+        },
+        "PassDead": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 15,
+          "sample_values": [
+            "0",
+            "0",
+            "2"
+          ]
+        },
+        "TO": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 9,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Sh": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 6,
+          "sample_values": [
+            "3",
+            "0",
+            "0"
+          ]
+        },
+        "Fld": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 6,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Def": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 4,
+          "sample_values": [
+            "1",
+            "0",
+            "0"
+          ]
+        },
+        "GCA": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 11,
+          "sample_values": [
+            "3",
+            "0",
+            "1"
+          ]
+        },
+        "GCA90": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2175,
+          "unique_count": 157,
+          "sample_values": [
+            "0.68",
+            "0.0",
+            "0.47"
+          ]
+        },
+        "Matches": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 1,
+          "sample_values": [
+            "Matches",
+            "Matches",
+            "Matches"
+          ]
+        }
+      }
+    },
+    "stats_keeper.csv": {
+      "file": "stats_keeper.csv",
+      "rows": 128,
+      "columns": 27,
+      "columns_meta": {
+        "Rk": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 128,
+          "sample_values": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "Player": {
+          "inferred_type": "TEXT",
+          "non_null_count": 128,
+          "unique_count": 128,
+          "sample_values": [
+            "Julen Agirrezabala",
+            "Alisson",
+            "Alphonse Areola"
+          ]
+        },
+        "Nation": {
+          "inferred_type": "TEXT",
+          "non_null_count": 128,
+          "unique_count": 39,
+          "sample_values": [
+            "es ESP",
+            "br BRA",
+            "fr FRA"
+          ]
+        },
+        "Pos": {
+          "inferred_type": "TEXT",
+          "non_null_count": 128,
+          "unique_count": 1,
+          "sample_values": [
+            "GK",
+            "GK",
+            "GK"
+          ]
+        },
+        "Squad": {
+          "inferred_type": "TEXT",
+          "non_null_count": 128,
+          "unique_count": 96,
+          "sample_values": [
+            "Valencia",
+            "Liverpool",
+            "West Ham"
+          ]
+        },
+        "Comp": {
+          "inferred_type": "TEXT",
+          "non_null_count": 128,
+          "unique_count": 5,
+          "sample_values": [
+            "es La Liga",
+            "eng Premier League",
+            "eng Premier League"
+          ]
+        },
+        "Age": {
+          "inferred_type": "TEXT",
+          "non_null_count": 128,
+          "unique_count": 127,
+          "sample_values": [
+            "24-293",
+            "33-013",
+            "32-230"
+          ]
+        },
+        "Born": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 20,
+          "sample_values": [
+            "2000",
+            "1992",
+            "1993"
+          ]
+        },
+        "MP": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 8,
+          "sample_values": [
+            "8",
+            "6",
+            "3"
+          ]
+        },
+        "Starts": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 9,
+          "sample_values": [
+            "8",
+            "6",
+            "3"
+          ]
+        },
+        "Min": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 22,
+          "sample_values": [
+            "720",
+            "540",
+            "270"
+          ]
+        },
+        "90s": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 20,
+          "sample_values": [
+            "8.0",
+            "6.0",
+            "3.0"
+          ]
+        },
+        "GA": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 17,
+          "sample_values": [
+            "14",
+            "7",
+            "5"
+          ]
+        },
+        "GA90": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 47,
+          "sample_values": [
+            "1.75",
+            "1.17",
+            "1.67"
+          ]
+        },
+        "SoTA": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 41,
+          "sample_values": [
+            "39",
+            "16",
+            "14"
+          ]
+        },
+        "Saves": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 31,
+          "sample_values": [
+            "25",
+            "9",
+            "9"
+          ]
+        },
+        "Save%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 74,
+          "sample_values": [
+            "64.1",
+            "56.3",
+            "71.4"
+          ]
+        },
+        "W": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 8,
+          "sample_values": [
+            "2",
+            "5",
+            "0"
+          ]
+        },
+        "D": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 6,
+          "sample_values": [
+            "2",
+            "0",
+            "1"
+          ]
+        },
+        "L": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 7,
+          "sample_values": [
+            "4",
+            "1",
+            "2"
+          ]
+        },
+        "CS": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 6,
+          "sample_values": [
+            "2",
+            "2",
+            "0"
+          ]
+        },
+        "CS%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 127,
+          "unique_count": 18,
+          "sample_values": [
+            "25.0",
+            "33.3",
+            "0.0"
+          ]
+        },
+        "PKatt": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 4,
+          "sample_values": [
+            "0",
+            "0",
+            "1"
+          ]
+        },
+        "PKA": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 4,
+          "sample_values": [
+            "0",
+            "0",
+            "1"
+          ]
+        },
+        "PKsv": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 3,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "PKm": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 2,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Matches": {
+          "inferred_type": "TEXT",
+          "non_null_count": 128,
+          "unique_count": 1,
+          "sample_values": [
+            "Matches",
+            "Matches",
+            "Matches"
+          ]
+        }
+      }
+    },
+    "stats_keeper_adv.csv": {
+      "file": "stats_keeper_adv.csv",
+      "rows": 128,
+      "columns": 32,
+      "columns_meta": {
+        "Rk": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 128,
+          "sample_values": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "Player": {
+          "inferred_type": "TEXT",
+          "non_null_count": 128,
+          "unique_count": 128,
+          "sample_values": [
+            "Julen Agirrezabala",
+            "Alisson",
+            "Alphonse Areola"
+          ]
+        },
+        "Nation": {
+          "inferred_type": "TEXT",
+          "non_null_count": 128,
+          "unique_count": 39,
+          "sample_values": [
+            "es ESP",
+            "br BRA",
+            "fr FRA"
+          ]
+        },
+        "Pos": {
+          "inferred_type": "TEXT",
+          "non_null_count": 128,
+          "unique_count": 1,
+          "sample_values": [
+            "GK",
+            "GK",
+            "GK"
+          ]
+        },
+        "Squad": {
+          "inferred_type": "TEXT",
+          "non_null_count": 128,
+          "unique_count": 96,
+          "sample_values": [
+            "Valencia",
+            "Liverpool",
+            "West Ham"
+          ]
+        },
+        "Comp": {
+          "inferred_type": "TEXT",
+          "non_null_count": 128,
+          "unique_count": 5,
+          "sample_values": [
+            "es La Liga",
+            "eng Premier League",
+            "eng Premier League"
+          ]
+        },
+        "Age": {
+          "inferred_type": "TEXT",
+          "non_null_count": 128,
+          "unique_count": 127,
+          "sample_values": [
+            "24-293",
+            "33-013",
+            "32-230"
+          ]
+        },
+        "Born": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 20,
+          "sample_values": [
+            "2000",
+            "1992",
+            "1993"
+          ]
+        },
+        "90s": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 20,
+          "sample_values": [
+            "8.0",
+            "6.0",
+            "3.0"
+          ]
+        },
+        "GA": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 17,
+          "sample_values": [
+            "14",
+            "7",
+            "5"
+          ]
+        },
+        "PKA": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 4,
+          "sample_values": [
+            "0",
+            "0",
+            "1"
+          ]
+        },
+        "FK": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 3,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "CK": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 7,
+          "sample_values": [
+            "2",
+            "1",
+            "2"
+          ]
+        },
+        "OG": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 4,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "PSxG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 88,
+          "sample_values": [
+            "10.8",
+            "6.5",
+            "3.9"
+          ]
+        },
+        "PSxG/SoT": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 32,
+          "sample_values": [
+            "0.29",
+            "0.4",
+            "0.24"
+          ]
+        },
+        "PSxG+/-": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 53,
+          "sample_values": [
+            "-3.2",
+            "-0.5",
+            "-1.1"
+          ]
+        },
+        "/90": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 79,
+          "sample_values": [
+            "-0.4",
+            "-0.09",
+            "-0.35"
+          ]
+        },
+        "Cmp": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 49,
+          "sample_values": [
+            "30",
+            "22",
+            "11"
+          ]
+        },
+        "Att": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 80,
+          "sample_values": [
+            "102",
+            "60",
+            "48"
+          ]
+        },
+        "Cmp%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 127,
+          "unique_count": 102,
+          "sample_values": [
+            "29.4",
+            "36.7",
+            "22.9"
+          ]
+        },
+        "Att (GK)": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 107,
+          "sample_values": [
+            "224",
+            "239",
+            "82"
+          ]
+        },
+        "Thr": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 42,
+          "sample_values": [
+            "37",
+            "27",
+            "15"
+          ]
+        },
+        "Launch%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 109,
+          "sample_values": [
+            "32.1",
+            "23.0",
+            "41.5"
+          ]
+        },
+        "AvgLen": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 92,
+          "sample_values": [
+            "31.8",
+            "29.5",
+            "35.4"
+          ]
+        },
+        "Opp": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 78,
+          "sample_values": [
+            "115",
+            "76",
+            "49"
+          ]
+        },
+        "Stp": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 15,
+          "sample_values": [
+            "10",
+            "3",
+            "2"
+          ]
+        },
+        "Stp%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 73,
+          "sample_values": [
+            "8.7",
+            "3.9",
+            "4.1"
+          ]
+        },
+        "#OPA": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 128,
+          "unique_count": 22,
+          "sample_values": [
+            "14",
+            "8",
+            "0"
+          ]
+        },
+        "#OPA/90": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 53,
+          "sample_values": [
+            "1.75",
+            "1.33",
+            "0.0"
+          ]
+        },
+        "AvgDist": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 128,
+          "unique_count": 85,
+          "sample_values": [
+            "15.8",
+            "14.4",
+            "5.2"
+          ]
+        },
+        "Matches": {
+          "inferred_type": "TEXT",
+          "non_null_count": 128,
+          "unique_count": 1,
+          "sample_values": [
+            "Matches",
+            "Matches",
+            "Matches"
+          ]
+        }
+      }
+    },
+    "stats_misc.csv": {
+      "file": "stats_misc.csv",
+      "rows": 2176,
+      "columns": 26,
+      "columns_meta": {
+        "Rk": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 2176,
+          "sample_values": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "Player": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 2136,
+          "sample_values": [
+            "Brenden Aaronson",
+            "Jones El-Abdellaoui",
+            "Himad Abdelli"
+          ]
+        },
+        "Nation": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2173,
+          "unique_count": 106,
+          "sample_values": [
+            "us USA",
+            "ma MAR",
+            "dz ALG"
+          ]
+        },
+        "Pos": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 10,
+          "sample_values": [
+            "FW",
+            "MF,DF",
+            "MF"
+          ]
+        },
+        "Squad": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 96,
+          "sample_values": [
+            "Leeds United",
+            "Celta Vigo",
+            "Angers"
+          ]
+        },
+        "Comp": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "eng Premier League",
+            "es La Liga",
+            "fr Ligue 1"
+          ]
+        },
+        "Age": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2174,
+          "unique_count": 1773,
+          "sample_values": [
+            "24-358",
+            "19-276",
+            "25-332"
+          ]
+        },
+        "Born": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2174,
+          "unique_count": 27,
+          "sample_values": [
+            "2000.0",
+            "2006.0",
+            "1999.0"
+          ]
+        },
+        "90s": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 81,
+          "sample_values": [
+            "4.4",
+            "0.4",
+            "2.1"
+          ]
+        },
+        "CrdY": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 6,
+          "sample_values": [
+            "1",
+            "0",
+            "0"
+          ]
+        },
+        "CrdR": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 2,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "2CrdY": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 2,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Fls": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 21,
+          "sample_values": [
+            "3",
+            "0",
+            "2"
+          ]
+        },
+        "Fld": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 25,
+          "sample_values": [
+            "13",
+            "0",
+            "2"
+          ]
+        },
+        "Off": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 11,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Crs": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 48,
+          "sample_values": [
+            "6",
+            "5",
+            "7"
+          ]
+        },
+        "Int": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 17,
+          "sample_values": [
+            "2",
+            "0",
+            "5"
+          ]
+        },
+        "TklW": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 20,
+          "sample_values": [
+            "9",
+            "0",
+            "2"
+          ]
+        },
+        "PKwon": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 3,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "PKcon": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 3,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "OG": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 3,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Recov": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 53,
+          "sample_values": [
+            "18",
+            "0",
+            "9"
+          ]
+        },
+        "Won": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 34,
+          "sample_values": [
+            "3",
+            "2",
+            "1"
+          ]
+        },
+        "Lost": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 34,
+          "sample_values": [
+            "5",
+            "0",
+            "0"
+          ]
+        },
+        "Won%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1929,
+          "unique_count": 190,
+          "sample_values": [
+            "37.5",
+            "100.0",
+            "100.0"
+          ]
+        },
+        "Matches": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 1,
+          "sample_values": [
+            "Matches",
+            "Matches",
+            "Matches"
+          ]
+        }
+      }
+    },
+    "stats_passing.csv": {
+      "file": "stats_passing.csv",
+      "rows": 2176,
+      "columns": 24,
+      "columns_meta": {
+        "Rk": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 2176,
+          "sample_values": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "Player": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 2136,
+          "sample_values": [
+            "Brenden Aaronson",
+            "Jones El-Abdellaoui",
+            "Himad Abdelli"
+          ]
+        },
+        "Nation": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2173,
+          "unique_count": 106,
+          "sample_values": [
+            "us USA",
+            "ma MAR",
+            "dz ALG"
+          ]
+        },
+        "Pos": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 10,
+          "sample_values": [
+            "FW",
+            "MF,DF",
+            "MF"
+          ]
+        },
+        "Squad": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 96,
+          "sample_values": [
+            "Leeds United",
+            "Celta Vigo",
+            "Angers"
+          ]
+        },
+        "Comp": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "eng Premier League",
+            "es La Liga",
+            "fr Ligue 1"
+          ]
+        },
+        "Age": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2174,
+          "unique_count": 1773,
+          "sample_values": [
+            "24-358",
+            "19-276",
+            "25-332"
+          ]
+        },
+        "Born": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2174,
+          "unique_count": 27,
+          "sample_values": [
+            "2000.0",
+            "2006.0",
+            "1999.0"
+          ]
+        },
+        "90s": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 81,
+          "sample_values": [
+            "4.4",
+            "0.4",
+            "2.1"
+          ]
+        },
+        "Cmp": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 389,
+          "sample_values": [
+            "86",
+            "21",
+            "86"
+          ]
+        },
+        "Att": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 440,
+          "sample_values": [
+            "109",
+            "26",
+            "110"
+          ]
+        },
+        "Cmp%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2165,
+          "unique_count": 412,
+          "sample_values": [
+            "78.9",
+            "80.8",
+            "78.2"
+          ]
+        },
+        "TotDist": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 1706,
+          "sample_values": [
+            "1167",
+            "320",
+            "1535"
+          ]
+        },
+        "PrgDist": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 1188,
+          "sample_values": [
+            "261",
+            "36",
+            "573"
+          ]
+        },
+        "Ast": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 6,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "xAG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 28,
+          "sample_values": [
+            "0.7",
+            "0.1",
+            "0.2"
+          ]
+        },
+        "xA": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 26,
+          "sample_values": [
+            "0.8",
+            "0.1",
+            "0.3"
+          ]
+        },
+        "A-xAG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 45,
+          "sample_values": [
+            "-0.7",
+            "-0.1",
+            "-0.2"
+          ]
+        },
+        "KP": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 23,
+          "sample_values": [
+            "5",
+            "2",
+            "2"
+          ]
+        },
+        "1/3": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 63,
+          "sample_values": [
+            "8",
+            "0",
+            "13"
+          ]
+        },
+        "PPA": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 23,
+          "sample_values": [
+            "3",
+            "1",
+            "3"
+          ]
+        },
+        "CrsPA": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 12,
+          "sample_values": [
+            "0",
+            "1",
+            "0"
+          ]
+        },
+        "PrgP": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 67,
+          "sample_values": [
+            "13",
+            "0",
+            "19"
+          ]
+        },
+        "Matches": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 1,
+          "sample_values": [
+            "Matches",
+            "Matches",
+            "Matches"
+          ]
+        }
+      }
+    },
+    "stats_passing_types.csv": {
+      "file": "stats_passing_types.csv",
+      "rows": 2176,
+      "columns": 25,
+      "columns_meta": {
+        "Rk": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 2176,
+          "sample_values": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "Player": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 2136,
+          "sample_values": [
+            "Brenden Aaronson",
+            "Jones El-Abdellaoui",
+            "Himad Abdelli"
+          ]
+        },
+        "Nation": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2173,
+          "unique_count": 106,
+          "sample_values": [
+            "us USA",
+            "ma MAR",
+            "dz ALG"
+          ]
+        },
+        "Pos": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 10,
+          "sample_values": [
+            "FW",
+            "MF,DF",
+            "MF"
+          ]
+        },
+        "Squad": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 96,
+          "sample_values": [
+            "Leeds United",
+            "Celta Vigo",
+            "Angers"
+          ]
+        },
+        "Comp": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "eng Premier League",
+            "es La Liga",
+            "fr Ligue 1"
+          ]
+        },
+        "Age": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2174,
+          "unique_count": 1773,
+          "sample_values": [
+            "24-358",
+            "19-276",
+            "25-332"
+          ]
+        },
+        "Born": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2174,
+          "unique_count": 27,
+          "sample_values": [
+            "2000.0",
+            "2006.0",
+            "1999.0"
+          ]
+        },
+        "90s": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 81,
+          "sample_values": [
+            "4.4",
+            "0.4",
+            "2.1"
+          ]
+        },
+        "Att": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 440,
+          "sample_values": [
+            "109",
+            "26",
+            "110"
+          ]
+        },
+        "Live": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 415,
+          "sample_values": [
+            "97",
+            "22",
+            "101"
+          ]
+        },
+        "Dead": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 90,
+          "sample_values": [
+            "10",
+            "4",
+            "9"
+          ]
+        },
+        "FK": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 38,
+          "sample_values": [
+            "2",
+            "0",
+            "1"
+          ]
+        },
+        "TB": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 9,
+          "sample_values": [
+            "1",
+            "0",
+            "1"
+          ]
+        },
+        "Sw": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 12,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Crs": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 48,
+          "sample_values": [
+            "6",
+            "5",
+            "7"
+          ]
+        },
+        "TI": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 68,
+          "sample_values": [
+            "4",
+            "4",
+            "1"
+          ]
+        },
+        "CK": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 31,
+          "sample_values": [
+            "0",
+            "0",
+            "5"
+          ]
+        },
+        "In": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 18,
+          "sample_values": [
+            "0",
+            "0",
+            "4"
+          ]
+        },
+        "Out": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 17,
+          "sample_values": [
+            "0",
+            "0",
+            "1"
+          ]
+        },
+        "Str": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 4,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Cmp": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 389,
+          "sample_values": [
+            "86",
+            "21",
+            "86"
+          ]
+        },
+        "Off": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 8,
+          "sample_values": [
+            "2",
+            "0",
+            "0"
+          ]
+        },
+        "Blocks": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 19,
+          "sample_values": [
+            "2",
+            "3",
+            "1"
+          ]
+        },
+        "Matches": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 1,
+          "sample_values": [
+            "Matches",
+            "Matches",
+            "Matches"
+          ]
+        }
+      }
+    },
+    "stats_playing_time.csv": {
+      "file": "stats_playing_time.csv",
+      "rows": 2683,
+      "columns": 30,
+      "columns_meta": {
+        "Rk": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2683,
+          "unique_count": 2683,
+          "sample_values": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "Player": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2683,
+          "unique_count": 2619,
+          "sample_values": [
+            "Brenden Aaronson",
+            "Zach Abbott",
+            "Keyliane Abdallah"
+          ]
+        },
+        "Nation": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2676,
+          "unique_count": 110,
+          "sample_values": [
+            "us USA",
+            "eng ENG",
+            "fr FRA"
+          ]
+        },
+        "Pos": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2682,
+          "unique_count": 10,
+          "sample_values": [
+            "FW",
+            "DF",
+            "FW"
+          ]
+        },
+        "Squad": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2683,
+          "unique_count": 96,
+          "sample_values": [
+            "Leeds United",
+            "Nott'ham Forest",
+            "Marseille"
+          ]
+        },
+        "Comp": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2683,
+          "unique_count": 5,
+          "sample_values": [
+            "eng Premier League",
+            "eng Premier League",
+            "fr Ligue 1"
+          ]
+        },
+        "Age": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2677,
+          "unique_count": 2107,
+          "sample_values": [
+            "24-358",
+            "19-155",
+            "19-193"
+          ]
+        },
+        "Born": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2677,
+          "unique_count": 27,
+          "sample_values": [
+            "2000.0",
+            "2006.0",
+            "2006.0"
+          ]
+        },
+        "MP": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2683,
+          "unique_count": 9,
+          "sample_values": [
+            "7",
+            "0",
+            "0"
+          ]
+        },
+        "Min": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2175,
+          "unique_count": 616,
+          "sample_values": [
+            "397.0",
+            "34.0",
+            "190.0"
+          ]
+        },
+        "Mn/MP": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 91,
+          "sample_values": [
+            "57.0",
+            "34.0",
+            "48.0"
+          ]
+        },
+        "Min%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2179,
+          "unique_count": 753,
+          "sample_values": [
+            "63.0",
+            "4.7",
+            "30.2"
+          ]
+        },
+        "90s": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2179,
+          "unique_count": 81,
+          "sample_values": [
+            "4.4",
+            "0.4",
+            "2.1"
+          ]
+        },
+        "Starts": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2683,
+          "unique_count": 9,
+          "sample_values": [
+            "4",
+            "0",
+            "0"
+          ]
+        },
+        "Mn/Start": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1806,
+          "unique_count": 62,
+          "sample_values": [
+            "79.0",
+            "70.0",
+            "48.0"
+          ]
+        },
+        "Compl": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2683,
+          "unique_count": 9,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Subs": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2683,
+          "unique_count": 8,
+          "sample_values": [
+            "3",
+            "0",
+            "0"
+          ]
+        },
+        "Mn/Sub": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1380,
+          "unique_count": 66,
+          "sample_values": [
+            "27.0",
+            "34.0",
+            "25.0"
+          ]
+        },
+        "unSub": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2683,
+          "unique_count": 9,
+          "sample_values": [
+            "0",
+            "1",
+            "1"
+          ]
+        },
+        "PPM": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2179,
+          "unique_count": 54,
+          "sample_values": [
+            "1.14",
+            "0.0",
+            "0.25"
+          ]
+        },
+        "onG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2179,
+          "unique_count": 25,
+          "sample_values": [
+            "7.0",
+            "0.0",
+            "1.0"
+          ]
+        },
+        "onGA": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2179,
+          "unique_count": 17,
+          "sample_values": [
+            "5.0",
+            "1.0",
+            "8.0"
+          ]
+        },
+        "+/-": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2179,
+          "unique_count": 32,
+          "sample_values": [
+            "2.0",
+            "-1.0",
+            "-7.0"
+          ]
+        },
+        "+/-90": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2175,
+          "unique_count": 543,
+          "sample_values": [
+            "0.45",
+            "-2.65",
+            "-3.32"
+          ]
+        },
+        "On-Off": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2001,
+          "unique_count": 774,
+          "sample_values": [
+            "2.77",
+            "-2.38",
+            "-3.11"
+          ]
+        },
+        "onxG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 147,
+          "sample_values": [
+            "5.6",
+            "0.3",
+            "3.2"
+          ]
+        },
+        "onxGA": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 138,
+          "sample_values": [
+            "4.8",
+            "1.0",
+            "7.4"
+          ]
+        },
+        "xG+/-": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 165,
+          "sample_values": [
+            "0.7",
+            "-0.7",
+            "-4.1"
+          ]
+        },
+        "xG+/-90": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2175,
+          "unique_count": 505,
+          "sample_values": [
+            "0.17",
+            "-1.84",
+            "-1.96"
+          ]
+        },
+        "Matches": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2683,
+          "unique_count": 1,
+          "sample_values": [
+            "Matches",
+            "Matches",
+            "Matches"
+          ]
+        }
+      }
+    },
+    "stats_possession.csv": {
+      "file": "stats_possession.csv",
+      "rows": 2176,
+      "columns": 32,
+      "columns_meta": {
+        "Rk": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 2176,
+          "sample_values": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "Player": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 2136,
+          "sample_values": [
+            "Brenden Aaronson",
+            "Jones El-Abdellaoui",
+            "Himad Abdelli"
+          ]
+        },
+        "Nation": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2173,
+          "unique_count": 106,
+          "sample_values": [
+            "us USA",
+            "ma MAR",
+            "dz ALG"
+          ]
+        },
+        "Pos": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 10,
+          "sample_values": [
+            "FW",
+            "MF,DF",
+            "MF"
+          ]
+        },
+        "Squad": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 96,
+          "sample_values": [
+            "Leeds United",
+            "Celta Vigo",
+            "Angers"
+          ]
+        },
+        "Comp": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "eng Premier League",
+            "es La Liga",
+            "fr Ligue 1"
+          ]
+        },
+        "Age": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2174,
+          "unique_count": 1773,
+          "sample_values": [
+            "24-358",
+            "19-276",
+            "25-332"
+          ]
+        },
+        "Born": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2174,
+          "unique_count": 27,
+          "sample_values": [
+            "2000.0",
+            "2006.0",
+            "1999.0"
+          ]
+        },
+        "90s": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 81,
+          "sample_values": [
+            "4.4",
+            "0.4",
+            "2.1"
+          ]
+        },
+        "Touches": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 501,
+          "sample_values": [
+            "182",
+            "30",
+            "139"
+          ]
+        },
+        "Def Pen": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 167,
+          "sample_values": [
+            "4",
+            "0",
+            "4"
+          ]
+        },
+        "Def 3rd": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 277,
+          "sample_values": [
+            "37",
+            "1",
+            "29"
+          ]
+        },
+        "Mid 3rd": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 296,
+          "sample_values": [
+            "67",
+            "9",
+            "80"
+          ]
+        },
+        "Att 3rd": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 189,
+          "sample_values": [
+            "79",
+            "20",
+            "32"
+          ]
+        },
+        "Att Pen": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 48,
+          "sample_values": [
+            "11",
+            "0",
+            "4"
+          ]
+        },
+        "Live": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 498,
+          "sample_values": [
+            "182",
+            "30",
+            "138"
+          ]
+        },
+        "Att": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 44,
+          "sample_values": [
+            "9",
+            "2",
+            "7"
+          ]
+        },
+        "Succ": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 25,
+          "sample_values": [
+            "4",
+            "0",
+            "2"
+          ]
+        },
+        "Succ%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1678,
+          "unique_count": 116,
+          "sample_values": [
+            "44.4",
+            "0.0",
+            "28.6"
+          ]
+        },
+        "Tkld": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 24,
+          "sample_values": [
+            "5",
+            "1",
+            "5"
+          ]
+        },
+        "Tkld%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1678,
+          "unique_count": 116,
+          "sample_values": [
+            "55.6",
+            "50.0",
+            "71.4"
+          ]
+        },
+        "Carries": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 327,
+          "sample_values": [
+            "91",
+            "19",
+            "66"
+          ]
+        },
+        "TotDist": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 1034,
+          "sample_values": [
+            "555",
+            "158",
+            "391"
+          ]
+        },
+        "PrgDist": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 710,
+          "sample_values": [
+            "246",
+            "94",
+            "218"
+          ]
+        },
+        "PrgC": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 41,
+          "sample_values": [
+            "7",
+            "5",
+            "9"
+          ]
+        },
+        "1/3": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 26,
+          "sample_values": [
+            "5",
+            "0",
+            "8"
+          ]
+        },
+        "CPA": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 25,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "Mis": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 30,
+          "sample_values": [
+            "16",
+            "1",
+            "2"
+          ]
+        },
+        "Dis": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 19,
+          "sample_values": [
+            "10",
+            "1",
+            "3"
+          ]
+        },
+        "Rec": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 373,
+          "sample_values": [
+            "106",
+            "22",
+            "95"
+          ]
+        },
+        "PrgR": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 74,
+          "sample_values": [
+            "21",
+            "15",
+            "7"
+          ]
+        },
+        "Matches": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 1,
+          "sample_values": [
+            "Matches",
+            "Matches",
+            "Matches"
+          ]
+        }
+      }
+    },
+    "stats_shooting.csv": {
+      "file": "stats_shooting.csv",
+      "rows": 2176,
+      "columns": 27,
+      "columns_meta": {
+        "Rk": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 2176,
+          "sample_values": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "Player": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 2136,
+          "sample_values": [
+            "Brenden Aaronson",
+            "Jones El-Abdellaoui",
+            "Himad Abdelli"
+          ]
+        },
+        "Nation": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2173,
+          "unique_count": 106,
+          "sample_values": [
+            "us USA",
+            "ma MAR",
+            "dz ALG"
+          ]
+        },
+        "Pos": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 10,
+          "sample_values": [
+            "FW",
+            "MF,DF",
+            "MF"
+          ]
+        },
+        "Squad": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 96,
+          "sample_values": [
+            "Leeds United",
+            "Celta Vigo",
+            "Angers"
+          ]
+        },
+        "Comp": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "eng Premier League",
+            "es La Liga",
+            "fr Ligue 1"
+          ]
+        },
+        "Age": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2174,
+          "unique_count": 1773,
+          "sample_values": [
+            "24-358",
+            "19-276",
+            "25-332"
+          ]
+        },
+        "Born": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2174,
+          "unique_count": 27,
+          "sample_values": [
+            "2000.0",
+            "2006.0",
+            "1999.0"
+          ]
+        },
+        "90s": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 81,
+          "sample_values": [
+            "4.4",
+            "0.4",
+            "2.1"
+          ]
+        },
+        "Gls": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 9,
+          "sample_values": [
+            "0",
+            "0",
+            "1"
+          ]
+        },
+        "Sh": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 28,
+          "sample_values": [
+            "8",
+            "0",
+            "1"
+          ]
+        },
+        "SoT": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 15,
+          "sample_values": [
+            "3",
+            "0",
+            "0"
+          ]
+        },
+        "SoT%": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1638,
+          "unique_count": 73,
+          "sample_values": [
+            "37.5",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "Sh/90": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2175,
+          "unique_count": 410,
+          "sample_values": [
+            "1.81",
+            "0.0",
+            "0.47"
+          ]
+        },
+        "SoT/90": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2175,
+          "unique_count": 214,
+          "sample_values": [
+            "0.68",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "G/Sh": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1638,
+          "unique_count": 36,
+          "sample_values": [
+            "0.0",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "G/SoT": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1086,
+          "unique_count": 29,
+          "sample_values": [
+            "0.0",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "Dist": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1638,
+          "unique_count": 289,
+          "sample_values": [
+            "14.8",
+            "30.5",
+            "11.7"
+          ]
+        },
+        "FK": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "PK": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "0",
+            "0",
+            "1"
+          ]
+        },
+        "PKatt": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "0",
+            "0",
+            "1"
+          ]
+        },
+        "xG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 47,
+          "sample_values": [
+            "0.7",
+            "0.0",
+            "0.8"
+          ]
+        },
+        "npxG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 40,
+          "sample_values": [
+            "0.7",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "npxG/Sh": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 1638,
+          "unique_count": 56,
+          "sample_values": [
+            "0.09",
+            "0.05",
+            "0.05"
+          ]
+        },
+        "G-xG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 50,
+          "sample_values": [
+            "-0.7",
+            "0.0",
+            "0.2"
+          ]
+        },
+        "np:G-xG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 52,
+          "sample_values": [
+            "-0.7",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "Matches": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 1,
+          "sample_values": [
+            "Matches",
+            "Matches",
+            "Matches"
+          ]
+        }
+      }
+    },
+    "stats_standard.csv": {
+      "file": "stats_standard.csv",
+      "rows": 2176,
+      "columns": 30,
+      "columns_meta": {
+        "Rk": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 2176,
+          "sample_values": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "Player": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 2136,
+          "sample_values": [
+            "Brenden Aaronson",
+            "Jones El-Abdellaoui",
+            "Himad Abdelli"
+          ]
+        },
+        "Nation": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2173,
+          "unique_count": 106,
+          "sample_values": [
+            "us USA",
+            "ma MAR",
+            "dz ALG"
+          ]
+        },
+        "Pos": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 10,
+          "sample_values": [
+            "FW",
+            "MF,DF",
+            "MF"
+          ]
+        },
+        "Squad": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 96,
+          "sample_values": [
+            "Leeds United",
+            "Celta Vigo",
+            "Angers"
+          ]
+        },
+        "Comp": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "eng Premier League",
+            "es La Liga",
+            "fr Ligue 1"
+          ]
+        },
+        "Age": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2174,
+          "unique_count": 1773,
+          "sample_values": [
+            "24-358",
+            "19-276",
+            "25-332"
+          ]
+        },
+        "Born": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2174,
+          "unique_count": 27,
+          "sample_values": [
+            "2000.0",
+            "2006.0",
+            "1999.0"
+          ]
+        },
+        "MP": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 8,
+          "sample_values": [
+            "7",
+            "1",
+            "4"
+          ]
+        },
+        "Starts": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 9,
+          "sample_values": [
+            "4",
+            "0",
+            "2"
+          ]
+        },
+        "Min": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2175,
+          "unique_count": 616,
+          "sample_values": [
+            "397.0",
+            "34.0",
+            "190.0"
+          ]
+        },
+        "90s": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 81,
+          "sample_values": [
+            "4.4",
+            "0.4",
+            "2.1"
+          ]
+        },
+        "Gls": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 9,
+          "sample_values": [
+            "0",
+            "0",
+            "1"
+          ]
+        },
+        "Ast": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 6,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "G+A": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 13,
+          "sample_values": [
+            "0",
+            "0",
+            "1"
+          ]
+        },
+        "G-PK": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 8,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "PK": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "0",
+            "0",
+            "1"
+          ]
+        },
+        "PKatt": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 5,
+          "sample_values": [
+            "0",
+            "0",
+            "1"
+          ]
+        },
+        "CrdY": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 6,
+          "sample_values": [
+            "1",
+            "0",
+            "0"
+          ]
+        },
+        "CrdR": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 2,
+          "sample_values": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        "xG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 47,
+          "sample_values": [
+            "0.7",
+            "0.0",
+            "0.8"
+          ]
+        },
+        "npxG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 40,
+          "sample_values": [
+            "0.7",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "xAG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 28,
+          "sample_values": [
+            "0.7",
+            "0.1",
+            "0.2"
+          ]
+        },
+        "npxG+xAG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2176,
+          "unique_count": 51,
+          "sample_values": [
+            "1.5",
+            "0.1",
+            "0.2"
+          ]
+        },
+        "PrgC": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 41,
+          "sample_values": [
+            "7",
+            "5",
+            "9"
+          ]
+        },
+        "PrgP": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 67,
+          "sample_values": [
+            "13",
+            "0",
+            "19"
+          ]
+        },
+        "PrgR": {
+          "inferred_type": "BIGINT",
+          "non_null_count": 2176,
+          "unique_count": 74,
+          "sample_values": [
+            "21",
+            "15",
+            "7"
+          ]
+        },
+        "G+A-PK": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2175,
+          "unique_count": 153,
+          "sample_values": [
+            "0.0",
+            "0.0",
+            "0.0"
+          ]
+        },
+        "xG+xAG": {
+          "inferred_type": "DOUBLE PRECISION",
+          "non_null_count": 2175,
+          "unique_count": 143,
+          "sample_values": [
+            "0.33",
+            "0.14",
+            "0.47"
+          ]
+        },
+        "Matches": {
+          "inferred_type": "TEXT",
+          "non_null_count": 2176,
+          "unique_count": 1,
+          "sample_values": [
+            "Matches",
+            "Matches",
+            "Matches"
+          ]
+        }
+      }
+    }
+  },
+  "totals": {
+    "rows": 24699,
+    "columns": 730,
+    "file_count": 13
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "total_seasons": 3,
+  "total_tables": 33,
+  "seasons": {
+    "2023-2024": {
+      "table_count": 11,
+      "tables": [
+        "stats_standard",
+        "stats_keeper_adv",
+        "stats_defense",
+        "stats_gca",
+        "stats_misc",
+        "stats_keeper",
+        "stats_playing_time",
+        "stats_passing",
+        "stats_passing_types",
+        "stats_possession",
+        "stats_shooting"
+      ]
+    },
+    "2024-2025": {
+      "table_count": 11,
+      "tables": [
+        "stats_standard",
+        "stats_keeper_adv",
+        "stats_defense",
+        "stats_gca",
+        "stats_misc",
+        "stats_keeper",
+        "stats_playing_time",
+        "stats_passing",
+        "stats_passing_types",
+        "stats_possession",
+        "stats_shooting"
+      ]
+    },
+    "2025-2026": {
+      "table_count": 11,
+      "tables": [
+        "stats_standard",
+        "stats_keeper_adv",
+        "stats_defense",
+        "stats_gca",
+        "stats_misc",
+        "stats_keeper",
+        "stats_playing_time",
+        "stats_passing",
+        "stats_passing_types",
+        "stats_possession",
+        "stats_shooting"
+      ]
+    }
+  },
+  "table_types": [
+    "stats_playing_time",
+    "stats_misc",
+    "stats_defense",
+    "stats_possession",
+    "stats_passing",
+    "stats_keeper",
+    "stats_standard",
+    "stats_passing_types",
+    "stats_shooting",
+    "stats_keeper_adv",
+    "stats_gca"
+  ]
+}
