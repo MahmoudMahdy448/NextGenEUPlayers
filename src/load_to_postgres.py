@@ -8,31 +8,31 @@ import math
 import time
 from sql_ident import make_sql_ident, make_table_name, normalize_name
 
-# 1️⃣ تحميل متغيرات البيئة
+# 1️⃣ Load environment variables
 load_dotenv()
 
 DB_USER = os.getenv("POSTGRES_USER")
 DB_PASSWORD = os.getenv("POSTGRES_PASSWORD")
-DB_HOST = os.getenv("POSTGRES_HOST", "db")  # "db" هو اسم الخدمة داخل Docker
+DB_HOST = os.getenv("POSTGRES_HOST", "db")  # "db" is the service name inside Docker
 DB_PORT = os.getenv("POSTGRES_PORT", "5432")
 DB_NAME = os.getenv("POSTGRES_DB")
 
-# 2️⃣ إنشاء الاتصال بالداتابيز
+# 2️⃣ Create database connection
 DATABASE_URL = f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
 engine = create_engine(DATABASE_URL)
 
-# 3️⃣ تحديد مسار البيانات
+# 3️⃣ Define data path
 DATA_DIR = "data/raw"
 
 def detect_schema_and_load():
     """
-    تمر على كل ملفات CSV داخل data/raw وتحملها للداتابيز
+    Iterate through all CSV files inside data/raw and load them to the database
     """
     # Only load the canonical players data files (skip stats_*, players_data_light, etc.)
     csv_files = glob.glob(f"{DATA_DIR}/**/players_data-*.csv", recursive=True)
     
     if not csv_files:
-        print("⚠️ لم يتم العثور على أي ملفات CSV في data/raw/")
+        print("⚠️ No CSV files found in data/raw/")
         return
 
     inspector = inspect(engine)
@@ -60,7 +60,7 @@ def detect_schema_and_load():
             break
         file_path = file_path
         try:
-            # استخراج اسم الجدول من اسم الملف
+            # Extract table name from filename
             # Use the CSV filename (without extension) as the table name.
             # Replace hyphens with underscores to be SQL-safe.
             base_name = os.path.splitext(os.path.basename(file_path))[0].lower()
@@ -73,7 +73,7 @@ def detect_schema_and_load():
 
             print(f"📂 Processing {file_path} → table: {table_name}")
 
-            # قراءة الملف as strings to avoid accidental dtype inference
+            # Read file as strings to avoid accidental dtype inference
             # keep_default_na=False keeps empty fields as empty strings instead of NaN
             df = pd.read_csv(file_path, dtype=str, keep_default_na=False)
 
@@ -277,7 +277,7 @@ def detect_schema_and_load():
             if other_cols:
                 df[other_cols] = df[other_cols].astype(str)
 
-            # تحميل البيانات إلى PostgreSQL
+            # Load data to PostgreSQL
             # Build CREATE TABLE statement using detected schema when available
             cols_defs = []
             final_col_types = {}
@@ -499,7 +499,7 @@ def detect_schema_and_load():
 
             # If raw mode, skip creating staging and any further coercion/ALTERs
             if getattr(args, 'raw', False):
-                print(f"✅ تم تحميل {len(df)} صف إلى الجدول {table_name} (raw mode)\n")
+                print(f"✅ Successfully loaded {len(df)} rows into table {table_name} (raw mode)\n")
                 continue
 
             # --- create a typed staging table (safer than altering landing tables) ---
@@ -534,14 +534,14 @@ def detect_schema_and_load():
             except Exception as err:
                 print(f"⚠️ Could not create/populate staging table {stg_table}: {err}")
 
-            print(f"✅ تم تحميل {len(df)} صف إلى الجدول {table_name}\n")
+            print(f"✅ Successfully loaded {len(df)} rows into table {table_name}\n")
 
         except Exception as e:
             import traceback
-            print(f"❌ خطأ أثناء تحميل {file_path}: {e}\n")
+            print(f"❌ Error while loading {file_path}: {e}\n")
             print(traceback.format_exc())
 
 if __name__ == "__main__":
-    print("🚀 بدء عملية تحميل البيانات إلى PostgreSQL ...")
+    print("🚀 Starting data loading process to PostgreSQL...")
     detect_schema_and_load()
-    print("🎉 انتهت عملية التحميل بنجاح!")
+    print("🎉 Data loading process completed successfully!")

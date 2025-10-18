@@ -1,0 +1,806 @@
+{
+  "Rk": {
+    "occurrences": 39
+  },
+  "Player": {
+    "occurrences": 39
+  },
+  "Nation": {
+    "occurrences": 39
+  },
+  "Pos": {
+    "occurrences": 39
+  },
+  "Squad": {
+    "occurrences": 39
+  },
+  "Comp": {
+    "occurrences": 39
+  },
+  "Age": {
+    "occurrences": 39
+  },
+  "Born": {
+    "occurrences": 39
+  },
+  "90s": {
+    "occurrences": 39
+  },
+  "Matches": {
+    "occurrences": 33
+  },
+  "Att": {
+    "occurrences": 21
+  },
+  "MP": {
+    "occurrences": 15
+  },
+  "Starts": {
+    "occurrences": 15
+  },
+  "Min": {
+    "occurrences": 15
+  },
+  "PKatt": {
+    "occurrences": 15
+  },
+  "Sh": {
+    "occurrences": 15
+  },
+  "FK": {
+    "occurrences": 15
+  },
+  "Cmp": {
+    "occurrences": 15
+  },
+  "Gls": {
+    "occurrences": 12
+  },
+  "Ast": {
+    "occurrences": 12
+  },
+  "PK": {
+    "occurrences": 12
+  },
+  "CrdY": {
+    "occurrences": 12
+  },
+  "CrdR": {
+    "occurrences": 12
+  },
+  "xG": {
+    "occurrences": 12
+  },
+  "npxG": {
+    "occurrences": 12
+  },
+  "xAG": {
+    "occurrences": 12
+  },
+  "PrgC": {
+    "occurrences": 12
+  },
+  "PrgP": {
+    "occurrences": 12
+  },
+  "PrgR": {
+    "occurrences": 12
+  },
+  "Cmp%": {
+    "occurrences": 12
+  },
+  "TotDist": {
+    "occurrences": 12
+  },
+  "PrgDist": {
+    "occurrences": 12
+  },
+  "1/3": {
+    "occurrences": 12
+  },
+  "Live": {
+    "occurrences": 12
+  },
+  "Crs": {
+    "occurrences": 12
+  },
+  "CK": {
+    "occurrences": 12
+  },
+  "Fld": {
+    "occurrences": 12
+  },
+  "TklW": {
+    "occurrences": 12
+  },
+  "Def 3rd": {
+    "occurrences": 12
+  },
+  "Mid 3rd": {
+    "occurrences": 12
+  },
+  "Att 3rd": {
+    "occurrences": 12
+  },
+  "Lost": {
+    "occurrences": 12
+  },
+  "Int": {
+    "occurrences": 12
+  },
+  "OG": {
+    "occurrences": 12
+  },
+  "GA": {
+    "occurrences": 12
+  },
+  "PKA": {
+    "occurrences": 12
+  },
+  "G+A": {
+    "occurrences": 9
+  },
+  "G-PK": {
+    "occurrences": 9
+  },
+  "npxG+xAG": {
+    "occurrences": 9
+  },
+  "G+A-PK": {
+    "occurrences": 9
+  },
+  "xG+xAG": {
+    "occurrences": 9
+  },
+  "SoT": {
+    "occurrences": 9
+  },
+  "SoT%": {
+    "occurrences": 9
+  },
+  "Sh/90": {
+    "occurrences": 9
+  },
+  "SoT/90": {
+    "occurrences": 9
+  },
+  "G/Sh": {
+    "occurrences": 9
+  },
+  "G/SoT": {
+    "occurrences": 9
+  },
+  "Dist": {
+    "occurrences": 9
+  },
+  "npxG/Sh": {
+    "occurrences": 9
+  },
+  "G-xG": {
+    "occurrences": 9
+  },
+  "np:G-xG": {
+    "occurrences": 9
+  },
+  "xA": {
+    "occurrences": 9
+  },
+  "A-xAG": {
+    "occurrences": 9
+  },
+  "KP": {
+    "occurrences": 9
+  },
+  "PPA": {
+    "occurrences": 9
+  },
+  "CrsPA": {
+    "occurrences": 9
+  },
+  "Dead": {
+    "occurrences": 9
+  },
+  "TB": {
+    "occurrences": 9
+  },
+  "Sw": {
+    "occurrences": 9
+  },
+  "TI": {
+    "occurrences": 9
+  },
+  "In": {
+    "occurrences": 9
+  },
+  "Out": {
+    "occurrences": 9
+  },
+  "Str": {
+    "occurrences": 9
+  },
+  "Off": {
+    "occurrences": 9
+  },
+  "Blocks": {
+    "occurrences": 9
+  },
+  "SCA": {
+    "occurrences": 9
+  },
+  "SCA90": {
+    "occurrences": 9
+  },
+  "PassLive": {
+    "occurrences": 9
+  },
+  "PassDead": {
+    "occurrences": 9
+  },
+  "TO": {
+    "occurrences": 9
+  },
+  "Def": {
+    "occurrences": 9
+  },
+  "GCA": {
+    "occurrences": 9
+  },
+  "GCA90": {
+    "occurrences": 9
+  },
+  "Tkl": {
+    "occurrences": 9
+  },
+  "Tkl%": {
+    "occurrences": 9
+  },
+  "Pass": {
+    "occurrences": 9
+  },
+  "Tkl+Int": {
+    "occurrences": 9
+  },
+  "Clr": {
+    "occurrences": 9
+  },
+  "Err": {
+    "occurrences": 9
+  },
+  "Touches": {
+    "occurrences": 9
+  },
+  "Def Pen": {
+    "occurrences": 9
+  },
+  "Att Pen": {
+    "occurrences": 9
+  },
+  "Succ": {
+    "occurrences": 9
+  },
+  "Succ%": {
+    "occurrences": 9
+  },
+  "Tkld": {
+    "occurrences": 9
+  },
+  "Tkld%": {
+    "occurrences": 9
+  },
+  "Carries": {
+    "occurrences": 9
+  },
+  "CPA": {
+    "occurrences": 9
+  },
+  "Mis": {
+    "occurrences": 9
+  },
+  "Dis": {
+    "occurrences": 9
+  },
+  "Rec": {
+    "occurrences": 9
+  },
+  "2CrdY": {
+    "occurrences": 9
+  },
+  "Fls": {
+    "occurrences": 9
+  },
+  "PKwon": {
+    "occurrences": 9
+  },
+  "PKcon": {
+    "occurrences": 9
+  },
+  "Recov": {
+    "occurrences": 9
+  },
+  "Won": {
+    "occurrences": 9
+  },
+  "Won%": {
+    "occurrences": 9
+  },
+  "GA90": {
+    "occurrences": 9
+  },
+  "SoTA": {
+    "occurrences": 9
+  },
+  "Saves": {
+    "occurrences": 9
+  },
+  "Save%": {
+    "occurrences": 9
+  },
+  "W": {
+    "occurrences": 9
+  },
+  "D": {
+    "occurrences": 9
+  },
+  "L": {
+    "occurrences": 9
+  },
+  "CS": {
+    "occurrences": 9
+  },
+  "CS%": {
+    "occurrences": 9
+  },
+  "PKsv": {
+    "occurrences": 9
+  },
+  "PKm": {
+    "occurrences": 9
+  },
+  "PSxG": {
+    "occurrences": 9
+  },
+  "PSxG/SoT": {
+    "occurrences": 9
+  },
+  "PSxG+/-": {
+    "occurrences": 9
+  },
+  "/90": {
+    "occurrences": 9
+  },
+  "Att (GK)": {
+    "occurrences": 9
+  },
+  "Thr": {
+    "occurrences": 9
+  },
+  "Launch%": {
+    "occurrences": 9
+  },
+  "AvgLen": {
+    "occurrences": 9
+  },
+  "Opp": {
+    "occurrences": 9
+  },
+  "Stp": {
+    "occurrences": 9
+  },
+  "Stp%": {
+    "occurrences": 9
+  },
+  "#OPA": {
+    "occurrences": 9
+  },
+  "#OPA/90": {
+    "occurrences": 9
+  },
+  "AvgDist": {
+    "occurrences": 9
+  },
+  "PK_stats_shooting": {
+    "occurrences": 6
+  },
+  "PKatt_stats_shooting": {
+    "occurrences": 6
+  },
+  "xG_stats_shooting": {
+    "occurrences": 6
+  },
+  "npxG_stats_shooting": {
+    "occurrences": 6
+  },
+  "Ast_stats_passing": {
+    "occurrences": 6
+  },
+  "xAG_stats_passing": {
+    "occurrences": 6
+  },
+  "PrgP_stats_passing": {
+    "occurrences": 6
+  },
+  "FK_stats_passing_types": {
+    "occurrences": 6
+  },
+  "Cmp_stats_passing_types": {
+    "occurrences": 6
+  },
+  "Sh_stats_gca": {
+    "occurrences": 6
+  },
+  "Att_stats_defense": {
+    "occurrences": 6
+  },
+  "Blocks_stats_defense": {
+    "occurrences": 6
+  },
+  "Sh_stats_defense": {
+    "occurrences": 6
+  },
+  "Def 3rd_stats_possession": {
+    "occurrences": 6
+  },
+  "Mid 3rd_stats_possession": {
+    "occurrences": 6
+  },
+  "Att 3rd_stats_possession": {
+    "occurrences": 6
+  },
+  "Live_stats_possession": {
+    "occurrences": 6
+  },
+  "Att_stats_possession": {
+    "occurrences": 6
+  },
+  "TotDist_stats_possession": {
+    "occurrences": 6
+  },
+  "PrgDist_stats_possession": {
+    "occurrences": 6
+  },
+  "PrgC_stats_possession": {
+    "occurrences": 6
+  },
+  "1/3_stats_possession": {
+    "occurrences": 6
+  },
+  "PrgR_stats_possession": {
+    "occurrences": 6
+  },
+  "Mn/MP": {
+    "occurrences": 6
+  },
+  "Min%": {
+    "occurrences": 6
+  },
+  "Mn/Start": {
+    "occurrences": 6
+  },
+  "Compl": {
+    "occurrences": 6
+  },
+  "Subs": {
+    "occurrences": 6
+  },
+  "Mn/Sub": {
+    "occurrences": 6
+  },
+  "unSub": {
+    "occurrences": 6
+  },
+  "PPM": {
+    "occurrences": 6
+  },
+  "onG": {
+    "occurrences": 6
+  },
+  "onGA": {
+    "occurrences": 6
+  },
+  "+/-": {
+    "occurrences": 6
+  },
+  "+/-90": {
+    "occurrences": 6
+  },
+  "On-Off": {
+    "occurrences": 6
+  },
+  "onxG": {
+    "occurrences": 6
+  },
+  "onxGA": {
+    "occurrences": 6
+  },
+  "xG+/-": {
+    "occurrences": 6
+  },
+  "xG+/-90": {
+    "occurrences": 6
+  },
+  "CrdY_stats_misc": {
+    "occurrences": 6
+  },
+  "CrdR_stats_misc": {
+    "occurrences": 6
+  },
+  "Fld_stats_misc": {
+    "occurrences": 6
+  },
+  "Off_stats_misc": {
+    "occurrences": 6
+  },
+  "Crs_stats_misc": {
+    "occurrences": 6
+  },
+  "Int_stats_misc": {
+    "occurrences": 6
+  },
+  "TklW_stats_misc": {
+    "occurrences": 6
+  },
+  "Lost_stats_misc": {
+    "occurrences": 6
+  },
+  "PKatt_stats_keeper": {
+    "occurrences": 6
+  },
+  "Cmp_stats_keeper_adv": {
+    "occurrences": 6
+  },
+  "Att_stats_keeper_adv": {
+    "occurrences": 6
+  },
+  "Cmp%_stats_keeper_adv": {
+    "occurrences": 6
+  },
+  "Rk_stats_shooting": {
+    "occurrences": 3
+  },
+  "Nation_stats_shooting": {
+    "occurrences": 3
+  },
+  "Pos_stats_shooting": {
+    "occurrences": 3
+  },
+  "Comp_stats_shooting": {
+    "occurrences": 3
+  },
+  "Age_stats_shooting": {
+    "occurrences": 3
+  },
+  "Born_stats_shooting": {
+    "occurrences": 3
+  },
+  "90s_stats_shooting": {
+    "occurrences": 3
+  },
+  "Gls_stats_shooting": {
+    "occurrences": 3
+  },
+  "Rk_stats_passing": {
+    "occurrences": 3
+  },
+  "Nation_stats_passing": {
+    "occurrences": 3
+  },
+  "Pos_stats_passing": {
+    "occurrences": 3
+  },
+  "Comp_stats_passing": {
+    "occurrences": 3
+  },
+  "Age_stats_passing": {
+    "occurrences": 3
+  },
+  "Born_stats_passing": {
+    "occurrences": 3
+  },
+  "90s_stats_passing": {
+    "occurrences": 3
+  },
+  "Rk_stats_passing_types": {
+    "occurrences": 3
+  },
+  "Nation_stats_passing_types": {
+    "occurrences": 3
+  },
+  "Pos_stats_passing_types": {
+    "occurrences": 3
+  },
+  "Comp_stats_passing_types": {
+    "occurrences": 3
+  },
+  "Age_stats_passing_types": {
+    "occurrences": 3
+  },
+  "Born_stats_passing_types": {
+    "occurrences": 3
+  },
+  "90s_stats_passing_types": {
+    "occurrences": 3
+  },
+  "Att_stats_passing_types": {
+    "occurrences": 3
+  },
+  "Rk_stats_gca": {
+    "occurrences": 3
+  },
+  "Nation_stats_gca": {
+    "occurrences": 3
+  },
+  "Pos_stats_gca": {
+    "occurrences": 3
+  },
+  "Comp_stats_gca": {
+    "occurrences": 3
+  },
+  "Age_stats_gca": {
+    "occurrences": 3
+  },
+  "Born_stats_gca": {
+    "occurrences": 3
+  },
+  "90s_stats_gca": {
+    "occurrences": 3
+  },
+  "Rk_stats_defense": {
+    "occurrences": 3
+  },
+  "Nation_stats_defense": {
+    "occurrences": 3
+  },
+  "Pos_stats_defense": {
+    "occurrences": 3
+  },
+  "Comp_stats_defense": {
+    "occurrences": 3
+  },
+  "Age_stats_defense": {
+    "occurrences": 3
+  },
+  "Born_stats_defense": {
+    "occurrences": 3
+  },
+  "90s_stats_defense": {
+    "occurrences": 3
+  },
+  "Rk_stats_possession": {
+    "occurrences": 3
+  },
+  "Nation_stats_possession": {
+    "occurrences": 3
+  },
+  "Pos_stats_possession": {
+    "occurrences": 3
+  },
+  "Comp_stats_possession": {
+    "occurrences": 3
+  },
+  "Age_stats_possession": {
+    "occurrences": 3
+  },
+  "Born_stats_possession": {
+    "occurrences": 3
+  },
+  "90s_stats_possession": {
+    "occurrences": 3
+  },
+  "Rk_stats_playing_time": {
+    "occurrences": 3
+  },
+  "Nation_stats_playing_time": {
+    "occurrences": 3
+  },
+  "Pos_stats_playing_time": {
+    "occurrences": 3
+  },
+  "Comp_stats_playing_time": {
+    "occurrences": 3
+  },
+  "Age_stats_playing_time": {
+    "occurrences": 3
+  },
+  "Born_stats_playing_time": {
+    "occurrences": 3
+  },
+  "MP_stats_playing_time": {
+    "occurrences": 3
+  },
+  "Min_stats_playing_time": {
+    "occurrences": 3
+  },
+  "90s_stats_playing_time": {
+    "occurrences": 3
+  },
+  "Starts_stats_playing_time": {
+    "occurrences": 3
+  },
+  "Rk_stats_misc": {
+    "occurrences": 3
+  },
+  "Nation_stats_misc": {
+    "occurrences": 3
+  },
+  "Pos_stats_misc": {
+    "occurrences": 3
+  },
+  "Comp_stats_misc": {
+    "occurrences": 3
+  },
+  "Age_stats_misc": {
+    "occurrences": 3
+  },
+  "Born_stats_misc": {
+    "occurrences": 3
+  },
+  "90s_stats_misc": {
+    "occurrences": 3
+  },
+  "Rk_stats_keeper": {
+    "occurrences": 3
+  },
+  "Nation_stats_keeper": {
+    "occurrences": 3
+  },
+  "Pos_stats_keeper": {
+    "occurrences": 3
+  },
+  "Comp_stats_keeper": {
+    "occurrences": 3
+  },
+  "Age_stats_keeper": {
+    "occurrences": 3
+  },
+  "Born_stats_keeper": {
+    "occurrences": 3
+  },
+  "MP_stats_keeper": {
+    "occurrences": 3
+  },
+  "Starts_stats_keeper": {
+    "occurrences": 3
+  },
+  "Min_stats_keeper": {
+    "occurrences": 3
+  },
+  "90s_stats_keeper": {
+    "occurrences": 3
+  },
+  "Rk_stats_keeper_adv": {
+    "occurrences": 3
+  },
+  "Nation_stats_keeper_adv": {
+    "occurrences": 3
+  },
+  "Pos_stats_keeper_adv": {
+    "occurrences": 3
+  },
+  "Comp_stats_keeper_adv": {
+    "occurrences": 3
+  },
+  "Age_stats_keeper_adv": {
+    "occurrences": 3
+  },
+  "Born_stats_keeper_adv": {
+    "occurrences": 3
+  },
+  "90s_stats_keeper_adv": {
+    "occurrences": 3
+  },
+  "GA_stats_keeper_adv": {
+    "occurrences": 3
+  },
+  "PKA_stats_keeper_adv": {
+    "occurrences": 3
+  },
+  "FK_stats_keeper_adv": {
+    "occurrences": 3
+  },
+  "CK_stats_keeper_adv": {
+    "occurrences": 3
+  },
+  "OG_stats_keeper_adv": {
+    "occurrences": 3
+  }
+}

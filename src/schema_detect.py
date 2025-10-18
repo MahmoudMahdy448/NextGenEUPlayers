@@ -8,6 +8,8 @@ import pandas as pd
 RAW_FOLDER = "/workspaces/NextGenEUPlayers/data/raw"
 SCHEMA_OUT = "/workspaces/NextGenEUPlayers/data/schemas"
 os.makedirs(SCHEMA_OUT, exist_ok=True)
+PROFILES_OUT = os.path.join(SCHEMA_OUT, "profiles")
+os.makedirs(PROFILES_OUT, exist_ok=True)
 
 
 def infer_type(series: pd.Series) -> str:
@@ -101,5 +103,98 @@ def detect_schema():
     return out
 
 
+def detect_profiles():
+    """Per-season profiler: scan CSVs under data/raw, produce per-season profile JSONs
+
+    Outputs written to data/schemas/profiles/
+    Returns mapping of season -> list of files scanned.
+    """
+    csv_files = glob(os.path.join(RAW_FOLDER, "**", "*.csv"), recursive=True)
+    print(f"Found {len(csv_files)} CSV files under {RAW_FOLDER}")
+
+    # organize files by season
+    files_by_season = defaultdict(list)
+    for fpath in sorted(csv_files):
+        season = os.path.basename(os.path.dirname(fpath))
+        files_by_season[season].append(fpath)
+
+    glossary_counts = defaultdict(int)
+    profiles_summary = []
+
+    for season, files in files_by_season.items():
+        season_profile = {"season": season, "tables": {}}
+        print(f"Profiling season {season} ({len(files)} files)")
+
+        for file in files:
+            logical = normalize_logical_name(file)
+            print(f"  - Profiling {file} -> {logical}")
+            try:
+                df = pd.read_csv(file, low_memory=False)
+            except Exception as e:
+                print(f"    ⚠️  Failed to read {file}: {e}")
+                season_profile["tables"][logical] = {"error": str(e)}
+                continue
+
+            table_info = {
+                "file": file,
+                "rows": int(len(df)),
+                "columns": int(len(df.columns)),
+                "column_info": {}
+            }
+
+            for col in df.columns:
+                s = df[col]
+                col_name = str(col)
+                inferred = infer_type(s)
+                nulls = int(s.isna().sum())
+                uniques = int(s.dropna().nunique())
+                sample_vals = s.dropna().astype(str).head(5).tolist()
+
+                table_info["column_info"][col_name] = {
+                    "inferred_type": inferred,
+                    "null_count": nulls,
+                    "unique_count": uniques,
+                    "sample_values": sample_vals
+                }
+
+                glossary_counts[col_name] += 1
+
+            season_profile["tables"][logical] = table_info
+            profiles_summary.append({
+                "season": season,
+                "table": logical,
+                "rows": table_info["rows"],
+                "columns": table_info["columns"]
+            })
+
+        # write per-season profile
+        out_path = os.path.join(PROFILES_OUT, f"per_season_{season}.initial_raw_data_profile.json")
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(season_profile, f, indent=2, ensure_ascii=False)
+        print(f"  -> Wrote season profile: {out_path}")
+
+    # write glossary summary (columns across all seasons)
+    glossary = {col: {"occurrences": cnt} for col, cnt in sorted(glossary_counts.items(), key=lambda kv: -kv[1])}
+    glossary_path = os.path.join(PROFILES_OUT, "glossary.json")
+    with open(glossary_path, "w", encoding="utf-8") as f:
+        json.dump(glossary, f, indent=2, ensure_ascii=False)
+    print(f"Wrote glossary summary to: {glossary_path}")
+
+    # write CSV summary
+    try:
+        import csv
+        summary_path = os.path.join(PROFILES_OUT, "profiles_summary.csv")
+        with open(summary_path, "w", newline='', encoding='utf-8') as sf:
+            writer = csv.DictWriter(sf, fieldnames=["season", "table", "rows", "columns"])
+            writer.writeheader()
+            for r in profiles_summary:
+                writer.writerow(r)
+        print(f"Wrote profiles summary CSV to: {summary_path}")
+    except Exception:
+        pass
+
+    return files_by_season
+
+
 if __name__ == "__main__":
-    detect_schema()
+    detect_profiles()
