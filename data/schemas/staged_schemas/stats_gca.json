@@ -1,0 +1,225 @@
+{
+  "table": "stats_gca",
+  "columns": {
+    "age": {
+      "declared_types": {
+        "INTEGER": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "birth_year": {
+      "declared_types": {
+        "INTEGER": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "competition": {
+      "declared_types": {
+        "VARCHAR(255)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "goal_creating_actions": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "goal_creating_actions_def": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "goal_creating_actions_per_90": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "nation": {
+      "declared_types": {
+        "VARCHAR(255)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "nineties_played": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "player_name": {
+      "declared_types": {
+        "VARCHAR(255)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "position": {
+      "declared_types": {
+        "VARCHAR(255)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "processed_at": {
+      "declared_types": {
+        "TIMESTAMP": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "rank": {
+      "declared_types": {
+        "INTEGER": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "season": {
+      "declared_types": {
+        "VARCHAR(50)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "shot_creating_actions": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "shot_creating_actions_dead_pass": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "shot_creating_actions_foul_drawn": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "shot_creating_actions_live_pass": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "shot_creating_actions_per_90": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "shot_creating_actions_shot": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "shot_creating_actions_take_on": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "squad": {
+      "declared_types": {
+        "VARCHAR(255)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "table_type": {
+      "declared_types": {
+        "VARCHAR(50)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    }
+  }
+}

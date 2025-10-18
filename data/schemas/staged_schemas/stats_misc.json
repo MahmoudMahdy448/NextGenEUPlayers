@@ -1,0 +1,325 @@
+{
+  "table": "stats_misc",
+  "columns": {
+    "aerial_win_pct": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "aerials_lost": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "aerials_won": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "age": {
+      "declared_types": {
+        "INTEGER": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "ball_recoveries": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "birth_year": {
+      "declared_types": {
+        "INTEGER": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "competition": {
+      "declared_types": {
+        "VARCHAR(255)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "crosses": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "fouled": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "fouls": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "interceptions": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "nation": {
+      "declared_types": {
+        "VARCHAR(255)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "nineties_played": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "offsides": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "own_goals": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "own_goals_against": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "passes_crosses": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "passes_offsides": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "penalties_conceded": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "penalties_won": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "player_name": {
+      "declared_types": {
+        "VARCHAR(255)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "position": {
+      "declared_types": {
+        "VARCHAR(255)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "processed_at": {
+      "declared_types": {
+        "TIMESTAMP": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "rank": {
+      "declared_types": {
+        "INTEGER": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "red_cards": {
+      "declared_types": {
+        "INTEGER": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "season": {
+      "declared_types": {
+        "VARCHAR(50)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "second_yellow": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "shot_creating_actions_foul_drawn": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "squad": {
+      "declared_types": {
+        "VARCHAR(255)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "table_type": {
+      "declared_types": {
+        "VARCHAR(50)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "tackles_won": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "yellow_cards": {
+      "declared_types": {
+        "INTEGER": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    }
+  }
+}

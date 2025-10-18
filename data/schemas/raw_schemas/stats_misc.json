@@ -1,0 +1,377 @@
+{
+  "table": "stats_misc",
+  "columns": {
+    "2CrdY": {
+      "preferred_type": "integer",
+      "raw_inferred_types": {
+        "BIGINT": 3
+      },
+      "total_nulls": 0,
+      "occurrences_in_seasons": 3,
+      "top_sample_values": [
+        "0",
+        "1"
+      ]
+    },
+    "90s": {
+      "preferred_type": "number",
+      "raw_inferred_types": {
+        "DOUBLE PRECISION": 3
+      },
+      "total_nulls": 0,
+      "occurrences_in_seasons": 3,
+      "top_sample_values": [
+        "1.1",
+        "0.0",
+        "1.0",
+        "13.7",
+        "14.1"
+      ]
+    },
+    "Age": {
+      "preferred_type": "integer",
+      "raw_inferred_types": {
+        "BIGINT": 1,
+        "DOUBLE PRECISION": 1,
+        "TEXT": 1
+      },
+      "total_nulls": 6,
+      "occurrences_in_seasons": 3,
+      "top_sample_values": [
+        "24.0",
+        "23",
+        "22",
+        "19",
+        "17"
+      ]
+    },
+    "Born": {
+      "preferred_type": "number",
+      "raw_inferred_types": {
+        "BIGINT": 1,
+        "DOUBLE PRECISION": 2
+      },
+      "total_nulls": 6,
+      "occurrences_in_seasons": 3,
+      "top_sample_values": [
+        "2000.0",
+        "2000",
+        "2006.0",
+        "2003",
+        "2006"
+      ]
+    },
+    "Comp": {
+      "preferred_type": "string",
+      "raw_inferred_types": {
+        "TEXT": 3
+      },
+      "total_nulls": 0,
+      "occurrences_in_seasons": 3,
+      "top_sample_values": [
+        "fr Ligue 1",
+        "eng Premier League",
+        "es La Liga",
+        "de Bundesliga",
+        "it Serie A"
+      ]
+    },
+    "CrdR": {
+      "preferred_type": "integer",
+      "raw_inferred_types": {
+        "BIGINT": 3
+      },
+      "total_nulls": 0,
+      "occurrences_in_seasons": 3,
+      "top_sample_values": [
+        "0",
+        "1"
+      ]
+    },
+    "CrdY": {
+      "preferred_type": "integer",
+      "raw_inferred_types": {
+        "BIGINT": 3
+      },
+      "total_nulls": 0,
+      "occurrences_in_seasons": 3,
+      "top_sample_values": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "5"
+      ]
+    },
+    "Crs": {
+      "preferred_type": "integer",
+      "raw_inferred_types": {
+        "BIGINT": 3
+      },
+      "total_nulls": 0,
+      "occurrences_in_seasons": 3,
+      "top_sample_values": [
+        "0",
+        "2",
+        "5",
+        "13",
+        "22"
+      ]
+    },
+    "Fld": {
+      "preferred_type": "integer",
+      "raw_inferred_types": {
+        "BIGINT": 3
+      },
+      "total_nulls": 0,
+      "occurrences_in_seasons": 3,
+      "top_sample_values": [
+        "0",
+        "2",
+        "26",
+        "25",
+        "4"
+      ]
+    },
+    "Fls": {
+      "preferred_type": "integer",
+      "raw_inferred_types": {
+        "BIGINT": 3
+      },
+      "total_nulls": 0,
+      "occurrences_in_seasons": 3,
+      "top_sample_values": [
+        "0",
+        "2",
+        "12",
+        "15",
+        "6"
+      ]
+    },
+    "Int": {
+      "preferred_type": "integer",
+      "raw_inferred_types": {
+        "BIGINT": 3
+      },
+      "total_nulls": 0,
+      "occurrences_in_seasons": 3,
+      "top_sample_values": [
+        "0",
+        "2",
+        "1",
+        "8",
+        "39"
+      ]
+    },
+    "Lost": {
+      "preferred_type": "integer",
+      "raw_inferred_types": {
+        "BIGINT": 3
+      },
+      "total_nulls": 0,
+      "occurrences_in_seasons": 3,
+      "top_sample_values": [
+        "0",
+        "1",
+        "2",
+        "11",
+        "16"
+      ]
+    },
+    "Matches": {
+      "preferred_type": "string",
+      "raw_inferred_types": {
+        "TEXT": 3
+      },
+      "total_nulls": 0,
+      "occurrences_in_seasons": 3,
+      "top_sample_values": [
+        "Matches"
+      ]
+    },
+    "Nation": {
+      "preferred_type": "string",
+      "raw_inferred_types": {
+        "TEXT": 3
+      },
+      "total_nulls": 11,
+      "occurrences_in_seasons": 3,
+      "top_sample_values": [
+        "eng ENG",
+        "us USA",
+        "fr FRA",
+        "ma MAR",
+        "es ESP"
+      ]
+    },
+    "OG": {
+      "preferred_type": "integer",
+      "raw_inferred_types": {
+        "BIGINT": 3
+      },
+      "total_nulls": 0,
+      "occurrences_in_seasons": 3,
+      "top_sample_values": [
+        "0",
+        "1"
+      ]
+    },
+    "Off": {
+      "preferred_type": "integer",
+      "raw_inferred_types": {
+        "BIGINT": 3
+      },
+      "total_nulls": 0,
+      "occurrences_in_seasons": 3,
+      "top_sample_values": [
+        "0",
+        "2",
+        "5",
+        "1"
+      ]
+    },
+    "PKcon": {
+      "preferred_type": "integer",
+      "raw_inferred_types": {
+        "BIGINT": 3
+      },
+      "total_nulls": 0,
+      "occurrences_in_seasons": 3,
+      "top_sample_values": [
+        "0",
+        "1"
+      ]
+    },
+    "PKwon": {
+      "preferred_type": "integer",
+      "raw_inferred_types": {
+        "BIGINT": 3
+      },
+      "total_nulls": 0,
+      "occurrences_in_seasons": 3,
+      "top_sample_values": [
+        "0"
+      ]
+    },
+    "Player": {
+      "preferred_type": "string",
+      "raw_inferred_types": {
+        "TEXT": 3
+      },
+      "total_nulls": 0,
+      "occurrences_in_seasons": 3,
+      "top_sample_values": [
+        "Max Aarons",
+        "Brenden Aaronson",
+        "Keyliane Abdallah",
+        "Paxten Aaronson",
+        "Yunis Abdelhamid"
+      ]
+    },
+    "Pos": {
+      "preferred_type": "string",
+      "raw_inferred_types": {
+        "TEXT": 3
+      },
+      "total_nulls": 0,
+      "occurrences_in_seasons": 3,
+      "top_sample_values": [
+        "DF",
+        "MF",
+        "FW",
+        "DF,MF",
+        "MF,FW"
+      ]
+    },
+    "Recov": {
+      "preferred_type": "integer",
+      "raw_inferred_types": {
+        "BIGINT": 3
+      },
+      "total_nulls": 0,
+      "occurrences_in_seasons": 3,
+      "top_sample_values": [
+        "7",
+        "0",
+        "5",
+        "75",
+        "88"
+      ]
+    },
+    "Rk": {
+      "preferred_type": "integer",
+      "raw_inferred_types": {
+        "BIGINT": 3
+      },
+      "total_nulls": 0,
+      "occurrences_in_seasons": 3,
+      "top_sample_values": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    "Squad": {
+      "preferred_type": "string",
+      "raw_inferred_types": {
+        "TEXT": 3
+      },
+      "total_nulls": 0,
+      "occurrences_in_seasons": 3,
+      "top_sample_values": [
+        "Bournemouth",
+        "Marseille",
+        "Valencia",
+        "Nice",
+        "Union Berlin"
+      ]
+    },
+    "TklW": {
+      "preferred_type": "integer",
+      "raw_inferred_types": {
+        "BIGINT": 3
+      },
+      "total_nulls": 0,
+      "occurrences_in_seasons": 3,
+      "top_sample_values": [
+        "2",
+        "0",
+        "19",
+        "18",
+        "35"
+      ]
+    },
+    "Won": {
+      "preferred_type": "integer",
+      "raw_inferred_types": {
+        "BIGINT": 3
+      },
+      "total_nulls": 0,
+      "occurrences_in_seasons": 3,
+      "top_sample_values": [
+        "0",
+        "3",
+        "2",
+        "5",
+        "13"
+      ]
+    },
+    "Won%": {
+      "preferred_type": "number",
+      "raw_inferred_types": {
+        "DOUBLE PRECISION": 3
+      },
+      "total_nulls": 713,
+      "occurrences_in_seasons": 3,
+      "top_sample_values": [
+        "100.0",
+        "0.0",
+        "31.3",
+        "44.8",
+        "62.2"
+      ]
+    }
+  }
+}

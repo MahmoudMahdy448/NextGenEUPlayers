@@ -1,0 +1,315 @@
+{
+  "table": "stats_shooting",
+  "columns": {
+    "age": {
+      "declared_types": {
+        "INTEGER": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "avg_distance": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "birth_year": {
+      "declared_types": {
+        "INTEGER": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "competition": {
+      "declared_types": {
+        "VARCHAR(255)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "expected_goals": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "free_kicks": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "goals": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "goals_minus_xg": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "goals_per_shot": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "goals_per_shot_on_target": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "nation": {
+      "declared_types": {
+        "VARCHAR(255)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "nineties_played": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "non_penalty_goals_minus_xg": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "non_penalty_xg": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "npxg_per_shot": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "passes_free_kick": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "penalty_attempts": {
+      "declared_types": {
+        "INTEGER": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "penalty_goals": {
+      "declared_types": {
+        "INTEGER": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "player_name": {
+      "declared_types": {
+        "VARCHAR(255)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "position": {
+      "declared_types": {
+        "VARCHAR(255)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "processed_at": {
+      "declared_types": {
+        "TIMESTAMP": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "rank": {
+      "declared_types": {
+        "INTEGER": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "season": {
+      "declared_types": {
+        "VARCHAR(50)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "shot_creating_actions_shot": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "shots": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "shots_on_target": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "shots_on_target_pct": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "shots_on_target_per_90": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "shots_per_90": {
+      "declared_types": {
+        "DECIMAL(10,2)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "squad": {
+      "declared_types": {
+        "VARCHAR(255)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    },
+    "table_type": {
+      "declared_types": {
+        "VARCHAR(50)": 3
+      },
+      "seasons_present": [
+        "2023-2024",
+        "2024-2025",
+        "2025-2026"
+      ]
+    }
+  }
+}
