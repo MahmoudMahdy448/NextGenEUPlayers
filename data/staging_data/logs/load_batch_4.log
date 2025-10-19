@@ -1,0 +1,12 @@
+Found 33 staging CSV(s)
+Processing data/staging_data/2023-2024/stg_stats_keeper_adv_2023-2024.csv -> staging.stg_stats_keeper_adv
+✅ Loaded 203 rows into staging.stg_stats_keeper_adv in 0.1s
+Processing data/staging_data/2024-2025/stg_stats_keeper_adv_2024-2025.csv -> staging.stg_stats_keeper_adv
+✅ Loaded 212 rows into staging.stg_stats_keeper_adv in 0.0s
+Processing data/staging_data/2025-2026/stg_stats_keeper_adv_2025-2026.csv -> staging.stg_stats_keeper_adv
+✅ Loaded 128 rows into staging.stg_stats_keeper_adv in 0.0s
+
+Load summary:
+{'file': 'data/staging_data/2023-2024/stg_stats_keeper_adv_2023-2024.csv', 'table': 'stg_stats_keeper_adv', 'start': 1760848526.8364277, 'expected_rows': 203, 'read_rows': 203, 'db_loaded_rows': 203, 'inserted_rows': 203, 'duration_s': 0.05248236656188965}
+{'file': 'data/staging_data/2024-2025/stg_stats_keeper_adv_2024-2025.csv', 'table': 'stg_stats_keeper_adv', 'start': 1760848526.8890116, 'expected_rows': 212, 'read_rows': 212, 'db_loaded_rows': 212, 'inserted_rows': 212, 'duration_s': 0.026190519332885742}
+{'file': 'data/staging_data/2025-2026/stg_stats_keeper_adv_2025-2026.csv', 'table': 'stg_stats_keeper_adv', 'start': 1760848526.9153225, 'expected_rows': 128, 'read_rows': 128, 'db_loaded_rows': 128, 'inserted_rows': 128, 'duration_s': 0.021005868911743164}

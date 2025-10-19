@@ -1,0 +1,15 @@
+Row counts for staging.*
+-------------------------
+stg_stats_defense: 7882
+stg_stats_gca: 7882
+stg_stats_keeper: 543
+stg_stats_keeper_adv: 543
+stg_stats_misc: 7882
+stg_stats_passing: 7882
+stg_stats_passing_types: 7882
+stg_stats_playing_time: 9703
+stg_stats_possession: 7882
+stg_stats_shooting: 7882
+stg_stats_standard: 7882
+-------------------------
+Total rows across 11 tables: 73845

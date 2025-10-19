@@ -1,0 +1,12 @@
+Found 33 staging CSV(s)
+Processing data/staging_data/2023-2024/stg_stats_defense_2023-2024.csv -> staging.stg_stats_defense
+✅ Loaded 2852 rows into staging.stg_stats_defense in 0.1s
+Processing data/staging_data/2024-2025/stg_stats_defense_2024-2025.csv -> staging.stg_stats_defense
+✅ Loaded 2854 rows into staging.stg_stats_defense in 0.1s
+Processing data/staging_data/2025-2026/stg_stats_defense_2025-2026.csv -> staging.stg_stats_defense
+✅ Loaded 2176 rows into staging.stg_stats_defense in 0.1s
+
+Load summary:
+{'file': 'data/staging_data/2023-2024/stg_stats_defense_2023-2024.csv', 'table': 'stg_stats_defense', 'start': 1760848524.2450569, 'expected_rows': 2852, 'read_rows': 2852, 'db_loaded_rows': 2852, 'inserted_rows': 2852, 'duration_s': 0.10729789733886719}
+{'file': 'data/staging_data/2024-2025/stg_stats_defense_2024-2025.csv', 'table': 'stg_stats_defense', 'start': 1760848524.3527408, 'expected_rows': 2854, 'read_rows': 2854, 'db_loaded_rows': 2854, 'inserted_rows': 2854, 'duration_s': 0.08492422103881836}
+{'file': 'data/staging_data/2025-2026/stg_stats_defense_2025-2026.csv', 'table': 'stg_stats_defense', 'start': 1760848524.4380596, 'expected_rows': 2176, 'read_rows': 2176, 'db_loaded_rows': 2176, 'inserted_rows': 2176, 'duration_s': 0.06502652168273926}

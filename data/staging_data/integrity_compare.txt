@@ -1,0 +1,72 @@
+Table | expected_total_rows (all seasons) | db_rows | diff
+-----
+stg_stats_defense | 7882 | 7882 | 0
+stg_stats_gca | 7882 | 7882 | 0
+stg_stats_keeper | 543 | 543 | 0
+stg_stats_keeper_adv | 543 | 543 | 0
+stg_stats_misc | 7882 | 7882 | 0
+stg_stats_passing | 7882 | 7882 | 0
+stg_stats_passing_types | 7882 | 7882 | 0
+stg_stats_playing_time | 9703 | 9703 | 0
+stg_stats_possession | 7882 | 7882 | 0
+stg_stats_shooting | 7882 | 7882 | 0
+stg_stats_standard | 7882 | 7882 | 0
+-----
+TOTAL | 73845 | 73845 | 0
+
+Per-season breakdown for tables with non-zero DB rows:
+
+stg_stats_defense: DB rows = 7882
+  2023-2024: 2852 rows (CSV)
+  2024-2025: 2854 rows (CSV)
+  2025-2026: 2176 rows (CSV)
+
+stg_stats_gca: DB rows = 7882
+  2023-2024: 2852 rows (CSV)
+  2024-2025: 2854 rows (CSV)
+  2025-2026: 2176 rows (CSV)
+
+stg_stats_keeper: DB rows = 543
+  2023-2024: 203 rows (CSV)
+  2024-2025: 212 rows (CSV)
+  2025-2026: 128 rows (CSV)
+
+stg_stats_keeper_adv: DB rows = 543
+  2023-2024: 203 rows (CSV)
+  2024-2025: 212 rows (CSV)
+  2025-2026: 128 rows (CSV)
+
+stg_stats_misc: DB rows = 7882
+  2023-2024: 2852 rows (CSV)
+  2024-2025: 2854 rows (CSV)
+  2025-2026: 2176 rows (CSV)
+
+stg_stats_passing: DB rows = 7882
+  2023-2024: 2852 rows (CSV)
+  2024-2025: 2854 rows (CSV)
+  2025-2026: 2176 rows (CSV)
+
+stg_stats_passing_types: DB rows = 7882
+  2023-2024: 2852 rows (CSV)
+  2024-2025: 2854 rows (CSV)
+  2025-2026: 2176 rows (CSV)
+
+stg_stats_playing_time: DB rows = 9703
+  2023-2024: 3512 rows (CSV)
+  2024-2025: 3508 rows (CSV)
+  2025-2026: 2683 rows (CSV)
+
+stg_stats_possession: DB rows = 7882
+  2023-2024: 2852 rows (CSV)
+  2024-2025: 2854 rows (CSV)
+  2025-2026: 2176 rows (CSV)
+
+stg_stats_shooting: DB rows = 7882
+  2023-2024: 2852 rows (CSV)
+  2024-2025: 2854 rows (CSV)
+  2025-2026: 2176 rows (CSV)
+
+stg_stats_standard: DB rows = 7882
+  2023-2024: 2852 rows (CSV)
+  2024-2025: 2854 rows (CSV)
+  2025-2026: 2176 rows (CSV)

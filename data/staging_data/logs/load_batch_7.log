@@ -1,0 +1,12 @@
+Found 33 staging CSV(s)
+Processing data/staging_data/2023-2024/stg_stats_playing_time_2023-2024.csv -> staging.stg_stats_playing_time
+✅ Loaded 3512 rows into staging.stg_stats_playing_time in 0.1s
+Processing data/staging_data/2024-2025/stg_stats_playing_time_2024-2025.csv -> staging.stg_stats_playing_time
+✅ Loaded 3508 rows into staging.stg_stats_playing_time in 0.1s
+Processing data/staging_data/2025-2026/stg_stats_playing_time_2025-2026.csv -> staging.stg_stats_playing_time
+✅ Loaded 2683 rows into staging.stg_stats_playing_time in 0.1s
+
+Load summary:
+{'file': 'data/staging_data/2023-2024/stg_stats_playing_time_2023-2024.csv', 'table': 'stg_stats_playing_time', 'start': 1760848529.0814815, 'expected_rows': 3512, 'read_rows': 3512, 'db_loaded_rows': 3512, 'inserted_rows': 3512, 'duration_s': 0.13337159156799316}
+{'file': 'data/staging_data/2024-2025/stg_stats_playing_time_2024-2025.csv', 'table': 'stg_stats_playing_time', 'start': 1760848529.215354, 'expected_rows': 3508, 'read_rows': 3508, 'db_loaded_rows': 3508, 'inserted_rows': 3508, 'duration_s': 0.1156306266784668}
+{'file': 'data/staging_data/2025-2026/stg_stats_playing_time_2025-2026.csv', 'table': 'stg_stats_playing_time', 'start': 1760848529.331881, 'expected_rows': 2683, 'read_rows': 2683, 'db_loaded_rows': 2683, 'inserted_rows': 2683, 'duration_s': 0.09009051322937012}

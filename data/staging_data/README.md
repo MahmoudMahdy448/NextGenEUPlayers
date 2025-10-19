@@ -102,6 +102,34 @@ Backfill approach:
 2. Build `dim_players` by extracting distinct normalized `player_name` (+ birth_year) from staging files, deduplicate via manual or fuzzy matching, and insert canonical rows with `player_id`.
 3. Update staging rows with `player_id` from `dim_players` using a normalized equality match (and optionally birth_year).
 
-Caveats: the generator uses heuristics and example values from manifests. Please review the generated DDL before applying it to any production database.
+## Compare summary (expected vs DB rows)
+
+A full comparison between the expected total rows (sum of per-season CSVs) and the rows present in the Postgres `staging` schema has been generated and saved here:
+
+- `data/staging_data/compare_summary.csv` — machine-readable CSV of the per-table comparison
+- `data/staging_data/compare_summary.md` — a brief human-readable markdown summary
+
+How the comparison was produced
+
+1. Run the comparison script inside the Compose app container so the script can connect to the `db` service by name:
+
+```bash
+docker compose run --rm app python3 scripts/compare_all_seasons_counts.py
+```
+
+2. The script prints a small table with columns: `Table | expected_total_rows (all seasons) | db_rows | diff` and a per-season breakdown for any table that has rows in the DB.
+
+3. The CSV and markdown files in this directory were produced by capturing the script output and exporting the rows to `compare_summary.csv` and `compare_summary.md` as part of ad-hoc verification following ingestion runs.
+
+Next steps
+
+- To populate missing tables, use the loader:
+
+```bash
+docker compose run --rm app python3 src/load_stg_to_postgres.py --apply-ddl --batches 11 --batch-index <i> --yes
+```
+
+- Re-run the comparison script and commit the updated `compare_summary.*` files when you want to snapshot the ingestion state.
+
 
 ````

@@ -1,0 +1,13 @@
+Table,expected_total_rows,db_rows,diff
+stg_stats_defense,7882,0,-7882
+stg_stats_gca,7882,0,-7882
+stg_stats_keeper,543,0,-543
+stg_stats_keeper_adv,543,0,-543
+stg_stats_misc,7882,0,-7882
+stg_stats_passing,7882,0,-7882
+stg_stats_passing_types,7882,0,-7882
+stg_stats_playing_time,9703,0,-9703
+stg_stats_possession,7882,0,-7882
+stg_stats_shooting,7882,0,-7882
+stg_stats_standard,7882,7882,0
+TOTAL,73845,7882,-65963
