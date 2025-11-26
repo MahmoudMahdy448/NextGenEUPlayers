@@ -1,0 +1,7265 @@
+{
+  "advanced_goalkeeping_2023_2024": {
+    "row_count": 211,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_8_level_0_90s",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "goals_ga",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "goals_pka",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "goals_fk",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "goals_ck",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "goals_og",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_psxg",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_psxgsot",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 3,
+        "null_percentage": 1.42
+      },
+      {
+        "name": "expected_psxg_1",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_90",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "launched_cmp",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "launched_att",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "launched_cmp_1",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.95
+      },
+      {
+        "name": "passes_att_gk",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "passes_thr",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "passes_launch",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "passes_avglen",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "goal_kicks_att",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "goal_kicks_launch",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 5,
+        "null_percentage": 2.37
+      },
+      {
+        "name": "goal_kicks_avglen",
+        "position": 28,
+        "type": "VARCHAR",
+        "null_count": 5,
+        "null_percentage": 2.37
+      },
+      {
+        "name": "crosses_opp",
+        "position": 29,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "crosses_stp",
+        "position": 30,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "crosses_stp_1",
+        "position": 31,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.95
+      },
+      {
+        "name": "sweeper_opa",
+        "position": 32,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sweeper_opa90",
+        "position": 33,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sweeper_avgdist",
+        "position": 34,
+        "type": "VARCHAR",
+        "null_count": 8,
+        "null_percentage": 3.79
+      },
+      {
+        "name": "unnamed_34_level_0_matches",
+        "position": 35,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 36,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "advanced_goalkeeping_2024_2025": {
+    "row_count": 220,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_8_level_0_90s",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "goals_ga",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "goals_pka",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "goals_fk",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "goals_ck",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "goals_og",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_psxg",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_psxgsot",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 6,
+        "null_percentage": 2.73
+      },
+      {
+        "name": "expected_psxg_1",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_90",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "launched_cmp",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "launched_att",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "launched_cmp_1",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.91
+      },
+      {
+        "name": "passes_att_gk",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "passes_thr",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "passes_launch",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "passes_avglen",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "goal_kicks_att",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "goal_kicks_launch",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.91
+      },
+      {
+        "name": "goal_kicks_avglen",
+        "position": 28,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.91
+      },
+      {
+        "name": "crosses_opp",
+        "position": 29,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "crosses_stp",
+        "position": 30,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "crosses_stp_1",
+        "position": 31,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.45
+      },
+      {
+        "name": "sweeper_opa",
+        "position": 32,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sweeper_opa90",
+        "position": 33,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sweeper_avgdist",
+        "position": 34,
+        "type": "VARCHAR",
+        "null_count": 4,
+        "null_percentage": 1.82
+      },
+      {
+        "name": "unnamed_34_level_0_matches",
+        "position": 35,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 36,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "advanced_goalkeeping_2025_2026": {
+    "row_count": 145,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_8_level_0_90s",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "goals_ga",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "goals_pka",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.69
+      },
+      {
+        "name": "goals_fk",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.69
+      },
+      {
+        "name": "goals_ck",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.69
+      },
+      {
+        "name": "goals_og",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.69
+      },
+      {
+        "name": "expected_psxg",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_psxgsot",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.69
+      },
+      {
+        "name": "expected_psxg_1",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.69
+      },
+      {
+        "name": "expected_90",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.69
+      },
+      {
+        "name": "launched_cmp",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "launched_att",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "launched_cmp_1",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "passes_att_gk",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "passes_thr",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "passes_launch",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "passes_avglen",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "goal_kicks_att",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "goal_kicks_launch",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.69
+      },
+      {
+        "name": "goal_kicks_avglen",
+        "position": 28,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.69
+      },
+      {
+        "name": "crosses_opp",
+        "position": 29,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "crosses_stp",
+        "position": 30,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "crosses_stp_1",
+        "position": 31,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sweeper_opa",
+        "position": 32,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sweeper_opa90",
+        "position": 33,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sweeper_avgdist",
+        "position": 34,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.69
+      },
+      {
+        "name": "unnamed_34_level_0_matches",
+        "position": 35,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 36,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "defensive_actions_2023_2024": {
+    "row_count": 2966,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.03
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_8_level_0_90s",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "tackles_tkl",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "tackles_tklw",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "tackles_def_3rd",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "tackles_mid_3rd",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "tackles_att_3rd",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "challenges_tkl",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "challenges_att",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "challenges_tkl_1",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 351,
+        "null_percentage": 11.83
+      },
+      {
+        "name": "challenges_lost",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "blocks_blocks",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "blocks_sh",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "blocks_pass",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_21_level_0_int",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_22_level_0_tklint",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_23_level_0_clr",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_24_level_0_err",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_25_level_0_matches",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "defensive_actions_2024_2025": {
+    "row_count": 2968,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.07
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.07
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.07
+      },
+      {
+        "name": "unnamed_8_level_0_90s",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "tackles_tkl",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "tackles_tklw",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "tackles_def_3rd",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "tackles_mid_3rd",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "tackles_att_3rd",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "challenges_tkl",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "challenges_att",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "challenges_tkl_1",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 354,
+        "null_percentage": 11.93
+      },
+      {
+        "name": "challenges_lost",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "blocks_blocks",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "blocks_sh",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "blocks_pass",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_21_level_0_int",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_22_level_0_tklint",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_23_level_0_clr",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_24_level_0_err",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_25_level_0_matches",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "defensive_actions_2025_2026": {
+    "row_count": 2385,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.04
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.04
+      },
+      {
+        "name": "unnamed_8_level_0_90s",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "tackles_tkl",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "tackles_tklw",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "tackles_def_3rd",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "tackles_mid_3rd",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "tackles_att_3rd",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "challenges_tkl",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "challenges_att",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "challenges_tkl_1",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 341,
+        "null_percentage": 14.3
+      },
+      {
+        "name": "challenges_lost",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "blocks_blocks",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "blocks_sh",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "blocks_pass",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_21_level_0_int",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_22_level_0_tklint",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_23_level_0_clr",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_24_level_0_err",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_25_level_0_matches",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "goal_and_shot_creation_2023_2024": {
+    "row_count": 2966,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.03
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_8_level_0_90s",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sca_sca",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sca_sca90",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sca_types_passlive",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sca_types_passdead",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sca_types_to",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sca_types_sh",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sca_types_fld",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sca_types_def",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "gca_gca",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "gca_gca90",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "gca_types_passlive",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "gca_types_passdead",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "gca_types_to",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "gca_types_sh",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "gca_types_fld",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "gca_types_def",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_25_level_0_matches",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "goal_and_shot_creation_2024_2025": {
+    "row_count": 2968,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.07
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.07
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.07
+      },
+      {
+        "name": "unnamed_8_level_0_90s",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sca_sca",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sca_sca90",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sca_types_passlive",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sca_types_passdead",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sca_types_to",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sca_types_sh",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sca_types_fld",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sca_types_def",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "gca_gca",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "gca_gca90",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "gca_types_passlive",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "gca_types_passdead",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "gca_types_to",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "gca_types_sh",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "gca_types_fld",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "gca_types_def",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_25_level_0_matches",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "goal_and_shot_creation_2025_2026": {
+    "row_count": 2385,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.04
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.04
+      },
+      {
+        "name": "unnamed_8_level_0_90s",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sca_sca",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sca_sca90",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sca_types_passlive",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sca_types_passdead",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sca_types_to",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sca_types_sh",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sca_types_fld",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "sca_types_def",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "gca_gca",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "gca_gca90",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "gca_types_passlive",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "gca_types_passdead",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "gca_types_to",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "gca_types_sh",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "gca_types_fld",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "gca_types_def",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_25_level_0_matches",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "goalkeeping_2023_2024": {
+    "row_count": 211,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "playing_time_mp",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "playing_time_starts",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "playing_time_min",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_11_level_0_90s",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_ga",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_ga90",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_sota",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_saves",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_save",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 3,
+        "null_percentage": 1.42
+      },
+      {
+        "name": "performance_w",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_d",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_l",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_cs",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_cs_1",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 15,
+        "null_percentage": 7.11
+      },
+      {
+        "name": "penalty_kicks_pkatt",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "penalty_kicks_pka",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "penalty_kicks_pksv",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "penalty_kicks_pkm",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "penalty_kicks_save",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 73,
+        "null_percentage": 34.6
+      },
+      {
+        "name": "unnamed_27_level_0_matches",
+        "position": 28,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 29,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "goalkeeping_2024_2025": {
+    "row_count": 220,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "playing_time_mp",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "playing_time_starts",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "playing_time_min",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_11_level_0_90s",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_ga",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_ga90",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_sota",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_saves",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_save",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 6,
+        "null_percentage": 2.73
+      },
+      {
+        "name": "performance_w",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_d",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_l",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_cs",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_cs_1",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 9,
+        "null_percentage": 4.09
+      },
+      {
+        "name": "penalty_kicks_pkatt",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "penalty_kicks_pka",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "penalty_kicks_pksv",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "penalty_kicks_pkm",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "penalty_kicks_save",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 65,
+        "null_percentage": 29.55
+      },
+      {
+        "name": "unnamed_27_level_0_matches",
+        "position": 28,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 29,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "goalkeeping_2025_2026": {
+    "row_count": 145,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "playing_time_mp",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "playing_time_starts",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "playing_time_min",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_11_level_0_90s",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_ga",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_ga90",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_sota",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_saves",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_save",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.69
+      },
+      {
+        "name": "performance_w",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.69
+      },
+      {
+        "name": "performance_d",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.69
+      },
+      {
+        "name": "performance_l",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_cs",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.69
+      },
+      {
+        "name": "performance_cs_1",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 4,
+        "null_percentage": 2.76
+      },
+      {
+        "name": "penalty_kicks_pkatt",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.69
+      },
+      {
+        "name": "penalty_kicks_pka",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.69
+      },
+      {
+        "name": "penalty_kicks_pksv",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.69
+      },
+      {
+        "name": "penalty_kicks_pkm",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.69
+      },
+      {
+        "name": "penalty_kicks_save",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 43,
+        "null_percentage": 29.66
+      },
+      {
+        "name": "unnamed_27_level_0_matches",
+        "position": 28,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 29,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "miscellaneous_stats_2023_2024": {
+    "row_count": 2966,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.03
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_8_level_0_90s",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_crdy",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_crdr",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_2crdy",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_fls",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_fld",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_off",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_crs",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_int",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_tklw",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_pkwon",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_pkcon",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_og",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_recov",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "aerial_duels_won",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "aerial_duels_lost",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "aerial_duels_won_1",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 244,
+        "null_percentage": 8.23
+      },
+      {
+        "name": "unnamed_25_level_0_matches",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "miscellaneous_stats_2024_2025": {
+    "row_count": 2968,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.07
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.07
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.07
+      },
+      {
+        "name": "unnamed_8_level_0_90s",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_crdy",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_crdr",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_2crdy",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_fls",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_fld",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_off",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_crs",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_int",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_tklw",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_pkwon",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_pkcon",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_og",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_recov",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "aerial_duels_won",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "aerial_duels_lost",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "aerial_duels_won_1",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 222,
+        "null_percentage": 7.48
+      },
+      {
+        "name": "unnamed_25_level_0_matches",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "miscellaneous_stats_2025_2026": {
+    "row_count": 2385,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.04
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.04
+      },
+      {
+        "name": "unnamed_8_level_0_90s",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_crdy",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_crdr",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_2crdy",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_fls",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_fld",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_off",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_crs",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_int",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_tklw",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_pkwon",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_pkcon",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_og",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_recov",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "aerial_duels_won",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "aerial_duels_lost",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "aerial_duels_won_1",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 177,
+        "null_percentage": 7.42
+      },
+      {
+        "name": "unnamed_25_level_0_matches",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "pass_types_2023_2024": {
+    "row_count": 2966,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.03
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_8_level_0_90s",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_9_level_0_att",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "pass_types_live",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "pass_types_dead",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "pass_types_fk",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "pass_types_tb",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "pass_types_sw",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "pass_types_crs",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "pass_types_ti",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "pass_types_ck",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "corner_kicks_in",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "corner_kicks_out",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "corner_kicks_str",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "outcomes_cmp",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "outcomes_off",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "outcomes_blocks",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_24_level_0_matches",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "pass_types_2024_2025": {
+    "row_count": 2968,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.07
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.07
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.07
+      },
+      {
+        "name": "unnamed_8_level_0_90s",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_9_level_0_att",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "pass_types_live",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "pass_types_dead",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "pass_types_fk",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "pass_types_tb",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "pass_types_sw",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "pass_types_crs",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "pass_types_ti",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "pass_types_ck",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "corner_kicks_in",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "corner_kicks_out",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "corner_kicks_str",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "outcomes_cmp",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "outcomes_off",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "outcomes_blocks",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_24_level_0_matches",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "pass_types_2025_2026": {
+    "row_count": 2385,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.04
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.04
+      },
+      {
+        "name": "unnamed_8_level_0_90s",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_9_level_0_att",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "pass_types_live",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "pass_types_dead",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "pass_types_fk",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "pass_types_tb",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "pass_types_sw",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "pass_types_crs",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "pass_types_ti",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "pass_types_ck",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "corner_kicks_in",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "corner_kicks_out",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "corner_kicks_str",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "outcomes_cmp",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "outcomes_off",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "outcomes_blocks",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_24_level_0_matches",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "passing_2023_2024": {
+    "row_count": 2966,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.03
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_8_level_0_90s",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "total_cmp",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "total_att",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "total_cmp_1",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 25,
+        "null_percentage": 0.84
+      },
+      {
+        "name": "total_totdist",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "total_prgdist",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "short_cmp",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "short_att",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "short_cmp_1",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 52,
+        "null_percentage": 1.75
+      },
+      {
+        "name": "medium_cmp",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "medium_att",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "medium_cmp_1",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 84,
+        "null_percentage": 2.83
+      },
+      {
+        "name": "long_cmp",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "long_att",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "long_cmp_1",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 202,
+        "null_percentage": 6.81
+      },
+      {
+        "name": "unnamed_23_level_0_ast",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_24_level_0_xag",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_xa",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_axag",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_27_level_0_kp",
+        "position": 28,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_28_level_0_13",
+        "position": 29,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_29_level_0_ppa",
+        "position": 30,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_30_level_0_crspa",
+        "position": 31,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_31_level_0_prgp",
+        "position": 32,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_32_level_0_matches",
+        "position": 33,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 34,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "passing_2024_2025": {
+    "row_count": 2968,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.07
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.07
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.07
+      },
+      {
+        "name": "unnamed_8_level_0_90s",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "total_cmp",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "total_att",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "total_cmp_1",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 19,
+        "null_percentage": 0.64
+      },
+      {
+        "name": "total_totdist",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "total_prgdist",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "short_cmp",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "short_att",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "short_cmp_1",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 45,
+        "null_percentage": 1.52
+      },
+      {
+        "name": "medium_cmp",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "medium_att",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "medium_cmp_1",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 70,
+        "null_percentage": 2.36
+      },
+      {
+        "name": "long_cmp",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "long_att",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "long_cmp_1",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 192,
+        "null_percentage": 6.47
+      },
+      {
+        "name": "unnamed_23_level_0_ast",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_24_level_0_xag",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_xa",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_axag",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_27_level_0_kp",
+        "position": 28,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_28_level_0_13",
+        "position": 29,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_29_level_0_ppa",
+        "position": 30,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_30_level_0_crspa",
+        "position": 31,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_31_level_0_prgp",
+        "position": 32,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_32_level_0_matches",
+        "position": 33,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 34,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "passing_2025_2026": {
+    "row_count": 2385,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.04
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.04
+      },
+      {
+        "name": "unnamed_8_level_0_90s",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "total_cmp",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "total_att",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "total_cmp_1",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 11,
+        "null_percentage": 0.46
+      },
+      {
+        "name": "total_totdist",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "total_prgdist",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "short_cmp",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "short_att",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "short_cmp_1",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 25,
+        "null_percentage": 1.05
+      },
+      {
+        "name": "medium_cmp",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "medium_att",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "medium_cmp_1",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 48,
+        "null_percentage": 2.01
+      },
+      {
+        "name": "long_cmp",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "long_att",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "long_cmp_1",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 146,
+        "null_percentage": 6.12
+      },
+      {
+        "name": "unnamed_23_level_0_ast",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_24_level_0_xag",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_xa",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_axag",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_27_level_0_kp",
+        "position": 28,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_28_level_0_13",
+        "position": 29,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_29_level_0_ppa",
+        "position": 30,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_30_level_0_crspa",
+        "position": 31,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_31_level_0_prgp",
+        "position": 32,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_32_level_0_matches",
+        "position": 33,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 34,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "playing_time_2023_2024": {
+    "row_count": 3652,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 4,
+        "null_percentage": 0.11
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.03
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.03
+      },
+      {
+        "name": "playing_time_mp",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "playing_time_min",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 660,
+        "null_percentage": 18.07
+      },
+      {
+        "name": "playing_time_mnmp",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 660,
+        "null_percentage": 18.07
+      },
+      {
+        "name": "playing_time_min_1",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 652,
+        "null_percentage": 17.85
+      },
+      {
+        "name": "playing_time_90s",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 652,
+        "null_percentage": 17.85
+      },
+      {
+        "name": "starts_starts",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "starts_mnstart",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 1080,
+        "null_percentage": 29.57
+      },
+      {
+        "name": "starts_compl",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "subs_subs",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "subs_mnsub",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 1037,
+        "null_percentage": 28.4
+      },
+      {
+        "name": "subs_unsub",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "team_success_ppm",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 655,
+        "null_percentage": 17.94
+      },
+      {
+        "name": "team_success_ong",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 652,
+        "null_percentage": 17.85
+      },
+      {
+        "name": "team_success_onga",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 652,
+        "null_percentage": 17.85
+      },
+      {
+        "name": "team_success_",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 652,
+        "null_percentage": 17.85
+      },
+      {
+        "name": "team_success_90",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 660,
+        "null_percentage": 18.07
+      },
+      {
+        "name": "team_success_onoff",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 679,
+        "null_percentage": 18.59
+      },
+      {
+        "name": "team_success_xg_onxg",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 660,
+        "null_percentage": 18.07
+      },
+      {
+        "name": "team_success_xg_onxga",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 660,
+        "null_percentage": 18.07
+      },
+      {
+        "name": "team_success_xg_xg",
+        "position": 28,
+        "type": "VARCHAR",
+        "null_count": 660,
+        "null_percentage": 18.07
+      },
+      {
+        "name": "team_success_xg_xg90",
+        "position": 29,
+        "type": "VARCHAR",
+        "null_count": 660,
+        "null_percentage": 18.07
+      },
+      {
+        "name": "team_success_xg_onoff",
+        "position": 30,
+        "type": "VARCHAR",
+        "null_count": 679,
+        "null_percentage": 18.59
+      },
+      {
+        "name": "unnamed_30_level_0_matches",
+        "position": 31,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 32,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "playing_time_2024_2025": {
+    "row_count": 3648,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 9,
+        "null_percentage": 0.25
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.05
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 6,
+        "null_percentage": 0.16
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 6,
+        "null_percentage": 0.16
+      },
+      {
+        "name": "playing_time_mp",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "playing_time_min",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 654,
+        "null_percentage": 17.93
+      },
+      {
+        "name": "playing_time_mnmp",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 654,
+        "null_percentage": 17.93
+      },
+      {
+        "name": "playing_time_min_1",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 651,
+        "null_percentage": 17.85
+      },
+      {
+        "name": "playing_time_90s",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 651,
+        "null_percentage": 17.85
+      },
+      {
+        "name": "starts_starts",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "starts_mnstart",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 1018,
+        "null_percentage": 27.91
+      },
+      {
+        "name": "starts_compl",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "subs_subs",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "subs_mnsub",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 1066,
+        "null_percentage": 29.22
+      },
+      {
+        "name": "subs_unsub",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "team_success_ppm",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 651,
+        "null_percentage": 17.85
+      },
+      {
+        "name": "team_success_ong",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 651,
+        "null_percentage": 17.85
+      },
+      {
+        "name": "team_success_onga",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 651,
+        "null_percentage": 17.85
+      },
+      {
+        "name": "team_success_",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 651,
+        "null_percentage": 17.85
+      },
+      {
+        "name": "team_success_90",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 654,
+        "null_percentage": 17.93
+      },
+      {
+        "name": "team_success_onoff",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 676,
+        "null_percentage": 18.53
+      },
+      {
+        "name": "team_success_xg_onxg",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 654,
+        "null_percentage": 17.93
+      },
+      {
+        "name": "team_success_xg_onxga",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 654,
+        "null_percentage": 17.93
+      },
+      {
+        "name": "team_success_xg_xg",
+        "position": 28,
+        "type": "VARCHAR",
+        "null_count": 654,
+        "null_percentage": 17.93
+      },
+      {
+        "name": "team_success_xg_xg90",
+        "position": 29,
+        "type": "VARCHAR",
+        "null_count": 654,
+        "null_percentage": 17.93
+      },
+      {
+        "name": "team_success_xg_onoff",
+        "position": 30,
+        "type": "VARCHAR",
+        "null_count": 675,
+        "null_percentage": 18.5
+      },
+      {
+        "name": "unnamed_30_level_0_matches",
+        "position": 31,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 32,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "playing_time_2025_2026": {
+    "row_count": 2935,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.03
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.03
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.07
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.07
+      },
+      {
+        "name": "playing_time_mp",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "playing_time_min",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 529,
+        "null_percentage": 18.02
+      },
+      {
+        "name": "playing_time_mnmp",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 529,
+        "null_percentage": 18.02
+      },
+      {
+        "name": "playing_time_min_1",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 524,
+        "null_percentage": 17.85
+      },
+      {
+        "name": "playing_time_90s",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 524,
+        "null_percentage": 17.85
+      },
+      {
+        "name": "starts_starts",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "starts_mnstart",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 844,
+        "null_percentage": 28.76
+      },
+      {
+        "name": "starts_compl",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "subs_subs",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "subs_mnsub",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 1135,
+        "null_percentage": 38.67
+      },
+      {
+        "name": "subs_unsub",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "team_success_ppm",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 524,
+        "null_percentage": 17.85
+      },
+      {
+        "name": "team_success_ong",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 524,
+        "null_percentage": 17.85
+      },
+      {
+        "name": "team_success_onga",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 524,
+        "null_percentage": 17.85
+      },
+      {
+        "name": "team_success_",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 524,
+        "null_percentage": 17.85
+      },
+      {
+        "name": "team_success_90",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 529,
+        "null_percentage": 18.02
+      },
+      {
+        "name": "team_success_onoff",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 638,
+        "null_percentage": 21.74
+      },
+      {
+        "name": "team_success_xg_onxg",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 529,
+        "null_percentage": 18.02
+      },
+      {
+        "name": "team_success_xg_onxga",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 529,
+        "null_percentage": 18.02
+      },
+      {
+        "name": "team_success_xg_xg",
+        "position": 28,
+        "type": "VARCHAR",
+        "null_count": 529,
+        "null_percentage": 18.02
+      },
+      {
+        "name": "team_success_xg_xg90",
+        "position": 29,
+        "type": "VARCHAR",
+        "null_count": 529,
+        "null_percentage": 18.02
+      },
+      {
+        "name": "team_success_xg_onoff",
+        "position": 30,
+        "type": "VARCHAR",
+        "null_count": 638,
+        "null_percentage": 21.74
+      },
+      {
+        "name": "unnamed_30_level_0_matches",
+        "position": 31,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 32,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "possession_2023_2024": {
+    "row_count": 2966,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.03
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_8_level_0_90s",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "touches_touches",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "touches_def_pen",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "touches_def_3rd",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "touches_mid_3rd",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "touches_att_3rd",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "touches_att_pen",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "touches_live",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "takeons_att",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "takeons_succ",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "takeons_succ_1",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 445,
+        "null_percentage": 15.0
+      },
+      {
+        "name": "takeons_tkld",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "takeons_tkld_1",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 445,
+        "null_percentage": 15.0
+      },
+      {
+        "name": "carries_carries",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "carries_totdist",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "carries_prgdist",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "carries_prgc",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "carries_13",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "carries_cpa",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "carries_mis",
+        "position": 28,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "carries_dis",
+        "position": 29,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "receiving_rec",
+        "position": 30,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "receiving_prgr",
+        "position": 31,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_31_level_0_matches",
+        "position": 32,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 33,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "possession_2024_2025": {
+    "row_count": 2968,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.07
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.07
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.07
+      },
+      {
+        "name": "unnamed_8_level_0_90s",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "touches_touches",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "touches_def_pen",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "touches_def_3rd",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "touches_mid_3rd",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "touches_att_3rd",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "touches_att_pen",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "touches_live",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "takeons_att",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "takeons_succ",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "takeons_succ_1",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 443,
+        "null_percentage": 14.93
+      },
+      {
+        "name": "takeons_tkld",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "takeons_tkld_1",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 443,
+        "null_percentage": 14.93
+      },
+      {
+        "name": "carries_carries",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "carries_totdist",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "carries_prgdist",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "carries_prgc",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "carries_13",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "carries_cpa",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "carries_mis",
+        "position": 28,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "carries_dis",
+        "position": 29,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "receiving_rec",
+        "position": 30,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "receiving_prgr",
+        "position": 31,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_31_level_0_matches",
+        "position": 32,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 33,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "possession_2025_2026": {
+    "row_count": 2385,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.04
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.04
+      },
+      {
+        "name": "unnamed_8_level_0_90s",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "touches_touches",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "touches_def_pen",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "touches_def_3rd",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "touches_mid_3rd",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "touches_att_3rd",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "touches_att_pen",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "touches_live",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "takeons_att",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "takeons_succ",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "takeons_succ_1",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 426,
+        "null_percentage": 17.86
+      },
+      {
+        "name": "takeons_tkld",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "takeons_tkld_1",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 426,
+        "null_percentage": 17.86
+      },
+      {
+        "name": "carries_carries",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "carries_totdist",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "carries_prgdist",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "carries_prgc",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "carries_13",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "carries_cpa",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "carries_mis",
+        "position": 28,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "carries_dis",
+        "position": 29,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "receiving_rec",
+        "position": 30,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "receiving_prgr",
+        "position": 31,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_31_level_0_matches",
+        "position": 32,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 33,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "shooting_2023_2024": {
+    "row_count": 2966,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.03
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_8_level_0_90s",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "standard_gls",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "standard_sh",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "standard_sot",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "standard_sot_1",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 531,
+        "null_percentage": 17.9
+      },
+      {
+        "name": "standard_sh90",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "standard_sot90",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "standard_gsh",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 531,
+        "null_percentage": 17.9
+      },
+      {
+        "name": "standard_gsot",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 859,
+        "null_percentage": 28.96
+      },
+      {
+        "name": "standard_dist",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 531,
+        "null_percentage": 17.9
+      },
+      {
+        "name": "standard_fk",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "standard_pk",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "standard_pkatt",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_xg",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_npxg",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_npxgsh",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 531,
+        "null_percentage": 17.9
+      },
+      {
+        "name": "expected_gxg",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_npgxg",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_26_level_0_matches",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 28,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "shooting_2024_2025": {
+    "row_count": 2968,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.07
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.07
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.07
+      },
+      {
+        "name": "unnamed_8_level_0_90s",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "standard_gls",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "standard_sh",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "standard_sot",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "standard_sot_1",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 519,
+        "null_percentage": 17.49
+      },
+      {
+        "name": "standard_sh90",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "standard_sot90",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "standard_gsh",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 519,
+        "null_percentage": 17.49
+      },
+      {
+        "name": "standard_gsot",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 885,
+        "null_percentage": 29.82
+      },
+      {
+        "name": "standard_dist",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 519,
+        "null_percentage": 17.49
+      },
+      {
+        "name": "standard_fk",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "standard_pk",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "standard_pkatt",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_xg",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_npxg",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_npxgsh",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 519,
+        "null_percentage": 17.49
+      },
+      {
+        "name": "expected_gxg",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_npgxg",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_26_level_0_matches",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 28,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "shooting_2025_2026": {
+    "row_count": 2385,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.04
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.04
+      },
+      {
+        "name": "unnamed_8_level_0_90s",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "standard_gls",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "standard_sh",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "standard_sot",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "standard_sot_1",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 471,
+        "null_percentage": 19.75
+      },
+      {
+        "name": "standard_sh90",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "standard_sot90",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "standard_gsh",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 471,
+        "null_percentage": 19.75
+      },
+      {
+        "name": "standard_gsot",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 920,
+        "null_percentage": 38.57
+      },
+      {
+        "name": "standard_dist",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 471,
+        "null_percentage": 19.75
+      },
+      {
+        "name": "standard_fk",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "standard_pk",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "standard_pkatt",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_xg",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_npxg",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_npxgsh",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 471,
+        "null_percentage": 19.75
+      },
+      {
+        "name": "expected_gxg",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_npgxg",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_26_level_0_matches",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 28,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "standard_stats_2023_2024": {
+    "row_count": 2966,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.03
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "playing_time_mp",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "playing_time_starts",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "playing_time_min",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "playing_time_90s",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_gls",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_ast",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_ga",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_gpk",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_pk",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_pkatt",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_crdy",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_crdr",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_xg",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_npxg",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_xag",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_npxgxag",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "progression_prgc",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "progression_prgp",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "progression_prgr",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_gls",
+        "position": 28,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_ast",
+        "position": 29,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_ga",
+        "position": 30,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_gpk",
+        "position": 31,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_gapk",
+        "position": 32,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_xg",
+        "position": 33,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_xag",
+        "position": 34,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_xgxag",
+        "position": 35,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_npxg",
+        "position": 36,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_npxgxag",
+        "position": 37,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_37_level_0_matches",
+        "position": 38,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 39,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "standard_stats_2024_2025": {
+    "row_count": 2968,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.07
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.07
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 2,
+        "null_percentage": 0.07
+      },
+      {
+        "name": "playing_time_mp",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "playing_time_starts",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "playing_time_min",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "playing_time_90s",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_gls",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_ast",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_ga",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_gpk",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_pk",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_pkatt",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_crdy",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_crdr",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_xg",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_npxg",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_xag",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_npxgxag",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "progression_prgc",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "progression_prgp",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "progression_prgr",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_gls",
+        "position": 28,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_ast",
+        "position": 29,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_ga",
+        "position": 30,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_gpk",
+        "position": 31,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_gapk",
+        "position": 32,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_xg",
+        "position": 33,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_xag",
+        "position": 34,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_xgxag",
+        "position": 35,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_npxg",
+        "position": 36,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_npxgxag",
+        "position": 37,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_37_level_0_matches",
+        "position": 38,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 39,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  },
+  "standard_stats_2025_2026": {
+    "row_count": 2385,
+    "columns": [
+      {
+        "name": "unnamed_0_level_0_rk",
+        "position": 1,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_1_level_0_player",
+        "position": 2,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_2_level_0_nation",
+        "position": 3,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_3_level_0_pos",
+        "position": 4,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_4_level_0_squad",
+        "position": 5,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_5_level_0_comp",
+        "position": 6,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_6_level_0_age",
+        "position": 7,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.04
+      },
+      {
+        "name": "unnamed_7_level_0_born",
+        "position": 8,
+        "type": "VARCHAR",
+        "null_count": 1,
+        "null_percentage": 0.04
+      },
+      {
+        "name": "playing_time_mp",
+        "position": 9,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "playing_time_starts",
+        "position": 10,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "playing_time_min",
+        "position": 11,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "playing_time_90s",
+        "position": 12,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_gls",
+        "position": 13,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_ast",
+        "position": 14,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_ga",
+        "position": 15,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_gpk",
+        "position": 16,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_pk",
+        "position": 17,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_pkatt",
+        "position": 18,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_crdy",
+        "position": 19,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "performance_crdr",
+        "position": 20,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_xg",
+        "position": 21,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_npxg",
+        "position": 22,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_xag",
+        "position": 23,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "expected_npxgxag",
+        "position": 24,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "progression_prgc",
+        "position": 25,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "progression_prgp",
+        "position": 26,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "progression_prgr",
+        "position": 27,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_gls",
+        "position": 28,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_ast",
+        "position": 29,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_ga",
+        "position": 30,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_gpk",
+        "position": 31,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_gapk",
+        "position": 32,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_xg",
+        "position": 33,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_xag",
+        "position": 34,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_xgxag",
+        "position": 35,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_npxg",
+        "position": 36,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "per_90_minutes_npxgxag",
+        "position": 37,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "unnamed_37_level_0_matches",
+        "position": 38,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      {
+        "name": "season_id",
+        "position": 39,
+        "type": "VARCHAR",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    ]
+  }
+}

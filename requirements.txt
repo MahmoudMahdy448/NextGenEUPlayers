@@ -1,0 +1,6 @@
+cloudscraper
+pandas
+lxml
+duckdb
+beautifulsoup4
+requests
