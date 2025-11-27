@@ -1,32 +1,60 @@
-# NextGenEUPlayers Copilot Guide
-## Architecture
-- ELT flow: Web → CSV → DuckDB `raw` → DuckDB `staging`, matching the stages documented in README.md.
-- Scrapers (`ingestion/fbref_scraper.py`, `ingestion/scrape_glossary.py`) target 11 FBref tables across seasons 2023-2024 through 2025-2026.
-- Raw DuckDB tables follow `raw.<stat>_<season>` naming with seasons underscored; `load_raw.py` also appends a `season_id` column.
-- Staging tables are unioned by stat (`staging.standard_stats`, etc.) using `UNION ALL BY NAME` plus a `processed_at` timestamp in `ingestion/transform_stage.py`.
-- Glossary definitions land in `data/glossary/glossary.csv`; schema docs are emitted to `schemas/raw/`.
-## Key Workflows
-- Install core deps once via `pip install -r requirements.txt` (cloudscraper, pandas, duckdb, bs4 stack); install `streamlit` separately when running the UI.
-- Extraction: `python ingestion/fbref_scraper.py`; honors `PROXY_URL`, enforces a 4s sleep between tables, and only follows links containing `players`.
-- Glossary scrape: `python ingestion/scrape_glossary.py`; reuses the link filter to avoid `squads` pages and deduplicates tooltips per column.
-- Load raw: `python ingestion/load_raw.py`; uses DuckDB `read_csv_auto(..., normalize_names=True)` so CSV headers must already be slug-friendly.
-- Transform staging: `python ingestion/transform_stage.py`; assumes schemas are aligned—schema drift will fill NULLs, so add columns consistently.
-- Profile raw schema: `python scripts/profile_raw_schema.py`; writes `schemas/raw/raw_profile.{json,md}` with row counts and NULL stats.
-- Explore DuckDB quickly with `streamlit run admin_ui.py`, which queries `data/duckdb/players.db` in read-only mode and defaults to the `raw` schema.
-## Conventions & Pitfalls
-- Data layout: raw CSVs under `data/raw/<season>/`, glossary artifacts in `data/glossary/`, DuckDB file at `data/duckdb/players.db`.
-- Filenames from scrapers use `clean_filename` (lowercase, underscores); keep this helper when adding new tables or stats.
-- fbref URLs must contain `players`; pulling `squads` links produces incompatible tables and will break load/transform steps.
-- Keep `TARGET_TABLES` lists synchronized across scraper, glossary, and transformer so staging outputs stay complete.
-- DuckDB schemas (`raw`, `staging`) are created lazily; update `admin_ui.py` if you introduce new schemas users should browse.
-- Prefer DuckDB SQL for joins/aggregations once data is loaded; pandas is only used during scraping.
-- Extending seasons requires updating `SEASONS` in `fbref_scraper.py`; `load_raw.py` globbing will discover matching folders automatically.
-- Staging tables overwrite on each run; `processed_at` is generated via `now()`, so don’t populate it in upstream data.
-- Profiling queries compute NULL counts column-by-column; if you add computed columns with expensive expressions, consider caching them first in SQL.
-- Streamlit caching uses `@st.cache_resource`; clear cache or restart the app when schemas change underneath.
-## Integration Notes
-- External network calls go through Cloudflare; keep `cloudscraper` (and optional proxy config) instead of bare `requests`.
-- `PROXY_URL` affects both scrapers—document it in README.md whenever you add new network tooling.
-- DuckDB SQL is embedded as multiline strings; keep formatting readable and avoid string concatenation for identifiers.
-- No orchestration tool: developers run stages manually in order, so update README.md if you insert new steps or dependencies.
-- Automated tests are absent—validate changes by running the relevant pipeline stage and spot-checking DuckDB via SQL or the Streamlit UI.
+# .github/copilot-instructions.md
+
+# Role & Objective
+You are a Senior Data Engineer acting as an autonomous agent. Your goal is to evolve `NextGenEUPlayers` from a manual Python script workflow into a robust, portfolio-grade ELT pipeline.
+**Primary Objective:** Build an end-to-end pipeline (Scrape → DuckDB Raw → dbt Modeling → Streamlit) to identify high-potential U23 football players.
+
+# Architecture & Tech Stack
+- **Flow:** Web → CSV (`ingestion/`) → DuckDB `raw` schema (`load_raw.py`) → dbt (`transformation/`) → Streamlit.
+- **Language:** Python 3.10+ (Type hinting required).
+- **Database:** DuckDB (Local file: `data/duckdb/players.db`).
+- **Transformation:** dbt (data build tool) with `dbt-duckdb`.
+- **Ingestion:** `cloudscraper` with strict rate limiting.
+
+# Workflow Guidelines
+
+## 1. Extraction (Ingestion Layer)
+- **Files:** `ingestion/fbref_scraper.py`, `ingestion/scrape_glossary.py`.
+- **Constraint:** Requests must go through `cloudscraper`.
+- **Rate Limit:** Enforce strict 4s sleep between requests.
+- **Filtering:** URLs must contain `players`; ignore `squads` pages.
+- **Output:** `data/raw/{season}/{table_name}.csv`.
+- **Naming:** Filenames must be `snake_case` (use `clean_filename` helper).
+- **Config:** Honor `PROXY_URL` env var if present; maintain `SEASONS` list in `fbref_scraper.py`.
+
+## 2. Loading (Raw Layer)
+- **File:** `ingestion/load_raw.py`.
+- **Target:** DuckDB schema `raw`.
+- **Method:** Use `read_csv_auto(..., normalize_names=True)`.
+- **Metadata:** Append `season_id` (e.g., '2023-2024') and `load_timestamp` during load.
+- **Restriction:** **No business logic here.** Do not perform joins or aggregations. Raw data only.
+
+## 3. Transformation (dbt Layer)
+- **Status:** **REPLACES** `ingestion/transform_stage.py`.
+- **Directory:** `transformation/` (to be initialized).
+- **Modeling Strategy:**
+    - **Staging (`models/staging/`):** View materialization. Clean column names, cast types (Age → INT), handle NULLs. Source is `raw` schema.
+    - **Intermediate (`models/intermediate/`):** Join logic. Join `Standard`, `Shooting`, `Passing`, etc., on `Player`, `Squad`, `Season`.
+    - **Marts (`models/marts/`):** Table materialization. The final presentation layer for the Dashboard.
+- **Conventions:**
+    - Use CTEs (Common Table Expressions) for readability.
+    - Use `ref()` for all model dependencies.
+    - Test unique keys (`player_id`, `season_id`) in `schema.yml`.
+
+## 4. Analytical Logic (Business Rules)
+Strictly adhere to these rules when generating SQL for Marts or KPIs:
+- **Normalization:** All volume metrics (Goals, Passes, etc.) **must** be divided by `90s Played`.
+- **Filters:** Exclude players with `< 5.0` 90s played to remove noise.
+- **KPI Definitions:**
+    - `progression_score`: `(prog_carries + prog_passes) / 90s`
+    - `final_product_score`: `(npxg + xag) / 90s`
+    - `defensive_workrate`: `(tackles_won + interceptions + recoveries) / 90s`
+    - `is_u23`: Boolean where `Age <= 23`.
+- **Scoring:** Use Window Functions (`PERCENT_RANK()`) partitioned by `Position` to grade players relative to their role.
+
+# Operational Rules
+1.  **No Fluff:** Do not generate conversational filler. Output code or direct commands only.
+2.  **File Hygiene:** Do not create new directories unless explicitly told to initialize `dbt` or `dagster`. Keep `data/` layout consistent.
+3.  **Docker:** Ensure code is container-compatible. Use relative paths.
+4.  **Error Handling:** Ingestion scripts must log failures (try/except) and not crash silently on network errors.
+5.  **Schema Drift:** If raw columns change, `load_raw.py` handles it dynamically; dbt staging models must explicitly select columns to ensure stability downstream.

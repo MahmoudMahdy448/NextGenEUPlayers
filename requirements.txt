@@ -4,3 +4,5 @@ lxml
 duckdb
 beautifulsoup4
 requests
+dbt-duckdb
+streamlit

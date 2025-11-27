@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  etl:
+    build: .
+    container_name: nextgeneu_etl
+    volumes:
+      - ./:/app
+    environment:
+      - PROXY_URL=${PROXY_URL}
+    command: tail -f /dev/null
+
+  dashboard:
+    build: .
+    container_name: nextgen_dashboard
+    # Start Streamlit on port 8501
+    command: streamlit run admin_ui.py --server.port 8501 --server.address 0.0.0.0
+    ports:
+      - "8501:8501" # Expose to localhost:8501
+    volumes:
+      - ./:/app  # Must mount the same volume to see the same DB file!
+    environment:
+      - PYTHONUNBUFFERED=1
