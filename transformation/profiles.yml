@@ -1,0 +1,6 @@
+nextgeneu_players:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: '/app/data/duckdb/players.db'

@@ -1,0 +1,47 @@
+version: 2
+
+sources:
+  - name: fbref_raw
+    schema: raw
+    description: "Raw FBref data loaded from CSVs"
+    tables:
+      # --- Domain: General ---
+      - name: standard_stats_2023_2024
+      - name: standard_stats_2024_2025
+      - name: standard_stats_2025_2026
+      - name: playing_time_2023_2024
+      - name: playing_time_2024_2025
+      - name: playing_time_2025_2026
+      - name: miscellaneous_stats_2023_2024
+      - name: miscellaneous_stats_2024_2025
+      - name: miscellaneous_stats_2025_2026
+      
+      # --- Domain: Attack ---
+      - name: shooting_2023_2024
+      - name: shooting_2024_2025
+      - name: shooting_2025_2026
+      - name: goal_and_shot_creation_2023_2024
+      - name: goal_and_shot_creation_2024_2025
+      - name: goal_and_shot_creation_2025_2026
+      
+      # --- Domain: Distribution ---
+      - name: passing_2023_2024
+      - name: passing_2024_2025
+      - name: passing_2025_2026
+      - name: pass_types_2023_2024
+      - name: pass_types_2024_2025
+      - name: pass_types_2025_2026
+      - name: possession_2023_2024
+      - name: possession_2024_2025
+      - name: possession_2025_2026
+      
+      # --- Domain: Defense ---
+      - name: defensive_actions_2023_2024
+      - name: defensive_actions_2024_2025
+      - name: defensive_actions_2025_2026
+      - name: goalkeeping_2023_2024
+      - name: goalkeeping_2024_2025
+      - name: goalkeeping_2025_2026
+      - name: advanced_goalkeeping_2023_2024
+      - name: advanced_goalkeeping_2024_2025
+      - name: advanced_goalkeeping_2025_2026

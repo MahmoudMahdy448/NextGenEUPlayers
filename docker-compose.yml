@@ -14,7 +14,7 @@ services:
     build: .
     container_name: nextgen_dashboard
     # Start Streamlit on port 8501
-    command: streamlit run admin_ui.py --server.port 8501 --server.address 0.0.0.0
+    command: streamlit run dashboard.py --server.port 8501 --server.address 0.0.0.0
     ports:
       - "8501:8501" # Expose to localhost:8501
     volumes:
