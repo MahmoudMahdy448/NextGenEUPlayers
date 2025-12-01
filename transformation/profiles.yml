@@ -3,4 +3,4 @@ nextgeneu_players:
   outputs:
     dev:
       type: duckdb
-      path: '/app/data/duckdb/players.db'
+      path: '/workspaces/NextGenEUPlayers/data/duckdb/players.db'

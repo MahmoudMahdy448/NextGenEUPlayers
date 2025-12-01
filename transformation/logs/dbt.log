@@ -7493,3 +7493,2132 @@ alter table "players"."main"."mart_player_trends__dbt_tmp" rename to "mart_playe
 [0m03:46:53.868445 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efae24645b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efae12ca4a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7efae2307850>]}
 [0m03:46:53.868847 [debug] [MainThread]: Flushing usage events
 [0m03:46:54.258889 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:08:21.140193 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7afe1649c1d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7afe17f08470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7afe16a08890>]}
+
+
+============================== 09:08:21.203647 | 81d93c3f-6431-46dc-a71e-c1a41dce7848 ==============================
+[0m09:08:21.203647 [info ] [MainThread]: Running with dbt=1.10.15
+[0m09:08:21.204618 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/workspaces/NextGenEUPlayers/transformation', 'log_cache_events': 'False', 'printer_width': '80', 'no_print': 'None', 'write_json': 'True', 'fail_fast': 'False', 'empty': 'False', 'indirect_selection': 'eager', 'debug': 'False', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'use_experimental_parser': 'False', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'quiet': 'False', 'invocation_command': 'dbt build', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'log_path': '/workspaces/NextGenEUPlayers/transformation/logs', 'cache_selected_only': 'False', 'partial_parse': 'True'}
+[0m09:08:21.539533 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '81d93c3f-6431-46dc-a71e-c1a41dce7848', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7afe10087950>]}
+[0m09:08:21.614167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '81d93c3f-6431-46dc-a71e-c1a41dce7848', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7afe10198e30>]}
+[0m09:08:21.616225 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m09:08:21.750646 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m09:08:21.872292 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 3 files added, 0 files changed.
+[0m09:08:21.873391 [debug] [MainThread]: Partial parsing: added file: nextgeneu_players://models/marts/scouting/mart_squad_profile.sql
+[0m09:08:21.873969 [debug] [MainThread]: Partial parsing: added file: nextgeneu_players://models/marts/scouting/mart_player_consistency.sql
+[0m09:08:21.874525 [debug] [MainThread]: Partial parsing: added file: nextgeneu_players://models/marts/scouting/mart_transfer_valuation.sql
+[0m09:08:22.272143 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '81d93c3f-6431-46dc-a71e-c1a41dce7848', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7afe0f47f110>]}
+[0m09:08:22.360265 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/NextGenEUPlayers/transformation/target/manifest.json
+[0m09:08:22.362474 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/NextGenEUPlayers/transformation/target/semantic_manifest.json
+[0m09:08:22.393560 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '81d93c3f-6431-46dc-a71e-c1a41dce7848', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7afe10003ad0>]}
+[0m09:08:22.394283 [info ] [MainThread]: Found 20 models, 33 sources, 586 macros
+[0m09:08:22.398017 [info ] [MainThread]: 
+[0m09:08:22.398650 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m09:08:22.399196 [info ] [MainThread]: 
+[0m09:08:22.400083 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m09:08:22.407021 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_players'
+[0m09:08:22.670214 [debug] [ThreadPool]: Using duckdb connection "list_players"
+[0m09:08:22.670877 [debug] [ThreadPool]: On list_players: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "connection_name": "list_players"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"players"'
+    
+  
+  
+[0m09:08:22.671488 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:08:22.958174 [debug] [ThreadPool]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "connection_name": "list_players"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"players"'
+    
+  
+  
+[0m09:08:22.958898 [debug] [ThreadPool]: DuckDB adapter: Rolling back transaction.
+[0m09:08:22.960087 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:08:22.960573 [debug] [MainThread]: Connection 'list_players' was properly closed.
+[0m09:08:22.961094 [info ] [MainThread]: 
+[0m09:08:22.961688 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.56 seconds (0.56s).
+[0m09:08:22.962435 [error] [MainThread]: Encountered an error:
+Runtime Error
+  IO Error: Cannot open file "/app/data/duckdb/players.db": No such file or directory
+[0m09:08:22.963912 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 1.8984393, "process_in_blocks": "40296", "process_kernel_time": 0.401262, "process_mem_max_rss": "176812", "process_out_blocks": "3064", "process_user_time": 3.863158}
+[0m09:08:22.964599 [debug] [MainThread]: Command `dbt build` failed at 09:08:22.964452 after 1.90 seconds
+[0m09:08:22.965140 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7afe16a23bc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7afe0f35da30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7afe10001700>]}
+[0m09:08:22.965701 [debug] [MainThread]: Flushing usage events
+[0m09:08:23.362364 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:08:47.375512 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b28a0a1e6f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b28a02604d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b28a086a2d0>]}
+
+
+============================== 09:08:47.379116 | e92c4ccd-0523-485f-a4ac-c6320385c7ec ==============================
+[0m09:08:47.379116 [info ] [MainThread]: Running with dbt=1.10.15
+[0m09:08:47.379877 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'log_path': '/workspaces/NextGenEUPlayers/transformation/logs', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'target_path': 'None', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'printer_width': '80', 'static_parser': 'True', 'quiet': 'False', 'write_json': 'True', 'fail_fast': 'False', 'empty': 'False', 'no_print': 'None', 'invocation_command': 'dbt build', 'version_check': 'True', 'debug': 'False', 'profiles_dir': '/workspaces/NextGenEUPlayers/transformation', 'partial_parse': 'True', 'log_format': 'default', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True'}
+[0m09:08:47.641791 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e92c4ccd-0523-485f-a4ac-c6320385c7ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2899fc9100>]}
+[0m09:08:47.712946 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e92c4ccd-0523-485f-a4ac-c6320385c7ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b28a0260f80>]}
+[0m09:08:47.714956 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m09:08:47.822778 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m09:08:47.911006 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m09:08:47.911710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e92c4ccd-0523-485f-a4ac-c6320385c7ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2899b9fa70>]}
+[0m09:08:49.520800 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e92c4ccd-0523-485f-a4ac-c6320385c7ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b289991f9e0>]}
+[0m09:08:49.600780 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/NextGenEUPlayers/transformation/target/manifest.json
+[0m09:08:49.603047 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/NextGenEUPlayers/transformation/target/semantic_manifest.json
+[0m09:08:49.632976 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e92c4ccd-0523-485f-a4ac-c6320385c7ec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b28999713a0>]}
+[0m09:08:49.633684 [info ] [MainThread]: Found 20 models, 33 sources, 586 macros
+[0m09:08:49.637335 [info ] [MainThread]: 
+[0m09:08:49.637867 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m09:08:49.638375 [info ] [MainThread]: 
+[0m09:08:49.639100 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m09:08:49.645301 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_players'
+[0m09:08:49.686071 [debug] [ThreadPool]: Using duckdb connection "list_players"
+[0m09:08:49.686672 [debug] [ThreadPool]: On list_players: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "connection_name": "list_players"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"players"'
+    
+  
+  
+[0m09:08:49.687237 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:08:49.693241 [debug] [ThreadPool]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "connection_name": "list_players"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"players"'
+    
+  
+  
+[0m09:08:49.693774 [debug] [ThreadPool]: DuckDB adapter: Rolling back transaction.
+[0m09:08:49.694816 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:08:49.695289 [debug] [MainThread]: Connection 'list_players' was properly closed.
+[0m09:08:49.695777 [info ] [MainThread]: 
+[0m09:08:49.696314 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.06 seconds (0.06s).
+[0m09:08:49.696990 [error] [MainThread]: Encountered an error:
+Runtime Error
+  IO Error: Could not set lock on file "/workspaces/NextGenEUPlayers/data/duckdb/players.db": Conflicting lock is held in python3.10 (PID 87358). However, you would be able to open this database in read-only mode, e.g. by using the -readonly parameter in the CLI. See also https://duckdb.org/docs/stable/connect/concurrency
+[0m09:08:49.698092 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": false, "command_wall_clock_time": 2.397537, "process_in_blocks": "0", "process_kernel_time": 0.301027, "process_mem_max_rss": "180044", "process_out_blocks": "3000", "process_user_time": 4.92945}
+[0m09:08:49.698750 [debug] [MainThread]: Command `dbt build` failed at 09:08:49.698637 after 2.40 seconds
+[0m09:08:49.699266 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b289f936ea0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b28987b03b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7b2899fc9580>]}
+[0m09:08:49.699782 [debug] [MainThread]: Flushing usage events
+[0m09:08:50.068051 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:10:07.573909 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2ac2a0f230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2ac26494f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2ac267db20>]}
+
+
+============================== 09:10:07.577420 | bf5b2659-dcb7-4708-9076-ca56d3330d43 ==============================
+[0m09:10:07.577420 [info ] [MainThread]: Running with dbt=1.10.15
+[0m09:10:07.578203 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'log_path': '/workspaces/NextGenEUPlayers/transformation/logs', 'printer_width': '80', 'quiet': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'introspect': 'True', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'invocation_command': 'dbt build', 'debug': 'False', 'warn_error': 'None', 'indirect_selection': 'eager', 'use_colors': 'True', 'profiles_dir': '/workspaces/NextGenEUPlayers/transformation', 'empty': 'False', 'write_json': 'True', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'log_format': 'default'}
+[0m09:10:07.846552 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bf5b2659-dcb7-4708-9076-ca56d3330d43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2ac1d3b500>]}
+[0m09:10:07.918124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bf5b2659-dcb7-4708-9076-ca56d3330d43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2ac26b98b0>]}
+[0m09:10:07.920056 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m09:10:08.037579 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m09:10:08.149007 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m09:10:08.149561 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m09:10:08.189806 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bf5b2659-dcb7-4708-9076-ca56d3330d43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2abc1719a0>]}
+[0m09:10:08.275143 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/NextGenEUPlayers/transformation/target/manifest.json
+[0m09:10:08.277373 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/NextGenEUPlayers/transformation/target/semantic_manifest.json
+[0m09:10:08.421423 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bf5b2659-dcb7-4708-9076-ca56d3330d43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2abbebffb0>]}
+[0m09:10:08.422224 [info ] [MainThread]: Found 20 models, 33 sources, 586 macros
+[0m09:10:08.426314 [info ] [MainThread]: 
+[0m09:10:08.426927 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m09:10:08.427517 [info ] [MainThread]: 
+[0m09:10:08.428381 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m09:10:08.435931 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_players'
+[0m09:10:08.478321 [debug] [ThreadPool]: Using duckdb connection "list_players"
+[0m09:10:08.478915 [debug] [ThreadPool]: On list_players: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "connection_name": "list_players"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"players"'
+    
+  
+  
+[0m09:10:08.479385 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:10:08.511681 [debug] [ThreadPool]: SQL status: OK in 0.032 seconds
+[0m09:10:08.513436 [debug] [ThreadPool]: On list_players: Close
+[0m09:10:08.514363 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_players, now create_players_main)
+[0m09:10:08.514964 [debug] [ThreadPool]: Creating schema "database: "players"
+schema: "main"
+"
+[0m09:10:08.522438 [debug] [ThreadPool]: Using duckdb connection "create_players_main"
+[0m09:10:08.522901 [debug] [ThreadPool]: On create_players_main: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "connection_name": "create_players_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='players'
+        and type='sqlite'
+    
+  
+[0m09:10:08.523329 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:10:08.524446 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m09:10:08.525892 [debug] [ThreadPool]: Using duckdb connection "create_players_main"
+[0m09:10:08.526327 [debug] [ThreadPool]: On create_players_main: BEGIN
+[0m09:10:08.526960 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:10:08.527399 [debug] [ThreadPool]: Using duckdb connection "create_players_main"
+[0m09:10:08.527793 [debug] [ThreadPool]: On create_players_main: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "connection_name": "create_players_main"} */
+
+    
+    
+        create schema if not exists "players"."main"
+    
+[0m09:10:08.528457 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:10:08.529388 [debug] [ThreadPool]: On create_players_main: COMMIT
+[0m09:10:08.529822 [debug] [ThreadPool]: Using duckdb connection "create_players_main"
+[0m09:10:08.530222 [debug] [ThreadPool]: On create_players_main: COMMIT
+[0m09:10:08.530861 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m09:10:08.531303 [debug] [ThreadPool]: On create_players_main: Close
+[0m09:10:08.533809 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_players_main, now list_players_main)
+[0m09:10:08.539462 [debug] [ThreadPool]: Using duckdb connection "list_players_main"
+[0m09:10:08.539906 [debug] [ThreadPool]: On list_players_main: BEGIN
+[0m09:10:08.540334 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:10:08.541077 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m09:10:08.541546 [debug] [ThreadPool]: Using duckdb connection "list_players_main"
+[0m09:10:08.541949 [debug] [ThreadPool]: On list_players_main: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "connection_name": "list_players_main"} */
+select
+      'players' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'players'
+  
+[0m09:10:08.718037 [debug] [ThreadPool]: SQL status: OK in 0.176 seconds
+[0m09:10:08.719996 [debug] [ThreadPool]: On list_players_main: ROLLBACK
+[0m09:10:08.721444 [debug] [ThreadPool]: Failed to rollback 'list_players_main'
+[0m09:10:08.721909 [debug] [ThreadPool]: On list_players_main: Close
+[0m09:10:08.725316 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bf5b2659-dcb7-4708-9076-ca56d3330d43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2ac3ba59d0>]}
+[0m09:10:08.725955 [debug] [MainThread]: Using duckdb connection "master"
+[0m09:10:08.726439 [debug] [MainThread]: On master: BEGIN
+[0m09:10:08.726870 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:10:08.727742 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m09:10:08.728211 [debug] [MainThread]: On master: COMMIT
+[0m09:10:08.728737 [debug] [MainThread]: Using duckdb connection "master"
+[0m09:10:08.729173 [debug] [MainThread]: On master: COMMIT
+[0m09:10:08.729893 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m09:10:08.730372 [debug] [MainThread]: On master: Close
+[0m09:10:08.733541 [debug] [Thread-1 (]: Began running node model.nextgeneu_players.stg_fbref__adv_goalkeeping
+[0m09:10:08.734287 [info ] [Thread-1 (]: 1 of 20 START sql view model main.stg_fbref__adv_goalkeeping ................... [RUN]
+[0m09:10:08.735043 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_players_main, now model.nextgeneu_players.stg_fbref__adv_goalkeeping)
+[0m09:10:08.735613 [debug] [Thread-1 (]: Began compiling node model.nextgeneu_players.stg_fbref__adv_goalkeeping
+[0m09:10:08.750408 [debug] [Thread-1 (]: Writing injected SQL for node "model.nextgeneu_players.stg_fbref__adv_goalkeeping"
+[0m09:10:08.751456 [debug] [Thread-1 (]: Began executing node model.nextgeneu_players.stg_fbref__adv_goalkeeping
+[0m09:10:08.784863 [debug] [Thread-1 (]: Writing runtime sql for node "model.nextgeneu_players.stg_fbref__adv_goalkeeping"
+[0m09:10:08.785992 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__adv_goalkeeping"
+[0m09:10:08.786575 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__adv_goalkeeping: BEGIN
+[0m09:10:08.787078 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:10:08.788160 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:08.788710 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__adv_goalkeeping"
+[0m09:10:08.789308 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__adv_goalkeeping: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__adv_goalkeeping"} */
+
+  
+  create view "players"."main"."stg_fbref__adv_goalkeeping__dbt_tmp" as (
+    
+
+WITH raw_union AS (
+    
+        SELECT *, '2023_2024' as source_season_id FROM "players"."raw"."advanced_goalkeeping_2023_2024"
+         UNION ALL 
+    
+        SELECT *, '2024_2025' as source_season_id FROM "players"."raw"."advanced_goalkeeping_2024_2025"
+         UNION ALL 
+    
+        SELECT *, '2025_2026' as source_season_id FROM "players"."raw"."advanced_goalkeeping_2025_2026"
+        
+    
+)
+
+SELECT
+    
+    md5(concat(
+        coalesce(unnamed_1_level_0_player, ''), 
+        '-', 
+        coalesce(unnamed_7_level_0_born, ''), 
+        '-', 
+        coalesce(unnamed_2_level_0_nation, '')
+    ))
+ as player_id,
+    unnamed_4_level_0_squad  as squad,
+    source_season_id         as season_id,
+    
+    TRY_CAST(expected_psxg AS FLOAT) as psxg, -- Post-Shot Expected Goals (How hard were the shots?)
+    TRY_CAST(expected_psxg_1 AS FLOAT) as psxg_plus_minus, -- The "Shot Stopping" Metric
+    
+    
+    TRY_CAST(REPLACE(launched_cmp, ',', '') AS INTEGER)
+ as long_passes_completed,
+    TRY_CAST(launched_cmp_1 AS FLOAT) as long_pass_completion_pct,
+    
+    
+    TRY_CAST(REPLACE(crosses_stp, ',', '') AS INTEGER)
+ as crosses_stopped,
+    TRY_CAST(crosses_stp_1 AS FLOAT) as crosses_stopped_pct,
+    
+    
+    TRY_CAST(REPLACE(sweeper_opa, ',', '') AS INTEGER)
+ as defensive_actions_outside_pen_area
+
+FROM raw_union
+WHERE unnamed_1_level_0_player != 'Player'
+  );
+
+[0m09:10:08.791242 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:08.798545 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__adv_goalkeeping"
+[0m09:10:08.799320 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__adv_goalkeeping: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__adv_goalkeeping"} */
+alter view "players"."main"."stg_fbref__adv_goalkeeping" rename to "stg_fbref__adv_goalkeeping__dbt_backup"
+[0m09:10:08.800598 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:08.804330 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__adv_goalkeeping"
+[0m09:10:08.805029 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__adv_goalkeeping: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__adv_goalkeeping"} */
+alter view "players"."main"."stg_fbref__adv_goalkeeping__dbt_tmp" rename to "stg_fbref__adv_goalkeeping"
+[0m09:10:08.806093 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:08.822804 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__adv_goalkeeping: COMMIT
+[0m09:10:08.823755 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__adv_goalkeeping"
+[0m09:10:08.824557 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__adv_goalkeeping: COMMIT
+[0m09:10:08.838655 [debug] [Thread-1 (]: SQL status: OK in 0.013 seconds
+[0m09:10:08.848050 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__adv_goalkeeping"
+[0m09:10:08.848876 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__adv_goalkeeping: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__adv_goalkeeping"} */
+
+      drop view if exists "players"."main"."stg_fbref__adv_goalkeeping__dbt_backup" cascade
+    
+[0m09:10:08.851914 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m09:10:08.854938 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__adv_goalkeeping: Close
+[0m09:10:08.857403 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf5b2659-dcb7-4708-9076-ca56d3330d43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2abc1197f0>]}
+[0m09:10:08.858274 [info ] [Thread-1 (]: 1 of 20 OK created sql view model main.stg_fbref__adv_goalkeeping .............. [[32mOK[0m in 0.12s]
+[0m09:10:08.859080 [debug] [Thread-1 (]: Finished running node model.nextgeneu_players.stg_fbref__adv_goalkeeping
+[0m09:10:08.859695 [debug] [Thread-1 (]: Began running node model.nextgeneu_players.stg_fbref__creation
+[0m09:10:08.860403 [info ] [Thread-1 (]: 2 of 20 START sql view model main.stg_fbref__creation .......................... [RUN]
+[0m09:10:08.861243 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nextgeneu_players.stg_fbref__adv_goalkeeping, now model.nextgeneu_players.stg_fbref__creation)
+[0m09:10:08.861795 [debug] [Thread-1 (]: Began compiling node model.nextgeneu_players.stg_fbref__creation
+[0m09:10:08.867577 [debug] [Thread-1 (]: Writing injected SQL for node "model.nextgeneu_players.stg_fbref__creation"
+[0m09:10:08.868411 [debug] [Thread-1 (]: Began executing node model.nextgeneu_players.stg_fbref__creation
+[0m09:10:08.872028 [debug] [Thread-1 (]: Writing runtime sql for node "model.nextgeneu_players.stg_fbref__creation"
+[0m09:10:08.872876 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__creation"
+[0m09:10:08.873416 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__creation: BEGIN
+[0m09:10:08.873907 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:10:08.874907 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:08.875501 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__creation"
+[0m09:10:08.876078 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__creation: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__creation"} */
+
+  
+  create view "players"."main"."stg_fbref__creation__dbt_tmp" as (
+    
+
+WITH raw_union AS (
+    
+        SELECT *, '2023_2024' as source_season_id FROM "players"."raw"."goal_and_shot_creation_2023_2024"
+         UNION ALL 
+    
+        SELECT *, '2024_2025' as source_season_id FROM "players"."raw"."goal_and_shot_creation_2024_2025"
+         UNION ALL 
+    
+        SELECT *, '2025_2026' as source_season_id FROM "players"."raw"."goal_and_shot_creation_2025_2026"
+        
+    
+)
+
+SELECT
+    
+    md5(concat(
+        coalesce(unnamed_1_level_0_player, ''), 
+        '-', 
+        coalesce(unnamed_7_level_0_born, ''), 
+        '-', 
+        coalesce(unnamed_2_level_0_nation, '')
+    ))
+ as player_id,
+    unnamed_4_level_0_squad  as squad,
+    source_season_id         as season_id,
+    
+    
+    TRY_CAST(REPLACE(sca_sca, ',', '') AS INTEGER)
+ as shot_creating_actions,
+    
+    TRY_CAST(REPLACE(gca_gca, ',', '') AS INTEGER)
+ as goal_creating_actions
+
+FROM raw_union
+WHERE unnamed_1_level_0_player != 'Player'
+  );
+
+[0m09:10:08.877997 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:08.883873 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__creation"
+[0m09:10:08.884448 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__creation: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__creation"} */
+alter view "players"."main"."stg_fbref__creation" rename to "stg_fbref__creation__dbt_backup"
+[0m09:10:08.885847 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:08.890666 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__creation"
+[0m09:10:08.891529 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__creation: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__creation"} */
+alter view "players"."main"."stg_fbref__creation__dbt_tmp" rename to "stg_fbref__creation"
+[0m09:10:08.892881 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:08.895316 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__creation: COMMIT
+[0m09:10:08.896093 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__creation"
+[0m09:10:08.896714 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__creation: COMMIT
+[0m09:10:08.899794 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m09:10:08.902965 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__creation"
+[0m09:10:08.903577 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__creation: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__creation"} */
+
+      drop view if exists "players"."main"."stg_fbref__creation__dbt_backup" cascade
+    
+[0m09:10:08.905561 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:08.907188 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__creation: Close
+[0m09:10:08.907944 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf5b2659-dcb7-4708-9076-ca56d3330d43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2aba976960>]}
+[0m09:10:08.908746 [info ] [Thread-1 (]: 2 of 20 OK created sql view model main.stg_fbref__creation ..................... [[32mOK[0m in 0.05s]
+[0m09:10:08.909520 [debug] [Thread-1 (]: Finished running node model.nextgeneu_players.stg_fbref__creation
+[0m09:10:08.910075 [debug] [Thread-1 (]: Began running node model.nextgeneu_players.stg_fbref__defense
+[0m09:10:08.910802 [info ] [Thread-1 (]: 3 of 20 START sql view model main.stg_fbref__defense ........................... [RUN]
+[0m09:10:08.911440 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nextgeneu_players.stg_fbref__creation, now model.nextgeneu_players.stg_fbref__defense)
+[0m09:10:08.911950 [debug] [Thread-1 (]: Began compiling node model.nextgeneu_players.stg_fbref__defense
+[0m09:10:08.918043 [debug] [Thread-1 (]: Writing injected SQL for node "model.nextgeneu_players.stg_fbref__defense"
+[0m09:10:08.918864 [debug] [Thread-1 (]: Began executing node model.nextgeneu_players.stg_fbref__defense
+[0m09:10:08.922357 [debug] [Thread-1 (]: Writing runtime sql for node "model.nextgeneu_players.stg_fbref__defense"
+[0m09:10:08.923139 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__defense"
+[0m09:10:08.923656 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__defense: BEGIN
+[0m09:10:08.924139 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:10:08.925105 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:08.925607 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__defense"
+[0m09:10:08.926110 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__defense: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__defense"} */
+
+  
+  create view "players"."main"."stg_fbref__defense__dbt_tmp" as (
+    
+
+WITH raw_union AS (
+    
+        SELECT *, '2023_2024' as source_season_id FROM "players"."raw"."defensive_actions_2023_2024"
+         UNION ALL 
+    
+        SELECT *, '2024_2025' as source_season_id FROM "players"."raw"."defensive_actions_2024_2025"
+         UNION ALL 
+    
+        SELECT *, '2025_2026' as source_season_id FROM "players"."raw"."defensive_actions_2025_2026"
+        
+    
+)
+
+SELECT
+    
+    md5(concat(
+        coalesce(unnamed_1_level_0_player, ''), 
+        '-', 
+        coalesce(unnamed_7_level_0_born, ''), 
+        '-', 
+        coalesce(unnamed_2_level_0_nation, '')
+    ))
+ as player_id,
+    unnamed_4_level_0_squad  as squad,
+    source_season_id         as season_id,
+    
+    
+    TRY_CAST(REPLACE(tackles_tkl, ',', '') AS INTEGER)
+ as tackles_total,
+    
+    TRY_CAST(REPLACE(tackles_tklw, ',', '') AS INTEGER)
+ as tackles_won,
+    
+    TRY_CAST(REPLACE(tackles_att_3rd, ',', '') AS INTEGER)
+ as tackles_att_3rd,
+    
+    TRY_CAST(REPLACE(unnamed_21_level_0_int, ',', '') AS INTEGER)
+ as interceptions,
+    
+    TRY_CAST(REPLACE(unnamed_23_level_0_clr, ',', '') AS INTEGER)
+ as clearances,
+    
+    TRY_CAST(REPLACE(blocks_sh, ',', '') AS INTEGER)
+ as shots_blocked
+
+FROM raw_union
+WHERE unnamed_1_level_0_player != 'Player'
+  );
+
+[0m09:10:08.927869 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:08.931106 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__defense"
+[0m09:10:08.931638 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__defense: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__defense"} */
+alter view "players"."main"."stg_fbref__defense" rename to "stg_fbref__defense__dbt_backup"
+[0m09:10:08.932581 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:08.935622 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__defense"
+[0m09:10:08.936171 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__defense: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__defense"} */
+alter view "players"."main"."stg_fbref__defense__dbt_tmp" rename to "stg_fbref__defense"
+[0m09:10:08.937046 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:08.938504 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__defense: COMMIT
+[0m09:10:08.939024 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__defense"
+[0m09:10:08.939508 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__defense: COMMIT
+[0m09:10:08.942428 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m09:10:08.945029 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__defense"
+[0m09:10:08.945561 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__defense: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__defense"} */
+
+      drop view if exists "players"."main"."stg_fbref__defense__dbt_backup" cascade
+    
+[0m09:10:08.947484 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:08.948977 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__defense: Close
+[0m09:10:08.949697 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf5b2659-dcb7-4708-9076-ca56d3330d43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2abaa6cc20>]}
+[0m09:10:08.950460 [info ] [Thread-1 (]: 3 of 20 OK created sql view model main.stg_fbref__defense ...................... [[32mOK[0m in 0.04s]
+[0m09:10:08.951224 [debug] [Thread-1 (]: Finished running node model.nextgeneu_players.stg_fbref__defense
+[0m09:10:08.951793 [debug] [Thread-1 (]: Began running node model.nextgeneu_players.stg_fbref__goalkeeping
+[0m09:10:08.952503 [info ] [Thread-1 (]: 4 of 20 START sql view model main.stg_fbref__goalkeeping ....................... [RUN]
+[0m09:10:08.953110 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nextgeneu_players.stg_fbref__defense, now model.nextgeneu_players.stg_fbref__goalkeeping)
+[0m09:10:08.953644 [debug] [Thread-1 (]: Began compiling node model.nextgeneu_players.stg_fbref__goalkeeping
+[0m09:10:08.959680 [debug] [Thread-1 (]: Writing injected SQL for node "model.nextgeneu_players.stg_fbref__goalkeeping"
+[0m09:10:08.960540 [debug] [Thread-1 (]: Began executing node model.nextgeneu_players.stg_fbref__goalkeeping
+[0m09:10:08.966014 [debug] [Thread-1 (]: Writing runtime sql for node "model.nextgeneu_players.stg_fbref__goalkeeping"
+[0m09:10:08.966915 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__goalkeeping"
+[0m09:10:08.967453 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__goalkeeping: BEGIN
+[0m09:10:08.967935 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:10:08.969407 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:08.969887 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__goalkeeping"
+[0m09:10:08.970400 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__goalkeeping: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__goalkeeping"} */
+
+  
+  create view "players"."main"."stg_fbref__goalkeeping__dbt_tmp" as (
+    
+
+WITH raw_union AS (
+    
+        SELECT *, '2023_2024' as source_season_id FROM "players"."raw"."goalkeeping_2023_2024"
+         UNION ALL 
+    
+        SELECT *, '2024_2025' as source_season_id FROM "players"."raw"."goalkeeping_2024_2025"
+         UNION ALL 
+    
+        SELECT *, '2025_2026' as source_season_id FROM "players"."raw"."goalkeeping_2025_2026"
+        
+    
+)
+
+SELECT
+    
+    md5(concat(
+        coalesce(unnamed_1_level_0_player, ''), 
+        '-', 
+        coalesce(unnamed_7_level_0_born, ''), 
+        '-', 
+        coalesce(unnamed_2_level_0_nation, '')
+    ))
+ as player_id,
+    unnamed_4_level_0_squad  as squad,
+    source_season_id         as season_id,
+    
+    
+    TRY_CAST(REPLACE(performance_ga, ',', '') AS INTEGER)
+ as goals_against,
+    
+    TRY_CAST(REPLACE(performance_saves, ',', '') AS INTEGER)
+ as saves,
+    TRY_CAST(performance_save AS FLOAT) as save_pct,
+    
+    TRY_CAST(REPLACE(performance_cs, ',', '') AS INTEGER)
+ as clean_sheets,
+    TRY_CAST(performance_cs_1 AS FLOAT) as clean_sheet_pct,
+    
+    TRY_CAST(REPLACE(penalty_kicks_pka, ',', '') AS INTEGER)
+ as pk_allowed,
+    
+    TRY_CAST(REPLACE(penalty_kicks_pksv, ',', '') AS INTEGER)
+ as pk_saved
+
+FROM raw_union
+WHERE unnamed_1_level_0_player != 'Player'
+  );
+
+[0m09:10:08.972322 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:08.975742 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__goalkeeping"
+[0m09:10:08.976262 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__goalkeeping: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__goalkeeping"} */
+alter view "players"."main"."stg_fbref__goalkeeping" rename to "stg_fbref__goalkeeping__dbt_backup"
+[0m09:10:08.977123 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:08.980371 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__goalkeeping"
+[0m09:10:08.980901 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__goalkeeping: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__goalkeeping"} */
+alter view "players"."main"."stg_fbref__goalkeeping__dbt_tmp" rename to "stg_fbref__goalkeeping"
+[0m09:10:08.981888 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:08.983343 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__goalkeeping: COMMIT
+[0m09:10:08.983852 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__goalkeeping"
+[0m09:10:08.984349 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__goalkeeping: COMMIT
+[0m09:10:08.986990 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m09:10:08.989877 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__goalkeeping"
+[0m09:10:08.990407 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__goalkeeping: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__goalkeeping"} */
+
+      drop view if exists "players"."main"."stg_fbref__goalkeeping__dbt_backup" cascade
+    
+[0m09:10:08.992350 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:08.993876 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__goalkeeping: Close
+[0m09:10:08.994602 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf5b2659-dcb7-4708-9076-ca56d3330d43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2abaa5f350>]}
+[0m09:10:08.995391 [info ] [Thread-1 (]: 4 of 20 OK created sql view model main.stg_fbref__goalkeeping .................. [[32mOK[0m in 0.04s]
+[0m09:10:08.996138 [debug] [Thread-1 (]: Finished running node model.nextgeneu_players.stg_fbref__goalkeeping
+[0m09:10:08.996706 [debug] [Thread-1 (]: Began running node model.nextgeneu_players.stg_fbref__misc
+[0m09:10:08.997416 [info ] [Thread-1 (]: 5 of 20 START sql view model main.stg_fbref__misc .............................. [RUN]
+[0m09:10:08.998017 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nextgeneu_players.stg_fbref__goalkeeping, now model.nextgeneu_players.stg_fbref__misc)
+[0m09:10:08.998550 [debug] [Thread-1 (]: Began compiling node model.nextgeneu_players.stg_fbref__misc
+[0m09:10:09.006109 [debug] [Thread-1 (]: Writing injected SQL for node "model.nextgeneu_players.stg_fbref__misc"
+[0m09:10:09.006997 [debug] [Thread-1 (]: Began executing node model.nextgeneu_players.stg_fbref__misc
+[0m09:10:09.010399 [debug] [Thread-1 (]: Writing runtime sql for node "model.nextgeneu_players.stg_fbref__misc"
+[0m09:10:09.011201 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__misc"
+[0m09:10:09.011743 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__misc: BEGIN
+[0m09:10:09.012233 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:10:09.013229 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.013761 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__misc"
+[0m09:10:09.014317 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__misc: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__misc"} */
+
+  
+  create view "players"."main"."stg_fbref__misc__dbt_tmp" as (
+    
+
+WITH raw_union AS (
+    
+        SELECT *, '2023_2024' as source_season_id FROM "players"."raw"."miscellaneous_stats_2023_2024"
+         UNION ALL 
+    
+        SELECT *, '2024_2025' as source_season_id FROM "players"."raw"."miscellaneous_stats_2024_2025"
+         UNION ALL 
+    
+        SELECT *, '2025_2026' as source_season_id FROM "players"."raw"."miscellaneous_stats_2025_2026"
+        
+    
+)
+
+SELECT
+    
+    md5(concat(
+        coalesce(unnamed_1_level_0_player, ''), 
+        '-', 
+        coalesce(unnamed_7_level_0_born, ''), 
+        '-', 
+        coalesce(unnamed_2_level_0_nation, '')
+    ))
+ as player_id,
+    unnamed_4_level_0_squad  as squad,
+    source_season_id         as season_id,
+    
+    
+    TRY_CAST(REPLACE(performance_crdy, ',', '') AS INTEGER)
+ as yellow_cards,
+    
+    TRY_CAST(REPLACE(performance_crdr, ',', '') AS INTEGER)
+ as red_cards,
+    
+    TRY_CAST(REPLACE(performance_fls, ',', '') AS INTEGER)
+ as fouls_committed,
+    
+    TRY_CAST(REPLACE(performance_fld, ',', '') AS INTEGER)
+ as fouls_drawn,
+    
+    TRY_CAST(REPLACE(performance_off, ',', '') AS INTEGER)
+ as offsides,
+    
+    TRY_CAST(REPLACE(performance_recov, ',', '') AS INTEGER)
+ as ball_recoveries,
+    
+    TRY_CAST(REPLACE(aerial_duels_won, ',', '') AS INTEGER)
+ as aerials_won,
+    
+    TRY_CAST(REPLACE(aerial_duels_lost, ',', '') AS INTEGER)
+ as aerials_lost
+
+FROM raw_union
+WHERE unnamed_1_level_0_player != 'Player'
+  );
+
+[0m09:10:09.016219 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.019511 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__misc"
+[0m09:10:09.020050 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__misc: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__misc"} */
+alter view "players"."main"."stg_fbref__misc" rename to "stg_fbref__misc__dbt_backup"
+[0m09:10:09.020936 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:09.024055 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__misc"
+[0m09:10:09.024599 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__misc: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__misc"} */
+alter view "players"."main"."stg_fbref__misc__dbt_tmp" rename to "stg_fbref__misc"
+[0m09:10:09.025446 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:09.026824 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__misc: COMMIT
+[0m09:10:09.027366 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__misc"
+[0m09:10:09.027860 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__misc: COMMIT
+[0m09:10:09.030464 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m09:10:09.033023 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__misc"
+[0m09:10:09.033578 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__misc: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__misc"} */
+
+      drop view if exists "players"."main"."stg_fbref__misc__dbt_backup" cascade
+    
+[0m09:10:09.035349 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.036772 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__misc: Close
+[0m09:10:09.037480 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf5b2659-dcb7-4708-9076-ca56d3330d43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2abaa6ee70>]}
+[0m09:10:09.038224 [info ] [Thread-1 (]: 5 of 20 OK created sql view model main.stg_fbref__misc ......................... [[32mOK[0m in 0.04s]
+[0m09:10:09.039053 [debug] [Thread-1 (]: Finished running node model.nextgeneu_players.stg_fbref__misc
+[0m09:10:09.039618 [debug] [Thread-1 (]: Began running node model.nextgeneu_players.stg_fbref__pass_types
+[0m09:10:09.040308 [info ] [Thread-1 (]: 6 of 20 START sql view model main.stg_fbref__pass_types ........................ [RUN]
+[0m09:10:09.040963 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nextgeneu_players.stg_fbref__misc, now model.nextgeneu_players.stg_fbref__pass_types)
+[0m09:10:09.041498 [debug] [Thread-1 (]: Began compiling node model.nextgeneu_players.stg_fbref__pass_types
+[0m09:10:09.048004 [debug] [Thread-1 (]: Writing injected SQL for node "model.nextgeneu_players.stg_fbref__pass_types"
+[0m09:10:09.048896 [debug] [Thread-1 (]: Began executing node model.nextgeneu_players.stg_fbref__pass_types
+[0m09:10:09.054577 [debug] [Thread-1 (]: Writing runtime sql for node "model.nextgeneu_players.stg_fbref__pass_types"
+[0m09:10:09.055481 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__pass_types"
+[0m09:10:09.056011 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__pass_types: BEGIN
+[0m09:10:09.056523 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:10:09.057541 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.058051 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__pass_types"
+[0m09:10:09.058606 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__pass_types: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__pass_types"} */
+
+  
+  create view "players"."main"."stg_fbref__pass_types__dbt_tmp" as (
+    
+
+WITH raw_union AS (
+    
+        SELECT *, '2023_2024' as source_season_id FROM "players"."raw"."pass_types_2023_2024"
+         UNION ALL 
+    
+        SELECT *, '2024_2025' as source_season_id FROM "players"."raw"."pass_types_2024_2025"
+         UNION ALL 
+    
+        SELECT *, '2025_2026' as source_season_id FROM "players"."raw"."pass_types_2025_2026"
+        
+    
+)
+
+SELECT
+    
+    md5(concat(
+        coalesce(unnamed_1_level_0_player, ''), 
+        '-', 
+        coalesce(unnamed_7_level_0_born, ''), 
+        '-', 
+        coalesce(unnamed_2_level_0_nation, '')
+    ))
+ as player_id,
+    unnamed_4_level_0_squad  as squad,
+    source_season_id         as season_id,
+    
+    -- High Value Creation Stats
+    
+    TRY_CAST(REPLACE(pass_types_tb, ',', '') AS INTEGER)
+ as through_balls,
+    
+    TRY_CAST(REPLACE(pass_types_sw, ',', '') AS INTEGER)
+ as switches,
+    
+    TRY_CAST(REPLACE(pass_types_crs, ',', '') AS INTEGER)
+ as crosses,
+    
+    TRY_CAST(REPLACE(corner_kicks_in, ',', '') AS INTEGER)
+ as corners_inswing,
+    
+    TRY_CAST(REPLACE(corner_kicks_out, ',', '') AS INTEGER)
+ as corners_outswing
+
+FROM raw_union
+WHERE unnamed_1_level_0_player != 'Player'
+  );
+
+[0m09:10:09.060732 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m09:10:09.065909 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__pass_types"
+[0m09:10:09.066686 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__pass_types: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__pass_types"} */
+alter view "players"."main"."stg_fbref__pass_types" rename to "stg_fbref__pass_types__dbt_backup"
+[0m09:10:09.068047 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.073061 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__pass_types"
+[0m09:10:09.073788 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__pass_types: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__pass_types"} */
+alter view "players"."main"."stg_fbref__pass_types__dbt_tmp" rename to "stg_fbref__pass_types"
+[0m09:10:09.074980 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.076660 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__pass_types: COMMIT
+[0m09:10:09.077287 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__pass_types"
+[0m09:10:09.077849 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__pass_types: COMMIT
+[0m09:10:09.080926 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m09:10:09.084792 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__pass_types"
+[0m09:10:09.085348 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__pass_types: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__pass_types"} */
+
+      drop view if exists "players"."main"."stg_fbref__pass_types__dbt_backup" cascade
+    
+[0m09:10:09.087305 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.088880 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__pass_types: Close
+[0m09:10:09.089605 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf5b2659-dcb7-4708-9076-ca56d3330d43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2abab90410>]}
+[0m09:10:09.090389 [info ] [Thread-1 (]: 6 of 20 OK created sql view model main.stg_fbref__pass_types ................... [[32mOK[0m in 0.05s]
+[0m09:10:09.091130 [debug] [Thread-1 (]: Finished running node model.nextgeneu_players.stg_fbref__pass_types
+[0m09:10:09.091680 [debug] [Thread-1 (]: Began running node model.nextgeneu_players.stg_fbref__passing
+[0m09:10:09.092370 [info ] [Thread-1 (]: 7 of 20 START sql view model main.stg_fbref__passing ........................... [RUN]
+[0m09:10:09.093066 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nextgeneu_players.stg_fbref__pass_types, now model.nextgeneu_players.stg_fbref__passing)
+[0m09:10:09.093670 [debug] [Thread-1 (]: Began compiling node model.nextgeneu_players.stg_fbref__passing
+[0m09:10:09.100424 [debug] [Thread-1 (]: Writing injected SQL for node "model.nextgeneu_players.stg_fbref__passing"
+[0m09:10:09.101349 [debug] [Thread-1 (]: Began executing node model.nextgeneu_players.stg_fbref__passing
+[0m09:10:09.104844 [debug] [Thread-1 (]: Writing runtime sql for node "model.nextgeneu_players.stg_fbref__passing"
+[0m09:10:09.105699 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__passing"
+[0m09:10:09.106224 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__passing: BEGIN
+[0m09:10:09.106758 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:10:09.107788 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.108315 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__passing"
+[0m09:10:09.108903 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__passing: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__passing"} */
+
+  
+  create view "players"."main"."stg_fbref__passing__dbt_tmp" as (
+    
+
+WITH raw_union AS (
+    
+        SELECT *, '2023_2024' as source_season_id FROM "players"."raw"."passing_2023_2024"
+         UNION ALL 
+    
+        SELECT *, '2024_2025' as source_season_id FROM "players"."raw"."passing_2024_2025"
+         UNION ALL 
+    
+        SELECT *, '2025_2026' as source_season_id FROM "players"."raw"."passing_2025_2026"
+        
+    
+)
+
+SELECT
+    
+    md5(concat(
+        coalesce(unnamed_1_level_0_player, ''), 
+        '-', 
+        coalesce(unnamed_7_level_0_born, ''), 
+        '-', 
+        coalesce(unnamed_2_level_0_nation, '')
+    ))
+ as player_id,
+    unnamed_4_level_0_squad  as squad,
+    source_season_id         as season_id,
+    
+    
+    TRY_CAST(REPLACE(total_cmp, ',', '') AS INTEGER)
+ as passes_completed,
+    
+    TRY_CAST(REPLACE(total_att, ',', '') AS INTEGER)
+ as passes_attempted,
+    
+    TRY_CAST(REPLACE(total_prgdist, ',', '') AS INTEGER)
+ as pass_progressive_distance,
+    
+    TRY_CAST(REPLACE(unnamed_27_level_0_kp, ',', '') AS INTEGER)
+ as key_passes,
+    
+    TRY_CAST(REPLACE(unnamed_29_level_0_ppa, ',', '') AS INTEGER)
+ as passes_into_penalty_area,
+    
+    TRY_CAST(REPLACE(unnamed_30_level_0_crspa, ',', '') AS INTEGER)
+ as crosses_into_penalty_area
+
+FROM raw_union
+WHERE unnamed_1_level_0_player != 'Player'
+  );
+
+[0m09:10:09.110951 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.114320 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__passing"
+[0m09:10:09.114878 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__passing: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__passing"} */
+alter view "players"."main"."stg_fbref__passing" rename to "stg_fbref__passing__dbt_backup"
+[0m09:10:09.115835 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:09.119194 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__passing"
+[0m09:10:09.119763 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__passing: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__passing"} */
+alter view "players"."main"."stg_fbref__passing__dbt_tmp" rename to "stg_fbref__passing"
+[0m09:10:09.120708 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:09.122130 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__passing: COMMIT
+[0m09:10:09.122699 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__passing"
+[0m09:10:09.123198 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__passing: COMMIT
+[0m09:10:09.126290 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m09:10:09.128999 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__passing"
+[0m09:10:09.129550 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__passing: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__passing"} */
+
+      drop view if exists "players"."main"."stg_fbref__passing__dbt_backup" cascade
+    
+[0m09:10:09.131448 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.133159 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__passing: Close
+[0m09:10:09.134052 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf5b2659-dcb7-4708-9076-ca56d3330d43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2aba95be90>]}
+[0m09:10:09.134989 [info ] [Thread-1 (]: 7 of 20 OK created sql view model main.stg_fbref__passing ...................... [[32mOK[0m in 0.04s]
+[0m09:10:09.135799 [debug] [Thread-1 (]: Finished running node model.nextgeneu_players.stg_fbref__passing
+[0m09:10:09.136544 [debug] [Thread-1 (]: Began running node model.nextgeneu_players.stg_fbref__playing_time
+[0m09:10:09.137484 [info ] [Thread-1 (]: 8 of 20 START sql view model main.stg_fbref__playing_time ...................... [RUN]
+[0m09:10:09.138420 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nextgeneu_players.stg_fbref__passing, now model.nextgeneu_players.stg_fbref__playing_time)
+[0m09:10:09.138997 [debug] [Thread-1 (]: Began compiling node model.nextgeneu_players.stg_fbref__playing_time
+[0m09:10:09.147442 [debug] [Thread-1 (]: Writing injected SQL for node "model.nextgeneu_players.stg_fbref__playing_time"
+[0m09:10:09.148314 [debug] [Thread-1 (]: Began executing node model.nextgeneu_players.stg_fbref__playing_time
+[0m09:10:09.151721 [debug] [Thread-1 (]: Writing runtime sql for node "model.nextgeneu_players.stg_fbref__playing_time"
+[0m09:10:09.152527 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__playing_time"
+[0m09:10:09.153045 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__playing_time: BEGIN
+[0m09:10:09.153554 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:10:09.154561 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.155061 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__playing_time"
+[0m09:10:09.155608 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__playing_time: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__playing_time"} */
+
+  
+  create view "players"."main"."stg_fbref__playing_time__dbt_tmp" as (
+    
+
+WITH raw_union AS (
+    
+        SELECT *, '2023_2024' as source_season_id FROM "players"."raw"."playing_time_2023_2024"
+         UNION ALL 
+    
+        SELECT *, '2024_2025' as source_season_id FROM "players"."raw"."playing_time_2024_2025"
+         UNION ALL 
+    
+        SELECT *, '2025_2026' as source_season_id FROM "players"."raw"."playing_time_2025_2026"
+        
+    
+)
+
+SELECT
+    
+    md5(concat(
+        coalesce(unnamed_1_level_0_player, ''), 
+        '-', 
+        coalesce(unnamed_7_level_0_born, ''), 
+        '-', 
+        coalesce(unnamed_2_level_0_nation, '')
+    ))
+ as player_id,
+    unnamed_1_level_0_player as player_name,
+    unnamed_4_level_0_squad  as squad,
+    source_season_id         as season_id,
+    
+    
+    TRY_CAST(REPLACE(playing_time_mp, ',', '') AS INTEGER)
+ as matches_played,
+    
+    TRY_CAST(REPLACE(starts_starts, ',', '') AS INTEGER)
+ as starts,
+    
+    TRY_CAST(REPLACE(subs_subs, ',', '') AS INTEGER)
+ as substitutions_on,
+    
+    TRY_CAST(REPLACE(subs_unsub, ',', '') AS INTEGER)
+ as unused_sub,
+    
+    -- Team Success (Plus/Minus)
+    TRY_CAST(team_success_onoff AS FLOAT) as plus_minus_net_per_90
+
+FROM raw_union
+WHERE unnamed_1_level_0_player != 'Player'
+  );
+
+[0m09:10:09.157531 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.160689 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__playing_time"
+[0m09:10:09.161207 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__playing_time: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__playing_time"} */
+alter view "players"."main"."stg_fbref__playing_time" rename to "stg_fbref__playing_time__dbt_backup"
+[0m09:10:09.162066 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:09.165112 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__playing_time"
+[0m09:10:09.165648 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__playing_time: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__playing_time"} */
+alter view "players"."main"."stg_fbref__playing_time__dbt_tmp" rename to "stg_fbref__playing_time"
+[0m09:10:09.166471 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:09.167820 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__playing_time: COMMIT
+[0m09:10:09.168346 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__playing_time"
+[0m09:10:09.168840 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__playing_time: COMMIT
+[0m09:10:09.171658 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m09:10:09.174489 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__playing_time"
+[0m09:10:09.174991 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__playing_time: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__playing_time"} */
+
+      drop view if exists "players"."main"."stg_fbref__playing_time__dbt_backup" cascade
+    
+[0m09:10:09.177402 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m09:10:09.178911 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__playing_time: Close
+[0m09:10:09.179620 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf5b2659-dcb7-4708-9076-ca56d3330d43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2abaa6f2f0>]}
+[0m09:10:09.180388 [info ] [Thread-1 (]: 8 of 20 OK created sql view model main.stg_fbref__playing_time ................. [[32mOK[0m in 0.04s]
+[0m09:10:09.181204 [debug] [Thread-1 (]: Finished running node model.nextgeneu_players.stg_fbref__playing_time
+[0m09:10:09.181771 [debug] [Thread-1 (]: Began running node model.nextgeneu_players.stg_fbref__possession
+[0m09:10:09.182458 [info ] [Thread-1 (]: 9 of 20 START sql view model main.stg_fbref__possession ........................ [RUN]
+[0m09:10:09.183143 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nextgeneu_players.stg_fbref__playing_time, now model.nextgeneu_players.stg_fbref__possession)
+[0m09:10:09.183722 [debug] [Thread-1 (]: Began compiling node model.nextgeneu_players.stg_fbref__possession
+[0m09:10:09.190588 [debug] [Thread-1 (]: Writing injected SQL for node "model.nextgeneu_players.stg_fbref__possession"
+[0m09:10:09.191440 [debug] [Thread-1 (]: Began executing node model.nextgeneu_players.stg_fbref__possession
+[0m09:10:09.194811 [debug] [Thread-1 (]: Writing runtime sql for node "model.nextgeneu_players.stg_fbref__possession"
+[0m09:10:09.195604 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__possession"
+[0m09:10:09.196111 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__possession: BEGIN
+[0m09:10:09.196622 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:10:09.197646 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.198144 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__possession"
+[0m09:10:09.198697 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__possession: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__possession"} */
+
+  
+  create view "players"."main"."stg_fbref__possession__dbt_tmp" as (
+    
+
+WITH raw_union AS (
+    
+        SELECT *, '2023_2024' as source_season_id FROM "players"."raw"."possession_2023_2024"
+         UNION ALL 
+    
+        SELECT *, '2024_2025' as source_season_id FROM "players"."raw"."possession_2024_2025"
+         UNION ALL 
+    
+        SELECT *, '2025_2026' as source_season_id FROM "players"."raw"."possession_2025_2026"
+        
+    
+)
+
+SELECT
+    
+    md5(concat(
+        coalesce(unnamed_1_level_0_player, ''), 
+        '-', 
+        coalesce(unnamed_7_level_0_born, ''), 
+        '-', 
+        coalesce(unnamed_2_level_0_nation, '')
+    ))
+ as player_id,
+    unnamed_4_level_0_squad  as squad,
+    source_season_id         as season_id,
+    
+    
+    TRY_CAST(REPLACE(touches_touches, ',', '') AS INTEGER)
+ as touches,
+    
+    TRY_CAST(REPLACE(touches_att_pen, ',', '') AS INTEGER)
+ as touches_att_pen,
+    
+    TRY_CAST(REPLACE(takeons_succ, ',', '') AS INTEGER)
+ as takeons_won,
+    
+    TRY_CAST(REPLACE(takeons_att, ',', '') AS INTEGER)
+ as takeons_attempted,
+    
+    TRY_CAST(REPLACE(carries_prgdist, ',', '') AS INTEGER)
+ as carry_progressive_distance,
+    
+    TRY_CAST(REPLACE(carries_cpa, ',', '') AS INTEGER)
+ as carries_into_penalty_area
+
+FROM raw_union
+WHERE unnamed_1_level_0_player != 'Player'
+  );
+
+[0m09:10:09.200534 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.203834 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__possession"
+[0m09:10:09.204381 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__possession: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__possession"} */
+alter view "players"."main"."stg_fbref__possession" rename to "stg_fbref__possession__dbt_backup"
+[0m09:10:09.205237 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:09.208451 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__possession"
+[0m09:10:09.208984 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__possession: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__possession"} */
+alter view "players"."main"."stg_fbref__possession__dbt_tmp" rename to "stg_fbref__possession"
+[0m09:10:09.209887 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:09.211326 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__possession: COMMIT
+[0m09:10:09.211861 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__possession"
+[0m09:10:09.212364 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__possession: COMMIT
+[0m09:10:09.215153 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m09:10:09.219901 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__possession"
+[0m09:10:09.220432 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__possession: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__possession"} */
+
+      drop view if exists "players"."main"."stg_fbref__possession__dbt_backup" cascade
+    
+[0m09:10:09.222322 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.223774 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__possession: Close
+[0m09:10:09.224491 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf5b2659-dcb7-4708-9076-ca56d3330d43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2ab8ab53d0>]}
+[0m09:10:09.225223 [info ] [Thread-1 (]: 9 of 20 OK created sql view model main.stg_fbref__possession ................... [[32mOK[0m in 0.04s]
+[0m09:10:09.226012 [debug] [Thread-1 (]: Finished running node model.nextgeneu_players.stg_fbref__possession
+[0m09:10:09.226573 [debug] [Thread-1 (]: Began running node model.nextgeneu_players.stg_fbref__shooting
+[0m09:10:09.227268 [info ] [Thread-1 (]: 10 of 20 START sql view model main.stg_fbref__shooting ......................... [RUN]
+[0m09:10:09.227891 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nextgeneu_players.stg_fbref__possession, now model.nextgeneu_players.stg_fbref__shooting)
+[0m09:10:09.228408 [debug] [Thread-1 (]: Began compiling node model.nextgeneu_players.stg_fbref__shooting
+[0m09:10:09.234497 [debug] [Thread-1 (]: Writing injected SQL for node "model.nextgeneu_players.stg_fbref__shooting"
+[0m09:10:09.235352 [debug] [Thread-1 (]: Began executing node model.nextgeneu_players.stg_fbref__shooting
+[0m09:10:09.238850 [debug] [Thread-1 (]: Writing runtime sql for node "model.nextgeneu_players.stg_fbref__shooting"
+[0m09:10:09.239669 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__shooting"
+[0m09:10:09.240179 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__shooting: BEGIN
+[0m09:10:09.240704 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:10:09.241665 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.242175 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__shooting"
+[0m09:10:09.242737 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__shooting: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__shooting"} */
+
+  
+  create view "players"."main"."stg_fbref__shooting__dbt_tmp" as (
+    
+
+WITH raw_union AS (
+    
+        SELECT *, '2023_2024' as source_season_id FROM "players"."raw"."shooting_2023_2024"
+         UNION ALL 
+    
+        SELECT *, '2024_2025' as source_season_id FROM "players"."raw"."shooting_2024_2025"
+         UNION ALL 
+    
+        SELECT *, '2025_2026' as source_season_id FROM "players"."raw"."shooting_2025_2026"
+        
+    
+)
+
+SELECT
+    
+    md5(concat(
+        coalesce(unnamed_1_level_0_player, ''), 
+        '-', 
+        coalesce(unnamed_7_level_0_born, ''), 
+        '-', 
+        coalesce(unnamed_2_level_0_nation, '')
+    ))
+ as player_id,
+    unnamed_4_level_0_squad  as squad,
+    source_season_id         as season_id,
+    
+    
+    TRY_CAST(REPLACE(standard_sh, ',', '') AS INTEGER)
+ as shots_total,
+    
+    TRY_CAST(REPLACE(standard_sot, ',', '') AS INTEGER)
+ as shots_on_target,
+    TRY_CAST(standard_dist AS FLOAT) as avg_shot_distance
+
+FROM raw_union
+WHERE unnamed_1_level_0_player != 'Player'
+  );
+
+[0m09:10:09.244541 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.247772 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__shooting"
+[0m09:10:09.248317 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__shooting: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__shooting"} */
+alter view "players"."main"."stg_fbref__shooting" rename to "stg_fbref__shooting__dbt_backup"
+[0m09:10:09.249147 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:09.252199 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__shooting"
+[0m09:10:09.252743 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__shooting: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__shooting"} */
+alter view "players"."main"."stg_fbref__shooting__dbt_tmp" rename to "stg_fbref__shooting"
+[0m09:10:09.253567 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:09.254913 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__shooting: COMMIT
+[0m09:10:09.255448 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__shooting"
+[0m09:10:09.255949 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__shooting: COMMIT
+[0m09:10:09.258513 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m09:10:09.261052 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__shooting"
+[0m09:10:09.261593 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__shooting: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__shooting"} */
+
+      drop view if exists "players"."main"."stg_fbref__shooting__dbt_backup" cascade
+    
+[0m09:10:09.263361 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.264743 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__shooting: Close
+[0m09:10:09.265423 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf5b2659-dcb7-4708-9076-ca56d3330d43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2aba955eb0>]}
+[0m09:10:09.266155 [info ] [Thread-1 (]: 10 of 20 OK created sql view model main.stg_fbref__shooting .................... [[32mOK[0m in 0.04s]
+[0m09:10:09.266898 [debug] [Thread-1 (]: Finished running node model.nextgeneu_players.stg_fbref__shooting
+[0m09:10:09.267440 [debug] [Thread-1 (]: Began running node model.nextgeneu_players.stg_fbref__standard
+[0m09:10:09.268115 [info ] [Thread-1 (]: 11 of 20 START sql view model main.stg_fbref__standard ......................... [RUN]
+[0m09:10:09.268732 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nextgeneu_players.stg_fbref__shooting, now model.nextgeneu_players.stg_fbref__standard)
+[0m09:10:09.269266 [debug] [Thread-1 (]: Began compiling node model.nextgeneu_players.stg_fbref__standard
+[0m09:10:09.278059 [debug] [Thread-1 (]: Writing injected SQL for node "model.nextgeneu_players.stg_fbref__standard"
+[0m09:10:09.278937 [debug] [Thread-1 (]: Began executing node model.nextgeneu_players.stg_fbref__standard
+[0m09:10:09.282299 [debug] [Thread-1 (]: Writing runtime sql for node "model.nextgeneu_players.stg_fbref__standard"
+[0m09:10:09.283134 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__standard"
+[0m09:10:09.283677 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__standard: BEGIN
+[0m09:10:09.284163 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:10:09.285180 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.285714 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__standard"
+[0m09:10:09.286305 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__standard: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__standard"} */
+
+  
+  create view "players"."main"."stg_fbref__standard__dbt_tmp" as (
+    -- 1. CONFIGURATION
+
+
+WITH raw_union AS (
+    
+        SELECT 
+            *, 
+            '2023_2024' as source_season_id 
+        FROM "players"."raw"."standard_stats_2023_2024"
+         UNION ALL 
+    
+        SELECT 
+            *, 
+            '2024_2025' as source_season_id 
+        FROM "players"."raw"."standard_stats_2024_2025"
+         UNION ALL 
+    
+        SELECT 
+            *, 
+            '2025_2026' as source_season_id 
+        FROM "players"."raw"."standard_stats_2025_2026"
+        
+    
+),
+
+cleaned AS (
+    SELECT
+        -- 1. IDENTITY (The Golden Key)
+        
+    md5(concat(
+        coalesce(unnamed_1_level_0_player, ''), 
+        '-', 
+        coalesce(unnamed_7_level_0_born, ''), 
+        '-', 
+        coalesce(unnamed_2_level_0_nation, '')
+    ))
+ as player_id,
+        
+        -- 2. METADATA
+        unnamed_1_level_0_player as player_name,
+        unnamed_2_level_0_nation as nation,
+        unnamed_4_level_0_squad  as squad,
+        unnamed_3_level_0_pos    as primary_position,
+        unnamed_5_level_0_comp   as competition,
+        source_season_id         as season_id,
+        
+        -- 3. DEMOGRAPHICS
+        
+    TRY_CAST(SPLIT_PART(unnamed_6_level_0_age, '-', 1) AS INTEGER)
+ as age,
+        
+    TRY_CAST(REPLACE(unnamed_7_level_0_born, ',', '') AS INTEGER)
+ as birth_year,
+
+        -- 4. PLAYING TIME
+        
+    TRY_CAST(REPLACE(playing_time_mp, ',', '') AS INTEGER)
+ as matches_played,
+        
+    TRY_CAST(REPLACE(playing_time_starts, ',', '') AS INTEGER)
+ as matches_started,
+        
+    TRY_CAST(REPLACE(playing_time_min, ',', '') AS INTEGER)
+ as minutes_played,
+        TRY_CAST(playing_time_90s AS FLOAT) as minutes_90s,
+
+        -- 5. PERFORMANCE METRICS (Using the macro to handle commas/types)
+        
+    TRY_CAST(REPLACE(performance_gls, ',', '') AS INTEGER)
+ as goals,
+        
+    TRY_CAST(REPLACE(performance_ast, ',', '') AS INTEGER)
+ as assists,
+        
+    TRY_CAST(REPLACE(performance_ga, ',', '') AS INTEGER)
+ as goals_assists,
+        
+    TRY_CAST(REPLACE(performance_pk, ',', '') AS INTEGER)
+ as penalties_made,
+        
+    TRY_CAST(REPLACE(performance_pkatt, ',', '') AS INTEGER)
+ as penalties_att,
+        
+        -- 6. EXPECTED METRICS
+        TRY_CAST(expected_xg AS FLOAT) as xg,
+        TRY_CAST(expected_npxg AS FLOAT) as npxg,
+        TRY_CAST(expected_xag AS FLOAT) as xag,
+        
+        -- 7. PROGRESSION
+        
+    TRY_CAST(REPLACE(progression_prgc, ',', '') AS INTEGER)
+ as progressive_carries,
+        
+    TRY_CAST(REPLACE(progression_prgp, ',', '') AS INTEGER)
+ as progressive_passes,
+        
+    TRY_CAST(REPLACE(progression_prgr, ',', '') AS INTEGER)
+ as progressive_receptions
+
+    FROM raw_union
+)
+
+SELECT * FROM cleaned
+WHERE player_name != 'Player' -- Filter header rows
+  AND player_name IS NOT NULL
+  );
+
+[0m09:10:09.289063 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m09:10:09.292452 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__standard"
+[0m09:10:09.293076 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__standard: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__standard"} */
+alter view "players"."main"."stg_fbref__standard" rename to "stg_fbref__standard__dbt_backup"
+[0m09:10:09.294092 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:09.299419 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__standard"
+[0m09:10:09.300232 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__standard: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__standard"} */
+alter view "players"."main"."stg_fbref__standard__dbt_tmp" rename to "stg_fbref__standard"
+[0m09:10:09.301784 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.303629 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__standard: COMMIT
+[0m09:10:09.304180 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__standard"
+[0m09:10:09.304717 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__standard: COMMIT
+[0m09:10:09.308106 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m09:10:09.310934 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.stg_fbref__standard"
+[0m09:10:09.311485 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__standard: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.stg_fbref__standard"} */
+
+      drop view if exists "players"."main"."stg_fbref__standard__dbt_backup" cascade
+    
+[0m09:10:09.313548 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m09:10:09.315265 [debug] [Thread-1 (]: On model.nextgeneu_players.stg_fbref__standard: Close
+[0m09:10:09.315997 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf5b2659-dcb7-4708-9076-ca56d3330d43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2ab8ac2ea0>]}
+[0m09:10:09.316775 [info ] [Thread-1 (]: 11 of 20 OK created sql view model main.stg_fbref__standard .................... [[32mOK[0m in 0.05s]
+[0m09:10:09.317621 [debug] [Thread-1 (]: Finished running node model.nextgeneu_players.stg_fbref__standard
+[0m09:10:09.318615 [debug] [Thread-1 (]: Began running node model.nextgeneu_players.int_goalkeeper_season_stats
+[0m09:10:09.319223 [info ] [Thread-1 (]: 12 of 20 START sql view model main.int_goalkeeper_season_stats ................. [RUN]
+[0m09:10:09.319891 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nextgeneu_players.stg_fbref__standard, now model.nextgeneu_players.int_goalkeeper_season_stats)
+[0m09:10:09.320666 [debug] [Thread-1 (]: Began compiling node model.nextgeneu_players.int_goalkeeper_season_stats
+[0m09:10:09.326185 [debug] [Thread-1 (]: Writing injected SQL for node "model.nextgeneu_players.int_goalkeeper_season_stats"
+[0m09:10:09.326941 [debug] [Thread-1 (]: Began executing node model.nextgeneu_players.int_goalkeeper_season_stats
+[0m09:10:09.330422 [debug] [Thread-1 (]: Writing runtime sql for node "model.nextgeneu_players.int_goalkeeper_season_stats"
+[0m09:10:09.331189 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.int_goalkeeper_season_stats"
+[0m09:10:09.331710 [debug] [Thread-1 (]: On model.nextgeneu_players.int_goalkeeper_season_stats: BEGIN
+[0m09:10:09.332157 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:10:09.333057 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.333554 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.int_goalkeeper_season_stats"
+[0m09:10:09.334045 [debug] [Thread-1 (]: On model.nextgeneu_players.int_goalkeeper_season_stats: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.int_goalkeeper_season_stats"} */
+
+  
+  create view "players"."main"."int_goalkeeper_season_stats__dbt_tmp" as (
+    WITH base AS (SELECT * FROM "players"."main"."stg_fbref__standard"), -- We still need Standard for Age/Nation/Minutes
+     gk_basic AS (SELECT * FROM "players"."main"."stg_fbref__goalkeeping"),
+     gk_adv   AS (SELECT * FROM "players"."main"."stg_fbref__adv_goalkeeping")
+
+SELECT 
+    b.player_id,
+    b.player_name,
+    b.season_id,
+    b.squad,
+    b.nation,
+    b.age,
+    b.birth_year,
+    b.minutes_90s,
+    
+    -- Basic
+    g.goals_against,
+    g.save_pct,
+    g.clean_sheet_pct,
+    g.pk_saved,
+    
+    -- Advanced (The Real Money Stats)
+    a.psxg,
+    a.psxg_plus_minus, -- Positive = Elite Shot Stopping
+    a.crosses_stopped_pct, -- Command of Area
+    a.defensive_actions_outside_pen_area as sweeper_actions,
+    a.long_pass_completion_pct
+
+FROM base b
+INNER JOIN gk_basic g USING (player_id, squad, season_id) -- Inner Join because we ONLY want GKs
+LEFT JOIN gk_adv a    USING (player_id, squad, season_id)
+  );
+
+[0m09:10:09.338784 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m09:10:09.341998 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.int_goalkeeper_season_stats"
+[0m09:10:09.342507 [debug] [Thread-1 (]: On model.nextgeneu_players.int_goalkeeper_season_stats: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.int_goalkeeper_season_stats"} */
+alter view "players"."main"."int_goalkeeper_season_stats" rename to "int_goalkeeper_season_stats__dbt_backup"
+[0m09:10:09.343341 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:09.346372 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.int_goalkeeper_season_stats"
+[0m09:10:09.346859 [debug] [Thread-1 (]: On model.nextgeneu_players.int_goalkeeper_season_stats: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.int_goalkeeper_season_stats"} */
+alter view "players"."main"."int_goalkeeper_season_stats__dbt_tmp" rename to "int_goalkeeper_season_stats"
+[0m09:10:09.347650 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:09.348981 [debug] [Thread-1 (]: On model.nextgeneu_players.int_goalkeeper_season_stats: COMMIT
+[0m09:10:09.349483 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.int_goalkeeper_season_stats"
+[0m09:10:09.349931 [debug] [Thread-1 (]: On model.nextgeneu_players.int_goalkeeper_season_stats: COMMIT
+[0m09:10:09.352297 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m09:10:09.354941 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.int_goalkeeper_season_stats"
+[0m09:10:09.355442 [debug] [Thread-1 (]: On model.nextgeneu_players.int_goalkeeper_season_stats: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.int_goalkeeper_season_stats"} */
+
+      drop view if exists "players"."main"."int_goalkeeper_season_stats__dbt_backup" cascade
+    
+[0m09:10:09.357332 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.358683 [debug] [Thread-1 (]: On model.nextgeneu_players.int_goalkeeper_season_stats: Close
+[0m09:10:09.359533 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf5b2659-dcb7-4708-9076-ca56d3330d43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2abaa6e540>]}
+[0m09:10:09.360650 [info ] [Thread-1 (]: 12 of 20 OK created sql view model main.int_goalkeeper_season_stats ............ [[32mOK[0m in 0.04s]
+[0m09:10:09.361588 [debug] [Thread-1 (]: Finished running node model.nextgeneu_players.int_goalkeeper_season_stats
+[0m09:10:09.362131 [debug] [Thread-1 (]: Began running node model.nextgeneu_players.int_player_season_stats
+[0m09:10:09.362881 [info ] [Thread-1 (]: 13 of 20 START sql view model main.int_player_season_stats ..................... [RUN]
+[0m09:10:09.363966 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nextgeneu_players.int_goalkeeper_season_stats, now model.nextgeneu_players.int_player_season_stats)
+[0m09:10:09.364573 [debug] [Thread-1 (]: Began compiling node model.nextgeneu_players.int_player_season_stats
+[0m09:10:09.369472 [debug] [Thread-1 (]: Writing injected SQL for node "model.nextgeneu_players.int_player_season_stats"
+[0m09:10:09.370261 [debug] [Thread-1 (]: Began executing node model.nextgeneu_players.int_player_season_stats
+[0m09:10:09.373582 [debug] [Thread-1 (]: Writing runtime sql for node "model.nextgeneu_players.int_player_season_stats"
+[0m09:10:09.374376 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.int_player_season_stats"
+[0m09:10:09.374892 [debug] [Thread-1 (]: On model.nextgeneu_players.int_player_season_stats: BEGIN
+[0m09:10:09.375388 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:10:09.376372 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.376874 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.int_player_season_stats"
+[0m09:10:09.377433 [debug] [Thread-1 (]: On model.nextgeneu_players.int_player_season_stats: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.int_player_season_stats"} */
+
+  
+  create view "players"."main"."int_player_season_stats__dbt_tmp" as (
+    WITH standard AS (SELECT * FROM "players"."main"."stg_fbref__standard"),
+     shooting AS (SELECT * FROM "players"."main"."stg_fbref__shooting"),
+     passing  AS (SELECT * FROM "players"."main"."stg_fbref__passing"),
+     pass_types AS (SELECT * FROM "players"."main"."stg_fbref__pass_types"),
+     defense  AS (SELECT * FROM "players"."main"."stg_fbref__defense"),
+     poss     AS (SELECT * FROM "players"."main"."stg_fbref__possession"),
+     misc     AS (SELECT * FROM "players"."main"."stg_fbref__misc")
+
+SELECT
+    -- Anchors
+    s.player_id,
+    s.player_name,
+    s.season_id,
+    s.squad,
+    s.competition,
+    s.nation,
+    s.primary_position,
+    s.age,
+    s.birth_year,
+    s.minutes_played,
+    s.minutes_90s,
+
+    -- Attacking Metrics
+    s.goals,
+    s.assists,
+    s.npxg,
+    s.xag,
+    coalesce(sh.shots_total, 0) as shots_total,
+    coalesce(sh.shots_on_target, 0) as shots_on_target,
+
+    -- Possession & Creation
+    coalesce(p.key_passes, 0) as key_passes,
+    coalesce(p.pass_progressive_distance, 0) as pass_progressive_distance,
+    coalesce(pt.through_balls, 0) as through_balls,
+    coalesce(pt.switches, 0) as switches,
+    coalesce(pt.crosses, 0) as crosses,
+    coalesce(poss.carry_progressive_distance, 0) as carry_progressive_distance,
+    coalesce(poss.takeons_won, 0) as takeons_won,
+
+    -- Defensive Workrate
+    coalesce(d.tackles_won, 0) as tackles_won,
+    coalesce(d.interceptions, 0) as interceptions,
+    coalesce(d.tackles_att_3rd, 0) as tackles_att_3rd,
+    coalesce(m.ball_recoveries, 0) as recoveries,
+    coalesce(m.aerials_won, 0) as aerials_won
+
+FROM standard s
+LEFT JOIN shooting sh USING (player_id, squad, season_id)
+LEFT JOIN passing p   USING (player_id, squad, season_id)
+LEFT JOIN pass_types pt USING (player_id, squad, season_id)
+LEFT JOIN defense d   USING (player_id, squad, season_id)
+LEFT JOIN poss        USING (player_id, squad, season_id)
+LEFT JOIN misc m      USING (player_id, squad, season_id)
+
+-- Filter out rows where the join keys might have drifted or empty names
+WHERE s.player_id IS NOT NULL
+  );
+
+[0m09:10:09.386421 [debug] [Thread-1 (]: SQL status: OK in 0.008 seconds
+[0m09:10:09.392425 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.int_player_season_stats"
+[0m09:10:09.393004 [debug] [Thread-1 (]: On model.nextgeneu_players.int_player_season_stats: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.int_player_season_stats"} */
+alter view "players"."main"."int_player_season_stats" rename to "int_player_season_stats__dbt_backup"
+[0m09:10:09.394141 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.397324 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.int_player_season_stats"
+[0m09:10:09.397859 [debug] [Thread-1 (]: On model.nextgeneu_players.int_player_season_stats: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.int_player_season_stats"} */
+alter view "players"."main"."int_player_season_stats__dbt_tmp" rename to "int_player_season_stats"
+[0m09:10:09.398842 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:09.400236 [debug] [Thread-1 (]: On model.nextgeneu_players.int_player_season_stats: COMMIT
+[0m09:10:09.400781 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.int_player_season_stats"
+[0m09:10:09.401273 [debug] [Thread-1 (]: On model.nextgeneu_players.int_player_season_stats: COMMIT
+[0m09:10:09.404578 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m09:10:09.407787 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.int_player_season_stats"
+[0m09:10:09.408378 [debug] [Thread-1 (]: On model.nextgeneu_players.int_player_season_stats: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.int_player_season_stats"} */
+
+      drop view if exists "players"."main"."int_player_season_stats__dbt_backup" cascade
+    
+[0m09:10:09.411183 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m09:10:09.413144 [debug] [Thread-1 (]: On model.nextgeneu_players.int_player_season_stats: Close
+[0m09:10:09.413924 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf5b2659-dcb7-4708-9076-ca56d3330d43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2ab8b04c20>]}
+[0m09:10:09.415155 [info ] [Thread-1 (]: 13 of 20 OK created sql view model main.int_player_season_stats ................ [[32mOK[0m in 0.05s]
+[0m09:10:09.416145 [debug] [Thread-1 (]: Finished running node model.nextgeneu_players.int_player_season_stats
+[0m09:10:09.416697 [debug] [Thread-1 (]: Began running node model.nextgeneu_players.mart_goalkeeping_analysis
+[0m09:10:09.417518 [info ] [Thread-1 (]: 14 of 20 START sql table model main.mart_goalkeeping_analysis .................. [RUN]
+[0m09:10:09.418157 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nextgeneu_players.int_player_season_stats, now model.nextgeneu_players.mart_goalkeeping_analysis)
+[0m09:10:09.418664 [debug] [Thread-1 (]: Began compiling node model.nextgeneu_players.mart_goalkeeping_analysis
+[0m09:10:09.423744 [debug] [Thread-1 (]: Writing injected SQL for node "model.nextgeneu_players.mart_goalkeeping_analysis"
+[0m09:10:09.424574 [debug] [Thread-1 (]: Began executing node model.nextgeneu_players.mart_goalkeeping_analysis
+[0m09:10:09.445146 [debug] [Thread-1 (]: Writing runtime sql for node "model.nextgeneu_players.mart_goalkeeping_analysis"
+[0m09:10:09.446056 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_goalkeeping_analysis"
+[0m09:10:09.446578 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_goalkeeping_analysis: BEGIN
+[0m09:10:09.447021 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:10:09.447952 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.448445 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_goalkeeping_analysis"
+[0m09:10:09.448930 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_goalkeeping_analysis: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.mart_goalkeeping_analysis"} */
+
+  
+    
+    
+
+    create  table
+      "players"."main"."mart_goalkeeping_analysis__dbt_tmp"
+  
+    as (
+      WITH base_stats AS (
+    SELECT * FROM "players"."main"."int_goalkeeper_season_stats"
+    WHERE minutes_90s >= 5.0
+),
+
+per_90_calculations AS (
+    SELECT 
+        *,
+        -- Normalization
+        
+    CASE 
+        WHEN minutes_90s = 0 OR minutes_90s IS NULL THEN 0
+        ELSE psxg_plus_minus / minutes_90s
+    END
+ as psxg_plus_minus_per_90,
+        
+    CASE 
+        WHEN minutes_90s = 0 OR minutes_90s IS NULL THEN 0
+        ELSE sweeper_actions / minutes_90s
+    END
+ as sweeper_actions_per_90,
+        
+        -- FLAGS
+        CASE WHEN (2026 - birth_year) <= 23 THEN TRUE ELSE FALSE END as is_u23_prospect
+    FROM base_stats
+)
+
+SELECT 
+    *,
+    -- Percentiles (Compare GK vs GK only)
+    PERCENT_RANK() OVER (PARTITION BY season_id ORDER BY psxg_plus_minus_per_90 ASC) as percentile_shot_stopping,
+    PERCENT_RANK() OVER (PARTITION BY season_id ORDER BY crosses_stopped_pct ASC) as percentile_command,
+    PERCENT_RANK() OVER (PARTITION BY season_id ORDER BY sweeper_actions_per_90 ASC) as percentile_sweeping,
+    PERCENT_RANK() OVER (PARTITION BY season_id ORDER BY long_pass_completion_pct ASC) as percentile_distribution
+FROM per_90_calculations
+    );
+  
+  
+[0m09:10:09.483490 [debug] [Thread-1 (]: SQL status: OK in 0.034 seconds
+[0m09:10:09.489841 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_goalkeeping_analysis"
+[0m09:10:09.490423 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_goalkeeping_analysis: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.mart_goalkeeping_analysis"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'mart_goalkeeping_analysis'
+  
+[0m09:10:09.491641 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.493054 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_goalkeeping_analysis"
+[0m09:10:09.493564 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_goalkeeping_analysis: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.mart_goalkeeping_analysis"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'mart_goalkeeping_analysis'
+  
+[0m09:10:09.494754 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.498599 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_goalkeeping_analysis"
+[0m09:10:09.499138 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_goalkeeping_analysis: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.mart_goalkeeping_analysis"} */
+alter table "players"."main"."mart_goalkeeping_analysis" rename to "mart_goalkeeping_analysis__dbt_backup"
+[0m09:10:09.500042 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:09.503766 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_goalkeeping_analysis"
+[0m09:10:09.504311 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_goalkeeping_analysis: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.mart_goalkeeping_analysis"} */
+alter table "players"."main"."mart_goalkeeping_analysis__dbt_tmp" rename to "mart_goalkeeping_analysis"
+[0m09:10:09.505323 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:09.511403 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_goalkeeping_analysis: COMMIT
+[0m09:10:09.511904 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_goalkeeping_analysis"
+[0m09:10:09.512508 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_goalkeeping_analysis: COMMIT
+[0m09:10:09.517592 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m09:10:09.520413 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_goalkeeping_analysis"
+[0m09:10:09.520927 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_goalkeeping_analysis: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.mart_goalkeeping_analysis"} */
+
+      drop table if exists "players"."main"."mart_goalkeeping_analysis__dbt_backup" cascade
+    
+[0m09:10:09.523030 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m09:10:09.524511 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_goalkeeping_analysis: Close
+[0m09:10:09.525196 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf5b2659-dcb7-4708-9076-ca56d3330d43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2aba9d0590>]}
+[0m09:10:09.525957 [info ] [Thread-1 (]: 14 of 20 OK created sql table model main.mart_goalkeeping_analysis ............. [[32mOK[0m in 0.11s]
+[0m09:10:09.526721 [debug] [Thread-1 (]: Finished running node model.nextgeneu_players.mart_goalkeeping_analysis
+[0m09:10:09.527277 [debug] [Thread-1 (]: Began running node model.nextgeneu_players.dim_players
+[0m09:10:09.527941 [info ] [Thread-1 (]: 15 of 20 START sql table model main.dim_players ................................ [RUN]
+[0m09:10:09.528562 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nextgeneu_players.mart_goalkeeping_analysis, now model.nextgeneu_players.dim_players)
+[0m09:10:09.529059 [debug] [Thread-1 (]: Began compiling node model.nextgeneu_players.dim_players
+[0m09:10:09.531988 [debug] [Thread-1 (]: Writing injected SQL for node "model.nextgeneu_players.dim_players"
+[0m09:10:09.532780 [debug] [Thread-1 (]: Began executing node model.nextgeneu_players.dim_players
+[0m09:10:09.538153 [debug] [Thread-1 (]: Writing runtime sql for node "model.nextgeneu_players.dim_players"
+[0m09:10:09.538954 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.dim_players"
+[0m09:10:09.539467 [debug] [Thread-1 (]: On model.nextgeneu_players.dim_players: BEGIN
+[0m09:10:09.539931 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:10:09.540808 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.541310 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.dim_players"
+[0m09:10:09.541804 [debug] [Thread-1 (]: On model.nextgeneu_players.dim_players: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.dim_players"} */
+
+  
+    
+    
+
+    create  table
+      "players"."main"."dim_players__dbt_tmp"
+  
+    as (
+      WITH unique_players AS (
+    SELECT 
+        player_id,
+        -- Get the most recently used name (in case it changed)
+        arg_max(player_name, season_id) as player_name,
+        -- Get the most recent nation/position
+        arg_max(nation, season_id) as nation,
+        arg_max(primary_position, season_id) as primary_position,
+        max(birth_year) as birth_year
+    FROM "players"."main"."int_player_season_stats"
+    GROUP BY player_id
+)
+
+SELECT * FROM unique_players
+    );
+  
+  
+[0m09:10:09.578509 [debug] [Thread-1 (]: SQL status: OK in 0.036 seconds
+[0m09:10:09.579995 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.dim_players"
+[0m09:10:09.580564 [debug] [Thread-1 (]: On model.nextgeneu_players.dim_players: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.dim_players"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'dim_players'
+  
+[0m09:10:09.581742 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.583155 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.dim_players"
+[0m09:10:09.583701 [debug] [Thread-1 (]: On model.nextgeneu_players.dim_players: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.dim_players"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'dim_players'
+  
+[0m09:10:09.584834 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.588414 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.dim_players"
+[0m09:10:09.589059 [debug] [Thread-1 (]: On model.nextgeneu_players.dim_players: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.dim_players"} */
+alter table "players"."main"."dim_players" rename to "dim_players__dbt_backup"
+[0m09:10:09.590026 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:09.593165 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.dim_players"
+[0m09:10:09.593730 [debug] [Thread-1 (]: On model.nextgeneu_players.dim_players: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.dim_players"} */
+alter table "players"."main"."dim_players__dbt_tmp" rename to "dim_players"
+[0m09:10:09.594811 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:09.596322 [debug] [Thread-1 (]: On model.nextgeneu_players.dim_players: COMMIT
+[0m09:10:09.596853 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.dim_players"
+[0m09:10:09.597363 [debug] [Thread-1 (]: On model.nextgeneu_players.dim_players: COMMIT
+[0m09:10:09.604105 [debug] [Thread-1 (]: SQL status: OK in 0.006 seconds
+[0m09:10:09.607009 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.dim_players"
+[0m09:10:09.607570 [debug] [Thread-1 (]: On model.nextgeneu_players.dim_players: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.dim_players"} */
+
+      drop table if exists "players"."main"."dim_players__dbt_backup" cascade
+    
+[0m09:10:09.609542 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.611103 [debug] [Thread-1 (]: On model.nextgeneu_players.dim_players: Close
+[0m09:10:09.611827 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf5b2659-dcb7-4708-9076-ca56d3330d43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2abbf2b680>]}
+[0m09:10:09.612588 [info ] [Thread-1 (]: 15 of 20 OK created sql table model main.dim_players ........................... [[32mOK[0m in 0.08s]
+[0m09:10:09.613365 [debug] [Thread-1 (]: Finished running node model.nextgeneu_players.dim_players
+[0m09:10:09.613910 [debug] [Thread-1 (]: Began running node model.nextgeneu_players.mart_scouting_analysis
+[0m09:10:09.614590 [info ] [Thread-1 (]: 16 of 20 START sql table model main.mart_scouting_analysis ..................... [RUN]
+[0m09:10:09.615188 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nextgeneu_players.dim_players, now model.nextgeneu_players.mart_scouting_analysis)
+[0m09:10:09.615723 [debug] [Thread-1 (]: Began compiling node model.nextgeneu_players.mart_scouting_analysis
+[0m09:10:09.620093 [debug] [Thread-1 (]: Writing injected SQL for node "model.nextgeneu_players.mart_scouting_analysis"
+[0m09:10:09.621225 [debug] [Thread-1 (]: Began executing node model.nextgeneu_players.mart_scouting_analysis
+[0m09:10:09.624902 [debug] [Thread-1 (]: Writing runtime sql for node "model.nextgeneu_players.mart_scouting_analysis"
+[0m09:10:09.625641 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_scouting_analysis"
+[0m09:10:09.626115 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_scouting_analysis: BEGIN
+[0m09:10:09.626585 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:10:09.627633 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.628445 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_scouting_analysis"
+[0m09:10:09.629366 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_scouting_analysis: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.mart_scouting_analysis"} */
+
+  
+    
+    
+
+    create  table
+      "players"."main"."mart_scouting_analysis__dbt_tmp"
+  
+    as (
+      WITH base_stats AS (
+    SELECT * FROM "players"."main"."int_player_season_stats"
+    WHERE minutes_90s >= 5.0 -- Filter: Remove noise (players with < 5 games)
+),
+
+per_90_calculations AS (
+    SELECT 
+        *,
+        -- 1. ATTACK SCORES
+        
+    CASE 
+        WHEN minutes_90s = 0 OR minutes_90s IS NULL THEN 0
+        ELSE goals + assists / minutes_90s
+    END
+ as goal_contribution_per_90,
+        
+    CASE 
+        WHEN minutes_90s = 0 OR minutes_90s IS NULL THEN 0
+        ELSE npxg + xag / minutes_90s
+    END
+ as expected_contribution_per_90,
+        
+        -- 2. PROGRESSION SCORES (The "Engine" Metric)
+        
+    CASE 
+        WHEN minutes_90s = 0 OR minutes_90s IS NULL THEN 0
+        ELSE pass_progressive_distance + carry_progressive_distance / minutes_90s
+    END
+ as progression_total_dist_per_90,
+        
+        -- 3. DEFENSIVE SCORES (The "Workrate" Metric)
+        
+    CASE 
+        WHEN minutes_90s = 0 OR minutes_90s IS NULL THEN 0
+        ELSE tackles_won + interceptions + recoveries / minutes_90s
+    END
+ as defensive_actions_per_90,
+        
+        -- 4. FLAGS
+        CASE WHEN (2026 - birth_year) <= 23 THEN TRUE ELSE FALSE END as is_u23_prospect
+    FROM base_stats
+)
+
+SELECT 
+    *,
+    -- Percentile Ranks (0.0 to 1.0)
+    -- Compare players only against peers in the SAME position and SAME season
+    PERCENT_RANK() OVER (
+        PARTITION BY season_id, primary_position 
+        ORDER BY expected_contribution_per_90 ASC
+    ) as percentile_attacking,
+
+    PERCENT_RANK() OVER (
+        PARTITION BY season_id, primary_position 
+        ORDER BY progression_total_dist_per_90 ASC
+    ) as percentile_progression,
+
+    PERCENT_RANK() OVER (
+        PARTITION BY season_id, primary_position 
+        ORDER BY defensive_actions_per_90 ASC
+    ) as percentile_defense
+
+FROM per_90_calculations
+    );
+  
+  
+[0m09:10:09.688512 [debug] [Thread-1 (]: SQL status: OK in 0.058 seconds
+[0m09:10:09.690056 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_scouting_analysis"
+[0m09:10:09.690664 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_scouting_analysis: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.mart_scouting_analysis"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'mart_scouting_analysis'
+  
+[0m09:10:09.691895 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.693386 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_scouting_analysis"
+[0m09:10:09.693925 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_scouting_analysis: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.mart_scouting_analysis"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'mart_scouting_analysis'
+  
+[0m09:10:09.695062 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.698697 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_scouting_analysis"
+[0m09:10:09.699239 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_scouting_analysis: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.mart_scouting_analysis"} */
+alter table "players"."main"."mart_scouting_analysis" rename to "mart_scouting_analysis__dbt_backup"
+[0m09:10:09.700270 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:09.703513 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_scouting_analysis"
+[0m09:10:09.704070 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_scouting_analysis: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.mart_scouting_analysis"} */
+alter table "players"."main"."mart_scouting_analysis__dbt_tmp" rename to "mart_scouting_analysis"
+[0m09:10:09.705024 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:09.706644 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_scouting_analysis: COMMIT
+[0m09:10:09.707183 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_scouting_analysis"
+[0m09:10:09.707711 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_scouting_analysis: COMMIT
+[0m09:10:09.725833 [debug] [Thread-1 (]: SQL status: OK in 0.017 seconds
+[0m09:10:09.728923 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_scouting_analysis"
+[0m09:10:09.729504 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_scouting_analysis: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.mart_scouting_analysis"} */
+
+      drop table if exists "players"."main"."mart_scouting_analysis__dbt_backup" cascade
+    
+[0m09:10:09.731882 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m09:10:09.733422 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_scouting_analysis: Close
+[0m09:10:09.734108 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf5b2659-dcb7-4708-9076-ca56d3330d43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2ac2bedc70>]}
+[0m09:10:09.734896 [info ] [Thread-1 (]: 16 of 20 OK created sql table model main.mart_scouting_analysis ................ [[32mOK[0m in 0.12s]
+[0m09:10:09.735755 [debug] [Thread-1 (]: Finished running node model.nextgeneu_players.mart_scouting_analysis
+[0m09:10:09.736718 [debug] [Thread-1 (]: Began running node model.nextgeneu_players.mart_player_trends
+[0m09:10:09.737358 [info ] [Thread-1 (]: 17 of 20 START sql table model main.mart_player_trends ......................... [RUN]
+[0m09:10:09.738024 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nextgeneu_players.mart_scouting_analysis, now model.nextgeneu_players.mart_player_trends)
+[0m09:10:09.738563 [debug] [Thread-1 (]: Began compiling node model.nextgeneu_players.mart_player_trends
+[0m09:10:09.744718 [debug] [Thread-1 (]: Writing injected SQL for node "model.nextgeneu_players.mart_player_trends"
+[0m09:10:09.745540 [debug] [Thread-1 (]: Began executing node model.nextgeneu_players.mart_player_trends
+[0m09:10:09.749154 [debug] [Thread-1 (]: Writing runtime sql for node "model.nextgeneu_players.mart_player_trends"
+[0m09:10:09.749995 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_player_trends"
+[0m09:10:09.750615 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_player_trends: BEGIN
+[0m09:10:09.751109 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:10:09.752265 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.752829 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_player_trends"
+[0m09:10:09.753433 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_player_trends: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.mart_player_trends"} */
+
+  
+    
+    
+
+    create  table
+      "players"."main"."mart_player_trends__dbt_tmp"
+  
+    as (
+      WITH combined_stats AS (
+    -- OUTFIELDERS
+    SELECT 
+        player_id, player_name, season_id, squad, age, primary_position,
+        minutes_90s,
+        
+        -- 1. The Raw Scoring Metrics (Keep these for everyone!)
+        goals,
+        npxg,
+        expected_contribution_per_90, -- (npxG + xAG)
+        
+        -- 2. The Specialist Metrics
+        progression_total_dist_per_90,
+        defensive_actions_per_90,
+        0.0 as gk_metric
+    FROM "players"."main"."mart_scouting_analysis"
+    
+    UNION ALL
+    
+    -- GOALKEEPERS (Scoring is irrelevant, set to 0)
+    SELECT 
+        player_id, player_name, season_id, squad, age, 'GK' as primary_position,
+        minutes_90s,
+        
+        0 as goals,
+        0.0 as npxg,
+        0.0 as expected_contribution_per_90,
+        
+        0.0 as progression_total_dist_per_90,
+        0.0 as defensive_actions_per_90,
+        psxg_plus_minus_per_90 as gk_metric
+    FROM "players"."main"."mart_goalkeeping_analysis"
+),
+
+calc_indices AS (
+    SELECT 
+        *,
+        -- TRACK A: The Specialist Index (Role-Based)
+        CASE 
+            WHEN primary_position IN ('MF', 'MF,DF') THEN progression_total_dist_per_90
+            WHEN primary_position IN ('DF', 'DF,MF') THEN defensive_actions_per_90
+            WHEN primary_position = 'GK' THEN gk_metric
+            ELSE expected_contribution_per_90 -- For Attackers, Specialist = Scoring
+        END as specialist_index,
+        
+        -- TRACK B: The Universal Scoring Index (For all Outfielders)
+        expected_contribution_per_90 as scoring_index
+    FROM combined_stats
+    WHERE minutes_90s >= 5.0
+)
+
+SELECT 
+    player_id, player_name, season_id, primary_position, age,
+    
+    -- Metrics
+    specialist_index,
+    scoring_index,
+    goals,
+    npxg,
+    
+    -- Trends (Calculated on the Specialist Index)
+    specialist_index - LAG(specialist_index) OVER (
+        PARTITION BY player_id ORDER BY season_id
+    ) as yoy_change_specialist,
+    
+    scoring_index - LAG(scoring_index) OVER (
+        PARTITION BY player_id ORDER BY season_id
+    ) as yoy_change_scoring
+
+FROM calc_indices
+    );
+  
+  
+[0m09:10:09.764573 [debug] [Thread-1 (]: SQL status: OK in 0.010 seconds
+[0m09:10:09.766327 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_player_trends"
+[0m09:10:09.766890 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_player_trends: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.mart_player_trends"} */
+
+    SELECT index_name
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'mart_player_trends'
+  
+[0m09:10:09.768012 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.769515 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_player_trends"
+[0m09:10:09.770058 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_player_trends: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.mart_player_trends"} */
+
+    SELECT COUNT(*) as remaining_indexes
+    FROM duckdb_indexes()
+    WHERE schema_name = 'main'
+      AND table_name = 'mart_player_trends'
+  
+[0m09:10:09.771197 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.774890 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_player_trends"
+[0m09:10:09.775457 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_player_trends: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.mart_player_trends"} */
+alter table "players"."main"."mart_player_trends" rename to "mart_player_trends__dbt_backup"
+[0m09:10:09.776393 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:09.779654 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_player_trends"
+[0m09:10:09.780346 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_player_trends: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.mart_player_trends"} */
+alter table "players"."main"."mart_player_trends__dbt_tmp" rename to "mart_player_trends"
+[0m09:10:09.781391 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:09.782863 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_player_trends: COMMIT
+[0m09:10:09.783410 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_player_trends"
+[0m09:10:09.783911 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_player_trends: COMMIT
+[0m09:10:09.793153 [debug] [Thread-1 (]: SQL status: OK in 0.009 seconds
+[0m09:10:09.796266 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_player_trends"
+[0m09:10:09.796826 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_player_trends: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.mart_player_trends"} */
+
+      drop table if exists "players"."main"."mart_player_trends__dbt_backup" cascade
+    
+[0m09:10:09.799068 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m09:10:09.800639 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_player_trends: Close
+[0m09:10:09.801361 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf5b2659-dcb7-4708-9076-ca56d3330d43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2abaa6e120>]}
+[0m09:10:09.802131 [info ] [Thread-1 (]: 17 of 20 OK created sql table model main.mart_player_trends .................... [[32mOK[0m in 0.06s]
+[0m09:10:09.802907 [debug] [Thread-1 (]: Finished running node model.nextgeneu_players.mart_player_trends
+[0m09:10:09.803446 [debug] [Thread-1 (]: Began running node model.nextgeneu_players.mart_squad_profile
+[0m09:10:09.804201 [info ] [Thread-1 (]: 18 of 20 START sql table model main.mart_squad_profile ......................... [RUN]
+[0m09:10:09.804879 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nextgeneu_players.mart_player_trends, now model.nextgeneu_players.mart_squad_profile)
+[0m09:10:09.805382 [debug] [Thread-1 (]: Began compiling node model.nextgeneu_players.mart_squad_profile
+[0m09:10:09.808499 [debug] [Thread-1 (]: Writing injected SQL for node "model.nextgeneu_players.mart_squad_profile"
+[0m09:10:09.809305 [debug] [Thread-1 (]: Began executing node model.nextgeneu_players.mart_squad_profile
+[0m09:10:09.813402 [debug] [Thread-1 (]: Writing runtime sql for node "model.nextgeneu_players.mart_squad_profile"
+[0m09:10:09.814085 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_squad_profile"
+[0m09:10:09.814581 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_squad_profile: BEGIN
+[0m09:10:09.815023 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:10:09.815950 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.816447 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_squad_profile"
+[0m09:10:09.816924 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_squad_profile: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.mart_squad_profile"} */
+
+  
+    
+    
+
+    create  table
+      "players"."main"."mart_squad_profile__dbt_tmp"
+  
+    as (
+      WITH player_stats AS (
+    SELECT * FROM "players"."main"."mart_scouting_analysis"
+)
+
+SELECT
+    squad,
+    season_id,
+    competition,
+    primary_position,
+    
+    -- Squad Depth Info
+    count(distinct player_id) as depth_count,
+    avg(age) as avg_age,
+    
+    -- The "Bar" to beat (Average Starter Performance)
+    -- We assume "Starters" are those with > 15.0 90s played
+    avg(CASE WHEN minutes_90s > 15 THEN expected_contribution_per_90 END) as starter_avg_xG_xAG,
+    avg(CASE WHEN minutes_90s > 15 THEN progression_total_dist_per_90 END) as starter_avg_progression,
+    avg(CASE WHEN minutes_90s > 15 THEN defensive_actions_per_90 END) as starter_avg_def_actions
+
+FROM player_stats
+GROUP BY 1, 2, 3, 4
+    );
+  
+  
+[0m09:10:09.824400 [debug] [Thread-1 (]: SQL status: OK in 0.007 seconds
+[0m09:10:09.827662 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_squad_profile"
+[0m09:10:09.828169 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_squad_profile: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.mart_squad_profile"} */
+alter table "players"."main"."mart_squad_profile__dbt_tmp" rename to "mart_squad_profile"
+[0m09:10:09.829019 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:09.830396 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_squad_profile: COMMIT
+[0m09:10:09.830900 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_squad_profile"
+[0m09:10:09.831377 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_squad_profile: COMMIT
+[0m09:10:09.836367 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m09:10:09.840562 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_squad_profile"
+[0m09:10:09.841098 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_squad_profile: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.mart_squad_profile"} */
+
+      drop table if exists "players"."main"."mart_squad_profile__dbt_backup" cascade
+    
+[0m09:10:09.841984 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:09.844106 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_squad_profile: Close
+[0m09:10:09.844783 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf5b2659-dcb7-4708-9076-ca56d3330d43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2aba9591f0>]}
+[0m09:10:09.845508 [info ] [Thread-1 (]: 18 of 20 OK created sql table model main.mart_squad_profile .................... [[32mOK[0m in 0.04s]
+[0m09:10:09.846219 [debug] [Thread-1 (]: Finished running node model.nextgeneu_players.mart_squad_profile
+[0m09:10:09.846769 [debug] [Thread-1 (]: Began running node model.nextgeneu_players.mart_transfer_valuation
+[0m09:10:09.847439 [info ] [Thread-1 (]: 19 of 20 START sql table model main.mart_transfer_valuation .................... [RUN]
+[0m09:10:09.848036 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nextgeneu_players.mart_squad_profile, now model.nextgeneu_players.mart_transfer_valuation)
+[0m09:10:09.848597 [debug] [Thread-1 (]: Began compiling node model.nextgeneu_players.mart_transfer_valuation
+[0m09:10:09.854146 [debug] [Thread-1 (]: Writing injected SQL for node "model.nextgeneu_players.mart_transfer_valuation"
+[0m09:10:09.854873 [debug] [Thread-1 (]: Began executing node model.nextgeneu_players.mart_transfer_valuation
+[0m09:10:09.858072 [debug] [Thread-1 (]: Writing runtime sql for node "model.nextgeneu_players.mart_transfer_valuation"
+[0m09:10:09.858824 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_transfer_valuation"
+[0m09:10:09.859340 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_transfer_valuation: BEGIN
+[0m09:10:09.859822 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:10:09.860706 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.861208 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_transfer_valuation"
+[0m09:10:09.861789 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_transfer_valuation: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.mart_transfer_valuation"} */
+
+  
+    
+    
+
+    create  table
+      "players"."main"."mart_transfer_valuation__dbt_tmp"
+  
+    as (
+      WITH stats AS (
+    SELECT * FROM "players"."main"."mart_scouting_analysis"
+),
+
+league_weights AS (
+    SELECT 
+        player_id,
+        CASE 
+            WHEN competition = 'Premier League' THEN 2.0
+            WHEN competition IN ('La Liga', 'Bundesliga') THEN 1.5
+            WHEN competition IN ('Serie A', 'Ligue 1') THEN 1.2
+            ELSE 1.0 
+        END as league_multiplier
+    FROM stats
+)
+
+SELECT
+    s.player_id,
+    s.player_name,
+    s.season_id,
+    s.squad,
+    s.age,
+    
+    -- 1. Performance Tier (S, A, B, C)
+    -- Note: Assuming percentile_attacking and percentile_defense exist in mart_scouting_analysis
+    -- If not, we might need to calculate them or use existing rank columns.
+    -- For safety, I will use a placeholder logic if they don't exist, but the user provided this SQL.
+    -- I'll stick to the user's SQL but I should check if these columns exist.
+    -- Let's assume they do or the user intends to add them. 
+    -- Actually, looking at dashboard.py, we calculate ranks on the fly. 
+    -- The dbt model `mart_scouting_analysis` might not have them.
+    -- Let's check `mart_scouting_analysis` columns first to be safe.
+    
+    CASE 
+        WHEN percentile_attacking > 0.90 OR percentile_defense > 0.90 THEN 'S-Tier (Elite)'
+        WHEN percentile_attacking > 0.75 OR percentile_defense > 0.75 THEN 'A-Tier (Starter)'
+        WHEN percentile_attacking > 0.50 THEN 'B-Tier (Rotation)'
+        ELSE 'C-Tier (Development)'
+    END as performance_tier,
+
+    -- 2. Estimated Market Value Calculation (The Algorithm)
+    -- Formula: (Base * Age_Factor * League_Tax)
+    ROUND(
+        (
+            -- Base Value derived from performance
+            (s.expected_contribution_per_90 * 50) + (s.defensive_actions_per_90 * 5)
+        ) 
+        * 
+        -- Age Multiplier (Younger = More Expensive)
+        (CASE WHEN s.age < 23 THEN 1.5 WHEN s.age > 30 THEN 0.5 ELSE 1.0 END)
+        * 
+        -- League Tax
+        lw.league_multiplier
+    , 1) as market_value_est_m_eur,
+    
+    -- 3. Contract Status Proxy (Minutes played as proxy for squad importance)
+    CASE WHEN s.minutes_90s < 10 THEN 'Fringe' ELSE 'Key Player' END as squad_status
+
+FROM stats s
+JOIN league_weights lw USING (player_id)
+    );
+  
+  
+[0m09:10:09.871359 [debug] [Thread-1 (]: SQL status: OK in 0.009 seconds
+[0m09:10:09.874993 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_transfer_valuation"
+[0m09:10:09.875567 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_transfer_valuation: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.mart_transfer_valuation"} */
+alter table "players"."main"."mart_transfer_valuation__dbt_tmp" rename to "mart_transfer_valuation"
+[0m09:10:09.876556 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:09.877973 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_transfer_valuation: COMMIT
+[0m09:10:09.878506 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_transfer_valuation"
+[0m09:10:09.878995 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_transfer_valuation: COMMIT
+[0m09:10:09.897433 [debug] [Thread-1 (]: SQL status: OK in 0.018 seconds
+[0m09:10:09.900393 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_transfer_valuation"
+[0m09:10:09.900936 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_transfer_valuation: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.mart_transfer_valuation"} */
+
+      drop table if exists "players"."main"."mart_transfer_valuation__dbt_backup" cascade
+    
+[0m09:10:09.901882 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:09.903432 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_transfer_valuation: Close
+[0m09:10:09.904136 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf5b2659-dcb7-4708-9076-ca56d3330d43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2ab8ad3aa0>]}
+[0m09:10:09.904919 [info ] [Thread-1 (]: 19 of 20 OK created sql table model main.mart_transfer_valuation ............... [[32mOK[0m in 0.06s]
+[0m09:10:09.905685 [debug] [Thread-1 (]: Finished running node model.nextgeneu_players.mart_transfer_valuation
+[0m09:10:09.906268 [debug] [Thread-1 (]: Began running node model.nextgeneu_players.mart_player_consistency
+[0m09:10:09.906953 [info ] [Thread-1 (]: 20 of 20 START sql table model main.mart_player_consistency .................... [RUN]
+[0m09:10:09.907573 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nextgeneu_players.mart_transfer_valuation, now model.nextgeneu_players.mart_player_consistency)
+[0m09:10:09.908078 [debug] [Thread-1 (]: Began compiling node model.nextgeneu_players.mart_player_consistency
+[0m09:10:09.911271 [debug] [Thread-1 (]: Writing injected SQL for node "model.nextgeneu_players.mart_player_consistency"
+[0m09:10:09.912046 [debug] [Thread-1 (]: Began executing node model.nextgeneu_players.mart_player_consistency
+[0m09:10:09.915696 [debug] [Thread-1 (]: Writing runtime sql for node "model.nextgeneu_players.mart_player_consistency"
+[0m09:10:09.916505 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_player_consistency"
+[0m09:10:09.917023 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_player_consistency: BEGIN
+[0m09:10:09.917547 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:10:09.918525 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m09:10:09.919036 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_player_consistency"
+[0m09:10:09.919608 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_player_consistency: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.mart_player_consistency"} */
+
+  
+    
+    
+
+    create  table
+      "players"."main"."mart_player_consistency__dbt_tmp"
+  
+    as (
+      WITH trends AS (
+    SELECT * FROM "players"."main"."mart_player_trends"
+),
+
+volatility_calc AS (
+    SELECT 
+        player_id,
+        player_name,
+        primary_position,
+        
+        -- How many seasons do we have data for?
+        count(distinct season_id) as seasons_tracked,
+        
+        -- Volatility (Standard Deviation of their Specialist Index)
+        stddev(specialist_index) as performance_volatility,
+        
+        -- Peak Performance
+        max(specialist_index) as career_peak_performance,
+        
+        -- Current Form (Last season vs Career Average)
+        (arg_max(specialist_index, season_id) - avg(specialist_index)) as form_vs_avg
+        
+    FROM trends
+    GROUP BY 1, 2, 3
+)
+
+SELECT 
+    *,
+    -- Risk Classification
+    CASE 
+        WHEN seasons_tracked < 2 THEN 'Unknown Risk (New Entry)'
+        WHEN performance_volatility > 0.20 THEN 'High Risk (Inconsistent)'
+        WHEN form_vs_avg < -0.1 THEN 'Declining Risk (Past Peak)'
+        ELSE 'Safe Bet (Consistent)'
+    END as transfer_risk_rating
+FROM volatility_calc
+    );
+  
+  
+[0m09:10:09.927835 [debug] [Thread-1 (]: SQL status: OK in 0.008 seconds
+[0m09:10:09.931946 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_player_consistency"
+[0m09:10:09.932836 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_player_consistency: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.mart_player_consistency"} */
+alter table "players"."main"."mart_player_consistency__dbt_tmp" rename to "mart_player_consistency"
+[0m09:10:09.933807 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:09.935207 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_player_consistency: COMMIT
+[0m09:10:09.935720 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_player_consistency"
+[0m09:10:09.936169 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_player_consistency: COMMIT
+[0m09:10:09.943599 [debug] [Thread-1 (]: SQL status: OK in 0.007 seconds
+[0m09:10:09.946161 [debug] [Thread-1 (]: Using duckdb connection "model.nextgeneu_players.mart_player_consistency"
+[0m09:10:09.946689 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_player_consistency: /* {"app": "dbt", "dbt_version": "1.10.15", "profile_name": "nextgeneu_players", "target_name": "dev", "node_id": "model.nextgeneu_players.mart_player_consistency"} */
+
+      drop table if exists "players"."main"."mart_player_consistency__dbt_backup" cascade
+    
+[0m09:10:09.947455 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m09:10:09.948866 [debug] [Thread-1 (]: On model.nextgeneu_players.mart_player_consistency: Close
+[0m09:10:09.949538 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bf5b2659-dcb7-4708-9076-ca56d3330d43', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2abaa89520>]}
+[0m09:10:09.950284 [info ] [Thread-1 (]: 20 of 20 OK created sql table model main.mart_player_consistency ............... [[32mOK[0m in 0.04s]
+[0m09:10:09.951009 [debug] [Thread-1 (]: Finished running node model.nextgeneu_players.mart_player_consistency
+[0m09:10:09.952467 [debug] [MainThread]: Using duckdb connection "master"
+[0m09:10:09.952906 [debug] [MainThread]: On master: BEGIN
+[0m09:10:09.953327 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m09:10:09.954048 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m09:10:09.954511 [debug] [MainThread]: On master: COMMIT
+[0m09:10:09.954923 [debug] [MainThread]: Using duckdb connection "master"
+[0m09:10:09.955357 [debug] [MainThread]: On master: COMMIT
+[0m09:10:09.955970 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m09:10:09.956426 [debug] [MainThread]: On master: Close
+[0m09:10:09.956917 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:10:09.957353 [debug] [MainThread]: Connection 'model.nextgeneu_players.mart_player_consistency' was properly closed.
+[0m09:10:09.957916 [info ] [MainThread]: 
+[0m09:10:09.958494 [info ] [MainThread]: Finished running 7 table models, 13 view models in 0 hours 0 minutes and 1.53 seconds (1.53s).
+[0m09:10:09.961767 [debug] [MainThread]: Command end result
+[0m09:10:09.997419 [debug] [MainThread]: Wrote artifact WritableManifest to /workspaces/NextGenEUPlayers/transformation/target/manifest.json
+[0m09:10:09.999864 [debug] [MainThread]: Wrote artifact SemanticManifest to /workspaces/NextGenEUPlayers/transformation/target/semantic_manifest.json
+[0m09:10:10.008454 [debug] [MainThread]: Wrote artifact RunExecutionResult to /workspaces/NextGenEUPlayers/transformation/target/run_results.json
+[0m09:10:10.009011 [info ] [MainThread]: 
+[0m09:10:10.009543 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m09:10:10.009991 [info ] [MainThread]: 
+[0m09:10:10.010480 [info ] [MainThread]: Done. PASS=20 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=20
+[0m09:10:10.011550 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": true, "command_wall_clock_time": 2.4987144, "process_in_blocks": "11680", "process_kernel_time": 0.408611, "process_mem_max_rss": "418648", "process_out_blocks": "11296", "process_user_time": 5.042202}
+[0m09:10:10.012120 [debug] [MainThread]: Command `dbt build` succeeded at 09:10:10.012015 after 2.50 seconds
+[0m09:10:10.012615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2ac1f95b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2abe35c620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2abe35d400>]}
+[0m09:10:10.013086 [debug] [MainThread]: Flushing usage events
+[0m09:10:10.518978 [debug] [MainThread]: An error was encountered while trying to flush usage events

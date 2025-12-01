@@ -87,13 +87,43 @@ def get_connection():
 @st.cache_data
 def load_data():
     con = get_connection()
-    # 1. Outfielders
-    df_field = con.execute("SELECT * FROM mart_scouting_analysis WHERE minutes_90s >= 5").df()
+    
+    # 1. Outfielders (Join with Valuation and Consistency)
+    # We join the new Marts here to avoid complex Python merging later
+    query = """
+        SELECT 
+            sa.*,
+            tv.market_value_est_m_eur,
+            tv.performance_tier,
+            tv.squad_status,
+            pc.transfer_risk_rating,
+            pc.performance_volatility,
+            pc.consistency_score
+        FROM mart_scouting_analysis sa
+        LEFT JOIN mart_transfer_valuation tv 
+            ON sa.player_id = tv.player_id AND sa.season_id = tv.season_id
+        LEFT JOIN mart_player_consistency pc
+            ON sa.player_id = pc.player_id
+        WHERE sa.minutes_90s >= 5
+    """
+    try:
+        df_field = con.execute(query).df()
+    except Exception as e:
+        # Fallback to basic load if Marts are missing (during dev)
+        print(f"Warning: {e}")
+        df_field = con.execute("SELECT * FROM mart_scouting_analysis WHERE minutes_90s >= 5").df()
+
     # 2. Goalkeepers
     try:
         df_gk = con.execute("SELECT * FROM mart_goalkeeping_analysis").df()
     except:
         df_gk = pd.DataFrame() # Fallback if table doesn't exist yet
+        
+    # 3. Squad Profiles (New Mart)
+    try:
+        df_squads = con.execute("SELECT * FROM mart_squad_profile").df()
+    except:
+        df_squads = pd.DataFrame()
     
     # Enrich Outfielders
     df_field['scouting_role'] = df_field['primary_position'].apply(map_role)
@@ -103,7 +133,7 @@ def load_data():
         df_gk['scouting_role'] = 'Goalkeeper'
         df_gk['primary_position'] = 'GK'
     
-    return df_field, df_gk
+    return df_field, df_gk, df_squads
 
 # 1. ENRICHMENT: Map Raw Positions to Scouting Roles
 def map_role(pos):
@@ -333,7 +363,7 @@ def create_comparison_radar(data_p1, data_p2, name_p1, name_p2):
     
     return fig
 
-df, df_gk = load_data()
+df, df_gk, df_squads = load_data()
 
 # --- SIDEBAR: GLOBAL FILTERS ---
 st.sidebar.header("🌍 Global Filters")
@@ -411,6 +441,11 @@ if 'active_tab' not in st.session_state:
 st.markdown('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 # Use index to control state, remove key to avoid conflict
 tabs = ["📊 Market Analytics", "👤 Player Deep Dive", "⚖️ Comparison"]
+
+# SAFETY CHECK: Ensure active_tab is valid (handles renames/reloads)
+if st.session_state.active_tab not in tabs:
+    st.session_state.active_tab = tabs[0]
+
 active_tab = st.radio("Navigation", tabs, 
                       index=tabs.index(st.session_state.active_tab),
                       label_visibility="collapsed")
@@ -480,23 +515,20 @@ if st.session_state.active_tab == "📊 Market Analytics":
         else:
             role_df['Overall Score'] = 0
             
-        # 2. SQUAD TIER HEURISTIC (New!)
-        # Used to find players overperforming their team's level
-        # Simple heuristic: Top teams usually have high avg Possession or 'Overall Score'
-        squad_strength = role_df.groupby('squad')['Overall Score'].transform('mean')
-        try:
-            role_df['Squad Tier'] = pd.qcut(squad_strength, 3, labels=["Small Club", "Mid-Table", "Elite Club"])
-        except ValueError:
-            # Fallback if not enough distinct values (e.g. single squad filtered)
-            role_df['Squad Tier'] = "Mid-Table"
-    
+        # 2. SQUAD TIER / VALUATION (From dbt Marts)
+        # Ensure columns exist (fallback for safety)
+        if 'market_value_est_m_eur' not in role_df.columns:
+            role_df['market_value_est_m_eur'] = 0
+        if 'performance_tier' not in role_df.columns:
+            role_df['performance_tier'] = "Unknown"
+
     # --- CONTROLS SECTION ---
     c_ctrl1, c_ctrl2, c_ctrl3 = st.columns([1, 1, 2])
     with c_ctrl1:
         # VIEW MODE: Allow switching color logic to find different types of players
         view_mode = st.selectbox(
             "🎨 View Mode", 
-            ["Smart Score (Performance)", "Squad Tier (Hidden Gems)", "Age (Prospects)"],
+            ["Smart Score (Performance)", "Market Value (Moneyball)", "Age (Prospects)"],
             help="Switch coloring to identify performance, value picks, or youth."
         )
     with c_ctrl2:
@@ -513,9 +545,9 @@ if st.session_state.active_tab == "📊 Market Analytics":
             if view_mode == "Smart Score (Performance)":
                 color_col = "Overall Score"
                 color_scale = "Viridis"
-            elif view_mode == "Squad Tier (Hidden Gems)":
-                color_col = "Squad Tier"
-                color_scale = None # Discrete
+            elif view_mode == "Market Value (Moneyball)":
+                color_col = "market_value_est_m_eur"
+                color_scale = "RdYlGn_r" # Green = Cheap, Red = Expensive
             else: # Age
                 color_col = "age"
                 color_scale = "RdYlBu" # Red = Old, Blue = Young
@@ -534,9 +566,8 @@ if st.session_state.active_tab == "📊 Market Analytics":
                 symbol="is_u23_prospect",
                 symbol_map={True: "diamond", False: "circle", 1: "diamond", 0: "circle"},
                 hover_name="player_name",
-                hover_data=["squad", "age", "season_id", "Overall Score"],
+                hover_data=["squad", "age", "season_id", "Overall Score", "market_value_est_m_eur", "performance_tier"],
                 color_continuous_scale=color_scale,
-                color_discrete_map={"Small Club": "#00CC96", "Mid-Table": "#FFA15A", "Elite Club": "#EF553B"},
                 # Embed Player Name for the Click Event
                 custom_data=['player_name'],
                 height=600
@@ -596,7 +627,7 @@ if st.session_state.active_tab == "📊 Market Analytics":
         st.markdown("### 🏆 Leaderboards")
         
         # 3. CONTEXTUAL TABS (Mini Tabs for Leaders)
-        l_tab1, l_tab2 = st.tabs(["🌟 Top Rated", "💎 Hidden Gems"])
+        l_tab1, l_tab2 = st.tabs(["🌟 Top Rated", "💰 Moneyball"])
         
         with l_tab1:
             if not role_df.empty:
@@ -610,19 +641,26 @@ if st.session_state.active_tab == "📊 Market Analytics":
                 )
         
         with l_tab2:
-            # Logic: High Score + Small Club
-            if not role_df.empty and 'Squad Tier' in role_df.columns:
-                gems = role_df[role_df['Squad Tier'] == "Small Club"].sort_values(by='Overall Score', ascending=False).head(10)
+            # Logic: High Performance Tier + Low Market Value
+            if not role_df.empty and 'performance_tier' in role_df.columns:
+                # Filter for Elite/High Performers who are cheap (< 30M)
+                # Note: Tiers might be case sensitive depending on dbt model output
+                gems = role_df[
+                    (role_df['performance_tier'].isin(['Elite', 'High Performer'])) & 
+                    (role_df['market_value_est_m_eur'] < 30)
+                ].sort_values(by='market_value_est_m_eur', ascending=True).head(10)
+                
                 if not gems.empty:
                     st.dataframe(
-                        gems[['player_name', 'squad', 'Overall Score']],
+                        gems[['player_name', 'market_value_est_m_eur', 'performance_tier']],
                         column_config={
-                            "Overall Score": st.column_config.ProgressColumn("Score", format="%.0f", min_value=0, max_value=100)
+                            "market_value_est_m_eur": st.column_config.NumberColumn("Est. Value (€M)", format="€%.1fM"),
+                            "performance_tier": "Tier"
                         },
                         hide_index=True, use_container_width=True
                     )
                 else:
-                    st.info("No hidden gems found.")
+                    st.info("No Moneyball picks found.")
 
     # --- NEW SECTION: LEAGUE CONTEXT ---
     st.divider()
@@ -794,24 +832,13 @@ if st.session_state.active_tab == "👤 Player Deep Dive":
             # Robust Metric Handling (Handle missing columns between GK/Outfield)
             c2.metric("90s Played", f"{p_latest['minutes_90s']:.1f}")
             
-            if 'save_pct' in p_latest:
-                 c3.metric("Save %", f"{p_latest['save_pct']:.1%}")
-            elif 'goals' in p_latest and 'assists' in p_latest:
-                 g_a = p_latest['goals'] + p_latest['assists']
-                 c3.metric("G + A", f"{int(g_a)}")
-            else:
-                 c3.metric("Key Stat", "-")
+            # NEW: Market Value
+            val = p_latest.get('market_value_est_m_eur', 0)
+            c3.metric("Est. Value", f"€{val:.1f}M")
             
-            # Dynamic "Form" Arrow (based on last 5 games trend if we had it, otherwise YoY)
-            if not trends_df.empty:
-                yoy = trends_df.iloc[-1]['yoy_change_specialist']
-                
-                # FIX: Handle NaN specifically to avoid the "nan" green arrow in your screenshot
-                if pd.isna(yoy):
-                    c4.metric("Role Perf. Trend", f"{trends_df.iloc[-1]['specialist_index']:.2f}", delta=None)
-                else:
-                    delta_color = "inverse" if yoy < 0 else "normal" # Green up, Red down
-                    c4.metric("Role Perf. Trend", f"{trends_df.iloc[-1]['specialist_index']:.2f}", f"{yoy:.2f}", delta_color=delta_color)
+            # NEW: Risk Badge
+            risk = p_latest.get('transfer_risk_rating', 'Unknown')
+            c4.metric("Risk Rating", risk)
             
             st.divider()
 
@@ -875,8 +902,8 @@ if st.session_state.active_tab == "👤 Player Deep Dive":
                             # (Simplified for snippet)
                             pass 
 
-            st.divider()
-            
+
+
             # =========================================================
             # SECTION 4: SEASON DEEP DIVE (New Feature)
             # =========================================================
