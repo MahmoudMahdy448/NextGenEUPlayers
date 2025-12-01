@@ -75,10 +75,10 @@ This diagram illustrates the transformation journey from raw web data to the fin
 ```mermaid
 flowchart LR
     %% Styles
-    classDef raw fill:#f9f,stroke:#333,stroke-width:2px
-    classDef stage fill:#bbf,stroke:#333,stroke-width:2px
-    classDef int fill:#dfd,stroke:#333,stroke-width:2px
-    classDef mart fill:#fd9,stroke:#333,stroke-width:4px
+    classDef raw fill:#f9f,stroke:#333,stroke-width:2px,font-size:18px,color:#000;
+    classDef stage fill:#bbf,stroke:#333,stroke-width:2px,font-size:18px,color:#000;
+    classDef int fill:#dfd,stroke:#333,stroke-width:2px,font-size:18px,color:#000;
+    classDef mart fill:#fd9,stroke:#333,stroke-width:4px,font-size:18px,color:#000;
 
     %% Nodes
     subgraph Source["1. Source-Aligned Schema"]
@@ -148,7 +148,10 @@ We implemented a **Star Schema** variant where `dim_players` acts as the central
 
 ```mermaid
 erDiagram
-    %% DIMENSION: The "Who"
+    %% Style overrides
+    %% Mermaid ERD doesn’t support classDef directly, but you can use quotes for labels
+    %% and keep field names short so they render larger.
+    
     dim_players {
         string player_id PK "Unique MD5 Hash"
         string player_name
@@ -157,7 +160,6 @@ erDiagram
         string primary_position
     }
 
-    %% FACT: The "What" (Performance)
     mart_scouting_analysis {
         string player_id FK
         string season_id
@@ -168,7 +170,6 @@ erDiagram
         float percentile_defense
     }
 
-    %% FACT: The "Value" (Business Logic)
     mart_transfer_valuation {
         string player_id FK
         string season_id
@@ -177,7 +178,6 @@ erDiagram
         string squad_status
     }
 
-    %% FACT: The "Trend" (Time Series)
     mart_player_trends {
         string player_id FK
         string season_id
