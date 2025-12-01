@@ -186,10 +186,37 @@ erDiagram
         float volatility_score
     }
 
+    mart_goalkeeping_analysis {
+        string player_id FK
+        string season_id
+        float save_pct
+        float psxg_net_per90
+        float cross_stop_pct
+    }
+
+    mart_player_consistency {
+        string player_id FK
+        string season_id
+        float consistency_score
+        float performance_std_dev
+        int matches_played
+    }
+
+    mart_squad_profile {
+        string squad
+        string season_id
+        float avg_player_age
+        float squad_market_value
+        float possession_style_score
+    }
+
     %% Relationships
     dim_players ||--|{ mart_scouting_analysis : "has stats"
     dim_players ||--|{ mart_transfer_valuation : "has value"
     dim_players ||--|{ mart_player_trends : "has history"
+    dim_players ||--|{ mart_goalkeeping_analysis : "has gk stats"
+    dim_players ||--|{ mart_player_consistency : "has consistency"
+    mart_scouting_analysis }|--|| mart_squad_profile : "belongs to"
 ```
 
 ## Analytics & KPIs
