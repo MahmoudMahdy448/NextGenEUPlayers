@@ -29,8 +29,8 @@ SELECT
     s.xag,
     coalesce(sh.shots_total, 0) as shots_total,
     coalesce(sh.shots_on_target, 0) as shots_on_target,
-    coalesce(c.sca, 0) as sca,
-    coalesce(c.gca, 0) as gca,
+    coalesce(c.shot_creating_actions, 0) as sca,
+    coalesce(c.goal_creating_actions, 0) as gca,
 
     -- Possession & Creation
     coalesce(p.key_passes, 0) as key_passes,

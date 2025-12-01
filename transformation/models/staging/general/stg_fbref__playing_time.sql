@@ -19,6 +19,8 @@ SELECT
     {{ clean_numeric('subs_unsub') }} as unused_sub,
     
     -- Team Success (Plus/Minus)
+    {{ clean_numeric('team_success_') }} as plus_minus,
+    {{ clean_numeric('team_success_90') }} as plus_minus_per90,
     TRY_CAST(team_success_onoff AS FLOAT) as plus_minus_net_per_90
 
 FROM raw_union

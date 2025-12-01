@@ -18,7 +18,7 @@ dbt_resource = DbtCliResource(
 # Define a job that runs ingestion THEN dbt
 full_pipeline_job = define_asset_job(
     name="refresh_scouting_platform",
-    selection=AssetSelection.groups("ingestion") | AssetSelection.groups("dbt_transformation")
+    selection=AssetSelection.groups("ingestion") | AssetSelection.assets(dbt.dbt_analytics_assets)
 )
 
 defs = Definitions(

@@ -1,18 +1,28 @@
 {
     "path_count": 203,
-    "parsed_path_count": 0,
-    "static_analysis_path_count": 0,
-    "static_analysis_parsed_path_count": 0,
+    "parsed_path_count": 2,
+    "static_analysis_path_count": 2,
+    "static_analysis_parsed_path_count": 1,
     "is_partial_parse_enabled": true,
     "is_static_analysis_enabled": true,
-    "read_files_elapsed": 0.01731828600168228,
-    "load_all_elapsed": 0.16359190300136106,
+    "read_files_elapsed": 0.01983944099629298,
+    "load_macros_elapsed": 0.0004960759979439899,
+    "parse_project_elapsed": 0.42083575199649204,
+    "patch_sources_elapsed": 4.6246001147665083e-05,
+    "process_manifest_elapsed": 0.000646797998342663,
+    "load_all_elapsed": 0.6309606609938783,
     "projects": [
         {
             "project_name": "nextgeneu_players",
-            "elapsed": 0,
-            "parsers": [],
-            "parsed_path_count": 0
+            "elapsed": 0.42074017300183186,
+            "parsers": [
+                {
+                    "parser": "model",
+                    "elapsed": 0.4207287729950622,
+                    "parsed_path_count": 2
+                }
+            ],
+            "parsed_path_count": 2
         },
         {
             "project_name": "dbt_duckdb",
