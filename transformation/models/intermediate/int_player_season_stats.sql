@@ -4,7 +4,9 @@ WITH standard AS (SELECT * FROM {{ ref('stg_fbref__standard') }}),
      pass_types AS (SELECT * FROM {{ ref('stg_fbref__pass_types') }}),
      defense  AS (SELECT * FROM {{ ref('stg_fbref__defense') }}),
      poss     AS (SELECT * FROM {{ ref('stg_fbref__possession') }}),
-     misc     AS (SELECT * FROM {{ ref('stg_fbref__misc') }})
+     misc     AS (SELECT * FROM {{ ref('stg_fbref__misc') }}),
+     creation AS (SELECT * FROM {{ ref('stg_fbref__creation') }}),
+     playing_time AS (SELECT * FROM {{ ref('stg_fbref__playing_time') }})
 
 SELECT
     -- Anchors
@@ -27,6 +29,8 @@ SELECT
     s.xag,
     coalesce(sh.shots_total, 0) as shots_total,
     coalesce(sh.shots_on_target, 0) as shots_on_target,
+    coalesce(c.sca, 0) as sca,
+    coalesce(c.gca, 0) as gca,
 
     -- Possession & Creation
     coalesce(p.key_passes, 0) as key_passes,
@@ -42,7 +46,11 @@ SELECT
     coalesce(d.interceptions, 0) as interceptions,
     coalesce(d.tackles_att_3rd, 0) as tackles_att_3rd,
     coalesce(m.ball_recoveries, 0) as recoveries,
-    coalesce(m.aerials_won, 0) as aerials_won
+    coalesce(m.aerials_won, 0) as aerials_won,
+    
+    -- Playing Time / Team Impact
+    coalesce(tm.plus_minus, 0) as plus_minus,
+    coalesce(tm.plus_minus_per90, 0) as plus_minus_per90
 
 FROM standard s
 LEFT JOIN shooting sh USING (player_id, squad, season_id)
@@ -51,6 +59,8 @@ LEFT JOIN pass_types pt USING (player_id, squad, season_id)
 LEFT JOIN defense d   USING (player_id, squad, season_id)
 LEFT JOIN poss        USING (player_id, squad, season_id)
 LEFT JOIN misc m      USING (player_id, squad, season_id)
+LEFT JOIN creation c  USING (player_id, squad, season_id)
+LEFT JOIN playing_time tm USING (player_id, squad, season_id)
 
 -- Filter out rows where the join keys might have drifted or empty names
 WHERE s.player_id IS NOT NULL
