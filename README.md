@@ -500,6 +500,430 @@ cd transformation
 dbt compile
 ```
 
+## Visualization Layer (Streamlit Dashboard)
+
+### Overview
+
+The **NextGen Scout Pro** dashboard is a comprehensive Streamlit application that transforms the analytical models (Marts) into an interactive scouting platform. It provides recruiters, analysts, and scouts with intuitive visualizations and data-driven insights for player evaluation.
+
+**Tech Stack:**
+- **Framework:** Streamlit (Python)
+- **Visualization:** Plotly (interactive charts)
+- **Database:** DuckDB (read-only connection)
+- **APIs:** TheSportsDB (team badges), FlagCDN (country flags)
+
+**Access:** `http://localhost:8501`
+
+### Architecture
+
+```mermaid
+flowchart TD
+    classDef db fill:#f9d71c,stroke:#333,stroke-width:2px,color:#000
+    classDef viz fill:#ff4b4b,stroke:#fff,stroke-width:2px,color:#fff
+    classDef api fill:#2ecc71,stroke:#fff,stroke-width:2px,color:#fff
+
+    A[DuckDB Marts] -->|SQL Query| B[Data Loader]
+    B --> C[Global Filters]
+    C --> D[Market Analytics]
+    C --> E[Player Deep Dive]
+    C --> F[Comparison Tool]
+    C --> G[Data Audit]
+    
+    H[TheSportsDB API] -.->|Team Badges| E
+    I[FlagCDN API] -.->|Country Flags| E
+    
+    class A db
+    class B,C,D,E,F,G viz
+    class H,I api
+```
+
+### Page Structure
+
+#### Sidebar: Global Filters
+
+The sidebar provides cross-page filtering capabilities that dynamically update all visualizations.
+
+![Sidebar Filters](docs/images/dashboard-sidebar.png)
+*Global filtering controls for seasons, leagues, teams, age, and position*
+
+**Filter Components:**
+
+1. **🌍 Season Selection** (Multi-select)
+   - Options: 2023-2024, 2024-2025, 2025-2026
+   - Default: Latest season
+   - Purpose: Compare players across different campaign years
+
+2. **🏆 League Filter** (Multi-select)
+   - Options: Premier League, La Liga, Serie A, Bundesliga, Ligue 1
+   - Default: All leagues selected
+   - Purpose: Focus on specific competitions
+
+3. **⚽ Team Filter** (Multi-select, Optional)
+   - Dynamic: Updates based on selected leagues
+   - Purpose: Scout specific squads or exclude top clubs
+
+4. **📅 Age Range** (Slider)
+   - Range: 15-45 years
+   - Default: Full range
+   - Purpose: Target specific age demographics
+
+5. **💎 U23 Prospects Filter** (Checkbox)
+   - Boolean: Show only players aged 23 or younger
+   - Purpose: Identify development prospects
+
+6. **🎯 Target Position** (Dropdown)
+   - Options: Attacker, Winger/AM, Midfielder, Defender, Wingback/DM, Goalkeeper
+   - Purpose: Position-specific analytics and comparisons
+
+---
+
+### Tab 1: 📊 Market Analytics
+
+The primary discovery interface for identifying talent using interactive scatter plots and leaderboards.
+
+![Market Analytics Overview](docs/images/dashboard-market-analytics.png)
+*Position-based market matrix with quadrant analysis*
+
+#### Features
+
+**1. View Mode Selector** (Dropdown)
+- **Smart Score (Performance):** Color-codes players by composite statistical rating
+- **Market Value (Moneyball):** Highlights undervalued high-performers (green = cheap, red = expensive)
+- **Age (Prospects):** Color gradient from young (blue) to veteran (red)
+
+**2. Quadrant Baseline Toggle** (Dropdown)
+- **Mean:** Uses average as center point (sensitive to outliers)
+- **Median:** Uses 50th percentile as center point (robust to extreme values)
+
+**3. Interactive Scatter Plot**
+
+The chart visualizes players in a 2D space defined by position-specific KPIs:
+
+| Position | X-Axis | Y-Axis | Bubble Size |
+|----------|--------|--------|-------------|
+| **Attacker** | Expected Goal Contribution (xG+xAG) | Actual Goals + Assists | Shot Volume |
+| **Winger/AM** | Key Passes per 90 | Dribbles Won per 90 | npxG |
+| **Midfielder** | Progressive Pass Distance | Key Passes | Minutes Played |
+| **Defender** | Interceptions per 90 | Aerials Won per 90 | Tackles Won |
+| **Wingback/DM** | Tackles Won per 90 | Ball Progression Distance | Interceptions |
+| **Goalkeeper** | Sweeper Actions per 90 | PSxG +/- per 90 | Clean Sheet % |
+
+**Quadrant Interpretation:**
+- 🟢 **Top Right (Elite):** High performance on both axes
+- 🟠 **Bottom Right (Specialist):** Volume-focused, lower efficiency
+- 🔵 **Top Left (Efficient):** High efficiency, lower volume
+- ⚪ **Bottom Left (Developing):** Below average on both metrics
+
+**Interactivity:**
+- **Click on any player** → Auto-navigates to their Deep Dive profile
+- **Hover** → Displays player name, club, age, season, Smart Score, market value, performance tier
+
+**4. League Calibration (Violin Plot)**
+
+![League Distribution](docs/images/dashboard-league-calibration.png)
+*Statistical distribution comparison across competitions*
+
+Visualizes whether specific metrics are "inflated" in certain leagues using violin plots that show:
+- Distribution density (width of violin)
+- Median values (center line)
+- Individual player data points
+- Box plot overlay (quartiles)
+
+**Use Case:** Determine if a player's stats in Ligue 1 would translate to the Premier League.
+
+**5. Leaderboards** (Right Sidebar)
+
+**Tab A: 🌟 Top Rated**
+- Ranks players by **Smart Score** (composite position-specific index)
+- Displays: Player Name, Squad, Score (0-100 progress bar)
+- Limit: Top 10
+
+**Tab B: 💰 Moneyball**
+- Identifies **undervalued** players: Elite/High Performer tier + Market Value < €30M
+- Sorted by: Ascending market value (cheapest first)
+- Use Case: Find hidden gems for budget-conscious clubs
+
+---
+
+### Tab 2: 👤 Player Deep Dive
+
+Comprehensive individual player analysis with scouting reports, statistical breakdowns, and similarity matching.
+
+![Player Profile Header](docs/images/dashboard-player-header.png)
+*Player bio card with team badge, flag, and U23 indicator*
+
+#### Features
+
+**1. Intelligent Search Bar**
+- **Normalization:** Handles Unicode characters (e.g., searching "Yildiz" finds "Yıldız")
+- **Auto-complete:** Dropdown with all player names
+- **Session Persistence:** Remembers last viewed player
+- **Click Navigation:** Clicking a player in Market Analytics auto-populates this search
+
+**2. Player Bio Header**
+
+Displays:
+- **Player Name** (Large heading with team logo)
+- **💎 U23 Prospect Badge** (if age ≤ 23)
+- **Squad:** Current club
+- **Nation:** Flag icon + country name
+- **Age:** Current age
+
+**3. Quick Stats Card** (4 Columns)
+- **Position:** Primary role (e.g., FW, MF, DF, GK)
+- **90s Played:** Total match time normalized
+- **Est. Value:** Algorithmic market valuation in €M
+- **Risk Rating:** Transfer risk assessment (Low/Medium/High/Unknown)
+
+**4. Visual Profile & Scouting Notes** (2 Columns)
+
+![Pizza Chart](docs/images/dashboard-pizza-chart.png)
+*Multi-category percentile profile (Pizza Chart)*
+
+**Left: Pizza Chart**
+- **Metrics:** 12-16 KPIs grouped by category
+  - **Attacking:** Goals, Shots, npxG, Touches in Box
+  - **Passing:** Passes Completed, Progressive Passes, Key Passes
+  - **Possession:** Touches, Carries, Dribbles, Progressive Carries
+  - **Defending:** Tackles, Interceptions, Blocks, Aerials
+  - *(For GKs: Shot Stopping, Distribution, Sweeping, Command)*
+- **Calculation:** Percentile rank vs. positional peers in the same season
+- **Visualization:** Polar bar chart with color-coded categories
+- **Hover:** Shows raw value + percentile
+
+**Right: Automated Scouting Notes**
+- **🟢 Key Strengths:** Metrics where player is in top 25% (75th+ percentile)
+- **🔴 Areas for Improvement:** Metrics where player is in bottom 25% (25th- percentile)
+- **Context:** Limited to top 5 items each to avoid clutter
+
+**5. Season Deep Dive** (Tabbed Layout)
+
+![Season Stats Breakdown](docs/images/dashboard-season-breakdown.png)
+*Detailed categorical statistics for selected season*
+
+**Season Selector:** Dropdown to analyze specific campaigns (2023-2024, 2024-2025, 2025-2026)
+
+**For Outfielders (4 Tabs):**
+- **🔫 Attacking:** Goals, xG, Shots, Shot Accuracy, Shot Distance, Goals vs xG
+- **🎯 Passing/Creation:** Assists, xAG, Key Passes, Progressive Passes, Passes into Box, Through Balls, Crosses
+- **🛡️ Defense:** Tackles, Interceptions, Blocks, Recoveries, Aerials, Fouls
+- **⚽ Possession:** Touches, Progressive Carries, Take-ons, Carries into Box, Miscontrols, Dispossessions
+
+**For Goalkeepers (3 Tabs):**
+- **🧤 Shot Stopping:** PSxG +/-, Save %, Goals Against, Clean Sheet %
+- **🧹 Sweeping:** Sweeper Actions, Crosses Stopped %, Avg Defensive Distance
+- **📢 Distribution:** Long Pass %, Avg Pass Length, Goal Kick Launch %
+
+**Display Format:** 4-column metric grid with safe handling for missing data
+
+**6. Multidimensional Evolution** (Line + Bar Chart)
+
+![Player Trends](docs/images/dashboard-player-trends.png)
+*Career trajectory showing role performance vs. goal threat over time*
+
+- **Primary Axis (Line):** Role-specific specialist index
+  - Defenders: Defensive Actions per 90
+  - Midfielders: Ball Progression Yards per 90
+  - Attackers: Attacking Output (xG+xAG)
+  - Goalkeepers: Shot Stopping (PSxG +/-)
+- **Secondary Axis (Bar):** Goal Threat (xG+xAG per 90) - Only for outfielders
+- **Purpose:** Identify if a midfielder is evolving into a goal-scoring threat, or if a defender maintains consistency
+
+**7. Statistical Doppelgängers** (Similarity Search)
+
+![Similar Players](docs/images/dashboard-similarity.png)
+*Top 5 most similar players using KNN distance metric*
+
+**Algorithm:**
+- **Feature Space:** All numeric metrics from the selected season
+- **Normalization:** Z-score standardization (to prevent bias toward high-volume stats)
+- **Distance Metric:** Euclidean distance in normalized space
+- **Output:** Top 5 closest matches (excluding the player themselves)
+
+**Display:**
+- **Similarity Score:** 0-100% (higher = more similar)
+- **Player Name, Club, Age, Nation**
+
+**Use Case:** "Find me a cheaper/younger version of Declan Rice"
+
+---
+
+### Tab 3: ⚖️ Comparison
+
+Head-to-head player comparison with dual radar charts and detailed metric tables.
+
+![Player Comparison](docs/images/dashboard-comparison.png)
+*Head-to-head statistical profile with percentile overlays*
+
+#### Features
+
+**1. Dual Search Bars**
+- **Player A:** Left dropdown (normalized search)
+- **Player B:** Right dropdown (normalized search)
+- **Default:** Auto-selects first two players from filtered dataset
+
+**2. Radar Chart (Overlapping)**
+- **Player A:** Green trace
+- **Player B:** Purple trace
+- **Metrics:** Same as Pizza Chart (12-16 KPIs)
+- **Values:** Percentile ranks (0-100 scale)
+- **Hover:** Unified tooltip on hover for easy comparison
+
+**3. Statistical Edge Summary**
+
+**🟢 Player A Advantages:**
+- Lists metrics where Player A is **+15 percentile points** better
+- Example: "Progressive Passes (+23% percentile)"
+
+**🟣 Player B Advantages:**
+- Lists metrics where Player B is **+15 percentile points** better
+
+**Neutral:** Displays "These players have very similar statistical profiles" if no significant differences
+
+**4. Detailed Metrics Table**
+
+![Comparison Table](docs/images/dashboard-comparison-table.png)
+*Side-by-side raw values with percentile ranks*
+
+**Columns:**
+- **Category:** Attacking, Passing, Possession, Defending
+- **Metric:** Stat name
+- **Player A:** Raw Value (Percentile %)
+- **Player B:** Raw Value (Percentile %)
+
+**Sorting:** Grouped by category for logical flow
+
+**Use Case:** "Should we sign Player A or Player B for the same price?"
+
+---
+
+### Tab 4: 🕒 Data Audit
+
+Operational transparency dashboard for data quality monitoring and ingestion tracking.
+#### Features
+
+**1. Database Statistics** (2 Columns)
+- **Total Players (Marts):** Row count from `mart_scouting_analysis`
+- **Last Data Update:** Most recent `load_timestamp` from raw tables
+
+**2. Recently Added/Updated Players Table**
+
+**Query:** Fetches the 20 most recent records from the latest season's raw table based on `load_timestamp`
+
+**Columns:**
+- **Player Name**
+- **Squad**
+- **Loaded At:** Timestamp of data ingestion
+
+**Purpose:**
+- Verify pipeline executed successfully
+- Identify when specific players were last updated
+- Audit data freshness for compliance
+
+**Error Handling:**
+- Displays friendly error message if `load_timestamp` column is missing
+- Gracefully handles missing Marts tables (during development)
+
+---
+
+### Data Enrichment APIs
+
+**1. Team Badges** (TheSportsDB)
+- **Endpoint:** `https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t={team_name}`
+- **Cache:** 1 hour TTL
+- **Fallback:** No badge displayed if API fails
+
+**2. Country Flags** (FlagCDN)
+- **Endpoint:** `https://flagcdn.com/h24/{country_code}.png`
+- **Normalization:** Handles ISO Alpha-3 codes (e.g., ENG → gb-eng)
+- **Manual Overrides:** Special cases for UK nations, USA, Korea, Türkiye
+
+**3. Unicode Name Normalization**
+- **Problem:** Search for "Yildiz" wouldn't match "Yıldız"
+- **Solution:** NFD decomposition + accent stripping
+- **Supported:** Turkish (ı, İ), Scandinavian (ø), German (ß), and all accented Latin characters
+
+---
+
+### Performance Optimizations
+
+**1. Caching Strategy**
+- **`@st.cache_resource`:** DuckDB connection (persistent across sessions)
+- **`@st.cache_data`:** Data loads, API calls (TTL: 1 hour)
+- **Benefit:** Dashboard loads in <2 seconds after initial cache
+
+**2. Read-Only Database Connection**
+```python
+duckdb.connect('data/duckdb/players.db', read_only=True)
+```
+- **Prevents:** IO lock errors when pipeline runs concurrently
+- **Trade-off:** Dashboard must be restarted to see new data (acceptable for scheduled pipelines)
+
+**3. Lazy Loading**
+- **Approach:** Only query Marts when tab is activated
+- **Result:** Initial page load only fetches outfielder data; GK data loads on-demand
+
+---
+
+### User Workflows
+
+**Workflow 1: Discover Undervalued Talent**
+1. **Sidebar:** Select "Midfielder" + "U23 Prospects Only" + Premier League
+2. **Tab 1:** Switch View Mode to "Market Value (Moneyball)"
+3. **Scatter Plot:** Identify green bubbles (cheap) in Elite Quadrant (top-right)
+4. **Leaderboard:** Check "💰 Moneyball" tab for sorted list
+5. **Click Player:** Auto-navigate to Deep Dive for confirmation
+
+**Workflow 2: Find Replacement for Injured Player**
+1. **Tab 2:** Search injured player (e.g., "Declan Rice")
+2. **Scroll to "Statistical Doppelgängers"**
+3. **Note Top 5:** Review similarity scores
+4. **Tab 3:** Compare injured player vs. top doppelgänger
+5. **Decision:** Evaluate if replacement fits tactical system
+
+**Workflow 3: Monitor Data Pipeline**
+1. **Tab 4:** Check "Last Data Update" timestamp
+2. **Verify:** Should match scheduled pipeline execution (e.g., 4 AM on 1st/15th)
+3. **Audit Table:** Confirm new players appear in "Recently Added/Updated"
+4. **Action:** If stale, investigate Dagster logs
+
+---
+
+### Deployment
+
+**Local Development:**
+```bash
+streamlit run dashboard.py --server.port 8501 --server.address 0.0.0.0
+```
+
+**Docker (Background):**
+```bash
+docker-compose up -d streamlit
+```
+
+**Access:** `http://localhost:8501`
+
+**Restarting (to refresh data after pipeline run):**
+```bash
+# Local
+pkill -f streamlit
+streamlit run dashboard.py
+
+# Docker
+docker-compose restart streamlit
+```
+
+---
+
+### Future Enhancements
+
+**Planned Features:**
+1. **Export Reports:** PDF generation of player profiles
+2. **Watch List:** Persistent favorites across sessions
+3. **Comparison Matrix:** Compare 3+ players simultaneously
+4. **Transfer Simulation:** "What if Player X joined Squad Y?" tactical fit analysis
+5. **Mobile Responsive:** Optimized layouts for tablets/phones
+
 ## License
 
 This project is for educational and research purposes.
