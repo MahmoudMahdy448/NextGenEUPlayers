@@ -45,6 +45,13 @@ NextGenEUPlayers/
 └── requirements.txt
 ```
 
+## System Architecture
+
+The NextGenEUPlayers platform implements a **Medallion Architecture** with orchestrated ELT patterns, designed for scalability and maintainability.
+
+### High-Level Architecture Diagram
+
+![architecture diagram](docs/images/architecture-diagram.png)
 ## Pipeline Stages
 
 ### 1. Extract (Web -> CSV)
