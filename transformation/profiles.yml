@@ -3,4 +3,4 @@ nextgeneu_players:
   outputs:
     dev:
       type: duckdb
-      path: '/workspaces/NextGenEUPlayers/data/duckdb/players.db'
+      path: "{{ env_var('DUCKDB_PATH', '/workspaces/NextGenEUPlayers/data/duckdb/players.db') }}"

@@ -9,6 +9,10 @@ sources:
       - name: standard_stats_2023_2024
       - name: standard_stats_2024_2025
       - name: standard_stats_2025_2026
+        loaded_at_field: load_timestamp
+        freshness:
+          warn_after: {count: 24, period: hour}
+          error_after: {count: 48, period: hour}
       - name: playing_time_2023_2024
       - name: playing_time_2024_2025
       - name: playing_time_2025_2026

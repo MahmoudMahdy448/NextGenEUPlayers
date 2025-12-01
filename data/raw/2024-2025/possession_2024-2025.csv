@@ -443,7 +443,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,90s,Touches,Def Pen,Def 3rd,Mid 3rd,Att
 Rk,Player,Nation,Pos,Squad,Comp,Age,Born,90s,Touches,Def Pen,Def 3rd,Mid 3rd,Att 3rd,Att Pen,Live,Att,Succ,Succ%,Tkld,Tkld%,Carries,TotDist,PrgDist,PrgC,1/3,CPA,Mis,Dis,Rec,PrgR,Matches
 426,Pau Cabanes,es ESP,"MF,FW",Alavés,es La Liga,19,2005,2.1,125,1,16,49,63,7,125,13,4,30.8,7,53.8,83,493,309,15,9,3,10,3,82,15,Matches
 427,Rémy Cabella,fr FRA,"FW,MF",Lille,fr Ligue 1,34,1990,11.2,900,6,75,357,483,51,900,38,19,50.0,18,47.4,546,2893,1530,45,35,12,16,10,667,130,Matches
-428,Leandro Cabrera,uy URU,DF,Espanyol,es La Liga,33,1991,31.9,1796,332,1047,681,76,33,1796,2,1,50.0,1,50.0,833,3674,2284,9,9,0,9,1,1009,6,Matches
+428,Leandro Cabrera,uy URU,DF,Espanyol,es La Liga,33,1991,31.9,1796,332,1047,681,76,33,1796,2,1,50.0,1,50.0,834,3693,2284,9,9,0,9,1,1010,6,Matches
 429,Liberato Cacace,nz NZL,"MF,DF",Empoli,it Serie A,23,2000,24.8,1187,81,343,485,381,56,1187,51,14,27.5,34,66.7,542,3590,1884,53,34,7,40,21,635,97,Matches
 430,Alessio Cacciamani,it ITA,"MF,DF",Torino,it Serie A,17,2007,0.3,18,0,4,4,10,1,18,1,1,100.0,0,0.0,14,138,75,2,1,1,1,0,12,2,Matches
 431,Anthony Caci,fr FRA,DF,Mainz 05,de Bundesliga,27,1997,29.8,1973,70,398,884,709,62,1973,64,29,45.3,31,48.4,960,3680,1650,45,25,13,44,24,1161,152,Matches
@@ -1007,7 +1007,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,90s,Touches,Def Pen,Def 3rd,Mid 3rd,Att
 968,Eric García,es ESP,"DF,MF",Barcelona,es La Liga,23,2001,17.4,1517,66,369,927,225,25,1517,12,5,41.7,5,41.7,852,3500,1877,18,12,1,17,5,1125,22,Matches
 969,Fran Garcia,es ESP,DF,Real Madrid,es La Liga,24,1999,24.1,1792,71,498,703,606,33,1792,23,8,34.8,15,65.2,1001,4606,2683,78,52,15,20,10,1162,177,Matches
 970,Gonzalo García,es ESP,"FW,DF",Real Madrid,es La Liga,20,2004,0.6,22,0,1,6,15,5,22,0,0,,0,,14,66,19,0,0,0,0,3,17,3,Matches
-971,Joan García,es ESP,GK,Espanyol,es La Liga,23,2001,38.0,1348,1137,1341,7,1,1,1348,0,0,,0,,781,4759,3182,0,0,0,2,0,524,0,Matches
+971,Joan García,es ESP,GK,Espanyol,es La Liga,23,2001,38.0,1348,1137,1341,7,1,1,1348,0,0,,0,,782,4760,3182,0,0,0,2,0,524,0,Matches
 972,Pablo Garcia,es ESP,FW,Betis,es La Liga,18,2006,0.4,23,0,3,7,14,2,23,2,1,50.0,1,50.0,16,120,59,2,0,1,3,1,15,8,Matches
 973,Rubén García,es ESP,"FW,MF",Osasuna,es La Liga,31,1993,26.8,1467,31,205,649,629,64,1467,36,12,33.3,20,55.6,779,3542,1382,37,46,13,39,21,969,157,Matches
 974,Ulisses Garcia,ch SUI,DF,Marseille,fr Ligue 1,28,1996,10.3,712,24,152,357,206,21,712,18,7,38.9,11,61.1,386,1759,858,23,10,1,15,11,480,87,Matches
@@ -1464,7 +1464,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,90s,Touches,Def Pen,Def 3rd,Mid 3rd,Att
 1407,Goduine Koyalipou,cf CTA,FW,Lens,fr Ligue 1,24,2000,9.8,318,9,18,147,157,60,318,25,12,48.0,13,52.0,174,821,393,15,8,8,29,16,233,68,Matches
 1408,Caleb Kporha,eng ENG,DF,Crystal Palace,eng Premier League,18,2006,0.1,11,1,4,2,5,0,11,0,0,,0,,4,46,36,1,1,0,0,2,3,0,Matches
 1409,Emil Krafth,se SWE,DF,Newcastle Utd,eng Premier League,29,1994,3.8,199,34,100,73,28,4,199,1,0,0.0,1,100.0,82,397,175,5,6,0,2,2,98,3,Matches
-1410,Alex Král,cz CZE,MF,Espanyol,es La Liga,26,1998,30.2,1155,84,278,646,253,45,1155,55,29,52.7,21,38.2,618,4041,1902,49,33,7,52,29,684,79,Matches
+1410,Alex Král,cz CZE,MF,Espanyol,es La Liga,26,1998,30.2,1155,84,278,646,253,45,1155,55,29,52.7,21,38.2,617,3984,1902,49,33,7,52,29,684,79,Matches
 1411,Andrej Kramarić,hr CRO,"MF,FW",Hoffenheim,de Bundesliga,33,1991,30.7,1554,11,176,715,676,131,1551,47,20,42.6,22,46.8,938,5047,2534,75,55,22,46,38,1153,202,Matches
 1412,Vladyslav Krapyvtsov,ua UKR,GK,Girona,es La Liga,19,2005,2.0,79,71,78,1,0,0,79,0,0,,0,,54,243,115,0,0,0,0,0,44,0,Matches
 1413,Frans Krätzig,de GER,"DF,MF",Heidenheim,de Bundesliga,21,2003,13.5,676,23,186,289,210,26,676,20,9,45.0,11,55.0,372,1784,822,25,17,6,21,8,403,57,Matches
@@ -2098,7 +2098,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,90s,Touches,Def Pen,Def 3rd,Mid 3rd,Att
 2017,Salih Özcan,tr TUR,MF,Dortmund,de Bundesliga,26,1998,4.3,307,13,76,172,60,7,307,2,2,100.0,0,0.0,127,540,226,4,6,2,4,1,161,4,Matches
 2018,Cenk Özkacar,tr TUR,DF,Valladolid,es La Liga,23,2000,8.4,507,88,313,187,8,6,507,0,0,,0,,244,1202,624,2,2,0,4,1,306,0,Matches
 2019,Nico O’Reilly,eng ENG,DF,Manchester City,eng Premier League,19,2005,5.9,419,14,71,223,130,18,419,15,9,60.0,6,40.0,249,1171,575,16,15,0,14,15,298,26,Matches
-2020,Jon Pacheco,es ESP,DF,Real Sociedad,es La Liga,23,2001,9.5,585,74,281,299,9,5,585,2,1,50.0,1,50.0,313,1925,1242,12,3,1,4,0,358,0,Matches
+2020,Jon Pacheco,es ESP,DF,Real Sociedad,es La Liga,23,2001,9.5,585,74,281,299,9,5,585,2,1,50.0,1,50.0,312,1923,1240,12,3,1,4,0,358,0,Matches
 2021,Willian Pacho,ec ECU,DF,Paris S-G,fr Ligue 1,22,2001,23.7,2223,244,921,1269,43,8,2223,7,2,28.6,4,57.1,1399,5986,2592,3,3,0,15,4,1697,1,Matches
 2022,Daniele Padelli,it ITA,GK,Udinese,it Serie A,38,1985,1.0,22,17,22,0,0,0,22,0,0,,0,,10,35,19,0,0,0,0,0,13,0,Matches
 2023,Alex Padilla,es ESP,GK,Athletic Club,es La Liga,20,2003,3.6,134,110,131,3,0,0,134,0,0,,0,,69,383,239,0,0,0,0,0,46,0,Matches

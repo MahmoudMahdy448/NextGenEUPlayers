@@ -56,7 +56,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 53,Lucien Agoume,fr FRA,MF,Sevilla,es La Liga,22,2002,35,2114,60,61.8,23.5,24,84,14,11,10,1,1.09,26,39,-13,-0.55,-0.55,25.7,31.4,-5.8,-0.24,-0.32,Matches
 54,Saad Agouzoul,ma MAR,DF,Auxerre,fr Ligue 1,26,1997,0,,,,,0,,0,0,,5,,,,,,,,,,,,Matches
 55,Felix Agu,ng NGA,DF,Werder Bremen,de Bundesliga,24,1999,22,1751,80,57.2,19.5,21,82,9,1,30,2,1.64,30,31,-1,-0.05,+0.09,29.0,24.8,+4.2,+0.22,+0.44,Matches
-56,Álvaro Aguado,es ESP,MF,Espanyol,es La Liga,28,1996,16,443,28,13.0,4.9,4,71,0,12,13,20,0.94,6,7,-1,-0.20,+0.10,6.0,8.3,-2.4,-0.48,+0.03,Matches
+56,Álvaro Aguado,es ESP,MF,Espanyol,es La Liga,28,1996,16,443,28,13.0,4.9,4,71,0,12,13,20,0.94,6,7,-1,-0.20,+0.10,6.0,8.3,-2.4,-0.48,+0.04,Matches
 57,Diego Aguado,es ESP,DF,Real Madrid,es La Liga,17,2007,0,,,,,0,,0,0,,4,,,,,,,,,,,,Matches
 58,Lorenzo Aguado,es ESP,DF,Real Madrid,es La Liga,21,2002,2,5,3,0.1,0.1,0,,0,2,3,6,3.00,0,0,0,0.00,-1.05,0.2,0.0,+0.2,+3.53,+2.67,Matches
 59,Nayef Aguerd,ma MAR,DF,Real Sociedad,es La Liga,28,1996,21,1760,84,51.5,19.6,21,84,17,0,,3,1.48,18,15,+3,+0.15,+0.91,25.9,18.8,+7.0,+0.36,+0.82,Matches
@@ -183,7 +183,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,Compl,Subs,Mn/Sub,unSub,PPM,onG,onGA,+/-,+/-90,On-Off,onxG,onxGA,xG+/-,xG+/-90,On-Off,Matches
 176,Aritz Arambarri,es ESP,DF,Leganés,es La Liga,26,1998,2,177,89,5.2,2.0,2,89,1,0,,1,2.00,3,2,+1,+0.51,+1.01,2.5,2.6,-0.2,-0.08,+0.56,Matches
 177,Mauro Arambarri,uy URU,MF,Getafe,es La Liga,28,1995,35,2661,76,77.8,29.6,31,83,23,4,23,0,1.11,29,32,-3,-0.10,+0.14,31.5,33.0,-1.5,-0.05,+0.90,Matches
-178,Jon Aramburu,ve VEN,DF,Real Sociedad,es La Liga,22,2002,35,2460,70,71.9,27.3,28,83,19,7,20,2,1.31,26,35,-9,-0.33,-0.14,31.9,30.4,+1.5,+0.06,+0.34,Matches
+178,Jon Aramburu,ve VEN,DF,Real Sociedad,es La Liga,22,2002,35,2460,70,71.9,27.3,28,83,19,7,20,2,1.31,26,35,-9,-0.33,-0.14,31.9,30.4,+1.5,+0.06,+0.33,Matches
 179,Egoitz Arana,es ESP,GK,Real Sociedad,es La Liga,22,2002,0,,,,,0,,0,0,,6,,,,,,,,,,,,Matches
 180,Julian Araujo,mx MEX,DF,Bournemouth,eng Premier League,22,2001,12,497,41,14.5,5.5,7,62,0,5,12,7,1.08,2,10,-8,-1.45,-2.06,6.8,9.4,-2.6,-0.47,-1.02,Matches
 181,Ronald Araújo,uy URU,DF,Barcelona,es La Liga,25,1999,12,754,63,22.0,8.4,11,68,5,1,5,7,2.69,22,8,+14,+1.67,+0.02,17.6,5.9,+11.7,+1.40,+0.13,Matches
@@ -337,7 +337,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 324,Ihlas Bebou,tg TOG,MF,Hoffenheim,de Bundesliga,30,1994,1,9,9,0.3,0.1,0,,0,1,9,0,0.00,0,1,-1,-10.00,-9.38,0.0,0.5,-0.5,-5.16,-4.79,Matches
 325,Adrian Beck,de GER,"MF,FW",Heidenheim,de Bundesliga,27,1997,32,1598,50,52.2,17.8,18,73,4,14,20,1,0.91,22,30,-8,-0.45,+0.72,22.3,29.2,-6.9,-0.39,+0.25,Matches
 Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,Compl,Subs,Mn/Sub,unSub,PPM,onG,onGA,+/-,+/-90,On-Off,onxG,onxGA,xG+/-,xG+/-90,On-Off,Matches
-326,Sheraldo Becker,sr SUR,"FW,MF",Real Sociedad,es La Liga,29,1995,22,995,45,29.1,11.1,11,71,2,11,19,4,1.00,8,11,-3,-0.27,+0.03,11.5,13.5,-2.0,-0.18,-0.20,Matches
+326,Sheraldo Becker,sr SUR,"FW,MF",Real Sociedad,es La Liga,29,1995,22,995,45,29.1,11.1,11,71,2,11,19,4,1.00,8,11,-3,-0.27,+0.03,11.6,13.5,-1.9,-0.17,-0.19,Matches
 327,Timo Becker,de GER,DF,Holstein Kiel,de Bundesliga,27,1997,30,2445,82,79.9,27.2,28,84,23,2,42,1,0.73,41,65,-24,-0.88,+0.14,33.1,50.9,-17.8,-0.66,-0.17,Matches
 328,Jan Bednarek,pl POL,DF,Southampton,eng Premier League,28,1996,30,2531,84,74.0,28.1,30,84,26,0,,0,0.37,19,57,-38,-1.35,+0.88,23.8,56.5,-32.6,-1.16,+0.81,Matches
 329,Donny van de Beek,nl NED,MF,Girona,es La Liga,27,1997,26,1421,55,41.5,15.8,16,74,4,10,25,6,1.12,25,23,+2,+0.13,+0.94,20.1,21.5,-1.4,-0.09,+0.21,Matches
@@ -552,7 +552,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 530,Pau Cabanes,es ESP,"MF,FW",Villarreal,es La Liga,19,2005,10,163,16,4.8,1.8,0,,0,10,16,5,1.30,5,1,+4,+2.21,+1.77,5.8,1.1,+4.7,+2.58,+2.15,Matches
 531,Pau Cabanes,es ESP,"MF,FW",Alavés,es La Liga,19,2005,6,188,31,5.5,2.1,2,52,0,4,21,11,0.50,1,2,-1,-0.48,-0.23,2.9,3.1,-0.2,-0.10,+0.01,Matches
 532,Rémy Cabella,fr FRA,"FW,MF",Lille,fr Ligue 1,34,1990,23,1011,44,33.0,11.2,12,72,2,11,13,4,1.61,15,12,+3,+0.27,-0.30,20.3,13.3,+7.0,+0.62,+0.39,Matches
-533,Leandro Cabrera,uy URU,DF,Espanyol,es La Liga,33,1991,33,2869,87,83.9,31.9,32,88,30,1,45,0,1.06,36,41,-5,-0.16,+0.82,29.7,43.5,-13.9,-0.44,+0.46,Matches
+533,Leandro Cabrera,uy URU,DF,Espanyol,es La Liga,33,1991,33,2869,87,83.9,31.9,32,88,30,1,45,0,1.06,36,41,-5,-0.16,+0.82,29.7,43.6,-14.0,-0.44,+0.46,Matches
 534,Liberato Cacace,nz NZL,"MF,DF",Empoli,it Serie A,23,2000,33,2230,68,65.2,24.8,24,86,16,9,20,4,0.85,20,46,-26,-1.05,-1.05,21.1,35.5,-14.4,-0.58,-0.35,Matches
 535,Alessio Cacciamani,it ITA,"MF,DF",Torino,it Serie A,17,2007,2,31,16,0.9,0.3,0,,0,2,16,4,0.00,0,0,0,0.00,+0.16,0.4,0.3,+0.1,+0.17,+0.60,Matches
 536,Anthony Caci,fr FRA,DF,Mainz 05,de Bundesliga,27,1997,33,2684,81,87.7,29.8,33,81,11,0,,0,1.55,54,38,+16,+0.54,+1.49,45.1,41.7,+3.4,+0.11,+0.45,Matches
@@ -612,7 +612,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 588,Franco Carboni,it ITA,DF,Venezia,it Serie A,21,2003,8,226,28,6.6,2.5,3,56,0,5,12,27,0.63,2,1,+1,+0.40,+1.10,2.3,3.6,-1.4,-0.54,+0.03,Matches
 589,Valentin Carboni,ar ARG,"MF,FW",Marseille,fr Ligue 1,19,2005,4,103,26,3.4,1.1,1,45,0,3,19,2,1.25,0,1,-1,-0.87,-1.73,0.9,1.5,-0.7,-0.58,-1.17,Matches
 590,Dani Cárdenas,es ESP,GK,Rayo Vallecano,es La Liga,27,1997,6,540,90,15.8,6.0,6,90,6,0,,32,1.67,7,6,+1,+0.17,+0.32,4.9,7.5,-2.7,-0.44,-0.41,Matches
-591,Irvin Cardona,mt MLT,"FW,MF",Espanyol,es La Liga,26,1997,16,606,38,17.7,6.7,5,68,0,11,24,2,0.94,7,5,+2,+0.30,+0.71,7.0,6.0,+1.0,+0.15,+0.80,Matches
+591,Irvin Cardona,mt MLT,"FW,MF",Espanyol,es La Liga,26,1997,16,606,38,17.7,6.7,5,68,0,11,24,2,0.94,7,5,+2,+0.30,+0.71,7.0,6.0,+1.0,+0.14,+0.80,Matches
 592,Irvin Cardona,mt MLT,FW,Saint-Étienne,fr Ligue 1,26,1997,15,1063,71,34.7,11.8,13,75,3,2,45,0,0.80,21,27,-6,-0.51,+0.93,14.7,28.9,-14.2,-1.31,-0.29,Matches
 593,Marc Cardona,es ESP,"FW,DF",Las Palmas,es La Liga,29,1995,11,132,12,3.9,1.5,0,,0,11,12,21,0.64,2,4,-2,-1.36,-0.84,2.8,4.7,-1.9,-1.30,-0.51,Matches
 594,Sergi Cardona,es ESP,DF,Villarreal,es La Liga,25,1999,35,2945,84,86.1,32.7,34,86,24,1,18,1,1.91,60,44,+16,+0.49,-0.27,57.3,37.4,+20.0,+0.61,+0.52,Matches
@@ -683,7 +683,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 656,Arthur Chaves,br BRA,DF,Hoffenheim,de Bundesliga,23,2001,26,2185,84,71.4,24.3,24,88,20,2,42,2,1.12,34,46,-12,-0.49,+0.53,30.2,35.3,-5.2,-0.21,+0.60,Matches
 657,Jhoanner Chávez,ec ECU,"DF,MF",Lens,fr Ligue 1,22,2002,10,596,60,19.5,6.6,7,82,2,3,8,5,1.80,8,5,+3,+0.45,+0.45,8.3,8.4,-0.1,-0.02,-0.26,Matches
 658,Walid Cheddira,ma MAR,FW,Napoli,it Serie A,26,1998,1,12,12,0.4,0.1,0,,0,1,12,1,0.00,0,1,-1,-7.50,-8.37,0.1,0.9,-0.8,-5.77,-6.40,Matches
-659,Walid Cheddira,ma MAR,FW,Espanyol,es La Liga,26,1998,22,640,29,18.7,7.1,5,59,0,17,20,12,1.00,8,9,-1,-0.14,+0.18,7.4,11.0,-3.6,-0.51,0.00,Matches
+659,Walid Cheddira,ma MAR,FW,Espanyol,es La Liga,26,1998,22,640,29,18.7,7.1,5,59,0,17,20,12,1.00,8,9,-1,-0.14,+0.18,7.4,11.0,-3.6,-0.51,+0.01,Matches
 660,Chema,es ESP,MF,Real Madrid,es La Liga,19,2005,2,12,6,0.4,0.1,0,,0,2,6,5,3.00,0,0,0,0.00,-1.06,0.2,0.1,+0.1,+0.99,+0.14,Matches
 661,Théo Chennahi,fr FRA,DF,Montpellier,fr Ligue 1,19,2005,4,181,45,5.9,2.0,2,87,1,2,4,21,0.75,1,7,-6,-2.98,-1.42,1.3,5.1,-3.8,-1.87,-1.06,Matches
 662,Sidiki Cherif,fr FRA,FW,Angers,fr Ligue 1,17,2006,7,324,46,10.6,3.6,3,81,1,4,21,0,0.86,2,7,-5,-1.39,-0.86,3.9,5.1,-1.3,-0.35,+0.32,Matches
@@ -1068,7 +1068,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 1026,Elif Elmas,mk MKD,"FW,MF",Torino,it Serie A,24,1999,13,1021,79,29.9,11.3,12,83,6,1,29,1,1.23,10,13,-3,-0.26,-0.15,11.0,16.0,-5.0,-0.44,-0.03,Matches
 1027,Elif Elmas,mk MKD,MF,RB Leipzig,de Bundesliga,24,1999,2,44,22,1.4,0.5,0,,0,2,22,10,1.50,0,1,-1,-2.05,-2.22,0.4,0.6,-0.2,-0.50,-0.31,Matches
 1028,Rodney Elongo-Yombo,de GER,FW,Dortmund,de Bundesliga,23,2001,0,,,,,0,,0,0,,2,,,,,,,,,,,,Matches
-1029,Aritz Elustondo,es ESP,DF,Real Sociedad,es La Liga,30,1994,22,1457,66,42.6,16.2,16,82,12,6,25,8,1.32,22,23,-1,-0.06,+0.40,18.6,20.0,-1.4,-0.09,-0.08,Matches
+1029,Aritz Elustondo,es ESP,DF,Real Sociedad,es La Liga,30,1994,22,1457,66,42.6,16.2,16,82,12,6,25,8,1.32,22,23,-1,-0.06,+0.40,18.7,20.0,-1.3,-0.08,-0.08,Matches
 1030,Nico Elvedi,ch SUI,DF,Gladbach,de Bundesliga,27,1996,25,2135,85,69.8,23.7,25,85,22,0,,2,1.28,35,38,-3,-0.13,-0.22,33.5,44.0,-10.6,-0.45,-0.23,Matches
 1031,Adri Embarba,es ESP,"FW,MF",Rayo Vallecano,es La Liga,32,1992,35,1607,46,47.0,17.9,18,69,1,17,22,3,1.43,20,21,-1,-0.06,+0.09,19.6,23.4,-3.8,-0.22,-0.23,Matches
 1032,Breel Embolo,ch SUI,"FW,MF",Monaco,fr Ligue 1,27,1997,29,1841,63,60.2,20.5,19,80,7,10,33,5,1.69,35,22,+13,+0.64,-0.03,45.5,17.9,+27.6,+1.35,+0.58,Matches
@@ -1247,7 +1247,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 1199,Gonzalo García,es ESP,"FW,DF",Real Madrid,es La Liga,20,2004,3,56,19,1.6,0.6,0,,0,3,19,3,3.00,4,0,+4,+6.43,+5.47,2.3,0.1,+2.1,+3.40,+2.58,Matches
 1200,Jastin García,es ESP,FW,Girona,es La Liga,20,2004,0,,,,,0,,0,0,,5,,,,,,,,,,,,Matches
 Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,Compl,Subs,Mn/Sub,unSub,PPM,onG,onGA,+/-,+/-90,On-Off,onxG,onxGA,xG+/-,xG+/-90,On-Off,Matches
-1201,Joan García,es ESP,GK,Espanyol,es La Liga,23,2001,38,3420,90,100.0,38.0,38,90,38,0,,0,1.11,40,51,-11,-0.29,,34.4,53.8,-19.4,-0.51,,Matches
+1201,Joan García,es ESP,GK,Espanyol,es La Liga,23,2001,38,3420,90,100.0,38.0,38,90,38,0,,0,1.11,40,51,-11,-0.29,,34.4,53.9,-19.5,-0.51,,Matches
 1202,Lucas García,es ESP,GK,Girona,es La Liga,20,2004,0,,,,,0,,0,0,,4,,,,,,,,,,,,Matches
 1203,Naim García,es ESP,MF,Leganés,es La Liga,22,2002,0,,,,,0,,0,0,,7,,,,,,,,,,,,Matches
 1204,Pablo Garcia,es ESP,FW,Betis,es La Liga,18,2006,3,38,13,1.1,0.4,0,,0,3,13,4,1.67,1,0,+1,+2.37,+2.21,0.2,0.4,-0.2,-0.40,-0.52,Matches
@@ -1322,8 +1322,8 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 1271,Joe Gomez,eng ENG,DF,Liverpool,eng Premier League,27,1997,9,519,58,15.2,5.8,6,77,4,3,19,10,2.56,17,8,+9,+1.56,+0.44,15.9,5.4,+10.5,+1.82,+0.79,Matches
 1272,Moi Gómez,es ESP,"MF,FW",Osasuna,es La Liga,30,1994,26,796,31,23.3,8.8,6,76,3,20,17,10,1.27,2,19,-17,-1.92,-2.37,6.1,15.8,-9.7,-1.10,-1.10,Matches
 1273,Rubén Gómez,es ESP,GK,Villarreal,es La Liga,22,2002,0,,,,,0,,0,0,,8,,,,,,,,,,,,Matches
-1274,Sergi Gómez,es ESP,DF,Espanyol,es La Liga,32,1992,12,664,55,19.4,7.4,6,86,5,6,25,25,1.08,7,13,-6,-0.81,-0.65,5.8,11.7,-5.8,-0.79,-0.35,Matches
-1275,Sergio Gómez,es ESP,"MF,DF",Real Sociedad,es La Liga,23,2000,37,2738,74,80.1,30.4,31,82,18,6,34,1,1.24,26,33,-7,-0.23,+0.30,30.7,35.9,-5.2,-0.17,-0.66,Matches
+1274,Sergi Gómez,es ESP,DF,Espanyol,es La Liga,32,1992,12,664,55,19.4,7.4,6,86,5,6,25,25,1.08,7,13,-6,-0.81,-0.65,5.8,11.7,-5.8,-0.79,-0.34,Matches
+1275,Sergio Gómez,es ESP,"MF,DF",Real Sociedad,es La Liga,23,2000,37,2738,74,80.1,30.4,31,82,18,6,34,1,1.24,26,33,-7,-0.23,+0.30,30.8,35.9,-5.1,-0.17,-0.66,Matches
 Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,Compl,Subs,Mn/Sub,unSub,PPM,onG,onGA,+/-,+/-90,On-Off,onxG,onxGA,xG+/-,xG+/-90,On-Off,Matches
 1276,Unai Gómez,es ESP,"MF,FW",Athletic Club,es La Liga,21,2003,32,1284,40,37.5,14.3,14,61,0,18,24,4,1.75,13,12,+1,+0.07,-0.94,17.6,17.6,0.0,0.00,-0.64,Matches
 1277,Antonio Gomis,es ESP,GK,Atlético Madrid,es La Liga,21,2003,0,,,,,0,,0,0,,31,,,,,,,,,,,,Matches
@@ -1336,7 +1336,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 1284,Nicolás González,ar ARG,"FW,MF",Juventus,it Serie A,26,1998,26,1750,67,51.2,19.4,23,75,5,3,7,1,1.77,28,18,+10,+0.51,-0.19,23.3,17.9,+5.4,+0.28,-0.34,Matches
 1285,Peter González,do DOM,"MF,FW",Getafe,es La Liga,22,2002,17,477,28,13.9,5.3,2,57,0,15,24,21,0.47,5,6,-1,-0.19,-0.07,7.8,8.2,-0.3,-0.06,+0.21,Matches
 1286,Urko González,es ESP,MF,Espanyol,es La Liga,23,2001,17,1374,81,40.2,15.3,16,84,7,1,24,0,1.35,17,14,+3,+0.20,+0.81,14.4,16.8,-2.4,-0.16,+0.59,Matches
-1287,Urko González,es ESP,MF,Real Sociedad,es La Liga,23,2001,1,45,45,1.3,0.5,1,45,0,0,,9,0.00,0,0,0,0.00,+0.29,0.6,0.5,0.0,+0.03,+0.07,Matches
+1287,Urko González,es ESP,MF,Real Sociedad,es La Liga,23,2001,1,45,45,1.3,0.5,1,45,0,0,,9,0.00,0,0,0,0.00,+0.29,0.6,0.5,0.0,+0.03,+0.06,Matches
 1288,Anthony Gordon,eng ENG,"FW,MF",Newcastle Utd,eng Premier League,23,2001,34,2434,72,71.2,27.0,28,81,9,6,26,0,1.68,43,33,+10,+0.37,-0.63,45.7,31.8,+13.8,+0.51,+0.11,Matches
 1289,Leon Goretzka,de GER,"MF,DF",Bayern Munich,de Bundesliga,29,1995,26,1325,51,43.3,14.7,13,80,9,13,22,5,2.38,43,14,+29,+1.97,0.00,39.8,11.3,+28.6,+1.94,+0.50,Matches
 1290,Mathieu Gorgelin,fr FRA,GK,Le Havre,fr Ligue 1,33,1990,16,1440,90,47.1,16.0,16,90,16,0,,17,1.19,24,33,-9,-0.56,+0.66,20.3,30.7,-10.4,-0.65,-0.03,Matches
@@ -1354,7 +1354,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 1301,Kamil Grabara,pl POL,GK,Wolfsburg,de Bundesliga,25,1999,29,2585,89,84.5,28.7,29,89,28,0,,0,1.17,50,49,+1,+0.03,-0.15,40.7,45.4,-4.7,-0.16,-0.10,Matches
 1302,Hubert Graczyk,pl POL,GK,Manchester Utd,eng Premier League,21,2003,0,,,,,0,,0,0,,2,,,,,,,,,,,,Matches
 1303,Jonathan Gradit,fr FRA,DF,Lens,fr Ligue 1,31,1992,25,2112,84,69.0,23.5,24,87,19,1,15,4,1.52,27,29,-2,-0.09,-0.56,34.1,32.4,+1.7,+0.07,-0.38,Matches
-1304,José Gragera,es ESP,MF,Espanyol,es La Liga,23,2000,10,569,57,16.6,6.3,7,71,2,3,25,3,1.00,4,12,-8,-1.27,-1.17,5.5,11.5,-5.9,-0.94,-0.51,Matches
+1304,José Gragera,es ESP,MF,Espanyol,es La Liga,23,2000,10,569,57,16.6,6.3,7,71,2,3,25,3,1.00,4,12,-8,-1.27,-1.17,5.5,11.6,-6.0,-0.95,-0.53,Matches
 1305,Jens Grahl,de GER,GK,Eint Frankfurt,de Bundesliga,35,1988,0,,,,,0,,0,0,,12,,,,,,,,,,,,Matches
 1306,Matteo Grandi,it ITA,GK,Venezia,it Serie A,31,1992,0,,,,,0,,0,0,,38,,,,,,,,,,,,Matches
 1307,Samuel Grandsir,fr FRA,"MF,FW",Le Havre,fr Ligue 1,27,1996,6,84,14,2.7,0.9,0,,0,6,14,9,0.50,1,8,-7,-7.50,-6.77,0.9,2.6,-1.7,-1.83,-1.23,Matches
@@ -1493,7 +1493,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 1435,Son Heung-min,kr KOR,FW,Tottenham,eng Premier League,32,1992,30,2110,70,61.7,23.4,24,79,11,6,35,0,1.13,44,35,+9,+0.38,+1.07,36.2,39.0,-2.8,-0.12,0.00,Matches
 1436,Aaron Hickey,sct SCO,"DF,MF",Brentford,eng Premier League,22,2002,0,,,,,0,,0,0,,1,,,,,,,,,,,,Matches
 1437,Isak Hien,se SWE,DF,Atalanta,it Serie A,25,1999,30,2327,78,68.0,25.9,27,83,22,3,33,2,2.10,58,21,+37,+1.43,+1.10,43.3,26.2,+17.1,+0.66,-0.10,Matches
-1438,Omar El Hilali,ma MAR,DF,Espanyol,es La Liga,20,2003,36,3153,88,92.2,35.0,36,88,30,0,,0,1.14,38,45,-7,-0.20,+1.15,31.4,50.6,-19.2,-0.55,-0.48,Matches
+1438,Omar El Hilali,ma MAR,DF,Espanyol,es La Liga,20,2003,36,3153,88,92.2,35.0,36,88,30,0,,0,1.14,38,45,-7,-0.20,+1.15,31.4,50.6,-19.3,-0.55,-0.48,Matches
 1439,James Hill,eng ENG,DF,Bournemouth,eng Premier League,22,2002,10,448,45,13.1,5.0,6,68,1,4,11,21,1.30,7,9,-2,-0.40,-0.83,10.5,8.5,+1.9,+0.39,-0.02,Matches
 1440,Piero Hincapié,ec ECU,DF,Leverkusen,de Bundesliga,22,2002,32,2670,83,87.3,29.7,28,89,25,4,44,1,2.06,61,35,+26,+0.88,+0.18,50.1,31.6,+18.4,+0.62,+0.11,Matches
 1441,Roger Hinojo,es ESP,DF,Espanyol,es La Liga,19,2005,1,9,9,0.3,0.1,0,,0,1,9,11,0.00,0,0,0,0.00,+0.29,0.2,0.4,-0.1,-1.46,-0.95,Matches
@@ -1628,7 +1628,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 1565,John Joe,ie IRL,"MF,FW",Getafe,es La Liga,20,2003,4,48,12,1.4,0.5,0,,0,4,12,5,1.00,0,0,0,0.00,+0.13,0.4,2.1,-1.6,-3.07,-2.86,Matches
 1566,John Joe,ie IRL,MF,Reims,fr Ligue 1,20,2003,13,545,42,17.8,6.1,5,70,1,8,25,4,0.62,3,10,-7,-1.16,-0.91,4.8,13.0,-8.2,-1.35,-0.93,Matches
 1567,Joelinton,br BRA,"MF,FW",Newcastle Utd,eng Premier League,27,1996,29,2393,83,70.0,26.6,29,83,18,0,,0,1.83,51,32,+19,+0.71,+0.54,46.4,31.5,+14.9,+0.56,+0.27,Matches
-1568,Jofre,es ESP,"MF,FW",Espanyol,es La Liga,23,2001,37,2165,59,63.3,24.1,26,73,3,11,23,0,1.11,23,38,-15,-0.62,-0.91,18.6,38.3,-19.7,-0.82,-0.84,Matches
+1568,Jofre,es ESP,"MF,FW",Espanyol,es La Liga,23,2001,37,2165,59,63.3,24.1,26,73,3,11,23,0,1.11,23,38,-15,-0.62,-0.91,18.6,38.4,-19.8,-0.82,-0.85,Matches
 1569,Þórir Jóhann Helgason,is ISL,MF,Lecce,it Serie A,23,2000,21,1156,55,33.8,12.8,13,74,4,8,24,6,1.14,12,14,-2,-0.16,+1.00,11.2,17.9,-6.7,-0.52,+0.11,Matches
 1570,Carl Johansson,se SWE,DF,Holstein Kiel,de Bundesliga,30,1994,10,568,57,18.6,6.3,7,75,4,3,15,7,1.10,11,19,-8,-1.27,-0.44,8.7,14.5,-5.8,-0.92,-0.36,Matches
 1571,Ben Johnson,eng ENG,"DF,FW",Ipswich Town,eng Premier League,24,2000,23,1354,59,39.6,15.0,14,85,10,9,19,9,0.74,17,36,-19,-1.26,-0.09,12.8,36.7,-23.9,-1.59,-0.96,Matches
@@ -1811,7 +1811,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 1741,Goduine Koyalipou,cf CTA,FW,Lens,fr Ligue 1,24,2000,15,885,59,28.9,9.8,12,69,0,3,19,3,1.47,13,12,+1,+0.10,+0.02,16.0,13.2,+2.8,+0.28,+0.12,Matches
 1742,Caleb Kporha,eng ENG,DF,Crystal Palace,eng Premier League,18,2006,2,13,7,0.4,0.1,0,,0,2,7,25,0.00,0,1,-1,-6.92,-6.95,0.1,0.1,0.0,0.00,-0.30,Matches
 1743,Emil Krafth,se SWE,DF,Newcastle Utd,eng Premier League,29,1994,12,342,29,10.0,3.8,2,90,2,10,16,14,1.92,5,2,+3,+0.79,+0.26,4.9,6.5,-1.5,-0.40,-0.98,Matches
-1744,Alex Král,cz CZE,MF,Espanyol,es La Liga,26,1998,37,2714,73,79.4,30.2,29,86,25,8,26,0,1.14,31,45,-14,-0.46,-0.85,26.0,47.7,-21.7,-0.72,-1.02,Matches
+1744,Alex Král,cz CZE,MF,Espanyol,es La Liga,26,1998,37,2714,73,79.4,30.2,29,86,25,8,26,0,1.14,31,45,-14,-0.46,-0.85,26.0,47.8,-21.8,-0.72,-1.02,Matches
 1745,Andrej Kramarić,hr CRO,"MF,FW",Hoffenheim,de Bundesliga,33,1991,32,2767,86,90.4,30.7,32,86,18,0,,0,1.00,37,59,-22,-0.72,-0.72,38.3,48.2,-9.9,-0.32,+0.67,Matches
 1746,Vladyslav Krapyvtsov,ua UKR,GK,Girona,es La Liga,19,2005,2,180,90,5.3,2.0,2,90,2,0,,13,0.00,2,7,-5,-2.50,-2.19,2.3,4.7,-2.4,-1.19,-1.03,Matches
 1747,Frans Krätzig,de GER,"DF,MF",Heidenheim,de Bundesliga,21,2003,16,1217,76,39.8,13.5,15,80,5,1,20,1,1.06,12,18,-6,-0.44,+0.58,13.0,20.5,-7.5,-0.56,-0.08,Matches
@@ -1823,13 +1823,13 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 1752,Thomas Kristensen,dk DEN,DF,Udinese,it Serie A,22,2002,24,1754,73,51.3,19.5,19,86,16,5,24,4,1.21,19,31,-12,-0.62,-0.45,20.1,27.4,-7.3,-0.37,+0.01,Matches
 1753,Nikola Krstović,me MNE,FW,Lecce,it Serie A,24,2000,37,3057,83,89.4,34.0,37,83,23,0,,0,0.89,24,52,-28,-0.82,-0.08,28.9,50.7,-21.8,-0.64,-0.47,Matches
 1754,Lukas Kübler,de GER,DF,Freiburg,de Bundesliga,31,1992,28,1842,66,60.2,20.5,22,78,8,6,20,3,1.46,31,35,-4,-0.20,-0.20,25.6,26.3,-0.7,-0.04,-0.23,Matches
-1755,Takefusa Kubo,jp JPN,"MF,FW",Real Sociedad,es La Liga,23,2001,36,2372,66,69.4,26.4,27,79,10,9,28,1,1.28,25,28,-3,-0.11,+0.57,30.1,27.2,+2.9,+0.11,+0.49,Matches
+1755,Takefusa Kubo,jp JPN,"MF,FW",Real Sociedad,es La Liga,23,2001,36,2372,66,69.4,26.4,27,79,10,9,28,1,1.28,25,28,-3,-0.11,+0.57,30.2,27.2,+3.0,+0.11,+0.49,Matches
 1756,Mahmut Kücüksahin,,DF,Augsburg,de Bundesliga,20,2004,0,,,,,0,,0,0,,2,,,,,,,,,,,,Matches
 1757,Mohammed Kudus,gh GHA,"FW,MF",West Ham,eng Premier League,23,2000,32,2590,81,75.7,28.8,31,83,14,1,19,0,1.13,33,46,-13,-0.45,-0.13,34.1,42.9,-8.9,-0.31,+0.11,Matches
 1758,Godwill Kukonki,eng ENG,DF,Manchester Utd,eng Premier League,16,2008,0,,,,,0,,0,0,,4,,,,,,,,,,,,Matches
 1759,Dejan Kulusevski,se SWE,"MF,FW",Tottenham,eng Premier League,24,2000,32,2389,75,69.9,26.5,27,84,22,5,24,0,1.06,50,41,+9,+0.34,+1.21,44.9,43.1,+1.8,+0.07,+0.62,Matches
 1760,Sael Kumbedi,fr FRA,DF,Lyon,fr Ligue 1,19,2005,14,951,68,31.1,10.6,12,78,4,2,5,12,1.93,18,12,+6,+0.57,+0.01,14.2,15.4,-1.3,-0.12,-0.80,Matches
-1761,Marash Kumbulla,al ALB,DF,Espanyol,es La Liga,24,2000,35,2972,85,86.9,33.0,34,87,29,1,27,0,1.11,35,45,-10,-0.30,-0.10,29.9,48.0,-18.0,-0.55,-0.27,Matches
+1761,Marash Kumbulla,al ALB,DF,Espanyol,es La Liga,24,2000,35,2972,85,86.9,33.0,34,87,29,1,27,0,1.11,35,45,-10,-0.30,-0.10,29.9,48.0,-18.1,-0.55,-0.27,Matches
 1762,Jonah Kusi-Asare,se SWE,FW,Bayern Munich,de Bundesliga,17,2007,1,3,3,0.1,0.0,0,,0,1,3,9,3.00,0,0,0,0.00,-1.97,0.1,0.3,-0.2,-5.27,-6.93,Matches
 1763,Daler Kuzyaev,ru RUS,MF,Le Havre,fr Ligue 1,31,1993,12,567,47,18.5,6.3,6,76,3,6,19,12,0.75,5,16,-11,-1.75,-1.02,3.7,13.1,-9.4,-1.50,-1.06,Matches
 1764,Khvicha Kvaratskhelia,ge GEO,"FW,MF",Napoli,it Serie A,23,2001,17,1178,69,34.4,13.1,15,76,4,2,19,0,2.24,19,6,+13,+0.99,+0.23,18.7,9.4,+9.3,+0.71,+0.14,Matches
@@ -1954,7 +1954,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 1878,Diego López,es ESP,"MF,FW",Valencia,es La Liga,22,2002,38,2737,72,80.0,30.4,35,76,9,3,25,0,1.21,40,40,0,0.00,+1.32,35.4,40.7,-5.3,-0.18,+0.25,Matches
 1879,Fer López,es ESP,"FW,MF",Celta Vigo,es La Liga,20,2004,17,671,39,19.6,7.5,7,66,1,10,21,3,1.65,12,8,+4,+0.54,+0.60,13.1,8.6,+4.5,+0.60,+0.39,Matches
 1880,Fermin López,es ESP,"MF,FW",Barcelona,es La Liga,21,2003,28,1252,45,36.6,13.9,12,69,4,16,27,3,2.32,31,15,+16,+1.15,-0.80,30.2,14.4,+15.8,+1.14,-0.26,Matches
-1881,Javi López,es ESP,DF,Real Sociedad,es La Liga,22,2002,29,1936,67,56.6,21.5,21,80,12,8,32,7,1.31,22,31,-9,-0.42,-0.30,24.4,26.8,-2.4,-0.11,-0.17,Matches
+1881,Javi López,es ESP,DF,Real Sociedad,es La Liga,22,2002,29,1936,67,56.6,21.5,21,80,12,8,32,7,1.31,22,31,-9,-0.42,-0.30,24.4,26.8,-2.3,-0.11,-0.17,Matches
 1882,José López,es ESP,DF,Espanyol,es La Liga,18,2006,0,,,,,0,,0,0,,2,,,,,,,,,,,,Matches
 1883,Pau López,es ESP,GK,Girona,es La Liga,29,1994,1,45,45,1.3,0.5,0,,0,1,45,16,0.00,1,2,-1,-2.00,-1.60,0.9,2.1,-1.2,-2.34,-2.16,Matches
 1884,Roberto López,es ESP,MF,Leganés,es La Liga,24,2000,13,396,30,11.6,4.4,3,86,2,10,14,25,1.00,2,8,-6,-1.36,-1.04,3.5,7.7,-4.2,-0.97,-0.40,Matches
@@ -2016,7 +2016,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 1938,Frank Magri,cm CMR,"FW,MF",Toulouse,fr Ligue 1,24,1999,31,1516,49,49.5,16.8,17,76,6,14,16,0,1.16,21,26,-5,-0.30,-0.65,23.2,20.2,+3.0,+0.18,-0.37,Matches
 1939,Federico Magro,it ITA,GK,Hellas Verona,it Serie A,19,2005,0,,,,,0,,0,0,,9,,,,,,,,,,,,Matches
 1940,Harry Maguire,eng ENG,DF,Manchester Utd,eng Premier League,31,1993,27,1758,65,51.4,19.5,19,82,13,8,26,3,1.07,20,27,-7,-0.36,-0.20,26.4,26.6,-0.2,-0.01,+0.05,Matches
-1941,Jon Magunazelaia,es ESP,MF,Real Sociedad,es La Liga,23,2001,2,7,4,0.2,0.1,0,,0,2,4,14,3.00,1,0,+1,+12.86,+13.17,0.9,0.1,+0.8,+10.11,+10.17,Matches
+1941,Jon Magunazelaia,es ESP,MF,Real Sociedad,es La Liga,23,2001,2,7,4,0.2,0.1,0,,0,2,4,14,3.00,1,0,+1,+12.86,+13.17,0.9,0.1,+0.8,+10.11,+10.16,Matches
 1942,Adel Mahamoud,km COM,FW,Nantes,fr Ligue 1,21,2003,0,,,,,0,,0,0,,1,,,,,,,,,,,,Matches
 1943,Arne Maier,de GER,MF,Augsburg,de Bundesliga,25,1999,28,938,34,30.7,10.4,7,62,0,21,24,4,1.29,12,16,-4,-0.38,+0.13,12.9,15.4,-2.5,-0.24,+0.25,Matches
 1944,Mike Maignan,fr FRA,GK,Milan,it Serie A,29,1995,37,3294,89,96.3,36.6,37,89,36,0,,0,1.62,56,41,+15,+0.41,-1.73,59.1,39.9,+19.3,+0.53,-1.73,Matches
@@ -2237,7 +2237,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,Compl,Subs,Mn/Sub,unSub,PPM,onG,onGA,+/-,+/-90,On-Off,onxG,onxGA,xG+/-,xG+/-90,On-Off,Matches
 2151,Éder Militão,br BRA,DF,Real Madrid,es La Liga,26,1998,12,938,78,27.4,10.4,11,83,9,1,20,0,2.25,20,9,+11,+1.06,0.00,18.6,11.0,+7.6,+0.73,-0.17,Matches
 2152,Luis Milla,es ESP,MF,Getafe,es La Liga,29,1994,33,2875,87,84.1,31.9,32,89,28,1,35,0,1.06,25,34,-9,-0.28,-0.94,30.9,38.8,-7.9,-0.25,+0.01,Matches
-2153,Pere Milla,es ESP,"MF,FW",Espanyol,es La Liga,31,1992,20,456,23,13.3,5.1,1,56,0,19,21,17,1.10,6,7,-1,-0.20,+0.11,5.6,6.0,-0.5,-0.09,+0.48,Matches
+2153,Pere Milla,es ESP,"MF,FW",Espanyol,es La Liga,31,1992,20,456,23,13.3,5.1,1,56,0,19,21,17,1.10,6,7,-1,-0.20,+0.11,5.6,6.0,-0.5,-0.09,+0.49,Matches
 2154,Enzo Millot,fr FRA,"MF,FW",Stuttgart,de Bundesliga,22,2002,29,1843,64,60.2,20.5,22,76,7,7,24,2,1.52,42,32,+10,+0.49,+0.41,35.6,27.8,+7.8,+0.38,-0.19,Matches
 2155,James Milner,eng ENG,MF,Brighton,eng Premier League,38,1986,4,170,43,5.0,1.9,3,56,0,1,1,0,2.50,4,1,+3,+1.59,+1.48,2.8,2.0,+0.8,+0.42,+0.33,Matches
 2156,Rony Mimb Baheng,cm CMR,DF,Marseille,fr Ligue 1,19,2005,0,,,,,0,,0,0,,1,,,,,,,,,,,,Matches
@@ -2513,11 +2513,11 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 2416,Joseph Okumu,ke KEN,DF,Reims,fr Ligue 1,27,1997,22,1695,77,55.4,18.8,20,83,13,2,21,2,0.59,17,28,-11,-0.58,-0.39,19.2,31.5,-12.3,-0.65,-0.15,Matches
 2417,Aingeru Olabarrieta,es ESP,FW,Athletic Club,es La Liga,18,2005,1,54,54,1.6,0.6,1,54,0,0,,2,3.00,0,0,0,0.00,-0.67,0.2,0.3,-0.2,-0.32,-0.73,Matches
 2418,Kazeem Olaigbe,be BEL,"MF,FW",Rennes,fr Ligue 1,21,2003,10,299,30,9.8,3.3,3,66,0,7,14,2,1.20,5,5,0,0.00,-0.03,6.1,5.9,+0.2,+0.05,-0.03,Matches
-2419,Olasagasti,es ESP,MF,Real Sociedad,es La Liga,23,2000,22,857,39,25.1,9.5,7,66,0,15,26,16,1.41,12,8,+4,+0.42,+0.95,9.3,9.7,-0.3,-0.04,0.00,Matches
+2419,Olasagasti,es ESP,MF,Real Sociedad,es La Liga,23,2000,22,857,39,25.1,9.5,7,66,0,15,26,16,1.41,12,8,+4,+0.42,+0.95,9.4,9.7,-0.3,-0.03,+0.01,Matches
 2420,Ben Old,nz NZL,"FW,MF",Saint-Étienne,fr Ligue 1,21,2002,13,528,41,17.3,5.9,4,74,0,9,26,1,1.00,4,15,-11,-1.87,-0.92,6.2,12.1,-5.9,-1.00,+0.13,Matches
 2421,Finn Ole Becker,de GER,MF,Hoffenheim,de Bundesliga,24,2000,13,670,52,21.9,7.4,7,85,5,6,12,6,1.08,8,13,-5,-0.67,-0.03,9.0,13.7,-4.6,-0.62,-0.30,Matches
 2422,Michael Olise,fr FRA,"FW,MF",Bayern Munich,de Bundesliga,22,2001,34,2334,69,76.3,25.9,28,78,10,6,24,0,2.41,70,23,+47,+1.81,-0.67,61.1,20.4,+40.7,+1.57,-0.35,Matches
-2423,Brian Oliván,es ESP,DF,Espanyol,es La Liga,30,1994,17,1017,60,29.7,11.3,12,75,7,5,23,8,1.00,12,16,-4,-0.35,-0.09,9.5,14.2,-4.7,-0.41,+0.14,Matches
+2423,Brian Oliván,es ESP,DF,Espanyol,es La Liga,30,1994,17,1017,60,29.7,11.3,12,75,7,5,23,8,1.00,12,16,-4,-0.35,-0.09,9.5,14.2,-4.8,-0.42,+0.14,Matches
 2424,Lucas Oliveira Rosa,br BRA,DF,Valladolid,es La Liga,24,2000,21,1890,90,55.3,21.0,21,90,21,0,,0,0.57,12,45,-33,-1.57,+0.25,16.8,38.4,-21.6,-1.03,-0.36,Matches
 2425,Mathías Olivera,uy URU,DF,Napoli,it Serie A,26,1997,32,2370,74,69.3,26.3,26,86,17,6,22,1,2.28,44,16,+28,+1.06,+0.72,37.5,22.0,+15.5,+0.59,-0.08,Matches
 Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,Compl,Subs,Mn/Sub,unSub,PPM,onG,onGA,+/-,+/-90,On-Off,onxG,onxGA,xG+/-,xG+/-90,On-Off,Matches
@@ -2590,7 +2590,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 2490,Cenk Özkacar,tr TUR,DF,Valencia,es La Liga,23,2000,0,,,,,0,,0,0,,2,,,,,,,,,,,,Matches
 2491,Nico O’Reilly,eng ENG,DF,Manchester City,eng Premier League,19,2005,9,528,59,15.4,5.9,6,82,4,3,13,21,2.56,12,3,+9,+1.53,+0.94,11.1,5.5,+5.7,+0.97,+0.51,Matches
 2492,Fernando Pacheco,es ESP,GK,Espanyol,es La Liga,32,1992,0,,,,,0,,0,0,,30,,,,,,,,,,,,Matches
-2493,Jon Pacheco,es ESP,DF,Real Sociedad,es La Liga,23,2001,14,854,61,25.0,9.5,9,80,7,5,27,15,0.86,4,13,-9,-0.95,-0.88,7.0,13.0,-6.1,-0.64,-0.80,Matches
+2493,Jon Pacheco,es ESP,DF,Real Sociedad,es La Liga,23,2001,14,854,61,25.0,9.5,9,80,7,5,27,15,0.86,4,13,-9,-0.95,-0.88,7.0,13.0,-6.0,-0.63,-0.79,Matches
 2494,Willian Pacho,ec ECU,DF,Paris S-G,fr Ligue 1,22,2001,28,2132,76,69.7,23.7,23,86,20,5,29,3,2.46,64,25,+39,+1.65,-0.10,64.2,22.2,+42.0,+1.77,+0.25,Matches
 2495,Daniele Padelli,it ITA,GK,Udinese,it Serie A,38,1985,1,90,90,2.6,1.0,1,90,1,0,,37,3.00,1,0,+1,+1.00,+1.43,2.3,0.8,+1.4,+1.42,+1.85,Matches
 2496,Alex Padilla,es ESP,GK,Athletic Club,es La Liga,20,2003,5,321,64,9.4,3.6,3,90,3,2,26,8,1.00,4,6,-2,-0.56,-1.34,4.8,5.6,-0.8,-0.21,-0.68,Matches
@@ -2762,7 +2762,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 2655,Grischa Prömel,de GER,MF,Hoffenheim,de Bundesliga,29,1995,2,174,87,5.7,1.9,2,87,1,0,,0,1.50,4,5,-1,-0.52,+0.14,4.4,4.1,+0.3,+0.16,+0.58,Matches
 2656,Ivan Provedel,it ITA,GK,Lazio,it Serie A,30,1994,29,2610,90,76.3,29.0,29,90,29,0,,9,1.76,51,42,+9,+0.31,-0.02,44.5,32.1,+12.4,+0.43,-0.36,Matches
 2657,Ivan Prtajin,hr CRO,FW,Union Berlin,de Bundesliga,28,1996,5,161,32,5.3,1.8,2,58,0,3,15,7,0.80,1,1,0,0.00,+0.50,2.3,2.0,+0.3,+0.17,+0.51,Matches
-2658,Javi Puado,es ESP,"FW,MF",Espanyol,es La Liga,26,1998,35,2974,85,87.0,33.0,35,85,20,0,,0,1.03,30,42,-12,-0.36,-0.56,29.6,46.9,-17.3,-0.52,-0.11,Matches
+2658,Javi Puado,es ESP,"FW,MF",Espanyol,es La Liga,26,1998,35,2974,85,87.0,33.0,35,85,20,0,,0,1.03,30,42,-12,-0.36,-0.56,29.6,47.0,-17.4,-0.53,-0.11,Matches
 2659,Tymoteusz Puchacz,pl POL,DF,Holstein Kiel,de Bundesliga,25,1999,10,396,40,12.9,4.4,5,54,0,5,25,4,0.40,6,10,-4,-0.91,0.00,5.4,7.3,-1.8,-0.42,+0.23,Matches
 2660,Diego Pugno,it ITA,FW,Juventus,it Serie A,18,2006,1,7,7,0.2,0.1,0,,0,1,7,1,1.00,0,1,-1,-12.86,-13.49,0.1,0.8,-0.8,-9.84,-10.31,Matches
 2661,Víctor Puig,es ESP,GK,Las Palmas,es La Liga,24,1999,0,,,,,0,,0,0,,1,,,,,,,,,,,,Matches
@@ -2819,7 +2819,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 2710,Vitor Reis,br BRA,DF,Manchester City,eng Premier League,18,2006,1,1,1,0.0,0.0,0,,0,1,1,8,3.00,0,0,0,0.00,-0.74,0.0,0.0,0.0,0.00,-0.54,Matches
 2711,Rocco Reitz,de GER,MF,Gladbach,de Bundesliga,22,2002,27,1830,68,59.8,20.3,21,82,5,6,19,0,1.30,32,32,0,0.00,+0.15,28.9,36.9,-8.0,-0.39,-0.05,Matches
 2712,Nicolai Remberg,de GER,MF,Holstein Kiel,de Bundesliga,24,2000,32,2417,76,79.0,26.9,26,89,25,6,18,0,0.78,39,62,-23,-0.86,+0.26,30.0,45.9,-15.8,-0.59,+0.15,Matches
-2713,Álex Remiro,es ESP,GK,Real Sociedad,es La Liga,29,1995,36,3240,90,94.7,36.0,36,90,36,0,,2,1.28,35,43,-8,-0.22,+1.28,41.0,40.8,+0.2,+0.01,+0.84,Matches
+2713,Álex Remiro,es ESP,GK,Real Sociedad,es La Liga,29,1995,36,3240,90,94.7,36.0,36,90,36,0,,2,1.28,35,43,-8,-0.22,+1.28,41.1,40.8,+0.3,+0.01,+0.84,Matches
 2714,Devyne Rensch,nl NED,DF,Roma,it Serie A,21,2003,14,469,34,13.7,5.2,5,72,1,9,12,1,2.50,8,3,+5,+0.96,+0.47,7.3,6.4,+0.9,+0.17,-0.18,Matches
 2715,Daniel Requena,es ESP,MF,Villarreal,es La Liga,20,2004,1,10,10,0.3,0.1,0,,0,1,10,1,3.00,0,1,-1,-9.00,-9.55,0.0,0.1,-0.1,-0.70,-1.24,Matches
 2716,Guillaume Restes,fr FRA,GK,Toulouse,fr Ligue 1,19,2005,29,2543,88,83.1,28.3,29,88,27,0,,0,1.17,32,36,-4,-0.14,-1.01,39.0,29.0,+10.1,+0.36,-0.05,Matches
@@ -2883,7 +2883,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 2772,Leo Román,es ESP,GK,Mallorca,es La Liga,24,2000,7,630,90,18.4,7.0,7,90,7,0,,31,1.00,5,10,-5,-0.71,-0.59,6.5,14.6,-8.1,-1.15,-1.15,Matches
 2773,Miguel Román,es ESP,MF,Celta Vigo,es La Liga,21,2002,0,,,,,0,,0,0,,4,,,,,,,,,,,,Matches
 2774,Alessandro Romano,ch SUI,MF,Roma,it Serie A,18,2006,0,,,,,0,,0,0,,1,,,,,,,,,,,,Matches
-2775,Carlos Romero,es ESP,DF,Espanyol,es La Liga,22,2001,34,2554,75,74.7,28.4,28,84,19,6,32,2,1.12,29,39,-10,-0.35,-0.25,25.4,41.2,-15.8,-0.56,-0.18,Matches
+2775,Carlos Romero,es ESP,DF,Espanyol,es La Liga,22,2001,34,2554,75,74.7,28.4,28,84,19,6,32,2,1.12,29,39,-10,-0.35,-0.25,25.4,41.2,-15.9,-0.56,-0.19,Matches
 Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,Compl,Subs,Mn/Sub,unSub,PPM,onG,onGA,+/-,+/-90,On-Off,onxG,onxGA,xG+/-,xG+/-90,On-Off,Matches
 2776,Cristian Romero,ar ARG,DF,Tottenham,eng Premier League,26,1998,18,1416,79,41.4,15.7,18,79,13,0,,3,1.11,27,22,+5,+0.32,+0.59,27.0,19.1,+7.9,+0.50,+1.06,Matches
 2777,Elías Romero,es ESP,FW,Las Palmas,es La Liga,20,2004,0,,,,,0,,0,0,,1,,,,,,,,,,,,Matches
@@ -2937,7 +2937,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 2824,Omar Sadik,ma MAR,FW,Espanyol,es La Liga,20,2004,0,,,,,0,,0,0,,1,,,,,,,,,,,,Matches
 2825,Umar Sadiq,ng NGA,FW,Valencia,es La Liga,27,1997,16,825,52,24.1,9.2,9,71,2,7,26,2,1.69,13,13,0,0.00,+0.35,11.3,10.9,+0.4,+0.05,+0.36,Matches
 Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,Compl,Subs,Mn/Sub,unSub,PPM,onG,onGA,+/-,+/-90,On-Off,onxG,onxGA,xG+/-,xG+/-90,On-Off,Matches
-2826,Umar Sadiq,ng NGA,FW,Real Sociedad,es La Liga,27,1997,7,227,32,6.6,2.5,2,64,0,5,20,11,1.14,1,2,-1,-0.40,-0.11,1.2,3.7,-2.4,-0.96,-0.98,Matches
+2826,Umar Sadiq,ng NGA,FW,Real Sociedad,es La Liga,27,1997,7,227,32,6.6,2.5,2,64,0,5,20,11,1.14,1,2,-1,-0.40,-0.11,1.3,3.7,-2.4,-0.93,-0.96,Matches
 2827,Alexis Saelemaekers,be BEL,"DF,FW",Roma,it Serie A,25,1999,22,1389,63,40.6,15.4,17,74,2,5,27,4,2.05,29,8,+21,+1.36,+1.36,25.1,14.0,+11.2,+0.73,+0.68,Matches
 2828,Alexis Saelemaekers,be BEL,"DF,FW",Milan,it Serie A,25,1999,1,90,90,2.6,1.0,1,90,1,0,,1,1.00,2,2,0,0.00,-0.49,2.1,1.0,+1.1,+1.12,+0.54,Matches
 2829,Jorge Sáenz,es ESP,DF,Leganés,es La Liga,27,1996,23,1690,73,49.4,18.8,19,83,14,4,30,12,1.22,14,19,-5,-0.27,+0.36,15.5,24.3,-8.8,-0.47,+0.29,Matches
@@ -3228,7 +3228,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 3103,Álex Suárez,es ESP,DF,Las Palmas,es La Liga,31,1993,30,2460,82,71.9,27.3,30,82,18,0,,5,0.93,28,45,-17,-0.62,-0.25,25.0,47.4,-22.4,-0.82,-0.06,Matches
 3104,Denis Suárez,es ESP,MF,Villarreal,es La Liga,30,1994,21,608,29,17.8,6.8,7,59,0,14,14,10,1.57,12,13,-1,-0.15,-0.82,9.7,11.7,-2.0,-0.30,-1.02,Matches
 3105,Gabriel Suazo,cl CHI,DF,Toulouse,fr Ligue 1,26,1997,30,2163,72,70.7,24.0,23,86,17,7,26,1,1.07,32,33,-1,-0.04,-0.24,36.4,27.9,+8.5,+0.36,-0.03,Matches
-3106,Luka Sučić,hr CRO,MF,Real Sociedad,es La Liga,21,2002,29,1792,62,52.4,19.9,21,78,10,8,20,3,1.21,16,27,-11,-0.55,-0.55,24.3,23.8,+0.5,+0.03,+0.14,Matches
+3106,Luka Sučić,hr CRO,MF,Real Sociedad,es La Liga,21,2002,29,1792,62,52.4,19.9,21,78,10,8,20,3,1.21,16,27,-11,-0.55,-0.55,24.3,23.8,+0.5,+0.03,+0.13,Matches
 3107,Yukinari Sugawara,jp JPN,"DF,MF",Southampton,eng Premier League,24,2000,30,1557,52,45.5,17.3,16,76,6,14,24,5,0.33,13,46,-33,-1.91,-0.60,16.9,40.2,-23.3,-1.34,+0.05,Matches
 3108,Niklas Süle,de GER,DF,Dortmund,de Bundesliga,28,1995,15,1053,70,34.4,11.7,12,80,5,3,31,6,2.07,27,18,+9,+0.77,+0.28,21.3,19.8,+1.4,+0.12,-0.64,Matches
 3109,Ibrahim Sulemana,gh GHA,MF,Atalanta,it Serie A,21,2003,9,283,31,8.3,3.1,3,70,0,6,12,26,2.44,6,4,+2,+0.64,-0.48,3.2,4.1,-0.9,-0.29,-1.07,Matches
@@ -3356,7 +3356,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 3226,Adama Traoré,es ESP,"FW,MF",Fulham,eng Premier League,28,1996,36,1772,49,51.8,19.7,18,76,4,18,23,1,1.47,32,28,+4,+0.20,+0.42,27.9,24.6,+3.3,+0.17,+0.25,Matches
 3227,Boubacar Traoré,ml MLI,MF,Wolves,eng Premier League,22,2001,1,1,1,0.0,0.0,0,,0,1,1,7,3.00,0,0,0,0.00,+0.39,0.6,0.0,+0.6,+49.93,+50.33,Matches
 3228,Daouda Traoré,fr FRA,MF,Nice,fr Ligue 1,18,2006,0,,,,,0,,0,0,,2,,,,,,,,,,,,Matches
-3229,Hamari Traoré,ml MLI,DF,Real Sociedad,es La Liga,32,1992,11,700,64,20.5,7.8,9,71,1,2,29,6,1.09,8,7,+1,+0.13,+0.53,7.6,9.5,-1.9,-0.24,-0.26,Matches
+3229,Hamari Traoré,ml MLI,DF,Real Sociedad,es La Liga,32,1992,11,700,64,20.5,7.8,9,71,1,2,29,6,1.09,8,7,+1,+0.13,+0.53,7.7,9.5,-1.8,-0.23,-0.25,Matches
 3230,Omar Traoré,de GER,DF,Heidenheim,de Bundesliga,26,1998,30,2616,87,85.5,29.1,30,87,24,0,,2,0.87,32,53,-21,-0.72,+0.49,33.7,45.9,-12.2,-0.42,+0.62,Matches
 3231,Kevin Trapp,de GER,GK,Eint Frankfurt,de Bundesliga,34,1990,26,2295,88,75.0,25.5,26,88,25,0,,0,1.69,50,34,+16,+0.63,-0.08,44.7,36.4,+8.3,+0.33,-0.71,Matches
 3232,Mark Travers,ie IRL,GK,Bournemouth,eng Premier League,25,1999,5,450,90,13.2,5.0,5,90,5,0,,18,1.60,6,5,+1,+0.20,-0.13,7.0,7.3,-0.2,-0.05,-0.53,Matches
@@ -3375,7 +3375,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 3245,Claudio Turi,it ITA,GK,Napoli,it Serie A,19,2005,0,,,,,0,,0,0,,11,,,,,,,,,,,,Matches
 3246,Riccardo Turicchia,it ITA,DF,Juventus,it Serie A,21,2003,0,,,,,0,,0,0,,1,,,,,,,,,,,,Matches
 3247,Matt Turner,us USA,GK,Crystal Palace,eng Premier League,30,1994,0,,,,,0,,0,0,,32,,,,,,,,,,,,Matches
-3248,Beñat Turrientes,es ESP,MF,Real Sociedad,es La Liga,22,2002,21,942,45,27.5,10.5,11,65,2,10,23,13,1.05,8,13,-5,-0.48,-0.26,10.3,14.7,-4.3,-0.41,-0.52,Matches
+3248,Beñat Turrientes,es ESP,MF,Real Sociedad,es La Liga,22,2002,21,942,45,27.5,10.5,11,65,2,10,23,13,1.05,8,13,-5,-0.48,-0.26,10.4,14.7,-4.3,-0.41,-0.52,Matches
 3249,Tuta,br BRA,"DF,MF",Eint Frankfurt,de Bundesliga,25,1999,30,2274,76,74.3,25.3,26,85,19,4,16,0,1.90,54,34,+20,+0.79,+0.56,48.1,35.8,+12.4,+0.49,-0.05,Matches
 3250,Ryan Tutu,cd COD,GK,Strasbourg,fr Ligue 1,19,2005,0,,,,,0,,0,0,,1,,,,,,,,,,,,Matches
 Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,Compl,Subs,Mn/Sub,unSub,PPM,onG,onGA,+/-,+/-90,On-Off,onxG,onxGA,xG+/-,xG+/-90,On-Off,Matches
@@ -3439,7 +3439,7 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 3306,Danilo Veiga,pt POR,DF,Lecce,it Serie A,21,2002,13,374,29,10.9,4.2,2,83,1,11,19,3,0.77,1,6,-5,-1.20,-0.43,3.9,5.6,-1.7,-0.42,+0.19,Matches
 3307,Renato Veiga,pt POR,"DF,MF",Chelsea,eng Premier League,21,2003,7,181,26,5.3,2.0,1,90,1,6,15,13,2.14,2,2,0,0.00,-0.58,2.0,3.0,-1.1,-0.52,-1.12,Matches
 3308,Renato Veiga,pt POR,DF,Juventus,it Serie A,21,2003,13,1093,84,32.0,12.1,12,87,11,1,45,1,2.08,18,11,+7,+0.58,-0.04,15.2,10.5,+4.7,+0.39,-0.09,Matches
-3309,Alejo Véliz,ar ARG,FW,Espanyol,es La Liga,20,2003,27,1127,42,33.0,12.5,10,71,2,17,25,11,0.89,18,22,-4,-0.32,-0.04,13.7,21.7,-8.0,-0.63,-0.18,Matches
+3309,Alejo Véliz,ar ARG,FW,Espanyol,es La Liga,20,2003,27,1127,42,33.0,12.5,10,71,2,17,25,11,0.89,18,22,-4,-0.32,-0.04,13.7,21.7,-8.1,-0.63,-0.18,Matches
 3310,Miloš Veljković,rs SRB,DF,Werder Bremen,de Bundesliga,28,1995,14,1029,74,33.6,11.4,11,85,9,3,31,4,0.93,19,25,-6,-0.52,-0.66,15.5,19.3,-3.8,-0.33,-0.54,Matches
 3311,Joël Veltman,nl NED,DF,Brighton,eng Premier League,32,1992,21,1697,81,49.6,18.9,19,86,14,2,27,3,1.81,32,24,+8,+0.42,+0.48,26.5,24.3,+2.2,+0.11,+0.01,Matches
 3312,Micky van de Ven,nl NED,DF,Tottenham,eng Premier League,23,2001,13,1015,78,29.7,11.3,12,82,7,1,30,6,1.08,22,17,+5,+0.44,+0.67,22.3,13.0,+9.3,+0.82,+1.34,Matches
@@ -3636,8 +3636,8 @@ Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,C
 3496,Nadir Zortea,it ITA,"DF,MF",Cagliari,it Serie A,25,1999,35,2713,78,79.3,30.1,33,81,17,2,26,1,0.97,34,51,-17,-0.56,-0.69,32.7,46.1,-13.4,-0.45,-0.55,Matches
 3497,Aristide Zossou,ci CIV,MF,Auxerre,fr Ligue 1,19,2005,3,16,5,0.5,0.2,0,,0,3,5,5,0.00,0,2,-2,-11.25,-11.22,0.4,1.9,-1.5,-8.55,-8.07,Matches
 3498,Yanis Zouaoui,dz ALG,"DF,FW",Le Havre,fr Ligue 1,30,1994,17,976,57,31.9,10.8,9,85,7,8,26,13,1.06,14,20,-6,-0.55,+0.53,16.5,18.7,-2.2,-0.20,+0.63,Matches
-3499,Igor Zubeldia,es ESP,DF,Real Sociedad,es La Liga,27,1997,28,2269,81,66.3,25.2,27,82,22,1,45,1,1.14,22,28,-6,-0.24,+0.15,29.4,27.6,+1.8,+0.07,+0.33,Matches
-3500,Martín Zubimendi,es ESP,MF,Real Sociedad,es La Liga,25,1999,36,2962,82,86.6,32.9,33,87,30,3,32,0,1.25,31,38,-7,-0.21,+0.57,38.1,35.0,+3.0,+0.09,+0.97,Matches
+3499,Igor Zubeldia,es ESP,DF,Real Sociedad,es La Liga,27,1997,28,2269,81,66.3,25.2,27,82,22,1,45,1,1.14,22,28,-6,-0.24,+0.15,29.4,27.6,+1.8,+0.07,+0.32,Matches
+3500,Martín Zubimendi,es ESP,MF,Real Sociedad,es La Liga,25,1999,36,2962,82,86.6,32.9,33,87,30,3,32,0,1.25,31,38,-7,-0.21,+0.57,38.1,35.0,+3.1,+0.09,+0.98,Matches
 Rk,Player,Nation,Pos,Squad,Comp,Age,Born,MP,Min,Mn/MP,Min%,90s,Starts,Mn/Start,Compl,Subs,Mn/Sub,unSub,PPM,onG,onGA,+/-,+/-90,On-Off,onxG,onxGA,xG+/-,xG+/-90,On-Off,Matches
 3501,Edhy Zuliani,fr FRA,DF,Toulouse,fr Ligue 1,19,2004,1,9,9,0.3,0.1,0,,0,1,9,12,1.00,1,0,+1,+10.00,+10.00,0.5,0.2,+0.3,+2.82,+2.46,Matches
 3502,Szymon Żurkowski,pl POL,MF,Empoli,it Serie A,26,1997,5,106,21,3.1,1.2,0,,0,5,21,2,0.00,1,8,-7,-5.94,-5.43,1.2,3.2,-2.0,-1.70,-1.27,Matches

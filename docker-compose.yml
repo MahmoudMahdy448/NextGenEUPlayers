@@ -1,23 +1,33 @@
 version: '3.8'
 
 services:
-  etl:
+  # 1. The Dagster Webserver & Daemon (The Brain)
+  dagster_webserver:
     build: .
-    container_name: nextgeneu_etl
-    volumes:
-      - ./:/app
+    container_name: nextgen_orchestrator
     environment:
-      - PROXY_URL=${PROXY_URL}
-    command: tail -f /dev/null
+      - DAGSTER_POSTGRES_USER=postgres
+      - DAGSTER_POSTGRES_PASSWORD=postgres
+      - DAGSTER_POSTGRES_DB=postgres
+      - DBT_PROFILES_DIR=/app/transformation
+      - DBT_PROJECT_DIR=/app/transformation
+      - DUCKDB_PATH=/app/data/duckdb/players.db
+    volumes:
+      - .:/app # Sync code
+      - ./data:/app/data # Sync data
+    ports:
+      - "3000:3000"
+    # This command starts the UI and points it to your orchestrator module
+    command: dagster dev -h 0.0.0.0 -p 3000 -m orchestrator
 
+  # 2. The Dashboard (Streamlit) - Keeps running independently
   dashboard:
     build: .
     container_name: nextgen_dashboard
-    # Start Streamlit on port 8501
     command: streamlit run dashboard.py --server.port 8501 --server.address 0.0.0.0
     ports:
-      - "8501:8501" # Expose to localhost:8501
+      - "8501:8501"
     volumes:
-      - ./:/app  # Must mount the same volume to see the same DB file!
+      - .:/app
     environment:
       - PYTHONUNBUFFERED=1

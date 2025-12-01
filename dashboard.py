@@ -440,7 +440,7 @@ if 'active_tab' not in st.session_state:
 
 st.markdown('<style>div.row-widget.stRadio > div{flex-direction:row;}</style>', unsafe_allow_html=True)
 # Use index to control state, remove key to avoid conflict
-tabs = ["📊 Market Analytics", "👤 Player Deep Dive", "⚖️ Comparison"]
+tabs = ["📊 Market Analytics", "👤 Player Deep Dive", "⚖️ Comparison", "🕒 Data Audit"]
 
 # SAFETY CHECK: Ensure active_tab is valid (handles renames/reloads)
 if st.session_state.active_tab not in tabs:
@@ -1284,3 +1284,68 @@ if st.session_state.active_tab == "⚖️ Comparison":
 
         else:
             st.warning("Could not find data for one of the selected players in the current filter.")
+
+# =========================================================
+# TAB 4: DATA AUDIT
+# =========================================================
+if st.session_state.active_tab == "🕒 Data Audit":
+    st.header("🕒 Data Ingestion Log")
+    
+    # 1. Database Stats
+    con = get_connection()
+    try:
+        # Check raw metadata
+        # Try to get count from marts first
+        try:
+            row_count = con.execute("SELECT count(*) FROM mart_scouting_analysis").fetchone()[0]
+        except:
+            row_count = "N/A (Marts not built)"
+            
+        # Get latest load time (Assuming you have a 'load_timestamp' or we infer it)
+        # If you don't have a load_timestamp in Marts, we can check Raw
+        # Try 2025-2026 first, then 2024-2025
+        try:
+            last_load = con.execute("SELECT max(load_timestamp) FROM raw.standard_stats_2025_2026").fetchone()[0]
+            audit_table = "raw.standard_stats_2025_2026"
+        except:
+            try:
+                last_load = con.execute("SELECT max(load_timestamp) FROM raw.standard_stats_2024_2025").fetchone()[0]
+                audit_table = "raw.standard_stats_2024_2025"
+            except:
+                last_load = "Unknown"
+                audit_table = None
+                
+    except Exception as e:
+        row_count = "Error"
+        last_load = f"Error: {e}"
+        audit_table = None
+
+    c1, c2 = st.columns(2)
+    c1.metric("Total Players (Marts)", row_count)
+    c2.metric("Last Data Update", str(last_load))
+
+    st.divider()
+
+    # 2. Show Newest Arrivals
+    st.subheader("🆕 Recently Added / Updated Players")
+    
+    if audit_table:
+        try:
+            # Fetch raw data for the log
+            # Adjust table name to your current season
+            recent_df = con.execute(f"""
+                SELECT 
+                    unnamed_1_level_0_player as Player,
+                    unnamed_4_level_0_squad as Squad,
+                    load_timestamp as Loaded_At
+                FROM {audit_table}
+                ORDER BY load_timestamp DESC
+                LIMIT 20
+            """).df()
+            
+            st.dataframe(recent_df, use_container_width=True)
+            
+        except Exception as e:
+            st.info(f"Could not load audit log. Ensure 'load_timestamp' exists in raw tables. Error: {e}")
+    else:
+        st.warning("Could not determine audit table.")

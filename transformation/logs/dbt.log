@@ -9622,3 +9622,78 @@ alter table "players"."main"."mart_player_consistency__dbt_tmp" rename to "mart_
 [0m09:10:10.012615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2ac1f95b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2abe35c620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c2abe35d400>]}
 [0m09:10:10.013086 [debug] [MainThread]: Flushing usage events
 [0m09:10:10.518978 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:11:00.294022 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f41b94a6540>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f41bb7f6870>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f41b9cfcbf0>]}
+
+
+============================== 11:11:00.297673 | 3e2280b9-d5f5-466f-bcfe-1d21b9b23bfe ==============================
+[0m11:11:00.297673 [info ] [MainThread]: Running with dbt=1.10.15
+[0m11:11:00.298394 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'empty': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'printer_width': '80', 'log_cache_events': 'False', 'write_json': 'True', 'target_path': 'None', 'version_check': 'True', 'profiles_dir': 'transformation', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt parse --project-dir transformation --profiles-dir transformation', 'use_colors': 'True', 'fail_fast': 'False', 'log_path': 'transformation/logs', 'debug': 'False', 'quiet': 'False', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'static_parser': 'True', 'introspect': 'True'}
+[0m11:11:00.550936 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3e2280b9-d5f5-466f-bcfe-1d21b9b23bfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f41b3843800>]}
+[0m11:11:00.621768 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3e2280b9-d5f5-466f-bcfe-1d21b9b23bfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f41b9479cd0>]}
+[0m11:11:00.623721 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m11:11:00.734467 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
+[0m11:11:00.845009 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:11:00.845595 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:11:00.884412 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3e2280b9-d5f5-466f-bcfe-1d21b9b23bfe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f41b38f7170>]}
+[0m11:11:00.888305 [info ] [MainThread]: Performance info: transformation/target/perf_info.json
+[0m11:11:00.975201 [debug] [MainThread]: Wrote artifact WritableManifest to transformation/target/manifest.json
+[0m11:11:00.977959 [debug] [MainThread]: Wrote artifact SemanticManifest to transformation/target/semantic_manifest.json
+[0m11:11:00.979466 [debug] [MainThread]: Resource report: {"command_name": "parse", "command_success": true, "command_wall_clock_time": 0.74559957, "process_in_blocks": "0", "process_kernel_time": 0.268807, "process_mem_max_rss": "167560", "process_out_blocks": "1464", "process_user_time": 3.348598}
+[0m11:11:00.980407 [debug] [MainThread]: Command `dbt parse` succeeded at 11:11:00.980282 after 0.75 seconds
+[0m11:11:00.980906 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f41ba692ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f41be90bad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f41b3913d10>]}
+[0m11:11:00.981411 [debug] [MainThread]: Flushing usage events
+[0m11:11:01.392768 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:21:47.369371 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ee129a96b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ee1288d82b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ee1288d8250>]}
+
+
+============================== 11:21:47.377446 | c2eb7307-5346-4071-be7e-8e99d65a0dde ==============================
+[0m11:21:47.377446 [info ] [MainThread]: Running with dbt=1.10.15
+[0m11:21:47.378336 [debug] [MainThread]: running dbt with arguments {'profiles_dir': 'transformation', 'warn_error': 'None', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'empty': 'None', 'cache_selected_only': 'False', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'use_colors': 'True', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'static_parser': 'True', 'no_print': 'None', 'debug': 'False', 'write_json': 'True', 'log_path': 'transformation/logs', 'log_format': 'default', 'target_path': 'None', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug --project-dir transformation --profiles-dir transformation', 'introspect': 'True', 'fail_fast': 'False'}
+[0m11:21:47.389389 [info ] [MainThread]: dbt version: 1.10.15
+[0m11:21:47.389827 [info ] [MainThread]: python version: 3.10.19
+[0m11:21:47.390144 [info ] [MainThread]: python path: /usr/local/bin/python3.10
+[0m11:21:47.390604 [info ] [MainThread]: os info: Linux-6.8.0-1030-azure-x86_64-with-glibc2.41
+[0m11:21:47.527163 [info ] [MainThread]: Using profiles dir at transformation
+[0m11:21:47.527749 [info ] [MainThread]: Using profiles.yml file at transformation/profiles.yml
+[0m11:21:47.528194 [info ] [MainThread]: Using dbt_project.yml file at transformation/dbt_project.yml
+[0m11:21:47.529753 [info ] [MainThread]: adapter type: duckdb
+[0m11:21:47.530142 [info ] [MainThread]: adapter version: 1.10.0
+[0m11:21:47.693158 [info ] [MainThread]: Configuration:
+[0m11:21:47.693748 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:21:47.694205 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m11:21:47.694629 [info ] [MainThread]: Required dependencies:
+[0m11:21:47.695039 [debug] [MainThread]: Executing "git --help"
+[0m11:21:48.207860 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:21:48.208458 [debug] [MainThread]: STDERR: "b''"
+[0m11:21:48.208791 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:21:48.209146 [info ] [MainThread]: Connection:
+[0m11:21:48.209586 [info ] [MainThread]:   database: players
+[0m11:21:48.209946 [info ] [MainThread]:   schema: main
+[0m11:21:48.210345 [info ] [MainThread]:   path: /app/data/duckdb/players.db
+[0m11:21:48.210713 [info ] [MainThread]:   config_options: None
+[0m11:21:48.211072 [info ] [MainThread]:   extensions: None
+[0m11:21:48.211450 [info ] [MainThread]:   settings: {}
+[0m11:21:48.211800 [info ] [MainThread]:   external_root: .
+[0m11:21:48.212149 [info ] [MainThread]:   use_credential_provider: None
+[0m11:21:48.212559 [info ] [MainThread]:   attach: None
+[0m11:21:48.212919 [info ] [MainThread]:   filesystems: None
+[0m11:21:48.213301 [info ] [MainThread]:   remote: None
+[0m11:21:48.213650 [info ] [MainThread]:   plugins: None
+[0m11:21:48.214039 [info ] [MainThread]:   disable_transactions: False
+[0m11:21:48.214608 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m11:21:48.295651 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m11:21:48.325568 [debug] [MainThread]: Using duckdb connection "debug"
+[0m11:21:48.326063 [debug] [MainThread]: On debug: select 1 as id
+[0m11:21:48.326459 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:21:48.354815 [debug] [MainThread]: SQL status: OK in 0.028 seconds
+[0m11:21:48.355958 [debug] [MainThread]: On debug: Close
+[0m11:21:48.356400 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m11:21:48.356805 [info ] [MainThread]: [32mAll checks passed![0m
+[0m11:21:48.357840 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 1.0737692, "process_in_blocks": "0", "process_kernel_time": 0.171091, "process_mem_max_rss": "158872", "process_out_blocks": "24", "process_user_time": 2.294232}
+[0m11:21:48.358337 [debug] [MainThread]: Command `dbt debug` succeeded at 11:21:48.358209 after 1.07 seconds
+[0m11:21:48.358689 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m11:21:48.359036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ee129a96b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ee12912cf40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ee128acbc70>]}
+[0m11:21:48.359478 [debug] [MainThread]: Flushing usage events
+[0m11:21:48.748242 [debug] [MainThread]: An error was encountered while trying to flush usage events
